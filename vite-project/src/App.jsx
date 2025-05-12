@@ -8,7 +8,18 @@ import Cybrain from './components/Cybrain'
 import Sphinix from './components/Sphinix'
 import Rockman from './components/Rockman'
 import Tardihuman from './components/Tardihuman'
-
+import Werewolf from './components/Werewolf'
+import Terraka from './components/Terraka'
+import Vultrix from './components/Vultrix'
+import Petrabyte from './components/Petrabyte'
+import Terrawolfvulbyte from './components/Terrawolfvulbyte'
+import Humotardilixian from './components/Humotardilixian'
+import Gorkon from './components/Gorkon'
+import Sandrax from './components/Sandrax'
+import Toxizon from './components/Toxizon'
+import Flaron from './components/Flaron'
+import Tardion from './components/Tardion'
+import Gordraxdiozone from './components/Gordraxdiozone'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 
 export default function App() {
@@ -27,6 +38,20 @@ export default function App() {
       <Route path='/rockman' element={<Rockman />} />
       <Route path='/tardihuman' element={<Tardihuman/>}/>
       <Route path='/cybrain' element={<Cybrain/>}/>
+      <Route path='/werewolf' element={<Werewolf/>}/>
+      <Route path='/terraka' element={<Terraka/>}/>
+      <Route path='/vultrix' element={<Vultrix/>}/>
+      <Route path='/petrabyte' element={<Petrabyte/>}/>
+      <Route path='/terrawolfvulbyte' element={<Terrawolfvulbyte/>}/>
+      <Route path='/humotardilixian' element={<Humotardilixian/>}/>
+      <Route path='/gorkon' element={<Gorkon/>}/>
+      <Route path='/sandrax' element={<Sandrax/>}/>
+      <Route path='/toxizon' element={<Toxizon/>}/>
+      <Route path='/tardion' element={<Tardion/>}/>
+      <Route path='/gordraxdiozone' element={<Gordraxdiozone/>}/>
+      <Route path='/flaron' element={<Flaron/>}/>
+      
+
       </Routes>
 
       

@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link} from "react-router-dom"
+import Logo from './Logo'
+
 
 export default function Navbar() {
 
@@ -19,7 +21,7 @@ export default function Navbar() {
     }
       {
         data2.map((item, key) => (
-          <div className='flex justify-between'>
+          <div className='hidden md:flex justify-between '>
             <nav className='flex justify-between items-center'>
 
               <div className='flex justify-between  items-center '>
@@ -31,6 +33,11 @@ export default function Navbar() {
           </div>
         ))
       }
+
+      <div>
+        <Logo />
+
+      </div>
     </div>
 
   )

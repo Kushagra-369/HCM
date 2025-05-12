@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from './logo'
+import Logo from './Logo'
 
 export default function Footer() {
   return (
@@ -10,10 +10,9 @@ export default function Footer() {
                 <div >
                 <h1 className="font-bold border-b-2 border-cyan-300">Get to know</h1>
                 <br/>
-                <h1 className='text-yellow-300'><a href="">about amazon</a></h1>
-                <h1 className='text-yellow-300'><a href="">career</a></h1>
-                <h1 className='text-yellow-300'><a href="">press release</a></h1>
-                <h1 className='text-yellow-300'><a href="">amazon science</a></h1>
+                <h1 className='text-yellow-300'><a href="">about empty spaces</a></h1>
+                <h1 className='text-yellow-300'><a href="">about hcm </a></h1>
+                <h1 className='text-yellow-300'><a href="">origin </a></h1>
             </div>
             <div>
                 <h1 className="font-bold border-b-2 border-cyan-300">connect with us</h1>

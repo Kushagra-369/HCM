@@ -9,6 +9,11 @@ import image7 from '../assets/images/HCM - 170.jpg'
 import image8 from '../assets/images/hcm 522.jpg'
 import image9 from '../assets/images/hcm 521.jpg'
 import image10 from '../assets/images/hcm 211.jpg'
+import image11 from '../assets/images/hcm 080.jpg'
+import image12 from '../assets/images/hcm 008.jpg'
+import image13 from '../assets/images/hcm 660.jpg'
+import image14 from '../assets/images/hcm 180.jpg'
+import image15 from '../assets/images/hcm 561.jpg'
 import Footer from './Footer'
 
 import { href, Link } from 'react-router-dom'
@@ -24,7 +29,7 @@ export default function Home() {
     ];
 
     let data2 = [
-        { title1: "HUMOTARDILIXIAN", title2: "HCM 871", title3: image5, href: '/' }
+        { title1: "HUMOTARDILIXIAN", title2: "HCM 871", title3: image5, href: '/humotardilixian' }
 
     ];
     let data3 = [
@@ -32,17 +37,30 @@ export default function Home() {
         { title1: "CYBRAIN", title2: "HCM 270", title3: image4, href: '/cybrain' }
     ];
     let data4 = [
-        { title1: "WEREWOLF", title2: "HCM 701", title3: image6, href: '/' },
-        { title1: "TERRAKA", title2: "HCM 170", title3: image7, href: '/' },      
+        { title1: "WEREWOLF", title2: "HCM 701", title3: image6, href: '/werewolf' },
+        { title1: "TERRAKA", title2: "HCM 170", title3: image7, href: '/terraka' },      
     ];
 
     let data5 = [
-        { title1: "TERRAWOLFBYTE", title2: "HCM 522", title3: image8, href: '/' }
+        { title1: "TERRAWOLFVULBYTE", title2: "HCM 522", title3: image8, href: '/terrawolfvulbyte' }
 
     ];
     let data6 = [
-        { title1: "VULTRIX", title2: "HCM 521", title3: image9, href: '/' },
-        { title1: "PARABYTE", title2: "HCM 211", title3: image10, href: '/' }
+        { title1: "VULTRIX", title2: "HCM 521", title3: image9, href: '/vultrix' },
+        { title1: "PETRABYTE", title2: "HCM 211", title3: image10, href: '/petrabyte' }
+    ];
+
+     let data7 = [
+        { title1: "GORKON", title2: "HCM 080", title3: image11, href: '/gorkon' },
+        { title1: "SANDRAX", title2: "HCM 008", title3: image12, href: '/sandrax' },      
+    ];
+    let data8 = [
+        { title1: "GORDRAXDIOZONE", title2: "HCM 561", title3: image15, href: '/gordraxdiozone' }
+
+    ];
+     let data9 = [
+         { title1: "TARDION", title2: "HCM 180", title3: image14, href: '/tardion' },
+        { title1: "FLARON", title2: "HCM 660", title3: image13, href: '/flaron' }
     ];
     
     return (
@@ -160,6 +178,64 @@ export default function Home() {
                     ))
                 }
             </div>
+
+                <br />
+<br />
+<br />
+
+            <div className='  grid grid-cols-2 '  >           
+                {
+                    data7.map((item, key) => (
+                        <div className=' flex justify-center  py-5' key={key}>
+                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{boxShadow:'4px 4px 50px rgba(62, 242, 7, 0.943)'}}>
+                                <Link to={item.href}>
+                                    <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                    <br />
+                                    <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                    <br />
+                                    <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
+                                </Link>
+                            </div>
+                        </div>
+                    ))
+                }
+
+            </div>
+            <div>
+            {
+                    data8.map((item, key) => (
+                        <div className=' flex justify-center  py-5' key={key}>
+                            <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{boxShadow:'0px 0px 500px rgba(85, 7, 242, 0.988)'}} >
+                                <Link to={item.href} >
+                                    <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                    <br />
+                                    <img className="h-60 w-60  " src={item.title3} alt=""></img>
+                                    <br />
+                                    <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
+                                </Link>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+            <div className='  grid grid-cols-2 ' >
+            {
+                    data9.map((item, key) => (
+                        <div className=' flex justify-center  py-5 ' key={key}>
+                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{boxShadow:'4px 4px 50px rgba(62, 242, 7, 0.943)'}}>
+                                <Link to={item.href} >
+                                    <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                    <br />
+                                    <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                    <br />
+                                    <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
+                                </Link>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+
             <div>
        
                 <Footer/>

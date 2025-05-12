@@ -34,10 +34,7 @@ export default function Navbar() {
         ))
       }
 
-      <div>
-        <Logo />
-
-      </div>
+      
     </div>
 
   )

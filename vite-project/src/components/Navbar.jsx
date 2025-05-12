@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
 
     <div className='flex justify-between  text-white px-5 items-center py-10' style={{backgroundImage:'url(https://t3.ftcdn.net/jpg/01/22/03/84/360_F_122038456_AEdKNITqNDwdPTVdPDy1Fk5YaD9Um1xm.jpg)', backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}>{
-      <div className='text-6xl items-center text-center '>
+      <div className='text-4xl md:text-6xl items-center text-center '>
         EMPTY SPACES
       </div>
     }

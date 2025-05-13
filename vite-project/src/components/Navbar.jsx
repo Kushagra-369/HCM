@@ -14,9 +14,9 @@ export default function Navbar() {
 
   ];
 
-  const[text,settext]= useState(false)
+  const [text, settext] = useState(false)
 
-  const cross=()=>{
+  const cross = () => {
     settext(!text)
   }
 
@@ -36,7 +36,7 @@ export default function Navbar() {
         <ul className=' hidden md:flex justify-center gap-15' >
           {
             data2.map((item, key) => (
-              <div  className=' hover:bg-yellow-300 hover:text-black'> 
+              <div className=' hover:bg-yellow-300 hover:text-black'>
 
                 <Link to={item.href}><li key={key}>{item.title1}</li></Link>
 
@@ -46,19 +46,19 @@ export default function Navbar() {
           }
         </ul>
 
-          
-          <div onClick={cross} className=' md:hidden block'>
-            {text ? <GiSplitCross/> : <FaBars/>}
-          </div>
-            {
-                text && (
-                    <ul className=' bg-gray-500 text-2xl text-yellow-300 absolute top-20   right-10'>
-                        {data2.map((item,key)=>(
-                            <li><a href={item.href}>{item.title1}</a></li>
-                        ))}
-                    </ul>
-                )
-            }
+
+        <div onClick={cross} className=' md:hidden block'>
+          {text ? <GiSplitCross /> : <FaBars />}
+        </div>
+        {
+          text && (
+            <ul className=' bg-gray-500 text-2xl text-yellow-300 absolute top-20   right-10'>
+              {data2.map((item, key) => (
+                <Link to={item.href}><li key={key}>{item.title1}</li></Link>
+              ))}
+            </ul>
+          )
+        }
 
       </div>
 

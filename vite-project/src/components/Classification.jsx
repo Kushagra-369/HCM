@@ -35,9 +35,9 @@ export default function Classification() {
   return (
     <div className=' bg-black py-20'>
       {
-        <h1 className=' text-6xl text-center text-white'>E(Entity) TYPE OF HCM</h1>
+        <h1 className='text-5xl md:text-6xl text-center text-white'>E(Entity) TYPE OF HCM</h1>
       }
-      <div className=' flex justify-around text-cyan-400 py-10 text-4xl'>
+      <div className=' px-10 gap-7 flex justify-around text-cyan-400 py-10 text-2xl md:text-4xl'>
         {data3.map((item, key) => (
           <ul >
             <br />
@@ -49,15 +49,15 @@ export default function Classification() {
         }
       </div>
       <div className=' py-5'>
-        <div className=' text-white text-6xl flex justify-center items-center text-center'>
+        <div className=' text-white text-5xl md:text-6xl flex justify-center items-center text-center'>
           <h1>N(Nature) TYPE OF HCM</h1>
         </div>
         <div >
-          <ul className=' flex justify-around py-5' >
+          <ul className='px-7 gap-5 flex justify-around py-5' >
             <br />
             <div>
-              <li className=' text-cyan-300 text-4xl' >Living-Living</li>
-              <div className=' py-5 text-2xl '>
+              <li className=' text-cyan-300 text-2xl md:text-4xl' >Living-Living</li>
+              <div className=' py-5 md:text-2xl '>
                 {data4.map((item, key) => (
                   <div className=' text-yellow-300 py-2'>
                     <li>{item.title1}</li>
@@ -66,8 +66,8 @@ export default function Classification() {
               </div>
             </div>
             <div>
-              <li className=' text-cyan-300 text-4xl' >Living-Non-living</li>
-              <div className=' py-5 text-2xl'>
+              <li className=' text-cyan-300 text-2xl md:text-4xl' >Living-Non-living</li>
+              <div className=' py-5 md:text-2xl'>
                 {data4.map((item, key) => (
                   <div className=' text-yellow-300 py-2'>
                     <li>{item.title2}</li>
@@ -76,8 +76,8 @@ export default function Classification() {
               </div>
             </div>
             <div>
-              <li className=' text-cyan-300 text-4xl' >Non-living-Non-living</li>
-              <div className=' py-5 text-2xl'>
+              <li className=' text-cyan-300 text-2xl md:text-4xl' >Non-living-Non-living</li>
+              <div className=' py-5 md:text-2xl'>
                 {data4.map((item, key) => (
                   <div className=' text-yellow-300 py-2'>
                     <li>{item.title3}</li>
@@ -90,19 +90,19 @@ export default function Classification() {
       </div>
 
       <div className=' py-5'>
-        <div className=' text-white text-6xl flex justify-center items-center text-center'>
+        <div className=' text-white text-5xl nd:text-6xl flex justify-center items-center text-center'>
           <h1>S(Species) TYPE OF HCM</h1>
         </div>
         <div>
-          <ul className=' text-cyan-300 text-5xl py-10'>
-            <li>Living-Living</li>
+          <ul className=' text-cyan-300  px-10 md:text-5xl py-10'>
+            <li className=' text-4xl' >Living-Living</li>
             <div>
-              <ul className=' flex justify-around py-5 '>
+              <ul className=' flex justify-around py-5 px-10 '>
                 <div>
-                  <li className=' text-yellow-300 text-4xl'>Biotic-Biotic</li>
-                  <div className=' text-orange-500 text-2xl px-5 py-2'>
+                  <li className=' text-yellow-300 text-3xl md:text-4xl'>Biotic-Biotic</li>
+                  <div className=' text-orange-500 text-sm md:text-2xl px-5 py-2'>
                     {data5.map((item, key) => (
-                      <div>
+                      <div className=' py-2'>
                         <ul>
                           <li>{item.title1}</li>
                         </ul>
@@ -111,10 +111,10 @@ export default function Classification() {
                   </div>
                 </div>
                 <div>
-                  <li className=' text-yellow-300 text-4xl'>Biotic-Abiotic</li>
-                  <div className=' text-orange-500 text-2xl px-5 py-2'>
+                  <li className=' text-yellow-300 text-3xl md:text-4xl'>Biotic-Abiotic</li>
+                  <div className=' text-orange-500 text-sm md:text-2xl px-5 py-2'>
                     {data5.map((item, key) => (
-                      <div>
+                      <div className=' py-2'>
                         <ul>
                           <li>{item.title2}</li>
                         </ul>
@@ -127,14 +127,14 @@ export default function Classification() {
               </ul>
 
             </div>
-            <li>Living-Non-living</li>
+            <li className=' text-4xl'>Living-Non-living</li>
             <div>
-              <ul className=' flex justify-around py-5 '>
+              <ul className=' flex justify-between gap-3 py-5 px-5 '>
                 <div>
-                  <li className=' text-yellow-300 text-4xl'>Biotic-Abiotic</li>
-                  <div className=' text-orange-500 text-2xl px-5 py-2'>
+                  <li className=' text-yellow-300  md:text-4xl'>Biotic-Abiotic</li>
+                  <div className=' text-orange-500 text-sm md:text-2xl px-5 py-2'>
                     {data6.map((item, key) => (
-                      <div>
+                      <div className=' py-2'>
                         <ul>
                           <li>{item.title1}</li>
                         </ul>
@@ -143,10 +143,10 @@ export default function Classification() {
                   </div>
                 </div>
                 <div>
-                  <li className=' text-yellow-300 text-4xl'>Biotic-Technology</li>
-                  <div className=' text-orange-500 text-2xl px-5 py-2'>
+                  <li className=' text-yellow-300  md:text-4xl'>Biotic-Technology</li>
+                  <div className=' text-orange-500 text-sm md:text-2xl px-5 py-2'>
                     {data6.map((item, key) => (
-                      <div>
+                      <div className=' py-2'>
                         <ul>
                           <li>{item.title2}</li>
                         </ul>
@@ -155,10 +155,10 @@ export default function Classification() {
                   </div>
                 </div>
                 <div>
-                  <li className=' text-yellow-300 text-4xl'>Abiotic-Technology</li>
-                  <div className=' text-orange-500 text-2xl py-2 px-5'>
+                  <li className=' text-yellow-300  md:text-4xl'>Abiotic-Technology</li>
+                  <div className=' text-orange-500 text-sm  md:text-2xl py-2 px-5'>
                     {data6.map((item, key) => (
-                      <div>
+                      <div className=' py-2'>
                         <ul>
                           <li>{item.title3}</li>
                         </ul>
@@ -167,10 +167,10 @@ export default function Classification() {
                   </div>
                 </div>
                 <div>
-                  <li className=' text-yellow-300 text-4xl'>Abiotic-Aboitic</li>
-                  <div className=' text-orange-500 text-2xl py-2 px-5'>
+                  <li className=' text-yellow-300  md:text-4xl'>Abiotic-Aboitic</li>
+                  <div className=' text-orange-500 text-sm md:text-2xl py-2 px-5'>
                     {data6.map((item, key) => (
-                      <div>
+                      <div className=' py-2'>
                         <ul>
                           <li>{item.title4}</li>
                         </ul>
@@ -181,12 +181,12 @@ export default function Classification() {
               </ul>
 
             </div>
-            <li>Non-living-Non-living</li>
+            <li className=' text-4xl'>Non-living-Non-living</li>
             <div>
               <ul className=' flex justify-around py-5 '>
                 <div>
-                  <li className=' text-yellow-300 text-4xl'>Abiotic-Abiotic</li>
-                  <div className=' text-orange-500 text-2xl px-5 py-2'>
+                  <li className=' text-yellow-300 text-2xl md:text-4xl'>Abiotic-Abiotic</li>
+                  <div className=' text-orange-500 md:text-2xl px-5 py-2'>
                     {data7.map((item, key) => (
                       <div>
                         <ul>
@@ -197,8 +197,8 @@ export default function Classification() {
                   </div>
                 </div>
                 <div>
-                  <li className=' text-yellow-300 text-4xl'>Technology-Technology</li>
-                  <div className=' text-orange-500 text-2xl px-5 py-2'>
+                  <li className=' text-yellow-300 text-2xl md:text-4xl'>Technology-Technology</li>
+                  <div className=' text-orange-500 md:text-2xl px-5 py-2'>
                     {data7.map((item, key) => (
                       <div>
                         <ul>
@@ -209,8 +209,8 @@ export default function Classification() {
                   </div>
                 </div>
                 <div>
-                  <li className=' text-yellow-300 text-4xl'>Abiotic-Technology</li>
-                  <div className=' text-orange-500 text-2xl py-2 px-5'>
+                  <li className=' text-yellow-300 text-2xl md:text-4xl'>Abiotic-Technology</li>
+                  <div className=' text-orange-500 md:text-2xl py-2 px-5'>
                     {data7.map((item, key) => (
                       <div>
                         <ul>
@@ -228,6 +228,10 @@ export default function Classification() {
           </ul>
         </div>
 
+      </div>
+
+      <div>
+        <h1 className=' text-6xl md:text-8xl text-red-600 text-center'>Some special fusions</h1>
       </div>
       <div>
         <Logo />

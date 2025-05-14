@@ -20,6 +20,11 @@ import Toxizon from './components/Toxizon'
 import Flaron from './components/Flaron'
 import Tardion from './components/Tardion'
 import Gordraxdiozone from './components/Gordraxdiozone'
+import Petrovis from './components/Petrovis'
+import Flurtone from './components/Flurtone'
+import Tigris from './components/Tigris'
+import Oculus from './components/Oculus'
+import Flurtotilus from './components/Flurtotilus'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 
 export default function App() {
@@ -50,6 +55,12 @@ export default function App() {
       <Route path='/tardion' element={<Tardion/>}/>
       <Route path='/gordraxdiozone' element={<Gordraxdiozone/>}/>
       <Route path='/flaron' element={<Flaron/>}/>
+      <Route path='/petrovis' element={<Petrovis/>}/>
+      <Route path='/flurtone' element={<Flurtone/>}/>
+      <Route path='/oculus' element={<Oculus/>}/>
+      <Route path='/tigris' element={<Tigris/>}/>
+      <Route path='/flurtotilus' element={<Flurtotilus/>}/>
+
       
 
       </Routes>

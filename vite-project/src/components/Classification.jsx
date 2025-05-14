@@ -17,21 +17,29 @@ export default function Classification() {
   ];
 
   let data5 = [
-    { title1: "Human-Animal", title2: "Animal-Plant",  },
-    { title1: "Human-Microbe", title2: "Tree-Decomposer",  },
+    { title1: "Human-Animal", title2: "Animal-Plant", },
+    { title1: "Human-Microbe", title2: "Tree-Decomposer", },
     { title1: "Animal-Microbe", title2: "Bird-Plant", }
   ];
   let data6 = [
-    { title1: "Human-Stone", title2: "Bird-AI", title3: "Plant-AI ",title4 :"Tree-Fire"},
-    { title1: "Human-Plant", title2: "Human-AI", title3: "Plant-Computer ",title4 :"Tree-Stone"},
-    { title1: "Bird-Stone", title2: "Animal-AI", title3: "Tree-AI ",title4:"Tree-Water" },
+    { title1: "Human-Stone", title2: "Bird-AI", title3: "Plant-AI ", title4: "Tree-Fire" },
+    { title1: "Human-Plant", title2: "Human-AI", title3: "Plant-Computer ", title4: "Tree-Stone" },
+    { title1: "Human-Sand", title2: "Animal-AI", title3: "Tree-AI ", title4: "Tree-Water" },
   ];
 
   let data7 = [
     { title1: "Fire-Stone", title2: "Computer-AI", title3: "Plant-AI" },
     { title1: "Water-Stone", title2: "", title3: "Stone-AI" },
-    { title1: "Fire-Water", title2: "", title3: "Water" },
+    { title1: "Fire-Water", title2: "", title3: "Water-AI" },
   ];
+  let data8 = [
+    {  title1: "Biotic-Abiotic-Biotic-Abiotic" },
+  ];
+
+  let data9 = [
+    { title1: "Abiotic-Biotic-Biotic-Technology" },
+    { title1: "Biotic-Biotic-Biotic-Technology" },
+  ]
   return (
     <div className=' bg-black py-20'>
       {
@@ -122,7 +130,7 @@ export default function Classification() {
                     ))}
                   </div>
                 </div>
-               
+
 
               </ul>
 
@@ -231,7 +239,40 @@ export default function Classification() {
       </div>
 
       <div>
-        <h1 className=' text-6xl md:text-8xl text-red-600 text-center'>Some special fusions</h1>
+        <h1 className=' text-6xl md:text-8xl text-lime-400 text-center'>Some special fusions</h1>
+        <div className=' flex justify-center py-10 gap-10 ' >
+
+         <div>
+           <h1 className='text-3xl md:text-6xl text-cyan-400 px-8 md:px-3'  >Living-Living-Living-Non-living</h1>
+          {
+            data9.map((items, key) => (
+              <h1 className=' text-2xl md:text-4xl text-yellow-300 py-5 px-10'>{items.title1}</h1>
+
+            ))
+          }
+         </div>
+
+         <div>
+           <h1 className='text-3xl md:text-6xl text-cyan-400 ' >Living-Non-living-Living-Non-living</h1>
+          {
+            data8.map((items, key) => (
+              <h1 className=' text-2xl md:text-4xl text-yellow-300 py-13 md:py-5 px-5'>{items.title1}</h1>
+
+            ))
+          }
+         </div>
+
+        </div>
+
+      </div>
+
+
+      <div>
+          <div className='text-6xl md:text-9xl text-red-600 text-center'>
+            <h1>THE GREATEST FUSION</h1>
+          </div>
+            <h1 className=' text-2xl text-cyan-300 text-center py-10'>soon to be uploaded</h1>
+
       </div>
       <div>
         <Logo />

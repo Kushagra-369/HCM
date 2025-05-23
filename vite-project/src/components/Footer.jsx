@@ -6,7 +6,7 @@ export default function Footer() {
     <div>
            <footer style={{backgroundImage:'url(https://w0.peakpx.com/wallpaper/972/488/HD-wallpaper-bloody-background-blood-thumbnail.jpg)', backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}>
             <h1 className="items-center flex justify-center font-extrabold text-white text-2xl py-5"><a href="">Back to top</a></h1>
-            <div className="text-white font-bold flex justify-around py-20">
+            <div className="text-white font-bold md:flex justify-around py-20">
                 <div >
                 <h1 className="font-bold border-b-2 border-cyan-300">Get to know</h1>
                 <br/>

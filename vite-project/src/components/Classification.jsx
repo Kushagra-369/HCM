@@ -136,11 +136,11 @@ export default function Classification() {
 
             </div>
             <li className=' text-4xl'>Living-Non-living</li>
-            <div>
-              <ul className=' flex justify-between gap-3 py-5 px-5 '>
+            <div className=' w-fit'>
+              <ul className=' flex justify-between gap-3 py-5 px-2 md:px-5 '>
                 <div>
                   <li className=' text-yellow-300  md:text-4xl'>Biotic-Abiotic</li>
-                  <div className=' text-orange-500 text-sm md:text-2xl px-5 py-2'>
+                  <div className=' text-orange-500 text-sm md:text-2xl px-2 md:px-5 py-2'>
                     {data6.map((item, key) => (
                       <div className=' py-2'>
                         <ul>
@@ -152,7 +152,7 @@ export default function Classification() {
                 </div>
                 <div>
                   <li className=' text-yellow-300  md:text-4xl'>Biotic-Technology</li>
-                  <div className=' text-orange-500 text-sm md:text-2xl px-5 py-2'>
+                  <div className=' text-orange-500 text-sm md:text-2xl px-2 md:px-5 py-2'>
                     {data6.map((item, key) => (
                       <div className=' py-2'>
                         <ul>
@@ -164,7 +164,7 @@ export default function Classification() {
                 </div>
                 <div>
                   <li className=' text-yellow-300  md:text-4xl'>Abiotic-Technology</li>
-                  <div className=' text-orange-500 text-sm  md:text-2xl py-2 px-5'>
+                  <div className=' text-orange-500 text-sm  md:text-2xl py-2 px-2 md:px-5'>
                     {data6.map((item, key) => (
                       <div className=' py-2'>
                         <ul>
@@ -176,7 +176,7 @@ export default function Classification() {
                 </div>
                 <div>
                   <li className=' text-yellow-300  md:text-4xl'>Abiotic-Aboitic</li>
-                  <div className=' text-orange-500 text-sm md:text-2xl py-2 px-5'>
+                  <div className=' text-orange-500 text-sm md:text-2xl py-2 px-2 md:px-5'>
                     {data6.map((item, key) => (
                       <div className=' py-2'>
                         <ul>

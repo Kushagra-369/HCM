@@ -24,9 +24,9 @@ export default function Comparision() {
 
   let data2 = [
     { title1: "HUMOTARDILIXIAN", title2: " 5000 ", href: '/humotardilixian' },
-    { title1: "TERRAWOLFVULBYTE", title2: " 5000 ", href: '/terrawolfvulbyte' },
-    { title1: "GORDRAXDIOZONE", title2: " 5000 ", href: '/gordraxdiozone' },
-    { title1: "FLURTOTILUS", title2: " 5000 ", href: '/flurtotilus' },
+    { title1: "TERRAWOLFVULBYTE", title2: " 4500 ", href: '/terrawolfvulbyte' },
+    { title1: "GORDRAXDIOZONE", title2: " 4200 ", href: '/gordraxdiozone' },
+    { title1: "FLURTOTILUS", title2: " 5500 ", href: '/flurtotilus' },
 
   ];
   return (

@@ -31,7 +31,7 @@ export default function Home() {
 
     let data = [
         { title1: "SPHINIX", title2: "HCM 090", title3: image1, href: '/sphinx' },
-        { title1: "ROCKMAN", title2: "HCM 570", title3: image2, href: '/rockman' },      
+        { title1: "ROCKMAN", title2: "HCM 570", title3: image2, href: '/rockman' },
     ];
 
     let data2 = [
@@ -44,7 +44,7 @@ export default function Home() {
     ];
     let data4 = [
         { title1: "WEREWOLF", title2: "HCM 701", title3: image6, href: '/werewolf' },
-        { title1: "TERRAKA", title2: "HCM 170", title3: image7, href: '/terraka' },      
+        { title1: "TERRAKA", title2: "HCM 170", title3: image7, href: '/terraka' },
     ];
 
     let data5 = [
@@ -56,43 +56,50 @@ export default function Home() {
         { title1: "PETRABYTE", title2: "HCM 211", title3: image10, href: '/petrabyte' }
     ];
 
-     let data7 = [
+    let data7 = [
         { title1: "GORKON", title2: "HCM 080", title3: image11, href: '/gorkon' },
-        { title1: "SANDRAX", title2: "HCM 008", title3: image12, href: '/sandrax' },      
+        { title1: "SANDRAX", title2: "HCM 008", title3: image12, href: '/sandrax' },
     ];
     let data8 = [
         { title1: "GORDRAXDIOZONE", title2: "HCM 561", title3: image15, href: '/gordraxdiozone' }
 
     ];
-     let data9 = [
-         { title1: "TARDION", title2: "HCM 180", title3: image14, href: '/tardion' },
+    let data9 = [
+        { title1: "TARDION", title2: "HCM 180", title3: image14, href: '/tardion' },
         { title1: "FLARON", title2: "HCM 660", title3: image13, href: '/flaron' }
     ];
     let data10 = [
         { title1: "TIGRIS", title2: "HCM 280", title3: image16, href: '/tigris' },
-        { title1: "OCULUS", title2: "HCM 190", title3: image19, href: '/oculus' },      
+        { title1: "OCULUS", title2: "HCM 190", title3: image19, href: '/oculus' },
     ];
-        let data11 = [
+    let data11 = [
         { title1: "FLURTOTILUS", title2: "HCM 371", title3: image20, href: '/flurtotilus' }
 
     ];
-         let data12 = [
-         { title1: "FLURTONE", title2: "HCM 111", title3: image18, href: '/flurtone' },
+    let data12 = [
+        { title1: "FLURTONE", title2: "HCM 111", title3: image18, href: '/flurtone' },
         { title1: "PETROVIS", title2: "HCM 421", title3: image17, href: '/petrovis' }
     ];
-    
+
     return (
-        <div style={{backgroundImage:'url(https://t3.ftcdn.net/jpg/01/22/03/84/360_F_122038456_AEdKNITqNDwdPTVdPDy1Fk5YaD9Um1xm.jpg)', backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}} >
+        <div style={{ backgroundImage: 'url(https://t3.ftcdn.net/jpg/01/22/03/84/360_F_122038456_AEdKNITqNDwdPTVdPDy1Fk5YaD9Um1xm.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} >
             <div class="text-center justify-center  text-yellow-200 py-10 underline">
-            <h1 class="text-8xl">HCM </h1>
-            <br/>
-            <h2 class="text-6xl"> Human Containment Monsters</h2>
-        </div>
-            <div className='  grid grid-cols-2 '  >           
+                <h1 class="text-8xl">HCM </h1>
+                <br />
+                <h2 class="text-6xl"> Human Containment Monsters</h2>
+            </div>
+              <br />
+            <br />
+            <div className=' text-center border-2 text-yellow-400 border-red-800  rounded-bl-2xl rounded-br-2xl ' style={{ boxShadow: '4px 4px 50px rgb(239, 252, 8)' }}>
+                <h1>PHASE-1</h1>
+            </div>
+            <br />
+            <br />
+            <div className='  grid grid-cols-2 '  >
                 {
                     data.map((item, key) => (
                         <div className=' flex justify-center  py-5' key={key}>
-                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{boxShadow:'4px 4px 50px rgba(62, 242, 7, 0.943)'}}>
+                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
                                 <Link to={item.href}>
                                     <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                     <br />
@@ -107,10 +114,10 @@ export default function Home() {
 
             </div>
             <div>
-            {
+                {
                     data2.map((item, key) => (
                         <div className=' flex justify-center  py-5' key={key}>
-                            <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{boxShadow:'0px 0px 500px rgba(85, 7, 242, 0.988)'}} >
+                            <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
                                 <Link to={item.href} >
                                     <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                     <br />
@@ -124,10 +131,10 @@ export default function Home() {
                 }
             </div>
             <div className='  grid grid-cols-2 ' >
-            {
+                {
                     data3.map((item, key) => (
                         <div className=' flex justify-center  py-5 ' key={key}>
-                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{boxShadow:'4px 4px 50px rgba(62, 242, 7, 0.943)'}}>
+                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
                                 <Link to={item.href} >
                                     <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                     <br />
@@ -140,15 +147,19 @@ export default function Home() {
                     ))
                 }
             </div>
-<br />
-<br />
-<br />
+           <br />
+            <br />
+            <div className=' text-center border-2 text-yellow-400 border-red-800  rounded-bl-2xl rounded-br-2xl ' style={{ boxShadow: '4px 4px 50px rgb(239, 252, 8)' }}>
+                <h1>PHASE-2</h1>
+            </div>
+            <br />
+            <br />
 
-            <div className='  grid grid-cols-2 '  >           
+            <div className='  grid grid-cols-2 '  >
                 {
                     data4.map((item, key) => (
                         <div className=' flex justify-center  py-5' key={key}>
-                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{boxShadow:'4px 4px 50px rgba(62, 242, 7, 0.943)'}}>
+                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
                                 <Link to={item.href}>
                                     <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                     <br />
@@ -163,10 +174,10 @@ export default function Home() {
 
             </div>
             <div>
-            {
+                {
                     data5.map((item, key) => (
                         <div className=' flex justify-center  py-5' key={key}>
-                            <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{boxShadow:'0px 0px 500px rgba(85, 7, 242, 0.988)'}} >
+                            <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
                                 <Link to={item.href} >
                                     <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                     <br />
@@ -180,10 +191,10 @@ export default function Home() {
                 }
             </div>
             <div className='  grid grid-cols-2 ' >
-            {
+                {
                     data6.map((item, key) => (
                         <div className=' flex justify-center  py-5 ' key={key}>
-                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{boxShadow:'4px 4px 50px rgba(62, 242, 7, 0.943)'}}>
+                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
                                 <Link to={item.href} >
                                     <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                     <br />
@@ -197,15 +208,19 @@ export default function Home() {
                 }
             </div>
 
-<br />
-<br />
-<br />
+           <br />
+            <br />
+            <div className=' text-center border-2 text-yellow-400 border-red-800  rounded-bl-2xl rounded-br-2xl ' style={{ boxShadow: '4px 4px 50px rgb(239, 252, 8)' }}>
+                <h1>PHASE-3</h1>
+            </div>
+            <br />
+            <br />
 
-            <div className='  grid grid-cols-2 '  >           
+            <div className='  grid grid-cols-2 '  >
                 {
                     data7.map((item, key) => (
                         <div className=' flex justify-center  py-5' key={key}>
-                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{boxShadow:'4px 4px 50px rgba(62, 242, 7, 0.943)'}}>
+                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
                                 <Link to={item.href}>
                                     <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                     <br />
@@ -220,10 +235,10 @@ export default function Home() {
 
             </div>
             <div>
-            {
+                {
                     data8.map((item, key) => (
                         <div className=' flex justify-center  py-5' key={key}>
-                            <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{boxShadow:'0px 0px 500px rgba(85, 7, 242, 0.988)'}} >
+                            <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
                                 <Link to={item.href} >
                                     <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                     <br />
@@ -237,10 +252,10 @@ export default function Home() {
                 }
             </div>
             <div className='  grid grid-cols-2 ' >
-            {
+                {
                     data9.map((item, key) => (
                         <div className=' flex justify-center  py-5 ' key={key}>
-                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{boxShadow:'4px 4px 50px rgba(62, 242, 7, 0.943)'}}>
+                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
                                 <Link to={item.href} >
                                     <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                     <br />
@@ -253,14 +268,18 @@ export default function Home() {
                     ))
                 }
             </div>
-<br />
-<br />
-<br />
-            <div className='  grid grid-cols-2 '  >           
+          <br />
+            <br />
+            <div className=' text-center border-2 text-yellow-400 border-red-800  rounded-bl-2xl rounded-br-2xl ' style={{ boxShadow: '4px 4px 50px rgb(239, 252, 8)' }}>
+                <h1>PHASE-4</h1>
+            </div>
+            <br />
+            <br />
+            <div className='  grid grid-cols-2 '  >
                 {
                     data10.map((item, key) => (
                         <div className=' flex justify-center  py-5' key={key}>
-                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{boxShadow:'4px 4px 50px rgba(62, 242, 7, 0.943)'}}>
+                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
                                 <Link to={item.href}>
                                     <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                     <br />
@@ -275,10 +294,10 @@ export default function Home() {
 
             </div>
             <div>
-            {
+                {
                     data11.map((item, key) => (
                         <div className=' flex justify-center  py-5' key={key}>
-                            <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{boxShadow:'0px 0px 500px rgba(85, 7, 242, 0.988)'}} >
+                            <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
                                 <Link to={item.href} >
                                     <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                     <br />
@@ -292,10 +311,10 @@ export default function Home() {
                 }
             </div>
             <div className='  grid grid-cols-2 ' >
-            {
+                {
                     data12.map((item, key) => (
                         <div className=' flex justify-center  py-5 ' key={key}>
-                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{boxShadow:'4px 4px 50px rgba(62, 242, 7, 0.943)'}}>
+                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
                                 <Link to={item.href} >
                                     <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                     <br />
@@ -309,11 +328,11 @@ export default function Home() {
                 }
             </div>
             <div>
-       
-                <Footer/>
+
+                <Footer />
             </div>
 
-           
+
         </div>
     )
 }

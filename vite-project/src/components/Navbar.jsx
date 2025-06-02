@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
 
     <div style={{ backgroundImage: 'url(https://t3.ftcdn.net/jpg/01/22/03/84/360_F_122038456_AEdKNITqNDwdPTVdPDy1Fk5YaD9Um1xm.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
-      <div className='flex justify-between px-5 gap-25 text-white items-center py-15'>
+      <div className='flex justify-between px-5  text-white items-center py-15'>
         <div>
           {
             <div className='text-5xl md:text-6xl items-center text-center  '>
@@ -36,7 +36,7 @@ export default function Navbar() {
         <ul className=' hidden md:flex justify-center gap-15' >
           {
             data2.map((item, key) => (
-              <div className=' hover:bg-yellow-300 hover:text-black'>
+              <div className=' hover:bg-yellow-300 text-2xl hover:text-black'>
 
                 <Link to={item.href}><li key={key}>{item.title1}</li></Link>
 

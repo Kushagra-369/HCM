@@ -36,7 +36,7 @@ export default function Navbar() {
         <ul className=' hidden md:flex justify-center gap-15' >
           {
             data2.map((item, key) => (
-              <div className=' hover:bg-yellow-300 text-2xl hover:text-black'>
+              <div key={key} className=' hover:bg-yellow-300 text-2xl hover:text-black'>
 
                 <Link to={item.href}><li key={key}>{item.title1}</li></Link>
 

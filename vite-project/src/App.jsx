@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
-import Classification from './components/Classification'
+import Classification2 from './components/Classification2'
 import Comparision from './components/Comparirion'
 import About from './components/About'
 import Cybrain from './components/Cybrain'
@@ -36,7 +36,7 @@ export default function App() {
       <Routes>
 
       <Route path='/' element={<Home/>}/>
-      <Route path='classification' element={<Classification/>}/>  
+      <Route path='classification' element={<Classification2/>}/>  
       <Route path='comparision' element={<Comparision/>}/>  
       <Route path='about' element={<About/>}/>  
       <Route path='/sphinx' element={<Sphinix />} />

@@ -25,7 +25,7 @@ export default function Classification2() {
                 {data.map((item, key) => (
                     <ul key={key} >
                         <br />
-                        <li >{item.title1}</li>
+                        <li className='text-2xl md:text-4xl' >{item.title1}</li>
 
                     </ul>
                 ))
@@ -41,7 +41,7 @@ export default function Classification2() {
                     {data.map((item, key) => (
                         <ul key={key} >
                             <br />
-                            <li className='text-3xl md:text-4xl' >{item.title1}</li>
+                            <li className='text-2xl md:text-4xl' >{item.title1}</li>
                             <div className=' py-3'>
                                 {
                                     item.title2.map((subitem, subkey) => (

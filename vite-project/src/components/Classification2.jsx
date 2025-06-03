@@ -21,7 +21,7 @@ export default function Classification2() {
             {
                 <h1 className='text-5xl md:text-6xl text-center text-white'>E(Entity) TYPE OF HCM</h1>
             }
-            <div className=' px-10 gap-7 flex justify-around text-cyan-400 py-10 text-2xl md:text-4xl'>
+            <div className=' md:px-10 gap-7 flex justify-around text-cyan-400 py-10 text-2xl md:text-4xl'>
                 {data.map((item, key) => (
                     <ul key={key} >
                         <br />
@@ -37,7 +37,7 @@ export default function Classification2() {
                 <div className=' text-white text-5xl md:text-6xl flex justify-center items-center text-center'>
                     <h1>N(Nature) TYPE OF HCM</h1>
                 </div>
-                <div className=' px-10 gap-7 flex justify-around text-cyan-400 py-10 text-2xl md:text-4xl'>
+                <div className=' md:px-10 gap-7 flex justify-around text-cyan-400 py-10 text-2xl md:text-4xl'>
                     {data.map((item, key) => (
                         <ul key={key} >
                             <br />

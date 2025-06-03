@@ -21,7 +21,7 @@ export default function Classification2() {
             {
                 <h1 className='text-5xl md:text-6xl text-center text-white'>E(Entity) TYPE OF HCM</h1>
             }
-            <div className=' md:px-10 gap-7 flex justify-around text-cyan-400 py-10 text-2xl md:text-4xl'>
+            <div className=' px-2 md:px-10 gap-7 flex justify-around text-cyan-400 py-10 text-2xl md:text-4xl'>
                 {data.map((item, key) => (
                     <ul key={key} >
                         <br />
@@ -37,7 +37,7 @@ export default function Classification2() {
                 <div className=' text-white text-5xl md:text-6xl flex justify-center items-center text-center'>
                     <h1>N(Nature) TYPE OF HCM</h1>
                 </div>
-                <div className=' md:px-10 gap-7 flex justify-around text-cyan-400 py-10 text-2xl md:text-4xl'>
+                <div className=' px-2 md:px-10 gap-7 flex justify-around text-cyan-400 py-10 text-2xl md:text-4xl'>
                     {data.map((item, key) => (
                         <ul key={key} >
                             <br />
@@ -64,15 +64,15 @@ export default function Classification2() {
                 <div className=' text-white text-5xl nd:text-6xl flex justify-center items-center text-center'>
                     <h1>S(Species) TYPE OF HCM</h1>
                 </div>
-                <div className=' px-7 gap-7  justify-around text-cyan-400 py-10 text-2xl md:text-4xl'>
+                <div className='px-2 md:px-7 gap-7  justify-around text-cyan-400 py-10 text-2xl md:text-4xl'>
                     {data.map((item, key) => (
                         <ul key={key} >
                             <br />
-                            <li className='text-3xl md:text-5xl'>{item.title1}</li>
+                            <li className='text-2xl md:text-5xl'>{item.title1}</li>
                             <div className=' flex justify-around py-5'>
                                 {
                                     item.title2.map((subitem, subkey) => (
-                                        <div key={subkey} className='px-2 py-2 text-yellow-300 text-xl md:text-4xl'>
+                                        <div key={subkey} className='px-2 py-2 text-yellow-300 text-sm md:text-4xl'>
                                             <li>{subitem}</li>
                                             <ul className='pl-2 py-5 text-red-500' >
                                                 {

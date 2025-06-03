@@ -45,7 +45,7 @@ export default function Classification2() {
                             <div className=' py-3'>
                                 {
                                     item.title2.map((subitem, subkey) => (
-                                        <div key={subkey} className='px-4 py-2 text-yellow-300 text-xl md:text-3xl '>
+                                        <div key={subkey} className='px-4 py-2 text-yellow-300 text-sm md:text-3xl '>
                                             {subitem}
                                         </div>
                                     ))

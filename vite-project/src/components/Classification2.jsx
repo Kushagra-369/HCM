@@ -72,12 +72,12 @@ export default function Classification2() {
                             <div className=' flex justify-around py-5'>
                                 {
                                     item.title2.map((subitem, subkey) => (
-                                        <div key={subkey} className='px-2 py-2 text-yellow-300 text-sm md:text-4xl'>
+                                        <div key={subkey} className='px-2 py-2 text-yellow-300 text-2xl md:text-4xl'>
                                             <li>{subitem}</li>
                                             <ul className='pl-2 py-5 text-red-500' >
                                                 {
                                                     item.title3[subkey]?.map((fsubitem, fsubkey) => (
-                                                        <li key={fsubkey} className='text-base md:text-xl'>
+                                                        <li key={fsubkey} className='text-sm md:text-xl'>
                                                             {fsubitem}
                                                         </li>
                                                     ))

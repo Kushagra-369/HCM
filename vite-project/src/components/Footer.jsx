@@ -19,7 +19,6 @@ export default function Footer() {
                 <h1 className="font-bold md:border-b-2 text-4xl border-cyan-300">connect with us</h1>
                 <br/>
                 <h1 className='text-yellow-300  text-2xl'><a href="">git hub</a></h1>
-                <h1 className='text-yellow-300  text-2xl'><a href="">facebook</a></h1>
                 <h1 className='text-yellow-300  text-2xl'><a href="">linkedin</a></h1>
             </div>
             <br />
@@ -31,13 +30,7 @@ export default function Footer() {
                 <h1 className='text-yellow-300  text-2xl'><a href=""> season 3</a></h1>
             </div>
             <br />
-            <div className=' text-center '>
-                <h1 className="font-bold md:border-b-2 text-4xl border-cyan-300">let us help you</h1>
-                <br/>
-                <h1 className='text-yellow-300  text-2xl'><a href="">your account</a></h1>
-                <h1 className='text-yellow-300  text-2xl'><a href="">returns centre</a></h1>
-                <h1 className='text-yellow-300  text-2xl'><a href="">help</a></h1>
-            </div>
+           
             </div>
                 <div>
                 <Logo/>

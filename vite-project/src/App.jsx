@@ -25,6 +25,7 @@ import Flurtone from './components/Flurtone'
 import Tigris from './components/Tigris'
 import Oculus from './components/Oculus'
 import Flurtotilus from './components/Flurtotilus'
+import Season1 from './components/Season1'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 
 export default function App() {
@@ -36,6 +37,7 @@ export default function App() {
       <Routes>
 
       <Route path='/' element={<Home/>}/>
+      <Route path='/season1' element={<Season1/>}/>
       <Route path='classification' element={<Classification2/>}/>  
       <Route path='comparision' element={<Comparision/>}/>  
       <Route path='about' element={<About/>}/>  

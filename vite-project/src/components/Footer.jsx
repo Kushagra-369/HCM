@@ -26,7 +26,7 @@ export default function Footer() {
             <div className=' text-center '>
                 <h1 className="font-bold md:border-b-2 text-4xl border-cyan-300">read our novel </h1>
                 <br/>
-                <h1 className='text-yellow-300 text-2xl'><a  href="/project/empty_spaces_season_1.docx"  > season 1</a></h1>
+                <h1 className='text-yellow-300 text-2xl'><a  href="/project/empty_spaces_season_1.docx" download > season 1</a></h1>
                 <h1 className='text-yellow-300  text-2xl'><a href=""> season 2</a></h1>
                 <h1 className='text-yellow-300  text-2xl'><a href=""> season 3</a></h1>
             </div>

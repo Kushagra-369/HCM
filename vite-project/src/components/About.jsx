@@ -11,6 +11,7 @@ export default function About() {
       <Element name="about_empty_spaces">
 
         <Empty_Spaces />
+        
       </Element>
       <br />
       <Element name="about_hcm">

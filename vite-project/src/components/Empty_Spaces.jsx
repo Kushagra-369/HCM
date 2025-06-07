@@ -15,12 +15,7 @@ export default function Empty_Spaces() {
 ⭕⭕⭕⭕⭕<br /> <br />
 and yes this universe  is made of anti matter and moves from death to life
  </h1>
- <div>
- 
- 
-         <Logo />
- 
-       </div>
+
     </div>
    </Element>
   )

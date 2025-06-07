@@ -25,7 +25,10 @@ import Flurtone from './components/Flurtone'
 import Tigris from './components/Tigris'
 import Oculus from './components/Oculus'
 import Flurtotilus from './components/Flurtotilus'
-import Season1 from './components/Season1'
+// import Season1 from './components/Season1'
+import About_HCM from './components/About_HCM'
+import Origin from './components/Origin'
+import Empty_Spaces from './components/Empty_Spaces'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 
 export default function App() {
@@ -37,7 +40,7 @@ export default function App() {
       <Routes>
 
       <Route path='/' element={<Home/>}/>
-      <Route path='/season1' element={<Season1/>}/>
+      {/* <Route path='/season1' element={<Season1/>}/> */}
       <Route path='classification' element={<Classification2/>}/>  
       <Route path='comparision' element={<Comparision/>}/>  
       <Route path='about' element={<About/>}/>  
@@ -62,6 +65,9 @@ export default function App() {
       <Route path='/oculus' element={<Oculus/>}/>
       <Route path='/tigris' element={<Tigris/>}/>
       <Route path='/flurtotilus' element={<Flurtotilus/>}/>
+      <Route path='/about_empty_spaces' element={ <Empty_Spaces/>} />
+      <Route path='/about_hcm' element={ <About_HCM/>} />
+      <Route path='/origin' element={ <Origin/>} />
 
       
 

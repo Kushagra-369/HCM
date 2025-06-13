@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Element } from 'react-scroll';
 import About from './About';
 
+
 export default function Footer() {
 
   let data = [
@@ -19,7 +20,8 @@ export default function Footer() {
   ];
 
   return (
-    <div>
+    <Element name='footer'>
+      <div>
       <footer style={{ backgroundImage: 'url(https://w0.peakpx.com/wallpaper/972/488/HD-wallpaper-bloody-background-blood-thumbnail.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
         <h1 className="items-center flex justify-center font-extrabold text-white text-2xl py-5">
           <Link to="/"><span>Back to top</span></Link>
@@ -42,8 +44,8 @@ export default function Footer() {
           <div className='text-center'>
             <h1 className="font-bold md:border-b-2 text-4xl border-cyan-300">connect with us</h1>
             <br />
-            <h1 className='text-yellow-300 text-2xl'><a href="">git hub</a></h1>
-            <h1 className='text-yellow-300 text-2xl'><a href="">linkedin</a></h1>
+            <h1 className='text-yellow-300 text-2xl'><a href="https://github.com/Kushagra-369">git hub</a></h1>
+            <h1 className='text-yellow-300 text-2xl'><a href="https://www.linkedin.com/in/kushagra-chhabra-83b215355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">linkedin</a></h1>
           </div>
           <br />
           <div className='text-center'>
@@ -64,5 +66,6 @@ export default function Footer() {
         </div>
       </footer>
     </div>
+    </Element>
   );
 }

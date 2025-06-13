@@ -19,6 +19,8 @@ import image17 from '../assets/images/hcm 421.jpg'
 import image18 from '../assets/images/hcm 111.jpg'
 import image19 from '../assets/images/hcm 190.jpg'
 import image20 from '../assets/images/hcm 371.jpg'
+import { Element } from 'react-scroll';
+
 
 import Footer from './Footer'
 
@@ -95,7 +97,8 @@ export default function Home() {
             </div>
             <br />
             <br />
-            <div className='  grid grid-cols-2 '  >
+            <Element name="phase1">
+                <div className='  grid grid-cols-2 '  >
                 {
                     data.map((item, key) => (
                         <div className=' flex justify-center  py-5' key={key}>
@@ -147,6 +150,7 @@ export default function Home() {
                     ))
                 }
             </div>
+            </Element>
            <br />
             <br />
             <div className=' text-center border-2 text-yellow-400 border-red-800  rounded-bl-2xl rounded-br-2xl ' style={{ boxShadow: '4px 4px 50px rgb(239, 252, 8)' }}>
@@ -155,7 +159,8 @@ export default function Home() {
             <br />
             <br />
 
-            <div className='  grid grid-cols-2 '  >
+         <Element name='phase2'>
+                 <div className='  grid grid-cols-2 '  >
                 {
                     data4.map((item, key) => (
                         <div className=' flex justify-center  py-5' key={key}>
@@ -208,6 +213,7 @@ export default function Home() {
                 }
             </div>
 
+         </Element>
            <br />
             <br />
             <div className=' text-center border-2 text-yellow-400 border-red-800  rounded-bl-2xl rounded-br-2xl ' style={{ boxShadow: '4px 4px 50px rgb(239, 252, 8)' }}>
@@ -216,7 +222,8 @@ export default function Home() {
             <br />
             <br />
 
-            <div className='  grid grid-cols-2 '  >
+           <Element name='phase3'>
+             <div className='  grid grid-cols-2 '  >
                 {
                     data7.map((item, key) => (
                         <div className=' flex justify-center  py-5' key={key}>
@@ -268,6 +275,7 @@ export default function Home() {
                     ))
                 }
             </div>
+           </Element>
           <br />
             <br />
             <div className=' text-center border-2 text-yellow-400 border-red-800  rounded-bl-2xl rounded-br-2xl ' style={{ boxShadow: '4px 4px 50px rgb(239, 252, 8)' }}>
@@ -275,9 +283,10 @@ export default function Home() {
             </div>
             <br />
             <br />
-            <div className='  grid grid-cols-2 '  >
+            X<Element name='phase4'>
+                 <div className='  grid grid-cols-2 '  >
                 {
-                    data10.map((item, key) => (
+                    data7.map((item, key) => (
                         <div className=' flex justify-center  py-5' key={key}>
                             <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
                                 <Link to={item.href}>
@@ -295,7 +304,7 @@ export default function Home() {
             </div>
             <div>
                 {
-                    data11.map((item, key) => (
+                    data8.map((item, key) => (
                         <div className=' flex justify-center  py-5' key={key}>
                             <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
                                 <Link to={item.href} >
@@ -312,7 +321,7 @@ export default function Home() {
             </div>
             <div className='  grid grid-cols-2 ' >
                 {
-                    data12.map((item, key) => (
+                    data9.map((item, key) => (
                         <div className=' flex justify-center  py-5 ' key={key}>
                             <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
                                 <Link to={item.href} >
@@ -327,6 +336,7 @@ export default function Home() {
                     ))
                 }
             </div>
+            </Element>
             <div>
 
                 <Footer />

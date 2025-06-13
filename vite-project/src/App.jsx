@@ -25,7 +25,7 @@ import Flurtone from './components/Flurtone'
 import Tigris from './components/Tigris'
 import Oculus from './components/Oculus'
 import Flurtotilus from './components/Flurtotilus'
-// import Season1 from './components/Season1'
+import Season1 from './components/Season1'
 import About_HCM from './components/About_HCM'
 import Origin from './components/Origin'
 import Empty_Spaces from './components/Empty_Spaces'
@@ -41,7 +41,7 @@ export default function App() {
         <Routes>
 
           <Route path='/' element={<Home />} />
-          {/* <Route path='/season1' element={<Season1/>}/> */}
+          <Route path='/season1' element={<Season1/>}/>
           <Route path='classification' element={<Classification2 />} />
           <Route path='comparision' element={<Comparision />} />
           <Route path='about' element={<About />} />

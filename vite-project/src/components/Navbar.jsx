@@ -3,6 +3,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { FaBars } from "react-icons/fa6";
 import { GiSplitCross } from "react-icons/gi";
+import { Element } from 'react-scroll';
 
 export default function Navbar() {
   const data2 = [
@@ -30,7 +31,8 @@ export default function Navbar() {
   const closeMenu2 = () => setMenuOpen2(false);
 
   return (
-    <div
+   <Element name='navbar'>
+     <div
       style={{
         backgroundImage:
           'url(https://t3.ftcdn.net/jpg/01/22/03/84/360_F_122038456_AEdKNITqNDwdPTVdPDy1Fk5YaD9Um1xm.jpg)',
@@ -130,5 +132,6 @@ export default function Navbar() {
         )}
       </div>
     </div>
+   </Element>
   );
 }

@@ -1039,423 +1039,986 @@ export default function Season1() {
                 </p>
                 <h2 className='text-center font-bold'>EMPTY SPACES PART-4</h2>
                 <p>
-                                       
 
-                   
+
+
 
                     <br />
 
-                So at last we saw K was back in his universe<br /><br />
+                    So at last we saw K was back in his universe<br /><br />
 
-                As they were in the forest area so quickly went back to their home<br /><br />
+                    As they were in the forest area so quickly went back to their home<br /><br />
 
-                Everyone was so much happy and while they were going everyone was asking him again and again, what happened ame how but K only said let's reach home then I will surely tell everything in detail<br /><br />
+                    Everyone was so much happy and while they were going everyone was asking him again and again, what happened ame how but K only said let's reach home then I will surely tell everything in detail<br /><br />
 
-                After some time they reached home<br /><br />
+                    After some time they reached home<br /><br />
 
-                Firstly they gave K some water and then all of them together ate dinner<br /><br />
+                    Firstly they gave K some water and then all of them together ate dinner<br /><br />
 
-                Then K took all of them in his room, K was in mid and all others were around him<br /><br />
+                    Then K took all of them in his room, K was in mid and all others were around him<br /><br />
 
-                K: firstly tell how much do you know, actually my brain is little tired as it has seen very much and is still amazed whether it was real or just a dream<br /><br />
+                    K: firstly tell how much do you know, actually my brain is little tired as it has seen very much and is still amazed whether it was real or just a dream<br /><br />
 
-                Paki: you went to find Ursh and then you were just missing<br /><br />
+                    Paki: you went to find Ursh and then you were just missing<br /><br />
 
-                K: oh yes, I got remember, so when I went to find him, he was again and again changing his location, moving from one place to other very quickly, as through when I stopped for a while and understood that it's a trap for me and not for him, despite I wasn't sure, meanwhile I was analysing everything someone attacked me from back on my head, and when I opened my eyes I was tied with a chair and a machine was fit on me which was being provided with a lot of electricity at the same time<br /><br />
+                    K: oh yes, I got remember, so when I went to find him, he was again and again changing his location, moving from one place to other very quickly, as through when I stopped for a while and understood that it's a trap for me and not for him, despite I wasn't sure, meanwhile I was analysing everything someone attacked me from back on my head, and when I opened my eyes I was tied with a chair and a machine was fit on me which was being provided with a lot of electricity at the same time<br /><br />
 
-                Ursh: oh that's why there were too many plugs in that room<br /><br />
+                    Ursh: oh that's why there were too many plugs in that room<br /><br />
 
-                Vay: then how could we easily switched on the machine<br /><br />
+                    Vay: then how could we easily switched on the machine<br /><br />
 
-                K: you too have done that?<br /><br />
+                    K: you too have done that?<br /><br />
 
-                Paki: yes, I will tell everything happened here but firstly complete your side<br /><br />
+                    Paki: yes, I will tell everything happened here but firstly complete your side<br /><br />
 
-                K: Vay, may be because it was already more or around 50 percent charged, despite not sure, anyways being tied on chair, I saw 2 persons with mask talking to me saying like I have done wrong, beware, as such, I don't completely remember as at that time I was focusing on a plan to get out, moreover I could hear 5 more different voices in background, as soon as I got the plan to escape with help of wires plugged in, they switched on the machine, as if they knew exactly what I was thinking and in how much time<br /><br />
+                    K: Vay, may be because it was already more or around 50 percent charged, despite not sure, anyways being tied on chair, I saw 2 persons with mask talking to me saying like I have done wrong, beware, as such, I don't completely remember as at that time I was focusing on a plan to get out, moreover I could hear 5 more different voices in background, as soon as I got the plan to escape with help of wires plugged in, they switched on the machine, as if they knew exactly what I was thinking and in how much time<br /><br />
 
-                Further K told everything happened there and tried to explain the concept of that universe, everyone was speechless as they only assumed, what K had written in his thesis but many things were new to them,<br /><br />
+                    Further K told everything happened there and tried to explain the concept of that universe, everyone was speechless as they only assumed, what K had written in his thesis but many things were new to them,<br /><br />
 
-                Anyhow they went back to their rooms so that K could take rest and they too<br /><br />
+                    Anyhow they went back to their rooms so that K could take rest and they too<br /><br />
 
-                Further Paki told everything happened here in his absence<br /><br />
+                    Further Paki told everything happened here in his absence<br /><br />
 
-                K: wow, I am proud of you all, you all managed everything very nicely, really, it was<br /><br />
+                    K: wow, I am proud of you all, you all managed everything very nicely, really, it was<br /><br />
 
-                Paki: K, I completed my promise, what you said, now please can I cry.<br /><br />
+                    Paki: K, I completed my promise, what you said, now please can I cry.<br /><br />
 
-                K tightly hugged Paki<br /><br />
+                    K tightly hugged Paki<br /><br />
 
-                Further coming to next morning<br /><br />
+                    Further coming to next morning<br /><br />
 
-                While Everyone came in Hall<br /><br />
+                    While Everyone came in Hall<br /><br />
 
-                K: Paki told me everything, I am really proud of you all, you all are really amazing, but<br /><br />
+                    K: Paki told me everything, I am really proud of you all, you all are really amazing, but<br /><br />
 
-                Ursh: but?<br /><br />
+                    Ursh: but?<br /><br />
 
-                K: what's next, as you made a video that I was missing, how would you explain everything, and if told the truth, I guarantee none would believe it<br /><br />
+                    K: what's next, as you made a video that I was missing, how would you explain everything, and if told the truth, I guarantee none would believe it<br /><br />
 
-                Vay: thanks me I guess<br /><br />
+                    Vay: thanks me I guess<br /><br />
 
-                Paki: wait what, why<br /><br />
+                    Paki: wait what, why<br /><br />
 
-                Vay: when Ursh told everything about the universe, I was damn sure that K would return soon, but still that video was important so I did something manipulative<br /><br />
+                    Vay: when Ursh told everything about the universe, I was damn sure that K would return soon, but still that video was important so I did something manipulative<br /><br />
 
-                K: don't say you fooled my audience<br /><br />
+                    K: don't say you fooled my audience<br /><br />
 
-                Vay: no no no, I guess, firstly listen then decide that was I right or wrong<br /><br />
+                    Vay: no no no, I guess, firstly listen then decide that was I right or wrong<br /><br />
 
-                So after some hours of publishing that video, I created a fake account, posted a video as a viewer you and blamed myself as a viewer and your audience that they are responsible for your situation, like said a line, "Cause of us he is gone"<br /><br />
+                    So after some hours of publishing that video, I created a fake account, posted a video as a viewer you and blamed myself as a viewer and your audience that they are responsible for your situation, like said a line, "Cause of us he is gone"<br /><br />
 
-                Moreover from my secret techniques and sources of Paki I made that video popular such that none can know that we had made it popular<br /><br />
+                    Moreover from my secret techniques and sources of Paki I made that video popular such that none can know that we had made it popular<br /><br />
 
-                Paki: oh that's why you asked that question at that time, sorry I was accusing you<br /><br />
+                    Paki: oh that's why you asked that question at that time, sorry I was accusing you<br /><br />
 
-                Vay: no need, but listen<br /><br />
+                    Vay: no need, but listen<br /><br />
 
-                Further from my main account I posted some comments like we are really missing you and also saying to the audience that they shouldn't blame themselves in such a way that I never ever seen that video, moreover I also posted posts like we got a plan, there are chances that we could bring you back, not high number but in decent amount<br /><br />
+                    Further from my main account I posted some comments like we are really missing you and also saying to the audience that they shouldn't blame themselves in such a way that I never ever seen that video, moreover I also posted posts like we got a plan, there are chances that we could bring you back, not high number but in decent amount<br /><br />
 
-                K (shock): wow bro, you are a true manipulator, I guess now my audience would be little emotional<br /><br />
+                    K (shock): wow bro, you are a true manipulator, I guess now my audience would be little emotional<br /><br />
 
-                Vay: yes<br /><br />
+                    Vay: yes<br /><br />
 
-                Ursh: I guess you should tell the truth to your audience<br /><br />
+                    Ursh: I guess you should tell the truth to your audience<br /><br />
 
-                K: I told, that none would believe it<br /><br />
+                    K: I told, that none would believe it<br /><br />
 
-                Ursh: I am saying about what Vay has done<br /><br />
+                    Ursh: I am saying about what Vay has done<br /><br />
 
-                K: hmmm, that's really important decision as I could totally backfire on me, as if I told that they were being manipulated then many of them could think that manipulation is still going on and this was all my plan,<br /><br />
+                    K: hmmm, that's really important decision as I could totally backfire on me, as if I told that they were being manipulated then many of them could think that manipulation is still going on and this was all my plan,<br /><br />
 
-                Paki: yes, it's better not to tell the truth<br /><br />
+                    Paki: yes, it's better not to tell the truth<br /><br />
 
-                Ursh: but at least to a live stream, giving all the answers, you had to give in the interview<br /><br />
+                    Ursh: but at least to a live stream, giving all the answers, you had to give in the interview<br /><br />
 
-                K: yeah, I was thinking the same<br /><br />
+                    K: yeah, I was thinking the same<br /><br />
 
-                Further K posted on his channel that he could be live next day at 11 am, and a poll which asked, should he explain everything or not<br /><br />
+                    Further K posted on his channel that he could be live next day at 11 am, and a poll which asked, should he explain everything or not<br /><br />
 
-                And till 9 pm around 90 percent were yes so he decided to go live<br /><br />
+                    And till 9 pm around 90 percent were yes so he decided to go live<br /><br />
 
-                So after some preparation K came live at 11<br /><br />
+                    So after some preparation K came live at 11<br /><br />
 
-                Set up was as such K was sitting on sofa and camera was in front capturing only him rest of the team were side<br /><br />
+                    Set up was as such K was sitting on sofa and camera was in front capturing only him rest of the team were side<br /><br />
 
-                So in start of live he greeted everyone and then told that his friends were right and earlier he was trapped somewhere by someone and got out with very much difficulty<br /><br />
+                    So in start of live he greeted everyone and then told that his friends were right and earlier he was trapped somewhere by someone and got out with very much difficulty<br /><br />
 
-                Coming next, he cleared every aspect of his thesis, at every point what he wanted to say, further took camera near his computer, doing a set up, on one screen he was being shown and on other, it was the computer, K played all the videos one by one which were made against him and he gave answer and explanations to all of them.<br /><br />
+                    Coming next, he cleared every aspect of his thesis, at every point what he wanted to say, further took camera near his computer, doing a set up, on one screen he was being shown and on other, it was the computer, K played all the videos one by one which were made against him and he gave answer and explanations to all of them.<br /><br />
 
-                Like the first video which said that he was violating religion, he cleared that thing by showing some text in some of ancient manuscripts which portrayed multiverse in same manner like he did,<br /><br />
+                    Like the first video which said that he was violating religion, he cleared that thing by showing some text in some of ancient manuscripts which portrayed multiverse in same manner like he did,<br /><br />
 
-                Next video which showed him arrogant due to his constructive criticism which spread hate on another platform, he firstly showed the reality of that platform that how toxic and unethical that platform is by various proofs, then once again explained everyone what constructive criticism is moreover at that time he wasn't enough mature to handle jokes on his friendship, which he learnt by time, and also blamed some toxic people who made morphed images of the creator he opposed, moreover on live he called the creator and asked for sorry, as earlier he didn't know about that app.<br /><br />
+                    Next video which showed him arrogant due to his constructive criticism which spread hate on another platform, he firstly showed the reality of that platform that how toxic and unethical that platform is by various proofs, then once again explained everyone what constructive criticism is moreover at that time he wasn't enough mature to handle jokes on his friendship, which he learnt by time, and also blamed some toxic people who made morphed images of the creator he opposed, moreover on live he called the creator and asked for sorry, as earlier he didn't know about that app.<br /><br />
 
-                Next video which showed his one of edited interview in manipulative manner, he called Vay and said to his audience that Vay with his skills and hard work found the full interview, which then he further played it<br /><br />
+                    Next video which showed his one of edited interview in manipulative manner, he called Vay and said to his audience that Vay with his skills and hard work found the full interview, which then he further played it<br /><br />
 
-                As such 70-80 videos were there and he answered all despite those which showed the same content<br /><br />
+                    As such 70-80 videos were there and he answered all despite those which showed the same content<br /><br />
 
-                At last he showed articles which commented on his good behavior in a very negative way like friendship and love, showing them he said to the audience that he would never ever give explanations of his love or friendship, saying this was actually very manipulative<br /><br />
+                    At last he showed articles which commented on his good behavior in a very negative way like friendship and love, showing them he said to the audience that he would never ever give explanations of his love or friendship, saying this was actually very manipulative<br /><br />
 
-                Meanwhile these videos he also gave answers to questions being asked on the live<br /><br />
+                    Meanwhile these videos he also gave answers to questions being asked on the live<br /><br />
 
-                Commenting on everything it took around 7 hrs and now it was about to 6 pm<br /><br />
+                    Commenting on everything it took around 7 hrs and now it was about to 6 pm<br /><br />
 
-                Further he said that he would further put time stamps of this stream<br /><br />
+                    Further he said that he would further put time stamps of this stream<br /><br />
 
-                Next he asked from everyone to give their support and stop hating him as he cares for them and their interests and tries doing a little emotional aspects<br /><br />
+                    Next he asked from everyone to give their support and stop hating him as he cares for them and their interests and tries doing a little emotional aspects<br /><br />
 
-                Further again put a poll asking that should he leave or stay as he is really tired now, which now showed 95 percent yes<br /><br />
+                    Further again put a poll asking that should he leave or stay as he is really tired now, which now showed 95 percent yes<br /><br />
 
-                Despite 'come back soon❤' was being spammed in the comment section<br /><br />
+                    Despite 'come back soon❤' was being spammed in the comment section<br /><br />
 
-                With this he ended the stream<br /><br />
+                    With this he ended the stream<br /><br />
 
-                Ursh: would this be sufficient, as you gave all of them and effort, would they clear your image in their mind<br /><br />
+                    Ursh: would this be sufficient, as you gave all of them and effort, would they clear your image in their mind<br /><br />
 
-                Paki: not all but mostly I guess<br /><br />
+                    Paki: not all but mostly I guess<br /><br />
 
-                K: yes, but now my focus is on those 7, earlier I decided to set back, but now I will not spare them, but yes I would need all of you for the final fight, just don't leave me<br /><br />
+                    K: yes, but now my focus is on those 7, earlier I decided to set back, but now I will not spare them, but yes I would need all of you for the final fight, just don't leave me<br /><br />
 
-                Rest all together: yes of course,<br /><br />
+                    Rest all together: yes of course,<br /><br />
 
-                Ursh: it is not the thing to say<br /><br />
+                    Ursh: it is not the thing to say<br /><br />
 
-                K: actually it's the matter of life and death now, and I can't afford to lose any of you, if anything happened to any of you then, it would be a defeat for me so if any of you think that you can't fight then please go to some safe place for some while, where none can contact you<br /><br />
+                    K: actually it's the matter of life and death now, and I can't afford to lose any of you, if anything happened to any of you then, it would be a defeat for me so if any of you think that you can't fight then please go to some safe place for some while, where none can contact you<br /><br />
 
-                Ursh: I promise I would take care of myself and everyone<br /><br />
+                    Ursh: I promise I would take care of myself and everyone<br /><br />
 
-                Rest all: we too<br /><br />
+                    Rest all: we too<br /><br />
 
-                Paki: just tell the plan<br /><br />
+                    Paki: just tell the plan<br /><br />
 
-                K: no, before telling the plan, I will start training of you all, and you have to do that properly<br /><br />
+                    K: no, before telling the plan, I will start training of you all, and you have to do that properly<br /><br />
 
-                Pray: what kinda training<br /><br />
+                    Pray: what kinda training<br /><br />
 
-                K: training of strength, speed, focus, faith, self-control<br /><br />
+                    K: training of strength, speed, focus, faith, self-control<br /><br />
 
-                K: come outside in 30 minutes with the best outfit you can do, till I can do the setup<br /><br />
+                    K: come outside in 30 minutes with the best outfit you can do, till I can do the setup<br /><br />
 
-                After 30 minutes all went out where K was in mid, and rest 6 were in front of him<br /><br />
+                    After 30 minutes all went out where K was in mid, and rest 6 were in front of him<br /><br />
 
-                Then he started martial arts training, punches kicks etc.<br /><br />
+                    Then he started martial arts training, punches kicks etc.<br /><br />
 
-                Further said them to punch the walls continually then racing, further meditation with a candle in front where they had to focus<br /><br />
+                    Further said them to punch the walls continually then racing, further meditation with a candle in front where they had to focus<br /><br />
 
-                All of this went continuously for 3 days<br /><br />
+                    All of this went continuously for 3 days<br /><br />
 
-                After 3 days<br /><br />
+                    After 3 days<br /><br />
 
-                K: I saw your practice and I guess your basics are prepared well<br /><br />
+                    K: I saw your practice and I guess your basics are prepared well<br /><br />
 
-                Now let's fight, any 2 of you come to fight with me at once, Pray and Raav come<br /><br />
+                    Now let's fight, any 2 of you come to fight with me at once, Pray and Raav come<br /><br />
 
-                Both came in front first attack was done by Pray, Pray tried to punch K but K dodged and attacked at his waist and quickly attacked Raav at head with his hand at 90 degrees but from back Pray attacked him which he couldn't dodge but quickly attacked near his knees, making him fall and when Raav tries to attack, K held his hands and made him fall at Pray who was about to stand<br /><br />
+                    Both came in front first attack was done by Pray, Pray tried to punch K but K dodged and attacked at his waist and quickly attacked Raav at head with his hand at 90 degrees but from back Pray attacked him which he couldn't dodge but quickly attacked near his knees, making him fall and when Raav tries to attack, K held his hands and made him fall at Pray who was about to stand<br /><br />
 
-                K: go back, Cheg and Vay come<br /><br />
+                    K: go back, Cheg and Vay come<br /><br />
 
-                When they came, both attacked a punch together but K holding both the arms, adding an extra momentum made them hit each other, further made their heads strike making them fall,<br /><br />
+                    When they came, both attacked a punch together but K holding both the arms, adding an extra momentum made them hit each other, further made their heads strike making them fall,<br /><br />
 
-                K: go back, Ursh and Paki, come<br /><br />
+                    K: go back, Ursh and Paki, come<br /><br />
 
-                Firstly Paki attacked him but instead of attacking him, she just moved sideways, K got confused a little and before he could think further Ursh attacked him with legs at his ankles, making him fall<br /><br />
+                    Firstly Paki attacked him but instead of attacking him, she just moved sideways, K got confused a little and before he could think further Ursh attacked him with legs at his ankles, making him fall<br /><br />
 
-                K: nice, everyone come and attack<br /><br />
+                    K: nice, everyone come and attack<br /><br />
 
-                Now everyone was in front of him<br /><br />
+                    Now everyone was in front of him<br /><br />
 
-                First Vay started sliding to attack near his feet with his legs but K jumped but suddenly Raav and Pray punched near his face<br /><br />
+                    First Vay started sliding to attack near his feet with his legs but K jumped but suddenly Raav and Pray punched near his face<br /><br />
 
-                But he stopped both the wrists and twisted them further Cheg and Ursh came from back and held his arms, Pray and Raav his legs and Vay his stomach, Paki in front of him, punched him at face<br /><br />
+                    But he stopped both the wrists and twisted them further Cheg and Ursh came from back and held his arms, Pray and Raav his legs and Vay his stomach, Paki in front of him, punched him at face<br /><br />
 
-                Then K got an idea<br /><br />
+                    Then K got an idea<br /><br />
 
-                He used his hip to make Vay away from him and as soon as Vay moved, K started revolving his hips in circular manner, due to which Raav and Pray lost a little grip and the moment K felt that he jumped with the highest force due to which Cheg and Ursh also lost a little grip<br /><br />
+                    He used his hip to make Vay away from him and as soon as Vay moved, K started revolving his hips in circular manner, due to which Raav and Pray lost a little grip and the moment K felt that he jumped with the highest force due to which Cheg and Ursh also lost a little grip<br /><br />
 
-                And now it was easy for K to get away as he did back flip and again in situation that he faced all of them in front of him<br /><br />
+                    And now it was easy for K to get away as he did back flip and again in situation that he faced all of them in front of him<br /><br />
 
-                K: let's stop, well done, I will tell you the plan now, but please don't stop training<br /><br />
+                    K: let's stop, well done, I will tell you the plan now, but please don't stop training<br /><br />
 
-                Further K discussed the plan<br /><br />
+                    Further K discussed the plan<br /><br />
 
-                Next day K called a reporter who was trying to approach him<br /><br />
+                    Next day K called a reporter who was trying to approach him<br /><br />
 
-                Despite of normal talk<br /><br />
+                    Despite of normal talk<br /><br />
 
-                K gave hint that there are someone, who are responsible, but can't tell anything else<br /><br />
+                    K gave hint that there are someone, who are responsible, but can't tell anything else<br /><br />
 
-                Later that evening called another reporter<br /><br />
+                    Later that evening called another reporter<br /><br />
 
-                And intentionally added 7 in his earlier line but showed it was by mistake<br /><br />
+                    And intentionally added 7 in his earlier line but showed it was by mistake<br /><br />
 
-                Next day again called another one where he added that they are very powerful<br /><br />
+                    Next day again called another one where he added that they are very powerful<br /><br />
 
-                And repeats the same thing in the evening<br /><br />
+                    And repeats the same thing in the evening<br /><br />
 
-                Till 3 days, he had now given a lot of info<br /><br />
+                    Till 3 days, he had now given a lot of info<br /><br />
 
-                Which those 7 were also seeing<br /><br />
+                    Which those 7 were also seeing<br /><br />
 
-                Mafia: I think he needs to learn a lesson, just order once, I will rip him off<br /><br />
+                    Mafia: I think he needs to learn a lesson, just order once, I will rip him off<br /><br />
 
-                Head 1: I guess it's time to meet him, he wants to meet us and want us to give hint<br /><br />
+                    Head 1: I guess it's time to meet him, he wants to meet us and want us to give hint<br /><br />
 
-                Back to K and the team<br /><br />
+                    Back to K and the team<br /><br />
 
-                K: I guess my plan should work, if they are really smart then they would know that I am doing everything to meet them, they after me, me after them, too much fun<br /><br />
+                    K: I guess my plan should work, if they are really smart then they would know that I am doing everything to meet them, they after me, me after them, too much fun<br /><br />
 
-                Ursh: it means, he would give hints directly<br /><br />
+                    Ursh: it means, he would give hints directly<br /><br />
 
-                Paki: I don't think so, that we could get the directly<br /><br />
+                    Paki: I don't think so, that we could get the directly<br /><br />
 
-                K: yeah, let's rest today and prepare our bags, we would leave tomorrow morning, to the very first house, where I got trapped<br /><br />
+                    K: yeah, let's rest today and prepare our bags, we would leave tomorrow morning, to the very first house, where I got trapped<br /><br />
 
-                Next morning everyone readied with their bags, clothes in which they were comfort to do anything (running or fighting)<br /><br />
+                    Next morning everyone readied with their bags, clothes in which they were comfort to do anything (running or fighting)<br /><br />
 
-                Sat in the car and went to the old house where K's team found his phone and watch<br /><br />
+                    Sat in the car and went to the old house where K's team found his phone and watch<br /><br />
 
-                After reaching there<br /><br />
+                    After reaching there<br /><br />
 
-                K started analysing the whole house, touching the walls, knocking the walls and even the floor, and putting ear while knocking<br /><br />
+                    K started analysing the whole house, touching the walls, knocking the walls and even the floor, and putting ear while knocking<br /><br />
 
-                A bit later<br /><br />
+                    A bit later<br /><br />
 
-                Cheg: we all checked, but we didn't find any secret entrance, I guess we should seek for any other hint<br /><br />
+                    Cheg: we all checked, but we didn't find any secret entrance, I guess we should seek for any other hint<br /><br />
 
-                K: main room where I was tied, is left, let's see<br /><br />
+                    K: main room where I was tied, is left, let's see<br /><br />
 
-                K again put ears on floor and did a knock<br /><br />
+                    K again put ears on floor and did a knock<br /><br />
 
-                K: yes, yes, there is a basement<br /><br />
+                    K: yes, yes, there is a basement<br /><br />
 
-                Cheg: but,,,,,<br /><br />
+                    Cheg: but,,,,,<br /><br />
 
-                Paki: what?<br /><br />
+                    Paki: what?<br /><br />
 
-                Cheg: I did the same thing as K did, but I didn't recognize, why,<br /><br />
+                    Cheg: I did the same thing as K did, but I didn't recognize, why,<br /><br />
 
-                K: because there is an extra layer, when I knocked, I knocked at 2 different positions, if I did that at one then it's normal but doing on 2, I heard 2 different voices which showed something is really wrong<br /><br />
+                    K: because there is an extra layer, when I knocked, I knocked at 2 different positions, if I did that at one then it's normal but doing on 2, I heard 2 different voices which showed something is really wrong<br /><br />
 
-                Cheg: ohk<br /><br />
+                    Cheg: ohk<br /><br />
 
-                Pray: should I bring axe or any other tool to dig?<br /><br />
+                    Pray: should I bring axe or any other tool to dig?<br /><br />
 
-                K: if there is a basement then there must be a code to open<br /><br />
+                    K: if there is a basement then there must be a code to open<br /><br />
 
-                Ursh: but there is nothing in this room, except these plugs,<br /><br />
+                    Ursh: but there is nothing in this room, except these plugs,<br /><br />
 
-                K: yeah, these plugs, something fishy in them, let me think,,<br /><br />
+                    K: yeah, these plugs, something fishy in them, let me think,,<br /><br />
 
-                Someone please bring the wires, I put in the car<br /><br />
+                    Someone please bring the wires, I put in the car<br /><br />
 
-                Vay brought the wires (total 10)<br /><br />
+                    Vay brought the wires (total 10)<br /><br />
 
-                But there were 8 sockets in the room<br /><br />
+                    But there were 8 sockets in the room<br /><br />
 
-                K and Ursh plugged all of them, as soon as they plugged the last socket, a low voice of getting something opened came<br /><br />
+                    K and Ursh plugged all of them, as soon as they plugged the last socket, a low voice of getting something opened came<br /><br />
 
-                But they could see nothing got opened<br /><br />
+                    But they could see nothing got opened<br /><br />
 
-                But in no time K found out that now the socket could be rotated (as he was still holding the wire's head)<br /><br />
+                    But in no time K found out that now the socket could be rotated (as he was still holding the wire's head)<br /><br />
 
-                So K rotated it 360 degrees, but nothing happened<br /><br />
+                    So K rotated it 360 degrees, but nothing happened<br /><br />
 
-                K said everyone to rotate them slowly and together and also if any sound came then stop immediately, he himself handed 2 of the sockets which were enough near<br /><br />
+                    K said everyone to rotate them slowly and together and also if any sound came then stop immediately, he himself handed 2 of the sockets which were enough near<br /><br />
 
-                So after some while another sound came like something getting dragged and suddenly stopped<br /><br />
+                    So after some while another sound came like something getting dragged and suddenly stopped<br /><br />
 
-                At the very moment the sound came, everyone stopped,<br /><br />
+                    At the very moment the sound came, everyone stopped,<br /><br />
 
-                Nothing was opened but K knew that he was near to the answer<br /><br />
+                    Nothing was opened but K knew that he was near to the answer<br /><br />
 
-                All others were stopped, while K rotated one of the sockets but nothing happened, brought it to the earlier position, then did the same with the 2nd socket but nothing happened, said all others to do the same thing one by one, but nothing happened in any case<br /><br />
+                    All others were stopped, while K rotated one of the sockets but nothing happened, brought it to the earlier position, then did the same with the 2nd socket but nothing happened, said all others to do the same thing one by one, but nothing happened in any case<br /><br />
 
-                Then K noticed that Vay, Pray and Cheg were rotating it in the opposite direction and he too was rotating the 2 sockets in different<br /><br />
+                    Then K noticed that Vay, Pray and Cheg were rotating it in the opposite direction and he too was rotating the 2 sockets in different<br /><br />
 
-                Moreover all 4 sockets were in alternative position<br /><br />
+                    Moreover all 4 sockets were in alternative position<br /><br />
 
-                K: I got it, it's based on clockwise and anticlockwise manner alternatively 4 of the sockets are to be rotated in same and other 4 in opposite<br /><br />
+                    K: I got it, it's based on clockwise and anticlockwise manner alternatively 4 of the sockets are to be rotated in same and other 4 in opposite<br /><br />
 
-                So after assigning everyone, their direction<br /><br />
+                    So after assigning everyone, their direction<br /><br />
 
-                They continuously rotated the sockets<br /><br />
+                    They continuously rotated the sockets<br /><br />
 
-                After a while K noticed a sliding gate for the basement being opened as he stopped, the gate got closed with speed<br /><br />
+                    After a while K noticed a sliding gate for the basement being opened as he stopped, the gate got closed with speed<br /><br />
 
-                K: don't stop,<br /><br />
+                    K: don't stop,<br /><br />
 
-                When the gate opened fully only K stopped, but still the gates got closed rapidly<br /><br />
+                    When the gate opened fully only K stopped, but still the gates got closed rapidly<br /><br />
 
-                As Ursh was near the sliding door so he replaced his position with him<br /><br />
+                    As Ursh was near the sliding door so he replaced his position with him<br /><br />
 
-                As soon as the door opened fully K jumped and by an inch K got inside safely, firstly K saw a button, he pressed it, in the room a pressure button appeared, totally in opposite to the basement opening<br /><br />
+                    As soon as the door opened fully K jumped and by an inch K got inside safely, firstly K saw a button, he pressed it, in the room a pressure button appeared, totally in opposite to the basement opening<br /><br />
 
-                It was near Vay, as he pressed it the gates opened, but as moved his hands away they got closed<br /><br />
+                    It was near Vay, as he pressed it the gates opened, but as moved his hands away they got closed<br /><br />
 
-                Vay: all of you please go to help K, I will stand here<br /><br />
+                    Vay: all of you please go to help K, I will stand here<br /><br />
 
-                Ursh: sure<br /><br />
+                    Ursh: sure<br /><br />
 
-                Vay: yess<br /><br />
+                    Vay: yess<br /><br />
 
-                So everyone got inside and told K what happened<br /><br />
+                    So everyone got inside and told K what happened<br /><br />
 
-                After moving down the stairs a bit they came across a locked door which had 2 rotating handles<br /><br />
+                    After moving down the stairs a bit they came across a locked door which had 2 rotating handles<br /><br />
 
-                K: that I know very well,<br /><br />
+                    K: that I know very well,<br /><br />
 
-                K opened his bag from that brought a copy out,<br /><br />
+                    K opened his bag from that brought a copy out,<br /><br />
 
-                Folding the copy in a cone shape, putting one side near his ear and other on door, he moved the handles and finally a sound came and again a button appeared<br /><br />
+                    Folding the copy in a cone shape, putting one side near his ear and other on door, he moved the handles and finally a sound came and again a button appeared<br /><br />
 
-                Cheg: now it's my turn to stay<br /><br />
+                    Cheg: now it's my turn to stay<br /><br />
 
-                So Cheg pressed it and the rest went inside<br /><br />
+                    So Cheg pressed it and the rest went inside<br /><br />
 
-                But again a door came which was connected to a heavy pressure plate <br /><br />
+                    But again a door came which was connected to a heavy pressure plate <br /><br />
 
-                This time Pray stayed there and finally they reached the main room<br /><br />
+                    This time Pray stayed there and finally they reached the main room<br /><br />
 
-                Put light of the torch here and there, saw posters on the wall which were of K and a cross on him then saw a table on which a paper was lying, that was a map<br /><br />
+                    Put light of the torch here and there, saw posters on the wall which were of K and a cross on him then saw a table on which a paper was lying, that was a map<br /><br />
 
-                On the other side on top it was written WELCOME<br /> further, "Why did you leave your friends outside"<br /><br />
+                    On the other side on top it was written WELCOME<br /> further, "Why did you leave your friends outside"<br /><br />
 
-                And suddenly the sound of the gate getting closed came<br /><br />
+                    And suddenly the sound of the gate getting closed came<br /><br />
 
-                Further it was written "Follow the map"<br /><br />
+                    Further it was written "Follow the map"<br /><br />
 
-                They again started searching more things on walls and then got by a button, pressed it, all the gates opened but none was present there<br /><br />
+                    They again started searching more things on walls and then got by a button, pressed it, all the gates opened but none was present there<br /><br />
 
-                K: no no no, what the hell,<br /><br />
+                    K: no no no, what the hell,<br /><br />
 
-                Ursh: don't panic let's quickly move outside they must be there<br /><br />
+                    Ursh: don't panic let's quickly move outside they must be there<br /><br />
 
-                Paki: there is a green gas, cover your nose and mouth<br /><br />
+                    Paki: there is a green gas, cover your nose and mouth<br /><br />
 
-                All moved outside the house but no one was there<br /><br />
+                    All moved outside the house but no one was there<br /><br />
 
-                Raav: I guess we must follow the map<br /><br />
+                    Raav: I guess we must follow the map<br /><br />
 
-                K: not we, only me<br /><br />
+                    K: not we, only me<br /><br />
 
-                Ursh: you can't order any of us,<br /><br />
+                    Ursh: you can't order any of us,<br /><br />
 
-                Paki: we will come with you<br /><br />
+                    Paki: we will come with you<br /><br />
 
-                Raav: let me search clues till you discuss<br /><br />
+                    Raav: let me search clues till you discuss<br /><br />
 
-                K: I can't afford any of you to lose, I already lost my friends, if you got away, then I would<br /><br />
+                    K: I can't afford any of you to lose, I already lost my friends, if you got away, then I would<br /><br />
 
-                K falling on knees and joined hands<br /><br />
+                    K falling on knees and joined hands<br /><br />
 
-                K: I beg you, please go<br /><br />
+                    K: I beg you, please go<br /><br />
 
-                Paki made him stand,<br /><br />
+                    Paki made him stand,<br /><br />
 
-                Paki: ok, Raav, let's go<br /><br />
+                    Paki: ok, Raav, let's go<br /><br />
 
-                But no response came<br /><br />
+                    But no response came<br /><br />
 
-                And in no time they recognized, he was also trapped<br /><br />
+                    And in no time they recognized, he was also trapped<br /><br />
 
-                Ursh: they are waiting for us to be alone, far from K<br /><br />
+                    Ursh: they are waiting for us to be alone, far from K<br /><br />
 
-                K: ahhhhhhhhhhhh !!!!!<br /><br />
+                    K: ahhhhhhhhhhhh !!!!!<br /><br />
 
-                K: ok let's move, let's see, do or die,<br /><br />
+                    K: ok let's move, let's see, do or die,<br /><br />
 
-                3 of them sat in the car and followed the map, they further reached near a forest,<br /><br />
+                    3 of them sat in the car and followed the map, they further reached near a forest,<br /><br />
 
-                K: I guess, we have to move further by foot<br /><br />
+                    K: I guess, we have to move further by foot<br /><br />
 
-                All started moving inside the forest<br /><br />
+                    All started moving inside the forest<br /><br />
 
-                K was a feet ahead of Paki and Ursh but could continuously hear their footsteps and many times did a talk in between<br /><br />
+                    K was a feet ahead of Paki and Ursh but could continuously hear their footsteps and many times did a talk in between<br /><br />
 
-                After moving many miles<br /><br />
+                    After moving many miles<br /><br />
 
-                K: I guess we are there, I could see something,<br /><br />
+                    K: I guess we are there, I could see something,<br /><br />
 
-                As he looked back, instead of Paki and Ursh, 2 persons in black were there K punched one of them, the other one held him from back but K hit elbow at his face and easily made both of them unconscious<br /><br />
+                    As he looked back, instead of Paki and Ursh, 2 persons in black were there K punched one of them, the other one held him from back but K hit elbow at his face and easily made both of them unconscious<br /><br />
 
-                Dragging them near to the very big dome situation in the middle of the forest<br /><br />
+                    Dragging them near to the very big dome situation in the middle of the forest<br /><br />
 
-                K (shouting in an emotional manner): come out cowards, if you have any courage, attack me directly, why my friends<br /><br />
+                    K (shouting in an emotional manner): come out cowards, if you have any courage, attack me directly, why my friends<br /><br />
 
-                A gate opened and the pro assassin came out<br /><br />
+                    A gate opened and the pro assassin came out<br /><br />
 
-                Assassin: cool, cool they gave you so many chances to retreat but didn't, it's your fault your friends are captured, ah not only friends but your best friend and also your life, your sweet and hot wife<br /><br />
+                    Assassin: cool, cool they gave you so many chances to retreat but didn't, it's your fault your friends are captured, ah not only friends but your best friend and also your life, your sweet and hot wife<br /><br />
 
-                K: don't utter a word about them or I will peel off your skin, you will regret<br /><br />
+                    K: don't utter a word about them or I will peel off your skin, you will regret<br /><br />
 
-                Assassin: cool, you are not in condition to give any threat, and you know what you still have a choice to go back otherwise come in and get your ass burned by the leaders<br /><br />
+                    Assassin: cool, you are not in condition to give any threat, and you know what you still have a choice to go back otherwise come in and get your ass burned by the leaders<br /><br />
 
-                K: just don't harm any of them, I will not leave by any how, let me in and see who's ass gotta burned<br /><br />
+                    K: just don't harm any of them, I will not leave by any how, let me in and see who's ass gotta burned<br /><br />
 
-                Assassin: yeah none of them would be harmed till you retreat or die so as you have decided so<br /><br />
+                    Assassin: yeah none of them would be harmed till you retreat or die so as you have decided so<br /><br />
 
-                'GET READY FOR THE FINAL BATTLE'<br /><br />
+                    'GET READY FOR THE FINAL BATTLE'<br /><br />
 
-                INTERVAL-4<br /><br />
+                    INTERVAL-4<br /><br />
+                </p>
+                <h2 className='text-center font-bold'>EMPTY SPACES SEASON FINALE</h2>
+                <p>
+                    
+                <br />
+
+
+                So K stepped inside the big dome, a person was standing there<br /><br />
+
+                K quickly ran towards him and picked his collar and asked, "Where are my friends"<br /><br />
+
+                Person: chill first move away, you will meet them or not depends on you, can you see the door<br /><br />
+
+                K: yes<br /><br />
+
+                Person: enter it<br /> One by one many doors will come, and at the end you will reach our leader if you still survive, go go go fast your friends are waiting for you (laughs)<br /><br />
+
+                K ran towards the door, opened and entered there he saw another person but K thought that maybe they already met but where<br /><br />
+
+                This was the scientist<br /><br />
+
+                K: who are you I have seen your eyes somewhere, wait wait I remember, you are the scientist the 7th member<br /><br />
+
+                Scientist: wait, I guess you met my parallel self, so let's come to the point, I am giving you a deal, just go away, your life would be spared,<br /><br />
+
+                K: I will not,<br /><br />
+
+                Scientist: I knew, I had a deal<br /><br />
+
+                Then the scientist took a remote out and pressed a button<br /><br />
+
+                In the end of the room Paki trapped in a glass chamber appeared,<br /><br />
+
+                K ready to run<br /><br />
+
+                Scientist: stop, or else I will cut off O2 supply of the chamber, listen to the deal<br /><br />
+
+                Then pressed another button<br /><br />
+
+                And at the left and right side of the room each side 3 glass chambers appeared in all of them girls were there<br /><br />
+
+                Scientist: these hot girls are for you, take all or any of them you want, we will give you all your friends back, except Paki and just leave this place and live a simple life without any thesis or invention<br /><br />
+
+                K: why do you think I would take your deal<br /><br />
+
+                Scientist: at least take a look, how cute they all are, totally of your style.<br /><br />
+
+                K: no, and no means no, boys no is also a no<br /><br />
+
+                Scientist: take time and think, but take choice perfectly, if I were you I would never leave that opportunity, till now I am leaving<br /><br />
+
+                K (to himself): wait, why did he give that hint, I would leave that he knew, but he knows I would leave it wait did he want me to leave it, it means it's better me to take it as it can also be a trap, it means I should say yes,<br /><br />
+
+                Oh I got it, he wanted me to think that,<br /><br />
+
+                Now I'm sure I will say no<br /><br />
+
+                Then K looked left and right and thought that why the hell are these girls here, what made them do that<br /><br />
+
+                Then K shouted: I choose Paki, I am moving further<br /><br />
+
+                As he took a step<br /><br />
+
+                All the 6 gates opened<br /><br />
+
+                All girls except one appeared in front of K, that one sat in her place<br /><br />
+
+                Now first time he looked at them<br /><br />
+
+                K (inside): oh god, they are perfectly dressed and look, what I thought when I was a teen, genuinely they are cute but this doesn't matter for me, please God don't let me distract, I am loyal to Paki, I know I will not,<br /><br />
+
+                Further all the girls took out weapons: sword, whip, claws, fans, bare hands from their back and were totally in front of him<br /><br />
+
+                K (inside): oh, now I got, if I had chosen any one then I had to fight with only one and go to Paki, I took a wrong decision<br /><br />
+
+                K (laughs): do you really think these girls can kill me, they can't even pluck the tip of my hair,<br /><br />
+
+                Girl 1 (in the middle): we are trained properly, we know all fight techniques, all martial arts, you will be dead soon<br /><br />
+
+                K: oh do you really think that (laughs), no girl in this universe can defeat me, you are only 5, if you were 5000 then also my win was final,<br /><br />
+
+                Girl 1: I guess you are the leader and stronger than all of them<br /><br />
+
+                Girl 1: yes<br /><br />
+
+                Girl 2: what yes, I have more skills, see my claws,<br /><br />
+
+                Girl 3: no, see my whip, I can rip anyone from far away<br /><br />
+
+                Girl 4: my punches are enough for anyone<br /><br />
+
+                Girl 5: I need not move a bit, my fans would do the task<br /><br />
+
+                Meanwhile they were arguing, K tried to flee away near Paki<br /><br />
+
+                K (thinking): I guess my plan worked, it was so easy to fool them<br /><br />
+
+                K was moving slowly towards Paki but, one bare-handed girl noticed that<br /><br />
+
+                Girl 4: see, he's fleeing away<br /><br />
+
+                Saying this she flipped twice, so that she could quickly reach K<br /><br />
+
+                And as she was near him, while flipping she kicked K at his back and K got fallen down a few meters away,<br /><br />
+
+                As K was on the ground, girl 3 attacked at his back with her whip despite K didn't utter a single word<br /><br />
+
+                Girl 1 (laughs): and he says he could fight with 5000 girls, he couldn't even stand in front of only 5, I guess soon your head would be under my feet<br /><br />
+
+                As she said that thing<br /><br />
+
+                Scientist and Head 2 who were observing everything placed their hands at their foreheads<br /><br />
+
+                While in the room, we could see K laughing despite he is laid down on the ground but he was laughing<br /><br />
+
+                Girl 2: why are you laughing<br /><br />
+
+                Girl 1: I guess he has lost his mental ability as the first time he is going to lose from a girl (laughs)<br /><br />
+
+                Further K quickly stood up, went near one of the cabins, broke the door in such a way he could get a metal stick long and wide enough to attack others and to be easily handled<br /><br />
+
+                K: earlier my focus was just to save Paki, but as you said the thing you have not to, come, I am ready<br /><br />
+
+                Girl 3: do you really think you can overpower us with just a normal stick, or is there something special<br /><br />
+
+                K (to viewers): special, you know, if you know (blink an eye)<br /><br />
+
+                K: you will soon get to know<br /><br />
+
+                Girl 3 then attacked him with a whip but K made the whip roll at the stick and pulled the stick, and so girl 3 fell down with her back up, K went and sat on her and attacked at her head with the stick to make her unconscious<br /><br />
+
+                K: someone was saying something,<br /><br />
+
+                Girl 1 further attacked K with her sword but K resisted it with his stick and with a smooth round moment of the stick he attacked at her hand making the sword fell down<br /><br />
+
+                Girl 4: now fight with me<br /><br />
+
+                And she started with martial arts, K put his stick at back and started fighting barehanded like her<br /><br />
+
+                One by one each attack was being blocked by K and as she attacked a punch near his chest, K slid somewhat away<br /><br />
+
+                K: nice one,<br /><br />
+
+                Then both girl 1 and girl 4 together attacked him<br /><br />
+
+                But K was easily resisting them<br /><br />
+
+                As Girl 1 tried to punch him like girl 4<br /><br />
+
+                K held her wrist, and then from both hands lifted her and made her fly in air and then threw her at girl 4<br /><br />
+
+                Took out his stick and attacked their heads one by one<br /><br />
+
+                Then girl 2 came suddenly and attacked his face with her claws but before she could do that K attacked her arms and then punched at her stomach and then with hands at 90 degrees to her neck, she was fainted<br /><br />
+
+                As she fainted, K felt pain at his hands, stick got dropped, a cut also came<br /><br />
+
+                Girl 5: I guess it's my turn, it's just you and me<br /><br />
+
+                Then she again threw her fans at him, and he barely got saved, K had never seen such a weapon, how to dodge and fight,<br /><br />
+
+                But with help of his feet he made the stick come back to his hands, as she again threw them, K started rotating the stick and the fans couldn't attack him they went back to her<br /><br />
+
+                K also stopped she came near him threw the fans in a weird manner, while K this time didn't do anything, and as the fans came near his neck, he held them and changed their direction, cause of that fans attacked girl 5 at neck, and she too fainted, K tied all of them with help of the whip of girl 3<br /><br />
+
+                But suddenly heard a sobbing voice of a girl, someone was crying<br /><br />
+
+                When he looked here and there, he saw that 6th girl, crying, sitting, in her cabin<br /><br />
+
+                He went towards her and asked why she was crying<br /><br />
+
+                Girl 6: I can't fight you, I don't have that enough power, you are too strong, and if I didn't defeat you,<br /><br />
+
+                K: then what?<br /><br />
+
+                Girl 6: no nothing, I am ready for the fight,<br /><br />
+
+                She stood up and in a position ready to fight<br /><br />
+
+                Girl 6: nah, I can't fight<br /><br />
+
+                K: first come in the middle and then tell me, maybe I could help you out,<br /><br />
+
+                Girl 6: they kidnapped my family, I know many martial arts moves, but I never used them for any bad purpose, but they are blackmailing me to do so,<br /><br />
+
+                Then she beautifully looked at his eyes, with a very innocent face, and said, "Would you help me, if yes then how"<br /><br />
+
+                K: I can surely help you, but, I don't know how could I, for helping you, I need to move out from here first after saving my friends, either you could leave from the back door or could move with us<br /><br />
+
+                Girl 6: I guess I should move with you, I would be safe with you, thank you for letting me come with you, if you don't mind then can I get a positive hug?<br /><br />
+
+                K: please no, I don't suspect your intentions but sorry I have some set boundaries, despite first tell me how could I open the cabin gate of Paki?<br /><br />
+
+                Girl 6: hmmm ok, but sorry, I have no idea, let's move near the cabin, we may figure out<br /><br />
+
+                K: ok<br /><br />
+
+                So both started moving towards Paki's cabin, but the girl was a little behind K<br /><br />
+
+                Suddenly the girl attacked K with a dagger at his back<br /><br />
+
+                But K held the dagger with his hands, blood was being dropped down his hands, he kicked the girl at her thighs, made her fall down,<br /><br />
+
+                Girl 6: how were you attentive, I thought I manipulated you<br /><br />
+
+                K: I don't trust girls that easily, despite the fact that I trusted you because of your tears, but the moment you were asking for a hug, despite we can't hear Paki but she gave me a hint, that I should not trust you, and so I was totally ready for your actions, it was clever that you didn't show any extra change in your movement so that Paki can't see or even I can't hear, but my focus was on your shadow so get lost now before I<br /><br />
+
+                Girl 6 (laughs): nice, but how would you open the gates, without the key<br /><br />
+
+                K: did you have the key?<br /><br />
+
+                Girl 6: yess, and yes don't try to snatch it or else I would break it (shows the key which was made of plastic)<br /><br />
+
+                K: I guess you forgot something<br /><br />
+
+                Girl 6: what<br /><br />
+
+                K then threw the stick which was at his back directly at her head very quickly and she got unconscious<br /><br />
+
+                K came near her body<br /><br />
+
+                K: that's why it's the OG weapon<br /><br />
+
+                K took the key and opened the cabin<br /><br />
+
+                Both of them hugged each other very tightly,<br /><br />
+
+                Then Paki quickly tore a piece of her clothes and tied it at the hand of K from where blood was dropping<br /><br />
+
+                Paki: up your t-shirt<br /><br />
+
+                K: what<br /><br />
+
+                Paki: I want to see your back<br /><br />
+
+                K lifted his t-shirt up<br /><br />
+
+                Paki: how badly they hurt you, the mark of the whip is still there,<br /><br />
+
+                K: you have met me now, this pain is equivalent to 0 in front of happiness I got meeting you, but let's move further, I guess this stage is cleared<br /><br />
+
+                Paki: if the first stage took so long time, then how would other ones go<br /><br />
+
+                K: I guess this was easy but long, coming next difficulty would increase but may become short, just a wild guess<br /><br />
+
+                Paki: let's see<br /><br />
+
+                Both of them moved out of the front door<br />
+                (as we see the door was closed, something was written as a heading it was, 'LUST CLEARED')<br /><br />
+
+                to the next room in which the mafia leader was already present<br /><br />
+
+                Mafia leader: hello, do you know who I am<br /><br />
+
+                K: no<br /><br />
+
+                Mafia leader: my name is Ogama Charles Lucky<br /><br />
+
+                Paki: wait, I read your name in the newspaper, you are the leader of the biggest Mafia of Asia<br /><br />
+
+                Ogama: yes and soon the world (laughs aloud)<br /><br />
+
+                K: if this is the next stage, where are my friends,<br /><br />
+
+                Ogama: why in such a hurry, wait, first meet my pets, due to whom I killed my every enemy<br /><br />
+
+                He whistled and called HCM - 090,<br /><br />
+
+                And with that a sphinx came, (lion head and arms with a human body)<br /><br />
+
+                K: how is that possible<br /><br />
+
+                Ogama: genes can be mixed, and when done properly, results in success but wait let me call HCM - 570, HCM- 901, HCM - 270<br /><br />
+
+                Further a creature made up of dark brown stones, one stone was one leg and other stone, the other, one stone stomach and 2 stones each in arms and one as a head with eyes and mouth appeared, all the stones were wide enough<br /><br />
+
+                Following him a human-like figure with 4 broad tentacles (2 in front and 2 in back) like tardigrade, sharp nails, glowing eyes, had great muscles walked in<br /><br />
+
+                And following them a creature floating in air, 2 thin metal arms, whole body was a metal, white glowing eyes, 0 muscles but the strongest of them also appeared<br /><br />
+
+                Paki: wait a rockman, tardihuman, and a cybrain, how the heck you made them,<br /><br />
+
+                Ogama: for now, defeat them, you have to kill them<br /><br />
+
+                K: Paki, stay back, I will fight<br /><br />
+
+                Paki: they are 4, we need to fight together to handle<br /><br />
+
+                K: don't argue, if I feel, I will call you by myself<br /><br />
+
+                Paki: why you always want to fight alone, never matter your life, as if only you can fight, no other can,<br /><br />
+
+                K: ok ok, please don't scold me, but I request please let me fight first<br /><br />
+
+                Ogama: hey, stop your husband-wife quarrel, only one of them would fight at one time, your wish fight alone or together and yes I am sending 2 of them back, HCM- 901, HCM - 270, go back, only these 2 are enough for you<br /><br />
+
+                Paki: ok then, but if I would feel, I will enter the fight in between<br /><br />
+
+                K: alright<br /><br />
+
+                Ogama went aside in the room<br /><br />
+
+                K ran towards sphinx and as he was about to attack, sphinx attacked with his arms at the chest of K, due to which, K flew in the air, struck the walls and got unconscious<br /><br />
+
+                Paki rushed towards him tried to wake him up, called his name, but he didn't respond, despite she checked, that he was alive, just unconscious<br /><br />
+
+                Paki: hey you listen, now I will fight with you, attack me<br /><br />
+
+                Further the sphinx rushed at her, attacked with his claw, but Paki dodged, and attacked at the joint arms and muscles with her elbow, but no damage occurred to him, so she quickly slid back and waited for him to attack, meanwhile thinking what could be the possible way to defeat<br /><br />
+
+                Suddenly she saw a belt in his neck, so she knew what to do<br /><br />
+
+                And as expected she jumped in the air, went on his back and pulled out the belt and came in front of him<br /><br />
+
+                But wait what, sphinx became mad, now it was screaming, and further punched her and made her fly in the air<br /><br />
+
+                Meanwhile she was in the air she was just thinking how to control him<br /><br />
+
+                But she hit the ground and too became unconscious, despite she was unconscious she got a vision<br /><br />
+
+                Where she and K were sitting on bed and were talking to each other<br /><br />
+
+                K (lovely tone): do you know, why I like and love you from so early,<br /><br />
+
+                Paki: love doesn't have any reason<br /><br />
+
+                K: yes, but I hated girls as you know, but I was impressed from you<br /><br />
+
+                Paki: oh damn, why,<br /><br />
+
+                K: cause you are good, not only with me but with everyone, you love every creature just like me or I can say better than me, I too sometimes talked rudely, but you were always good to everyone,<br /><br />
+
+                Suddenly Paki got her consciousness back<br /><br />
+
+                Paki (inside): yes I know, what to do, thanks K,<br /><br />
+
+                Then went directly in front of him with her hands at back<br /><br />
+
+                Paki: you wanna hurt me, you can, I will not hurt you<br /><br />
+
+                First time he talked<br /><br />
+
+                Sphinx: but you wanted to kill me<br /><br />
+
+                Paki: sorry but I thought you were evil and made artificially, but I realized you are also a part of this nature and deserve to live<br /><br />
+
+                While saying this all she was slowly moving further step by step<br /><br />
+
+                Paki: you are not wrong, wrong has happened to you,<br /><br />
+
+                By the time, she was near him now<br /><br />
+
+                Paki: you are like my brother (saying this, hugged him), still you want to hurt me you can<br /><br />
+
+                Sphinx started crying at her shoulders<br /><br />
+
+                Suddenly the rockman attacked her with his punch, but K came at the right time and held his hand<br /><br />
+
+                K: hello, love you Paki,<br /><br />
+
+                Seeing that Sphinx became angry and went directly to Ogama, holding him by neck, killed him<br /><br />
+
+                Scientist and Head were seeing this<br /><br />
+
+                Scientist: I can't do anything if the belt is not in the neck, I never expected that by this method they would clear, I just thought at max K may convert his anger to power and kill them<br /><br />
+
+                Head: hmmm, nothing can be done now, in great wars sacrifices are needed<br /><br />
+
+                Back to room<br /><br />
+
+                Sphinx: you both shall go, I will handle this pile of stones<br /><br />
+
+                K: no that's my war, I will do it<br /><br />
+
+                Saying this he attacked at joints of rockman and he got split into pieces<br /><br />
+
+                But wait what he rejoined,<br /><br />
+
+                And attacked K<br /><br />
+
+                K flew but luckily Sphinx caught him,<br /><br />
+
+                K: thanks bro<br /><br />
+
+                Sphinx: let me fight<br /><br />
+
+                K: one last try, can you hold him for 2 minutes<br /><br />
+
+                Sphinx: yes of course<br /><br />
+
+                Then Sphinx went near rockman and started fighting in a way, just want to stop him not to attack<br /><br />
+
+                Meanwhile K standing, started meditating, gathering all his power and anger in his hands<br /><br />
+
+                K: give space,<br /><br />
+
+                Saying this attacked at the head of rockman due to which it got burst and split into small thousands of pieces,<br /><br />
+
+                Sphinx: nice, can you tell why you called me bro<br /><br />
+
+                K: cause you are also nice, at start anger was in my head, making me rage, but due I remembered how to convert anger to power<br /><br />
+
+                Sphinx: oh great<br /><br />
+
+                Paki: but he is still a hybrid, what will he do<br /><br />
+
+                Sphinx: there are many forests and mountain areas which are rarely visited, I will go there,<br /><br />
+
+                K: but if any time you felt lonely, as you have human emotions, you can anytime come to us we are like your family or if you want to live with you can, but it would be more like a jail, so you have to decide<br /><br />
+
+                Sphinx: I know, I will choose option A, goodbye<br /><br />
+
+                So he hugged K and K wished him good luck, he broke the walls of the room and went away<br /><br />
+
+                Then K took 3 of the stones and one by one shot them at the 3 cameras of the room and now none could see what happened in next 2-3 minutes<br /><br />
+
+                But next we could see K and Paki moved further to the next room<br /><br />
+
+                And after the door of this room closed it was written<br /><br />
+
+                Pride and greed cleared<br /><br />
+
+                So they entered the next room, with serious faces,<br /><br />
+
+                As they entered they saw Ursh was unconscious inside a cage and outside it there were 2 bodyguards it were the tardihuman and the cybrain<br /><br />
+
+                K ignoring them just moved further towards Ursh, tardihuman attacked him but K moved a little right, dodged his attack<br /><br />
+
+                Then a whistle sound came which was done by Paki<br /><br />
+
+                Paki: hey, fight with us<br /><br />
+
+                Then tardihuman and cybrain looked at all of them, ready to attack<br /><br />
+
+                Meanwhile they all were dodging the attacks or attacking when any other was their target, K reached near the cage of Ursh, he held the 2 bars to make them open, stretched them but nothing happened, he then used the rod to break the bars, but no change, but got an idea, he threw the rod at cybrain,<br /><br />
+
+                Cybrain looked at the back and attacked K with a laser beam through the eyes, but K dodged it, due to which the laser beam struck the bar of cage and melted it<br /><br />
+
+                But cybrain was so fast that the very next moment he held K from neck and threw him apart,<br /><br />
+
+                And now tardihuman also faced towards K, and the moment he was going to attack K with his tentacles Ursh came and pulled K aside<br /><br />
+
+                Ursh: no one can harm K till I am present<br /><br />
+
+                Now both tardihuman and cybrain attacked them together<br /><br />
+
+                But a whistle came, they stopped<br /><br />
+
+                And now both the heads, mathematician and the scientist came inside the room, ordered HCMs to go<br /><br />
+
+                Head 1: great work K, defeating the human emotions, the deadly sins,<br /><br />
+
+                Head 2: yes, at first you defeated lust, despite of those cute girls you still focused on your love<br /><br />
+
+                Head 1: next defeating the 2 HCMs, you win over anger and fear<br /><br />
+
+                Ursh: do you really think he fears these hybrids<br /><br />
+
+                K stopped Ursh by sign as keeping his finger on lips<br /><br />
+
+                Head 2: earlier we thought you also have pride that's why you accepted such a difficult challenge so easily<br /><br />
+
+                Head 1: but you knew what was going to happen, and also when you had the option to kill me, not showing any greed you chose the right path<br /><br />
+
+                Head 2: and in the previous level, without wasting any time, you won over sloth<br /><br />
+
+                Head 1: and at last, you showed the real focus that was to save Ursh,<br /><br />
+
+                Then both the heads clapped thrice<br /><br />
+
+                Head 1: so, as you may have guessed, I like giving options, so your first option is, join us<br /><br />
+
+                K nodded left-right<br /><br />
+
+                Head 2: or else die<br /><br />
+
+                Head 1: you know what, in every story, there is a villain<br /><br />
+
+                Interrupting him<br /><br />
+
+                Ursh: yes we know, every story has a hero and a villain, and this too, you wanna say that<br /><br />
+
+                Head 1: listen, I wanna say, every story has a hero and a villain, but in real life stories both are villains, but you know what in this story we both are heroes,<br /><br />
+
+                Head 2: yes, we just care for humans, cause the information you were spreading could be so harmful, if went in wrong hands, yes all your thesis are absolutely right, but normal people who are trapped in these sins can misuse the information, we are the top leaders of this world, but those who are little below may use your information for their benefits, not caring about the concepts of space and time<br /><br />
+
+                K then showed thumb to them (wanna say ok)<br /><br />
+
+                Then waved and signed everyone to move backward<br /><br />
+
+                The next moment, head 1 signed mathematician<br /><br />
+
+                And so he rushed towards K held him and put a gun at his head, warning others to move back, near the door,<br /><br />
+
+                Head 1: hope you would have made the right choice, but I guess I have to send you again in that dimension,<br /><br />
+
+                Saying this head 2 brought that machine<br /><br />
+
+                Paki: how did you get that back<br /><br />
+
+                Then they brought Steve (robo of K)<br /><br />
+
+                Head 1: we hacked him, it was difficult but, we did<br /><br />
+
+                Ursh: oh that's why K and I got trapped earlier too<br /><br />
+
+                Head 1: yes, and now I will switch on this machine again, setting it at you, and yes now it doesn't need plugs,<br /><br />
+
+                K then bites the mathematician's hand<br /><br />
+
+                But the mathematician again held him<br /><br />
+
+                Scientist: let me handle him<br /><br />
+
+                Finally K spoke<br /><br />
+
+                K: don't use that machine it has a glitch,<br /><br />
+
+                But head 1 not cared<br /><br />
+
+                Meanwhile the scientist rushed towards him with a special glove type machine and punched at his chest<br /><br />
+
+                And at the same time head 1 switched on the machine,<br /><br />
+
+                And with that a great flash occurred, sound of blast came, same time smoke happened in the whole area, none of K's team could see what is happening<br /><br />
+
+                And at the right moment scientist and the mathematician tossed at different sides walls<br /><br />
+
+                And it was so hard that their necks were broken and they died<br /><br />
+
+                Smoke remained for 2-3 minutes and finally from the smoke K appeared and said in a very serious and sad tone<br /><br />
+
+                K: WE WON<br /><br />
+
+                They all hugged him,<br /><br />
+
+                While going back<br /><br />
+
+                Paki: I have a question Ursh<br /><br />
+
+                Ursh: what<br /><br />
+
+                Paki: what is K actually scared of<br /><br />
+
+                Ursh: just leave it for now and relax, WE WON<br /><br />
+
+                K: BUT AT WHAT COST<br /><br />
+
+                WITH THIS SEASON 1 ENDS<br /><br />
+
+                Some glimpses for season 2<br /><br />
+
+                Scene 1<br /> <br />
+                Paki : ursh,, from 2-3 days K is acting a little weird,, not spending any night with me ,, why <br /><br />
+
+                Scene 2  <br /> <br />
+                A monster,,  <br /> <br />
+
+                with a lion face, metal body and tentacles <br /><br />
+
+                Scene 3 <br /><br />
+
+                K : My real fear is the INFINITY
                 </p>
 
             </div>

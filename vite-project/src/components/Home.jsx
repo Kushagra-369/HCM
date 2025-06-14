@@ -283,10 +283,10 @@ export default function Home() {
             </div>
             <br />
             <br />
-            X<Element name='phase4'>
+            <Element name='phase4'>
                  <div className='  grid grid-cols-2 '  >
                 {
-                    data7.map((item, key) => (
+                    data10.map((item, key) => (
                         <div className=' flex justify-center  py-5' key={key}>
                             <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
                                 <Link to={item.href}>
@@ -304,7 +304,7 @@ export default function Home() {
             </div>
             <div>
                 {
-                    data8.map((item, key) => (
+                    data11.map((item, key) => (
                         <div className=' flex justify-center  py-5' key={key}>
                             <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
                                 <Link to={item.href} >
@@ -321,7 +321,7 @@ export default function Home() {
             </div>
             <div className='  grid grid-cols-2 ' >
                 {
-                    data9.map((item, key) => (
+                    data12.map((item, key) => (
                         <div className=' flex justify-center  py-5 ' key={key}>
                             <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
                                 <Link to={item.href} >

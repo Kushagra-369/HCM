@@ -19,8 +19,9 @@ import image17 from '../assets/images/hcm 421.jpg'
 import image18 from '../assets/images/hcm 111.jpg'
 import image19 from '../assets/images/hcm 190.jpg'
 import image20 from '../assets/images/hcm 371.jpg'
+import { TypeAnimation } from 'react-type-animation';
 import { Element } from 'react-scroll';
-
+import MovingComponent from 'react-moving-text';
 
 import Footer from './Footer'
 
@@ -85,257 +86,301 @@ export default function Home() {
 
     return (
         <div style={{ backgroundImage: 'url(https://t3.ftcdn.net/jpg/01/22/03/84/360_F_122038456_AEdKNITqNDwdPTVdPDy1Fk5YaD9Um1xm.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} >
-            <div class="text-center justify-center  text-yellow-200 py-10 underline">
-                <h1 class="text-8xl">HCM </h1>
-                <br />
-                <h2 class="text-6xl"> Human Containment Monsters</h2>
+            <div class="text-center justify-center text-3xl md:text-7xl text-yellow-200 py-10 underline">
+                <TypeAnimation
+                    sequence={[
+                        1000,
+                        'HCM ',
+                        1000,
+                        'Human Contentment Monsters',
+                        1000
+                    ]}
+                    wrapper="span"
+                    speed={100}
+                    style={{ display: 'inline-block' }}
+                    repeat={Infinity}
+                />
             </div>
-              <br />
             <br />
-            <div className=' text-center border-2 text-yellow-400 border-red-800  rounded-bl-2xl rounded-br-2xl ' style={{ boxShadow: '4px 4px 50px rgb(239, 252, 8)' }}>
-                <h1>PHASE-1</h1>
+            <br />
+            <div className=' text-center border-2 font-black text-2xl text-yellow-400 border-red-800  rounded-bl-2xl rounded-br-2xl ' style={{ boxShadow: '4px 4px 50px rgb(239, 252, 8)' }}>
+                <MovingComponent
+                    type="slideInFromLeft"
+                    duration="6000ms"
+                    delay="0s"
+                    direction="normal"
+                    timing="linear"
+                    iteration="infinite"
+                    fillMode="none">
+                    PHASE-1
+                </MovingComponent>
             </div>
             <br />
             <br />
             <Element name="phase1">
                 <div className='  grid grid-cols-2 '  >
-                {
-                    data.map((item, key) => (
-                        <div className=' flex justify-center  py-5' key={key}>
-                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
-                                <Link to={item.href}>
-                                    <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
-                                    <br />
-                                    <img className="h-50 w-50  " src={item.title3} alt=""></img>
-                                    <br />
-                                    <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
-                                </Link>
+                    {
+                        data.map((item, key) => (
+                            <div className=' flex justify-center  py-5' key={key}>
+                                <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
+                                    <Link to={item.href}>
+                                        <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                        <br />
+                                        <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                        <br />
+                                        <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
-                    ))
-                }
+                        ))
+                    }
 
-            </div>
-            <div>
-                {
-                    data2.map((item, key) => (
-                        <div className=' flex justify-center  py-5' key={key}>
-                            <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
-                                <Link to={item.href} >
-                                    <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
-                                    <br />
-                                    <img className="h-60 w-60  " src={item.title3} alt=""></img>
-                                    <br />
-                                    <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
-                                </Link>
+                </div>
+                <div>
+                    {
+                        data2.map((item, key) => (
+                            <div className=' flex justify-center  py-5' key={key}>
+                                <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
+                                    <Link to={item.href} >
+                                        <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                        <br />
+                                        <img className="h-60 w-60  " src={item.title3} alt=""></img>
+                                        <br />
+                                        <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
-                    ))
-                }
-            </div>
-            <div className='  grid grid-cols-2 ' >
-                {
-                    data3.map((item, key) => (
-                        <div className=' flex justify-center  py-5 ' key={key}>
-                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
-                                <Link to={item.href} >
-                                    <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
-                                    <br />
-                                    <img className="h-50 w-50  " src={item.title3} alt=""></img>
-                                    <br />
-                                    <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
-                                </Link>
+                        ))
+                    }
+                </div>
+                <div className='  grid grid-cols-2 ' >
+                    {
+                        data3.map((item, key) => (
+                            <div className=' flex justify-center  py-5 ' key={key}>
+                                <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
+                                    <Link to={item.href} >
+                                        <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                        <br />
+                                        <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                        <br />
+                                        <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
-                    ))
-                }
-            </div>
+                        ))
+                    }
+                </div>
             </Element>
-           <br />
             <br />
-            <div className=' text-center border-2 text-yellow-400 border-red-800  rounded-bl-2xl rounded-br-2xl ' style={{ boxShadow: '4px 4px 50px rgb(239, 252, 8)' }}>
-                <h1>PHASE-2</h1>
+            <br />
+            <div className=' text-center border-2 font-black text-2xl text-yellow-400 border-red-800  rounded-bl-2xl rounded-br-2xl ' style={{ boxShadow: '4px 4px 50px rgb(239, 252, 8)' }}>
+                <MovingComponent
+                    type="slideInFromLeft"
+                    duration="6000ms"
+                    delay="0s"
+                    direction="normal"
+                    timing="linear"
+                    iteration="infinite"
+                    fillMode="none">
+                    PHASE-2
+                </MovingComponent>            </div>
+            <br />
+            <br />
+
+            <Element name='phase2'>
+                <div className='  grid grid-cols-2 '  >
+                    {
+                        data4.map((item, key) => (
+                            <div className=' flex justify-center  py-5' key={key}>
+                                <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
+                                    <Link to={item.href}>
+                                        <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                        <br />
+                                        <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                        <br />
+                                        <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
+                                    </Link>
+                                </div>
+                            </div>
+                        ))
+                    }
+
+                </div>
+                <div>
+                    {
+                        data5.map((item, key) => (
+                            <div className=' flex justify-center  py-5' key={key}>
+                                <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
+                                    <Link to={item.href} >
+                                        <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                        <br />
+                                        <img className="h-60 w-60  " src={item.title3} alt=""></img>
+                                        <br />
+                                        <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
+                                    </Link>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+                <div className='  grid grid-cols-2 ' >
+                    {
+                        data6.map((item, key) => (
+                            <div className=' flex justify-center  py-5 ' key={key}>
+                                <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
+                                    <Link to={item.href} >
+                                        <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                        <br />
+                                        <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                        <br />
+                                        <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
+                                    </Link>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+
+            </Element>
+            <br />
+            <br />
+            <div className=' text-center border-2 font-black text-2xl text-yellow-400 border-red-800  rounded-bl-2xl rounded-br-2xl ' style={{ boxShadow: '4px 4px 50px rgb(239, 252, 8)' }}>
+                <MovingComponent
+                    type="slideInFromLeft"
+                    duration="6000ms"
+                    delay="0s"
+                    direction="normal"
+                    timing="linear"
+                    iteration="infinite"
+                    fillMode="none">
+                    PHASE-3
+                </MovingComponent>
             </div>
             <br />
             <br />
 
-         <Element name='phase2'>
-                 <div className='  grid grid-cols-2 '  >
-                {
-                    data4.map((item, key) => (
-                        <div className=' flex justify-center  py-5' key={key}>
-                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
-                                <Link to={item.href}>
-                                    <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
-                                    <br />
-                                    <img className="h-50 w-50  " src={item.title3} alt=""></img>
-                                    <br />
-                                    <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
-                                </Link>
+            <Element name='phase3'>
+                <div className='  grid grid-cols-2 '  >
+                    {
+                        data7.map((item, key) => (
+                            <div className=' flex justify-center  py-5' key={key}>
+                                <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
+                                    <Link to={item.href}>
+                                        <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                        <br />
+                                        <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                        <br />
+                                        <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
-                    ))
-                }
+                        ))
+                    }
 
-            </div>
-            <div>
-                {
-                    data5.map((item, key) => (
-                        <div className=' flex justify-center  py-5' key={key}>
-                            <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
-                                <Link to={item.href} >
-                                    <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
-                                    <br />
-                                    <img className="h-60 w-60  " src={item.title3} alt=""></img>
-                                    <br />
-                                    <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
-                                </Link>
+                </div>
+                <div>
+                    {
+                        data8.map((item, key) => (
+                            <div className=' flex justify-center  py-5' key={key}>
+                                <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
+                                    <Link to={item.href} >
+                                        <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                        <br />
+                                        <img className="h-60 w-60  " src={item.title3} alt=""></img>
+                                        <br />
+                                        <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
-                    ))
-                }
-            </div>
-            <div className='  grid grid-cols-2 ' >
-                {
-                    data6.map((item, key) => (
-                        <div className=' flex justify-center  py-5 ' key={key}>
-                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
-                                <Link to={item.href} >
-                                    <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
-                                    <br />
-                                    <img className="h-50 w-50  " src={item.title3} alt=""></img>
-                                    <br />
-                                    <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
-                                </Link>
+                        ))
+                    }
+                </div>
+                <div className='  grid grid-cols-2 ' >
+                    {
+                        data9.map((item, key) => (
+                            <div className=' flex justify-center  py-5 ' key={key}>
+                                <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
+                                    <Link to={item.href} >
+                                        <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                        <br />
+                                        <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                        <br />
+                                        <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
-                    ))
-                }
-            </div>
-
-         </Element>
-           <br />
-            <br />
-            <div className=' text-center border-2 text-yellow-400 border-red-800  rounded-bl-2xl rounded-br-2xl ' style={{ boxShadow: '4px 4px 50px rgb(239, 252, 8)' }}>
-                <h1>PHASE-3</h1>
-            </div>
+                        ))
+                    }
+                </div>
+            </Element>
             <br />
             <br />
-
-           <Element name='phase3'>
-             <div className='  grid grid-cols-2 '  >
-                {
-                    data7.map((item, key) => (
-                        <div className=' flex justify-center  py-5' key={key}>
-                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
-                                <Link to={item.href}>
-                                    <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
-                                    <br />
-                                    <img className="h-50 w-50  " src={item.title3} alt=""></img>
-                                    <br />
-                                    <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
-                                </Link>
-                            </div>
-                        </div>
-                    ))
-                }
-
-            </div>
-            <div>
-                {
-                    data8.map((item, key) => (
-                        <div className=' flex justify-center  py-5' key={key}>
-                            <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
-                                <Link to={item.href} >
-                                    <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
-                                    <br />
-                                    <img className="h-60 w-60  " src={item.title3} alt=""></img>
-                                    <br />
-                                    <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
-                                </Link>
-                            </div>
-                        </div>
-                    ))
-                }
-            </div>
-            <div className='  grid grid-cols-2 ' >
-                {
-                    data9.map((item, key) => (
-                        <div className=' flex justify-center  py-5 ' key={key}>
-                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
-                                <Link to={item.href} >
-                                    <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
-                                    <br />
-                                    <img className="h-50 w-50  " src={item.title3} alt=""></img>
-                                    <br />
-                                    <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
-                                </Link>
-                            </div>
-                        </div>
-                    ))
-                }
-            </div>
-           </Element>
-          <br />
-            <br />
-            <div className=' text-center border-2 text-yellow-400 border-red-800  rounded-bl-2xl rounded-br-2xl ' style={{ boxShadow: '4px 4px 50px rgb(239, 252, 8)' }}>
-                <h1>PHASE-4</h1>
-            </div>
+            <div className=' text-center border-2 font-black text-2xl text-yellow-400 border-red-800  rounded-bl-2xl rounded-br-2xl ' style={{ boxShadow: '4px 4px 50px rgb(239, 252, 8)' }}>
+                <MovingComponent
+                    type="slideInFromLeft"
+                    duration="6000ms"
+                    delay="0s"
+                    direction="normal"
+                    timing="linear"
+                    iteration="infinite"
+                    fillMode="none">
+                    PHASE-4
+                </MovingComponent>            </div>
             <br />
             <br />
             <Element name='phase4'>
-                 <div className='  grid grid-cols-2 '  >
-                {
-                    data10.map((item, key) => (
-                        <div className=' flex justify-center  py-5' key={key}>
-                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
-                                <Link to={item.href}>
-                                    <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
-                                    <br />
-                                    <img className="h-50 w-50  " src={item.title3} alt=""></img>
-                                    <br />
-                                    <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
-                                </Link>
+                <div className='  grid grid-cols-2 '  >
+                    {
+                        data10.map((item, key) => (
+                            <div className=' flex justify-center  py-5' key={key}>
+                                <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
+                                    <Link to={item.href}>
+                                        <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                        <br />
+                                        <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                        <br />
+                                        <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
-                    ))
-                }
+                        ))
+                    }
 
-            </div>
-            <div>
-                {
-                    data11.map((item, key) => (
-                        <div className=' flex justify-center  py-5' key={key}>
-                            <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
-                                <Link to={item.href} >
-                                    <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
-                                    <br />
-                                    <img className="h-60 w-60  " src={item.title3} alt=""></img>
-                                    <br />
-                                    <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
-                                </Link>
+                </div>
+                <div>
+                    {
+                        data11.map((item, key) => (
+                            <div className=' flex justify-center  py-5' key={key}>
+                                <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
+                                    <Link to={item.href} >
+                                        <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                        <br />
+                                        <img className="h-60 w-60  " src={item.title3} alt=""></img>
+                                        <br />
+                                        <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
-                    ))
-                }
-            </div>
-            <div className='  grid grid-cols-2 ' >
-                {
-                    data12.map((item, key) => (
-                        <div className=' flex justify-center  py-5 ' key={key}>
-                            <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
-                                <Link to={item.href} >
-                                    <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
-                                    <br />
-                                    <img className="h-50 w-50  " src={item.title3} alt=""></img>
-                                    <br />
-                                    <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
-                                </Link>
+                        ))
+                    }
+                </div>
+                <div className='  grid grid-cols-2 ' >
+                    {
+                        data12.map((item, key) => (
+                            <div className=' flex justify-center  py-5 ' key={key}>
+                                <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
+                                    <Link to={item.href} >
+                                        <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                        <br />
+                                        <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                        <br />
+                                        <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
-                    ))
-                }
-            </div>
+                        ))
+                    }
+                </div>
             </Element>
             <div>
 

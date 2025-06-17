@@ -4,6 +4,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { FaBars } from "react-icons/fa6";
 import { GiSplitCross } from "react-icons/gi";
 import { Element } from 'react-scroll';
+import MovingComponent from 'react-moving-text';
 
 export default function Navbar() {
   const data2 = [
@@ -81,7 +82,19 @@ export default function Navbar() {
         )}
 
         {/* Center Title */}
-        <div className="text-5xl md:text-6xl text-center">EMPTY SPACES</div>
+        <div className="text-5xl md:text-6xl text-center">
+         <MovingComponent
+                             type="swing"
+                             duration="4000ms"
+                             delay="0s"
+                             direction="normal"
+                             timing="ease-in-out"
+                             iteration="infinite"
+                             fillMode="both">
+                             EMPTY SPACES
+                         </MovingComponent>
+
+        </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex justify-center gap-10">

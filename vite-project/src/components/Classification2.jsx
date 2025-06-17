@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from './Logo';
+import MovingComponent from 'react-moving-text';
 
 export default function Classification2() {
 
@@ -128,7 +129,19 @@ export default function Classification2() {
 
             <div>
                 <div className='text-6xl md:text-9xl text-red-600 text-center'>
-                    <h1>THE GREATEST FUSION</h1>
+                    <MovingComponent 
+                        type="spin"
+                        duration="6000ms"
+                        delay="0s"
+                        direction="normal"
+                        timing="ease-in-out"
+                        iteration="infinite"
+                        fillMode="both"
+                        >        
+
+
+                        THE GREATEST FUSION
+                    </MovingComponent>
                 </div>
                 <h1 className=' text-2xl text-cyan-300 text-center py-10'>soon to be uploaded</h1>
 

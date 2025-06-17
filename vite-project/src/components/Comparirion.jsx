@@ -1,5 +1,7 @@
 import React from 'react'
 import Logo from './Logo'
+import MovingComponent from 'react-moving-text';
+
 
 export default function Comparision() {
 
@@ -55,7 +57,19 @@ export default function Comparision() {
 
       <div className=' items-center text-center'>
         <div className='text-6xl md:text-8xl text-orange-400 text-center'>
-          <h1>THE GREATEST FUSION</h1>
+          <MovingComponent 
+                                 type="spin"
+                                 duration="6000ms"
+                                 delay="0s"
+                                 direction="normal"
+                                 timing="ease-in-out"
+                                 iteration="infinite"
+                                 fillMode="both"
+                                 >        
+         
+         
+                                 THE GREATEST FUSION
+                             </MovingComponent>
         </div>
         <div className=' items-center flex justify-center py-40'>
           <div className=' flex justify-center hover:scale-125 md:hover:scale-140 transition-all duration-300  border-4   bg-black rounded-2xl h-[350px] w-[250px] items-center text-center' style={{ boxShadow: '0px 0px 1000px rgb(255, 7, 7) , 0px 0px 1000px rgb(255, 7, 7),0px 0px 1000px rgb(255, 7, 7),rgb(13, 48, 245) 0px 0px 1000px 12px,rgb(13, 48, 245) 0px 0px 1000px 12px,rgb(13, 48, 245) 0px 0px 1000px 12px' }}>

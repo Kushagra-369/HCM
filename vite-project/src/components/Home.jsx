@@ -145,7 +145,7 @@ export default function Home() {
                                         <Link to={item.href}>
                                             <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-30 md:h-50 md:w-50 " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -170,11 +170,11 @@ export default function Home() {
                                     timing="linear"
                                     iteration="infinite"
                                     fillMode="none">
-                                    <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
+                                    <div className=' flex justify-around border-4  hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
                                         <Link to={item.href} >
-                                            <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                            <h1 className="text-center  md:text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-60 w-60  " src={item.title3} alt=""></img>
+                                            <img className="h-40 w-40 md:h-60 md:w-60 " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -199,9 +199,9 @@ export default function Home() {
                                     fillMode="none">
                                     <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
                                         <Link to={item.href} >
-                                            <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                            <h1 className="text-center text-xl md:text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-30 md:h-50 md:w-50 " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -244,8 +244,8 @@ export default function Home() {
                         data4.map((item, key) => (
                             <div className=' flex justify-center  py-5' key={key}>
                                 <MovingComponent
-                                    type="swing"
-                                    duration="6000ms"
+                                    type="spin"
+                                    duration="10000ms"
                                     delay="0s"
                                     direction="normal"
                                     timing="linear"
@@ -255,7 +255,7 @@ export default function Home() {
                                         <Link to={item.href}>
                                             <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-30 md:h-50 md:w-50  " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -272,8 +272,8 @@ export default function Home() {
                         data5.map((item, key) => (
                             <div className=' flex justify-center  py-5' key={key}>
                                 <MovingComponent
-                                    type="swing"
-                                    duration="6000ms"
+                                    type="spin"
+                                    duration="10000ms"
                                     delay="0s"
                                     direction="normal"
                                     timing="linear"
@@ -281,9 +281,9 @@ export default function Home() {
                                     fillMode="none">
                                     <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
                                         <Link to={item.href} >
-                                            <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                            <h1 className="text-center md:text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-60 w-60  " src={item.title3} alt=""></img>
+                                            <img className="h-40 w-40 md:h-60 md:w-60  " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -299,8 +299,8 @@ export default function Home() {
                         data6.map((item, key) => (
                             <div className=' flex justify-center  py-5 ' key={key}>
                                 <MovingComponent
-                                    type="swing"
-                                    duration="6000ms"
+                                    type="spin"
+                                    duration="10000ms"
                                     delay="0s"
                                     direction="normal"
                                     timing="linear"
@@ -310,7 +310,7 @@ export default function Home() {
                                         <Link to={item.href} >
                                             <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-30 md:h-50 md:w-50  " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -355,8 +355,8 @@ export default function Home() {
                         data7.map((item, key) => (
                             <div className=' flex justify-center  py-5' key={key}>
                                 <MovingComponent
-                                    type="swing"
-                                    duration="6000ms"
+                                    type="shakeHorizontal"
+                                    duration="2000ms"
                                     delay="0s"
                                     direction="normal"
                                     timing="linear"
@@ -366,7 +366,7 @@ export default function Home() {
                                         <Link to={item.href}>
                                             <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-30 md:h-50 md:w-50  " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -383,8 +383,8 @@ export default function Home() {
                         data8.map((item, key) => (
                             <div className=' flex justify-center  py-5' key={key}>
                                 <MovingComponent
-                                    type="swing"
-                                    duration="6000ms"
+                                    type="shakeVertical"
+                                    duration="2000ms"
                                     delay="0s"
                                     direction="normal"
                                     timing="linear"
@@ -392,9 +392,9 @@ export default function Home() {
                                     fillMode="none">
                                     <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
                                         <Link to={item.href} >
-                                            <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                            <h1 className="text-center md:text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-60 w-60  " src={item.title3} alt=""></img>
+                                            <img className="h-40 w-40 md:h-60 md:w-60   " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -410,8 +410,8 @@ export default function Home() {
                         data9.map((item, key) => (
                             <div className=' flex justify-center  py-5 ' key={key}>
                                 <MovingComponent
-                                    type="swing"
-                                    duration="6000ms"
+                                    type="shakeHorizontal"
+                                    duration="2000ms"
                                     delay="0s"
                                     direction="normal"
                                     timing="linear"
@@ -421,7 +421,7 @@ export default function Home() {
                                         <Link to={item.href} >
                                             <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-30 md:h-50 md:w-50  " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -463,7 +463,7 @@ export default function Home() {
                         data10.map((item, key) => (
                             <div className=' flex justify-center  py-5' key={key}>
                                 <MovingComponent
-                                    type="swing"
+                                    type="jelly"
                                     duration="6000ms"
                                     delay="0s"
                                     direction="normal"
@@ -474,7 +474,7 @@ export default function Home() {
                                         <Link to={item.href}>
                                             <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-30 md:h-50 md:w-50  " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -491,7 +491,7 @@ export default function Home() {
                         data11.map((item, key) => (
                             <div className=' flex justify-center  py-5' key={key}>
                                 <MovingComponent
-                                    type="swing"
+                                    type="jelly"
                                     duration="6000ms"
                                     delay="0s"
                                     direction="normal"
@@ -500,9 +500,9 @@ export default function Home() {
                                     fillMode="none">
                                     <div className=' flex justify-around border-4 hover:scale-120 transition-all duration-300 bg-black rounded-2xl ' style={{ boxShadow: '0px 0px 500px rgba(85, 7, 242, 0.988)' }} >
                                         <Link to={item.href} >
-                                            <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                            <h1 className="text-center  md:text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-60 w-60  " src={item.title3} alt=""></img>
+                                            <img className="h-40 w-40 md:h-60 md:w-60 " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -518,7 +518,7 @@ export default function Home() {
                         data12.map((item, key) => (
                             <div className=' flex justify-center  py-5 ' key={key}>
                                 <MovingComponent
-                                    type="swing"
+                                    type="jelly"
                                     duration="6000ms"
                                     delay="0s"
                                     direction="normal"
@@ -529,7 +529,7 @@ export default function Home() {
                                         <Link to={item.href} >
                                             <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-50 w-50  " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-30 md:h-50 md:w-50  " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>

@@ -4,6 +4,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { FaBars } from "react-icons/fa6";
 import { GiSplitCross } from "react-icons/gi";
 import { Element } from 'react-scroll';
+import './Navbar.css';
 import MovingComponent from 'react-moving-text';
 
 export default function Navbar() {
@@ -32,119 +33,125 @@ export default function Navbar() {
   const closeMenu2 = () => setMenuOpen2(false);
 
   return (
-   <Element name='navbar'>
-     <div
-      style={{
-        backgroundImage:
-          'url(https://t3.ftcdn.net/jpg/01/22/03/84/360_F_122038456_AEdKNITqNDwdPTVdPDy1Fk5YaD9Um1xm.jpg)',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-      }}
-    >
-      <div className="flex justify-between px-5 text-white h-50 items-center py-4">
-        {/* Left Mobile Menu Icon */}
-        <div
-          onClick={openMenu2}
-          className=" cursor-pointer text-3xl"
-          aria-label="Open menu"
-        >
-          <FaBars />
-        </div>
-
-        {/* Mobile Menu 2 (In-page scroll links) */}
-        {menuOpen2 && (
-          <div className="fixed inset-0 z-50 bg-black bg-opacity-70 flex flex-col overflow-y-auto">
-            <div className="flex justify-end p-4">
-              <button
-                onClick={closeMenu2}
-                aria-label="Close menu 2"
-                className="text-3xl text-white hover:text-yellow-300 transition"
-              >
-                <GiSplitCross />
-              </button>
-            </div>
-            <nav className="flex-1 flex flex-col justify-center items-center gap-6">
-              {data3.map((item, key) => (
-                <ScrollLink
-                  key={key}
-                  to={item.href}
-                  smooth={true}
-                  duration={600}
-                  offset={-70}
-                  onClick={closeMenu2}
-                  className="w-3/4 max-w-xs text-center bg-gray-700 text-yellow-300 py-3 rounded-lg text-2xl font-semibold hover:bg-yellow-300 hover:text-black transition cursor-pointer"
-                >
-                  {item.title1}
-                </ScrollLink>
-              ))}
-            </nav>
+    <Element name='navbar'>
+      <div
+        style={{
+          backgroundImage:
+            'url(https://t3.ftcdn.net/jpg/01/22/03/84/360_F_122038456_AEdKNITqNDwdPTVdPDy1Fk5YaD9Um1xm.jpg)',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+        }}
+      >
+        <div className="flex justify-between px-5 text-white h-50 items-center py-4">
+          {/* Left Mobile Menu Icon */}
+          <div
+            onClick={openMenu2}
+            className=" cursor-pointer text-3xl"
+            aria-label="Open menu"
+          >
+            <FaBars />
           </div>
-        )}
 
-        {/* Center Title */}
-        <div className="text-5xl md:text-6xl text-center">
-         <MovingComponent
-                             type="swing"
-                             duration="4000ms"
-                             delay="0s"
-                             direction="normal"
-                             timing="ease-in-out"
-                             iteration="infinite"
-                             fillMode="both">
-                             EMPTY SPACES
-                         </MovingComponent>
-
-        </div>
-
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex justify-center gap-10">
-          {data2.map((item, key) => (
-            <li
-              key={key}
-              className="hover:bg-yellow-300 text-2xl hover:text-black px-4 py-2 rounded transition"
-            >
-              <RouterLink to={item.href}>{item.title1}</RouterLink>
-            </li>
-          ))}
-        </ul>
-
-        {/* Right Mobile Menu Icon */}
-        <button
-          onClick={openMenu}
-          className="md:hidden block cursor-pointer text-3xl"
-          aria-label="Open menu"
-        >
-          <FaBars />
-        </button>
-
-        {/* Mobile Menu 1 (Router navigation) */}
-        {menuOpen && (
-          <div className="fixed inset-0 z-50 bg-black bg-opacity-70 flex flex-col overflow-y-auto">
-            <div className="flex justify-end p-4">
-              <button
-                onClick={closeMenu}
-                aria-label="Close menu"
-                className="text-3xl text-white hover:text-yellow-300 transition"
-              >
-                <GiSplitCross />
-              </button>
+          {/* Mobile Menu 2 (In-page scroll links) */}
+          {menuOpen2 && (
+            <div className="fixed inset-0 z-50 bg-black bg-opacity-70 flex flex-col overflow-y-auto">
+              <div className="flex justify-end p-4">
+                <button
+                  onClick={closeMenu2}
+                  aria-label="Close menu 2"
+                  className="text-3xl text-white hover:text-yellow-300 transition"
+                >
+                  <GiSplitCross />
+                </button>
+              </div>
+              <nav className="flex-1 flex flex-col justify-center items-center gap-6">
+                {data3.map((item, key) => (
+                  <ScrollLink
+                    key={key}
+                    to={item.href}
+                    smooth={true}
+                    duration={600}
+                    offset={-70}
+                    onClick={closeMenu2}
+                    className="w-3/4 max-w-xs text-center bg-gray-700 text-yellow-300 py-3 rounded-lg text-2xl font-semibold hover:bg-yellow-300 hover:text-black transition cursor-pointer"
+                  >
+                    {item.title1}
+                  </ScrollLink>
+                ))}
+              </nav>
             </div>
-            <nav className="flex-1 flex flex-col justify-center items-center gap-6">
-              {data2.map((item, key) => (
+          )}
+
+          {/* Center Title */}
+          <div className="text-5xl font-black md:text-6xl text-center">
+            <MovingComponent
+              type="swing"
+              duration="4000ms"
+              delay="0s"
+              direction="normal"
+              timing="ease-in-out"
+              iteration="infinite"
+              fillMode="both">
+              EMPTY SPACES
+            </MovingComponent>
+
+          </div>
+
+          {/* Desktop Menu */}
+          <ul className="hidden md:flex  justify-center gap-10">
+            {data2.map((item, key) => (
+              <div key={key} className="animated-gradient-border  w-3/4 max-w-xs mx-auto my-2">
                 <RouterLink
-                  key={key}
                   to={item.href}
                   onClick={closeMenu}
-                  className="w-3/4 max-w-xs text-center bg-gray-700 text-yellow-300 py-3 rounded-lg text-2xl font-semibold hover:bg-yellow-300 hover:text-black transition"
+                  className="animated-gradient-border-inner p-1 block text-center text-yellow-300 py-3 text-2xl font-semibold  hover:text-black transition rounded-lg"
                 >
                   {item.title1}
                 </RouterLink>
-              ))}
-            </nav>
-          </div>
-        )}
+              </div>
+            ))}
+          </ul>
+
+          {/* Right Mobile Menu Icon */}
+          <button
+            onClick={openMenu}
+            className="md:hidden block cursor-pointer text-3xl"
+            aria-label="Open menu"
+          >
+            <FaBars />
+          </button>
+
+          {/* Mobile Menu 1 (Router navigation) */}
+          {menuOpen && (
+            <div className="fixed inset-0 z-50 bg-black bg-opacity-70 flex flex-col overflow-y-auto">
+              <div className="flex justify-end p-4">
+                <button
+                  onClick={closeMenu}
+                  aria-label="Close menu"
+                  className="text-3xl text-white hover:text-yellow-300 transition"
+                >
+                  <GiSplitCross />
+                </button>
+              </div>
+              <nav className="flex-1 flex flex-col justify-center items-center gap-6">
+                {data2.map((item, key) => (
+                  <div key={key} className="animated-gradient-border w-3/4 max-w-xs mx-auto my-2">
+                    <RouterLink
+                      to={item.href}
+                      onClick={closeMenu}
+                      className="animated-gradient-border-inner p-1  block text-center text-yellow-300 py-3 text-2xl font-semibold  hover:text-black transition rounded-lg"
+                    >
+                      {item.title1}
+                    </RouterLink>
+                  </div>
+                ))}
+
+
+              </nav>
+            </div>
+          )}
+        </div>
       </div>
-    </div>
-   </Element>
+    </Element>
   );
 }

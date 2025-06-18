@@ -1,0 +1,22 @@
+@keyframes border-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.animated-gradient-border {
+  position: relative;
+  padding: 2px; /* Border thickness */
+  border-radius: 0.75rem; /* Match Tailwind's rounded-lg */
+  background: linear-gradient(270deg, #04ef18, #3716f1, #ef0814, #120e01);
+  background-size: 400% 400%;
+  animation: border-move 3s linear infinite;
+}
+
+.animated-gradient-border-inner {
+  border-radius: 0.75rem;
+}
+

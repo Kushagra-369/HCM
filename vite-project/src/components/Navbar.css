@@ -11,7 +11,7 @@
   position: relative;
   padding: 2px; /* Border thickness */
   border-radius: 0.75rem; /* Match Tailwind's rounded-lg */
-  background: linear-gradient(270deg, #04ef18, #3716f1, #ef0814, #120e01);
+  background: linear-gradient(270deg, #0408f9, #07f647, #f30909, #07e9f1 , #100f01);
   background-size: 400% 400%;
   animation: border-move 3s linear infinite;
 }

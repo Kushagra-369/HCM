@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from './Logo'
 import MovingComponent from 'react-moving-text';
+import './Greatest.css';
 
 
 export default function Comparision() {
@@ -57,25 +58,40 @@ export default function Comparision() {
 
       <div className=' items-center text-center'>
         <div className='text-6xl md:text-8xl text-orange-400 text-center'>
-          <MovingComponent 
-                                 type="spin"
-                                 duration="6000ms"
-                                 delay="0s"
-                                 direction="normal"
-                                 timing="ease-in-out"
-                                 iteration="infinite"
-                                 fillMode="both"
-                                 >        
-         
-         
-                                 THE GREATEST FUSION
-                             </MovingComponent>
+          <MovingComponent
+            type="spin"
+            duration="6000ms"
+            delay="0s"
+            direction="normal"
+            timing="ease-in-out"
+            iteration="infinite"
+            fillMode="both"
+          >
+
+
+            THE GREATEST FUSION
+          </MovingComponent>
         </div>
-        <div className=' items-center flex justify-center py-40'>
-          <div className=' flex justify-center hover:scale-125 md:hover:scale-140 transition-all duration-300  border-4   bg-black rounded-2xl h-[350px] w-[250px] items-center text-center' style={{ boxShadow: '0px 0px 1000px rgb(255, 7, 7) , 0px 0px 1000px rgb(255, 7, 7),0px 0px 1000px rgb(255, 7, 7),rgb(13, 48, 245) 0px 0px 1000px 12px,rgb(13, 48, 245) 0px 0px 1000px 12px,rgb(13, 48, 245) 0px 0px 1000px 12px' }}>
-          <a href=""><h1 className=' text-2xl text-cyan-300 text-center py-10'>soon to be uploaded</h1></a>
-        </div>
-        </div>
+       
+            <MovingComponent
+          type="shakeMix"
+          duration="1000ms"
+          delay="0s"
+          direction="normal"
+          timing="ease-out"
+          iteration="infinite"
+          fillMode="none">
+          <div className='items-center flex justify-center py-40 '>
+            <div className='devil-shadow-card  '>
+              <a href="">
+                <h1 className='text-3xl text-red-200 text-center py-10 font-horror '>SOON TO BE UPLOADED</h1>
+              </a>
+            </div>
+          </div>
+          </MovingComponent>
+
+
+
       </div>
       <div>
         <Logo />

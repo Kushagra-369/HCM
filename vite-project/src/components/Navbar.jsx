@@ -66,17 +66,20 @@ export default function Navbar() {
               </div>
               <nav className="flex-1 flex flex-col justify-center items-center gap-6">
                 {data3.map((item, key) => (
-                  <ScrollLink
-                    key={key}
+                  <div key={key} className="animated-gradient-border  w-3/4 max-w-xs mx-auto my-2">
+                    <ScrollLink
+                   
                     to={item.href}
                     smooth={true}
                     duration={600}
                     offset={-70}
                     onClick={closeMenu2}
-                    className="w-3/4 max-w-xs text-center bg-gray-700 text-yellow-300 py-3 rounded-lg text-2xl font-semibold hover:bg-yellow-300 hover:text-black transition cursor-pointer"
+                    className="animated-gradient-border-inner p-1 block text-center text-yellow-300 py-3 text-2xl font-semibold  hover:text-black transition rounded-lg"
                   >
                     {item.title1}
                   </ScrollLink>
+                  </div>
+              
                 ))}
               </nav>
             </div>

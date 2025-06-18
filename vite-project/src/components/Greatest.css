@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+.font-horror {
+  font-family: 'Creepster', cursive;
+  letter-spacing: 2px;
+}
+
+/* Chaotic, evil flickering aura */
+@keyframes devil-shadow {
+  0% {
+    box-shadow:
+      -10px -10px 200px rgba(255, 0, 0, 0.8),
+      20px 10px 300px rgba(58, 4, 218, 0.934),
+      -5px 25px 400px rgba(2, 235, 72, 0.945),
+      0 0 600px rgba(2, 241, 245, 0.938),
+      0 0 900px rgba(247, 247, 4, 0.9);
+  }
+  50% {
+    box-shadow:
+      10px -15px 400px rgb(20, 239, 255),
+      -15px 10px 300px rgba(61, 2, 236, 0.9),
+      0 30px 500px rgba(7, 247, 35, 0.932),
+      0 0 800px rgb(227, 2, 2),
+      0 0 1200px rgba(179, 247, 6, 0.881);
+  }
+  100% {
+    box-shadow:
+      -10px -10px 200px rgba(176, 250, 4, 0.963),
+      20px 10px 300px rgba(234, 2, 2, 0.966),
+      -5px 25px 400px rgba(4, 249, 192, 0.918),
+      0 0 600px rgba(4, 239, 55, 0.8),
+      0 0 900px rgba(60, 2, 233, 0.9);
+  }
+}
+
+/* Main card container */
+.devil-shadow-card {
+  position: relative;
+  height: 350px;
+  width: 250px;
+  background: #000;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: devil-shadow 2.5s infinite ease-in-out;
+  border: 3px solid rgba(139, 0, 0, 0.7);
+  transition: transform 0.3s ease;
+  z-index: 10;
+}

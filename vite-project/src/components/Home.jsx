@@ -143,9 +143,9 @@ export default function Home() {
                                     <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
 
                                         <Link to={item.href}>
-                                            <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
+                                            <h1 className="text-center md:text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-30 w-30 md:h-50 md:w-50 " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-25 md:h-50 md:w-50 " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -199,9 +199,9 @@ export default function Home() {
                                     fillMode="none">
                                     <div className=' flex justify-around hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl ' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
                                         <Link to={item.href} >
-                                            <h1 className="text-center text-xl md:text-2xl text-cyan-300">{item.title1}</h1>
+                                            <h1 className="text-center  md:text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-30 w-30 md:h-50 md:w-50 " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-25 md:h-50 md:w-50 " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>

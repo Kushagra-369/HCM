@@ -5,6 +5,7 @@ import { FaBars } from "react-icons/fa6";
 import { GiSplitCross } from "react-icons/gi";
 import { Element } from 'react-scroll';
 import './Navbar.css';
+
 import MovingComponent from 'react-moving-text';
 
 export default function Navbar() {
@@ -86,7 +87,7 @@ export default function Navbar() {
           )}
 
           {/* Center Title */}
-          <div className="text-5xl font-black md:text-6xl text-center">
+          <div className="text-5xl font-black md:text-6xl text-center" style={{ fontFamily: "'Creepster', cursive", textShadow: '2px 2px 8px black' }}>
             <MovingComponent
               type="swing"
               duration="4000ms"

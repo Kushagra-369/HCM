@@ -39,20 +39,31 @@ export default function Classification2() {
                 <div className=' text-white text-5xl md:text-6xl  flex justify-center items-center text-center'>
                     <h1>N(Nature) TYPE OF HCM</h1>
                 </div>
-                <div className='px-2 md:px-10 gap-7 md:flex   justify-around text-cyan-400 py-10 text-2xl md:text-4xl'>
-                    {data.map((item, key) => (
-                        <ul key={key} className='bg-gradient-to-r  border-2 border-black from-blue-500 to-green-600 rounded-lg shadow-lg p-5 transition-transform transform hover:scale-102'>
-                            <li className='text-2xl md:text-4xl  font-bold text-cyan text-yellow-400 text-center mb-4'>{item.title1}</li>
-                            <div className='py-3 flex md:block'>
-                                {item.title2.map((subitem, subkey) => (
-                                    <div key={subkey} className='px-4 py-2 text-red-600 font-bold text-sm md:text-3xl transition-colors duration-300 '>
-                                        {subitem}
-                                    </div>
-                                ))}
-                            </div>
-                        </ul>
-                    ))}
+                <div className="px-4 md:px-10 py-10 text-cyan-400 text-2xl md:text-4xl">
+                    <div className="flex flex-col md:flex-row flex-wrap gap-6 justify-center items-stretch">
+                        {data.map((item, key) => (
+                            <ul
+                                key={key}
+                                className="bg-gradient-to-r from-blue-500 to-green-600 border-2 border-black rounded-lg shadow-lg p-6 w-full md:w-90 transition-transform transform hover:scale-105"
+                            >
+                                <li className="text-2xl md:text-3xl font-bold text-yellow-400 text-center mb-4">
+                                    {item.title1}
+                                </li>
+                                <div className="flex   md:block justify-center">
+                                    {item.title2.map((subitem, subkey) => (
+                                        <div
+                                            key={subkey}
+                                            className="px-2 py-1  text-red-600 font-semibold text-xl  md:text-xl transition-colors duration-300"
+                                        >
+                                            {subitem}
+                                        </div>
+                                    ))}
+                                </div>
+                            </ul>
+                        ))}
+                    </div>
                 </div>
+
 
             </div>
 

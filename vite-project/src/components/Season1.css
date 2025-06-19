@@ -1,0 +1,33 @@
+.burning-text {
+  font-weight: bold;
+  color: #ff3;
+  position: relative;
+  text-shadow:
+    0 0 5px #ffa500,
+    0 0 10px #ff4500,
+    0 0 20px #ff0000,
+    0 0 40px #ff4500,
+    0 0 60px #ff0000;
+  animation: flicker 1s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+    text-shadow:
+      0 0 5px #ff0,
+      0 0 10px #ff8c00,
+      0 0 20px #ff4500,
+      0 0 40px #ff0000;
+    transform: rotate(-0.5deg);
+  }
+  100% {
+    opacity: 0.9;
+    text-shadow:
+      0 0 3px #ff0,
+      0 0 8px #ff6347,
+      0 0 18px #ff0000,
+      0 0 35px #ff4500;
+    transform: rotate(0.5deg);
+  }
+}

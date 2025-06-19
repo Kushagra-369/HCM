@@ -6,8 +6,8 @@ import { Link as ScrollLink, Element } from 'react-scroll';
 export default function Footer() {
   const data = [
     { title2: "/season1", title1: "season-1" },
-    { title2: "", title1: "season-2" },
-    { title2: "", title1: "season-3" },
+    { title2: "", title1: "season-2 (not yet)" },
+    { title2: "", title1: "season-3 (not yet)"},
   ];
 
   const data2 = [

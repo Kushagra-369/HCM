@@ -22,114 +22,159 @@ export default function Classification2() {
             {
                 <h1 className='text-5xl md:text-6xl text-center text-white'>E(Entity) TYPE OF HCM</h1>
             }
-            <div className=' px-2 md:px-10 gap-7 flex justify-around text-cyan-400 py-10 text-2xl md:text-4xl'>
+            <div className="px-4 md:px-10 py-10 flex flex-wrap justify-center gap-7 text-blue-700">
                 {data.map((item, key) => (
-                    <ul key={key} >
-                        <br />
-                        <li className='text-2xl md:text-4xl' >{item.title1}</li>
-
-                    </ul>
-                ))
-
-                }
-
+                    <div
+                        key={key}
+                        className="bg-gradient-to-br from-[#f03608] to-[#ede903] border border-red-700 rounded-xl shadow-lg px-6 py-4 text-center transition transform hover:scale-105 hover:shadow-cyan-400/40"
+                    >
+                        <h2 className="text-2xl md:text-4xl  font-semibold tracking-wide  transition-colors duration-300">
+                            {item.title1}
+                        </h2>
+                    </div>
+                ))}
             </div>
+
             <div className=' py-5'>
-                <div className=' text-white text-5xl md:text-6xl flex justify-center items-center text-center'>
+                <div className=' text-white text-5xl md:text-6xl  flex justify-center items-center text-center'>
                     <h1>N(Nature) TYPE OF HCM</h1>
                 </div>
-                <div className=' px-2 md:px-10 gap-7 flex justify-around text-cyan-400 py-10 text-2xl md:text-4xl'>
+                <div className='px-2 md:px-10 gap-7 md:flex   justify-around text-cyan-400 py-10 text-2xl md:text-4xl'>
                     {data.map((item, key) => (
-                        <ul key={key} >
-                            <br />
-                            <li className='text-2xl md:text-4xl' >{item.title1}</li>
-                            <div className=' py-3'>
-                                {
-                                    item.title2.map((subitem, subkey) => (
-                                        <div key={subkey} className='px-4 py-2 text-yellow-300 text-sm md:text-3xl '>
-                                            {subitem}
-                                        </div>
-                                    ))
-                                }
+                        <ul key={key} className='bg-gradient-to-r  border-2 border-black from-blue-500 to-green-600 rounded-lg shadow-lg p-5 transition-transform transform hover:scale-102'>
+                            <li className='text-2xl md:text-4xl  font-bold text-cyan text-yellow-400 text-center mb-4'>{item.title1}</li>
+                            <div className='py-3 flex md:block'>
+                                {item.title2.map((subitem, subkey) => (
+                                    <div key={subkey} className='px-4 py-2 text-red-600 font-bold text-sm md:text-3xl transition-colors duration-300 '>
+                                        {subitem}
+                                    </div>
+                                ))}
                             </div>
-
                         </ul>
-                    ))
-                    }
-
-
+                    ))}
                 </div>
+
             </div>
 
             <div className=' py-5'>
                 <div className=' text-white text-5xl nd:text-6xl flex justify-center items-center text-center'>
                     <h1>S(Species) TYPE OF HCM</h1>
                 </div>
-                <div className='px-2 md:px-7 gap-7  justify-around text-cyan-400 py-10 text-2xl md:text-4xl'>
+                <div className="px-6 md:px-16 py-12 bg-black min-h-screen">
                     {data.map((item, key) => (
-                        <ul key={key} >
-                            <br />
-                            <li className='text-2xl md:text-5xl'>{item.title1}</li>
-                            <div className=' flex justify-around py-5'>
-                                {
-                                    item.title2.map((subitem, subkey) => (
-                                        <div key={subkey} className='px-2 py-2 text-yellow-300 text-sm md:text-4xl'>
-                                            <li>{subitem}</li>
-                                            <ul className='pl-2 py-5 text-red-500' >
-                                                {
-                                                    item.title3[subkey]?.map((fsubitem, fsubkey) => (
-                                                        <li key={fsubkey} className='text-sm md:text-xl'>
-                                                            {fsubitem}
-                                                        </li>
-                                                    ))
-                                                }
-                                            </ul>
+                        <section
+                            key={key}
+                            className="mb-12 border-l-8 border-cyan-500 bg-gray-800 p-8 hover:bg-gray-700 transition-colors duration-300"
+                        >
+                            {/* Main Title */}
+                            <h2 className="text-5xl md:text-6xl font-extrabold uppercase tracking-widest text-red-600 mb-8 select-none">
+                                {item.title1}
+                            </h2>
 
-                                        </div>
-                                    ))
-                                }
+                            {/* Sub Items */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                                {item.title2.map((subitem, subkey) => (
+                                    <div key={subkey} className="group cursor-pointer">
+                                        <h3 className="text-3xl font-bold text-yellow-400 tracking-wide mb-4 border-b-4 border-cyan-500 pb-2 uppercase  transition-colors">
+                                            {subitem}
+                                        </h3>
+
+                                        {/* Sub-Sub Items */}
+                                        <ul className="list-none text-gray-300 space-y-3 pl-4">
+                                            {item.title3[subkey]?.map((fsubitem, fsubkey) => (
+                                                <li
+                                                    key={fsubkey}
+                                                    className="relative pl-6 before:absolute before:left-0 before:top-2 before:h-1 before:w-4 before:bg-cyan-500 before:rounded-sm before:opacity-75 before:transition-all before:group-hover:w-6"
+                                                >
+                                                    {fsubitem}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
                             </div>
-
-                        </ul>
-                    ))
-                    }
-
-
+                        </section>
+                    ))}
                 </div>
+
 
             </div>
 
             <div>
                 <h1 className=' text-6xl md:text-8xl text-lime-400 text-center'>Some special fusions</h1>
-                <div className=' flex justify-center py-10 gap-10 ' >
+                <div className="min-h-screen bg-black md:flex justify-center items-start py-20 px-6 md:px-24 gap-16 text-gray-300 font-sans relative overflow-hidden">
 
-                    <div>
-                        <h1 className='text-3xl md:text-6xl text-cyan-400 px-8 md:px-3'  >Living-Living-Living-Non-living</h1>
-                        {
-                            data9.map((items, key) => (
-                                <h1 className=' text-2xl md:text-4xl text-yellow-300 py-5 px-10'>{items.title1}</h1>
+                    {/* Optional subtle smoky overlay (you can replace with a subtle animated SVG or CSS noise) */}
+                    <div
+                        className="absolute inset-0 pointer-events-none"
+                        style={{
+                            background:
+                                "radial-gradient(circle at 20% 20%, rgba(120, 0, 120, 0.15), transparent 70%)," +
+                                "radial-gradient(circle at 80% 80%, rgba(0, 0, 80, 0.15), transparent 70%)",
+                            mixBlendMode: "screen",
+                            zIndex: 0,
+                        }}
+                    />
 
-                            ))
-                        }
-                    </div>
+                    {/* Left Section */}
+                    <section className="relative bg-black/60 backdrop-blur-md rounded-3xl shadow-[0_0_30px_rgba(170,1200,120,0.7)] p-12 max-w-md w-full border border-green-500 z-10">
+                        <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-red-600 to-green-500 bg-clip-text text-transparent mb-12 text-center select-none tracking-widest
+      animate-[flicker_3s_ease-in-out_infinite]"
+                        >
+                            Living-Living-Living-Non-living
+                        </h1>
 
-                    <div>
-                        <h1 className='text-3xl md:text-6xl text-cyan-400 ' >Living-Non-living-Living-Non-living</h1>
-                        {
-                            data8.map((items, key) => (
-                                <h1 className=' text-2xl md:text-4xl text-yellow-300 py-13 md:py-5 px-5'>{items.title1}</h1>
+                        <div className="space-y-6">
+                            {data9.map((items, key) => (
+                                <h2
+                                    key={key}
+                                    className="text-xl md:text-2xl font-medium px-6 py-4 rounded-lg bg-black/30 border border-orange-400 hover:bg-black/50 transition-colors cursor-default shadow-[0_0_10px_rgba(160,160,0.7)] text-cyan-300"
+                                >
+                                    {items.title1}
+                                </h2>
+                            ))}
+                        </div>
+                    </section>
 
-                            ))
-                        }
-                    </div>
+                    {/* Right Section */}
+                    <section className="relative bg-black/60 backdrop-blur-md rounded-3xl shadow-[0_0_30px_rgba(170,120,120,97)] p-12 max-w-md w-full border border-blue-800 z-10">
+                        <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent mb-12 text-center select-none tracking-widest
+      animate-[flicker_3s_ease-in-out_infinite]"
+                        >
+                            Living-Non-living-Living-Non-living
+                        </h1>
 
+                        <div className="space-y-6">
+                            {data8.map((items, key) => (
+                                <h2
+                                    key={key}
+                                    className="text-xl md:text-2xl font-medium px-6 py-4 rounded-lg bg-black/30 border border-blue-700 hover:bg-black/50 transition-colors cursor-default shadow-[0_0_10px_rgba(0,0,160,0.7)] text-blue-300"
+                                >
+                                    {items.title1}
+                                </h2>
+                            ))}
+                        </div>
+                    </section>
+
+                    {/* Flicker animation (add in your global CSS or Tailwind config) */}
+                    <style>{`
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+      }
+      20%, 22%, 24%, 55% {
+        opacity: 0.6;
+      }
+    }
+  `}</style>
                 </div>
+
 
             </div>
 
             <div>
                 <div className='text-6xl md:text-9xl text-red-600 text-center'>
-                    <MovingComponent 
+                    <MovingComponent
                         type="spin"
                         duration="6000ms"
                         delay="0s"
@@ -137,7 +182,7 @@ export default function Classification2() {
                         timing="ease-in-out"
                         iteration="infinite"
                         fillMode="both"
-                        >        
+                    >
 
 
                         THE GREATEST FUSION

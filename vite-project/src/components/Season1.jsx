@@ -1,10 +1,11 @@
 import React from 'react'
+import './Season1.css'
 
 export default function Season1() {
     return (
-        <div className='  bg-black text-white'>
+        <div className='  bg-black text-white' >
 
-            <div className='text-6xl text-center py-10'>
+            <div className="text-6xl text-center py-10 burning-text">
                 EMPTY SPACES
             </div>
 
@@ -1459,566 +1460,566 @@ export default function Season1() {
                 </p>
                 <h2 className='text-center font-bold'>EMPTY SPACES SEASON FINALE</h2>
                 <p>
-                    
-                <br />
 
+                    <br />
 
-                So K stepped inside the big dome, a person was standing there<br /><br />
 
-                K quickly ran towards him and picked his collar and asked, "Where are my friends"<br /><br />
+                    So K stepped inside the big dome, a person was standing there<br /><br />
 
-                Person: chill first move away, you will meet them or not depends on you, can you see the door<br /><br />
+                    K quickly ran towards him and picked his collar and asked, "Where are my friends"<br /><br />
 
-                K: yes<br /><br />
+                    Person: chill first move away, you will meet them or not depends on you, can you see the door<br /><br />
 
-                Person: enter it<br /> One by one many doors will come, and at the end you will reach our leader if you still survive, go go go fast your friends are waiting for you (laughs)<br /><br />
+                    K: yes<br /><br />
 
-                K ran towards the door, opened and entered there he saw another person but K thought that maybe they already met but where<br /><br />
+                    Person: enter it<br /> One by one many doors will come, and at the end you will reach our leader if you still survive, go go go fast your friends are waiting for you (laughs)<br /><br />
 
-                This was the scientist<br /><br />
+                    K ran towards the door, opened and entered there he saw another person but K thought that maybe they already met but where<br /><br />
 
-                K: who are you I have seen your eyes somewhere, wait wait I remember, you are the scientist the 7th member<br /><br />
+                    This was the scientist<br /><br />
 
-                Scientist: wait, I guess you met my parallel self, so let's come to the point, I am giving you a deal, just go away, your life would be spared,<br /><br />
+                    K: who are you I have seen your eyes somewhere, wait wait I remember, you are the scientist the 7th member<br /><br />
 
-                K: I will not,<br /><br />
+                    Scientist: wait, I guess you met my parallel self, so let's come to the point, I am giving you a deal, just go away, your life would be spared,<br /><br />
 
-                Scientist: I knew, I had a deal<br /><br />
+                    K: I will not,<br /><br />
 
-                Then the scientist took a remote out and pressed a button<br /><br />
+                    Scientist: I knew, I had a deal<br /><br />
 
-                In the end of the room Paki trapped in a glass chamber appeared,<br /><br />
+                    Then the scientist took a remote out and pressed a button<br /><br />
 
-                K ready to run<br /><br />
+                    In the end of the room Paki trapped in a glass chamber appeared,<br /><br />
 
-                Scientist: stop, or else I will cut off O2 supply of the chamber, listen to the deal<br /><br />
+                    K ready to run<br /><br />
 
-                Then pressed another button<br /><br />
+                    Scientist: stop, or else I will cut off O2 supply of the chamber, listen to the deal<br /><br />
 
-                And at the left and right side of the room each side 3 glass chambers appeared in all of them girls were there<br /><br />
+                    Then pressed another button<br /><br />
 
-                Scientist: these hot girls are for you, take all or any of them you want, we will give you all your friends back, except Paki and just leave this place and live a simple life without any thesis or invention<br /><br />
+                    And at the left and right side of the room each side 3 glass chambers appeared in all of them girls were there<br /><br />
 
-                K: why do you think I would take your deal<br /><br />
+                    Scientist: these hot girls are for you, take all or any of them you want, we will give you all your friends back, except Paki and just leave this place and live a simple life without any thesis or invention<br /><br />
 
-                Scientist: at least take a look, how cute they all are, totally of your style.<br /><br />
+                    K: why do you think I would take your deal<br /><br />
 
-                K: no, and no means no, boys no is also a no<br /><br />
+                    Scientist: at least take a look, how cute they all are, totally of your style.<br /><br />
 
-                Scientist: take time and think, but take choice perfectly, if I were you I would never leave that opportunity, till now I am leaving<br /><br />
+                    K: no, and no means no, boys no is also a no<br /><br />
 
-                K (to himself): wait, why did he give that hint, I would leave that he knew, but he knows I would leave it wait did he want me to leave it, it means it's better me to take it as it can also be a trap, it means I should say yes,<br /><br />
+                    Scientist: take time and think, but take choice perfectly, if I were you I would never leave that opportunity, till now I am leaving<br /><br />
 
-                Oh I got it, he wanted me to think that,<br /><br />
+                    K (to himself): wait, why did he give that hint, I would leave that he knew, but he knows I would leave it wait did he want me to leave it, it means it's better me to take it as it can also be a trap, it means I should say yes,<br /><br />
 
-                Now I'm sure I will say no<br /><br />
+                    Oh I got it, he wanted me to think that,<br /><br />
 
-                Then K looked left and right and thought that why the hell are these girls here, what made them do that<br /><br />
+                    Now I'm sure I will say no<br /><br />
 
-                Then K shouted: I choose Paki, I am moving further<br /><br />
+                    Then K looked left and right and thought that why the hell are these girls here, what made them do that<br /><br />
 
-                As he took a step<br /><br />
+                    Then K shouted: I choose Paki, I am moving further<br /><br />
 
-                All the 6 gates opened<br /><br />
+                    As he took a step<br /><br />
 
-                All girls except one appeared in front of K, that one sat in her place<br /><br />
+                    All the 6 gates opened<br /><br />
 
-                Now first time he looked at them<br /><br />
+                    All girls except one appeared in front of K, that one sat in her place<br /><br />
 
-                K (inside): oh god, they are perfectly dressed and look, what I thought when I was a teen, genuinely they are cute but this doesn't matter for me, please God don't let me distract, I am loyal to Paki, I know I will not,<br /><br />
+                    Now first time he looked at them<br /><br />
 
-                Further all the girls took out weapons: sword, whip, claws, fans, bare hands from their back and were totally in front of him<br /><br />
+                    K (inside): oh god, they are perfectly dressed and look, what I thought when I was a teen, genuinely they are cute but this doesn't matter for me, please God don't let me distract, I am loyal to Paki, I know I will not,<br /><br />
 
-                K (inside): oh, now I got, if I had chosen any one then I had to fight with only one and go to Paki, I took a wrong decision<br /><br />
+                    Further all the girls took out weapons: sword, whip, claws, fans, bare hands from their back and were totally in front of him<br /><br />
 
-                K (laughs): do you really think these girls can kill me, they can't even pluck the tip of my hair,<br /><br />
+                    K (inside): oh, now I got, if I had chosen any one then I had to fight with only one and go to Paki, I took a wrong decision<br /><br />
 
-                Girl 1 (in the middle): we are trained properly, we know all fight techniques, all martial arts, you will be dead soon<br /><br />
+                    K (laughs): do you really think these girls can kill me, they can't even pluck the tip of my hair,<br /><br />
 
-                K: oh do you really think that (laughs), no girl in this universe can defeat me, you are only 5, if you were 5000 then also my win was final,<br /><br />
+                    Girl 1 (in the middle): we are trained properly, we know all fight techniques, all martial arts, you will be dead soon<br /><br />
 
-                Girl 1: I guess you are the leader and stronger than all of them<br /><br />
+                    K: oh do you really think that (laughs), no girl in this universe can defeat me, you are only 5, if you were 5000 then also my win was final,<br /><br />
 
-                Girl 1: yes<br /><br />
+                    Girl 1: I guess you are the leader and stronger than all of them<br /><br />
 
-                Girl 2: what yes, I have more skills, see my claws,<br /><br />
+                    Girl 1: yes<br /><br />
 
-                Girl 3: no, see my whip, I can rip anyone from far away<br /><br />
+                    Girl 2: what yes, I have more skills, see my claws,<br /><br />
 
-                Girl 4: my punches are enough for anyone<br /><br />
+                    Girl 3: no, see my whip, I can rip anyone from far away<br /><br />
 
-                Girl 5: I need not move a bit, my fans would do the task<br /><br />
+                    Girl 4: my punches are enough for anyone<br /><br />
 
-                Meanwhile they were arguing, K tried to flee away near Paki<br /><br />
+                    Girl 5: I need not move a bit, my fans would do the task<br /><br />
 
-                K (thinking): I guess my plan worked, it was so easy to fool them<br /><br />
+                    Meanwhile they were arguing, K tried to flee away near Paki<br /><br />
 
-                K was moving slowly towards Paki but, one bare-handed girl noticed that<br /><br />
+                    K (thinking): I guess my plan worked, it was so easy to fool them<br /><br />
 
-                Girl 4: see, he's fleeing away<br /><br />
+                    K was moving slowly towards Paki but, one bare-handed girl noticed that<br /><br />
 
-                Saying this she flipped twice, so that she could quickly reach K<br /><br />
+                    Girl 4: see, he's fleeing away<br /><br />
 
-                And as she was near him, while flipping she kicked K at his back and K got fallen down a few meters away,<br /><br />
+                    Saying this she flipped twice, so that she could quickly reach K<br /><br />
 
-                As K was on the ground, girl 3 attacked at his back with her whip despite K didn't utter a single word<br /><br />
+                    And as she was near him, while flipping she kicked K at his back and K got fallen down a few meters away,<br /><br />
 
-                Girl 1 (laughs): and he says he could fight with 5000 girls, he couldn't even stand in front of only 5, I guess soon your head would be under my feet<br /><br />
+                    As K was on the ground, girl 3 attacked at his back with her whip despite K didn't utter a single word<br /><br />
 
-                As she said that thing<br /><br />
+                    Girl 1 (laughs): and he says he could fight with 5000 girls, he couldn't even stand in front of only 5, I guess soon your head would be under my feet<br /><br />
 
-                Scientist and Head 2 who were observing everything placed their hands at their foreheads<br /><br />
+                    As she said that thing<br /><br />
 
-                While in the room, we could see K laughing despite he is laid down on the ground but he was laughing<br /><br />
+                    Scientist and Head 2 who were observing everything placed their hands at their foreheads<br /><br />
 
-                Girl 2: why are you laughing<br /><br />
+                    While in the room, we could see K laughing despite he is laid down on the ground but he was laughing<br /><br />
 
-                Girl 1: I guess he has lost his mental ability as the first time he is going to lose from a girl (laughs)<br /><br />
+                    Girl 2: why are you laughing<br /><br />
 
-                Further K quickly stood up, went near one of the cabins, broke the door in such a way he could get a metal stick long and wide enough to attack others and to be easily handled<br /><br />
+                    Girl 1: I guess he has lost his mental ability as the first time he is going to lose from a girl (laughs)<br /><br />
 
-                K: earlier my focus was just to save Paki, but as you said the thing you have not to, come, I am ready<br /><br />
+                    Further K quickly stood up, went near one of the cabins, broke the door in such a way he could get a metal stick long and wide enough to attack others and to be easily handled<br /><br />
 
-                Girl 3: do you really think you can overpower us with just a normal stick, or is there something special<br /><br />
+                    K: earlier my focus was just to save Paki, but as you said the thing you have not to, come, I am ready<br /><br />
 
-                K (to viewers): special, you know, if you know (blink an eye)<br /><br />
+                    Girl 3: do you really think you can overpower us with just a normal stick, or is there something special<br /><br />
 
-                K: you will soon get to know<br /><br />
+                    K (to viewers): special, you know, if you know (blink an eye)<br /><br />
 
-                Girl 3 then attacked him with a whip but K made the whip roll at the stick and pulled the stick, and so girl 3 fell down with her back up, K went and sat on her and attacked at her head with the stick to make her unconscious<br /><br />
+                    K: you will soon get to know<br /><br />
 
-                K: someone was saying something,<br /><br />
+                    Girl 3 then attacked him with a whip but K made the whip roll at the stick and pulled the stick, and so girl 3 fell down with her back up, K went and sat on her and attacked at her head with the stick to make her unconscious<br /><br />
 
-                Girl 1 further attacked K with her sword but K resisted it with his stick and with a smooth round moment of the stick he attacked at her hand making the sword fell down<br /><br />
+                    K: someone was saying something,<br /><br />
 
-                Girl 4: now fight with me<br /><br />
+                    Girl 1 further attacked K with her sword but K resisted it with his stick and with a smooth round moment of the stick he attacked at her hand making the sword fell down<br /><br />
 
-                And she started with martial arts, K put his stick at back and started fighting barehanded like her<br /><br />
+                    Girl 4: now fight with me<br /><br />
 
-                One by one each attack was being blocked by K and as she attacked a punch near his chest, K slid somewhat away<br /><br />
+                    And she started with martial arts, K put his stick at back and started fighting barehanded like her<br /><br />
 
-                K: nice one,<br /><br />
+                    One by one each attack was being blocked by K and as she attacked a punch near his chest, K slid somewhat away<br /><br />
 
-                Then both girl 1 and girl 4 together attacked him<br /><br />
+                    K: nice one,<br /><br />
 
-                But K was easily resisting them<br /><br />
+                    Then both girl 1 and girl 4 together attacked him<br /><br />
 
-                As Girl 1 tried to punch him like girl 4<br /><br />
+                    But K was easily resisting them<br /><br />
 
-                K held her wrist, and then from both hands lifted her and made her fly in air and then threw her at girl 4<br /><br />
+                    As Girl 1 tried to punch him like girl 4<br /><br />
 
-                Took out his stick and attacked their heads one by one<br /><br />
+                    K held her wrist, and then from both hands lifted her and made her fly in air and then threw her at girl 4<br /><br />
 
-                Then girl 2 came suddenly and attacked his face with her claws but before she could do that K attacked her arms and then punched at her stomach and then with hands at 90 degrees to her neck, she was fainted<br /><br />
+                    Took out his stick and attacked their heads one by one<br /><br />
 
-                As she fainted, K felt pain at his hands, stick got dropped, a cut also came<br /><br />
+                    Then girl 2 came suddenly and attacked his face with her claws but before she could do that K attacked her arms and then punched at her stomach and then with hands at 90 degrees to her neck, she was fainted<br /><br />
 
-                Girl 5: I guess it's my turn, it's just you and me<br /><br />
+                    As she fainted, K felt pain at his hands, stick got dropped, a cut also came<br /><br />
 
-                Then she again threw her fans at him, and he barely got saved, K had never seen such a weapon, how to dodge and fight,<br /><br />
+                    Girl 5: I guess it's my turn, it's just you and me<br /><br />
 
-                But with help of his feet he made the stick come back to his hands, as she again threw them, K started rotating the stick and the fans couldn't attack him they went back to her<br /><br />
+                    Then she again threw her fans at him, and he barely got saved, K had never seen such a weapon, how to dodge and fight,<br /><br />
 
-                K also stopped she came near him threw the fans in a weird manner, while K this time didn't do anything, and as the fans came near his neck, he held them and changed their direction, cause of that fans attacked girl 5 at neck, and she too fainted, K tied all of them with help of the whip of girl 3<br /><br />
+                    But with help of his feet he made the stick come back to his hands, as she again threw them, K started rotating the stick and the fans couldn't attack him they went back to her<br /><br />
 
-                But suddenly heard a sobbing voice of a girl, someone was crying<br /><br />
+                    K also stopped she came near him threw the fans in a weird manner, while K this time didn't do anything, and as the fans came near his neck, he held them and changed their direction, cause of that fans attacked girl 5 at neck, and she too fainted, K tied all of them with help of the whip of girl 3<br /><br />
 
-                When he looked here and there, he saw that 6th girl, crying, sitting, in her cabin<br /><br />
+                    But suddenly heard a sobbing voice of a girl, someone was crying<br /><br />
 
-                He went towards her and asked why she was crying<br /><br />
+                    When he looked here and there, he saw that 6th girl, crying, sitting, in her cabin<br /><br />
 
-                Girl 6: I can't fight you, I don't have that enough power, you are too strong, and if I didn't defeat you,<br /><br />
+                    He went towards her and asked why she was crying<br /><br />
 
-                K: then what?<br /><br />
+                    Girl 6: I can't fight you, I don't have that enough power, you are too strong, and if I didn't defeat you,<br /><br />
 
-                Girl 6: no nothing, I am ready for the fight,<br /><br />
+                    K: then what?<br /><br />
 
-                She stood up and in a position ready to fight<br /><br />
+                    Girl 6: no nothing, I am ready for the fight,<br /><br />
 
-                Girl 6: nah, I can't fight<br /><br />
+                    She stood up and in a position ready to fight<br /><br />
 
-                K: first come in the middle and then tell me, maybe I could help you out,<br /><br />
+                    Girl 6: nah, I can't fight<br /><br />
 
-                Girl 6: they kidnapped my family, I know many martial arts moves, but I never used them for any bad purpose, but they are blackmailing me to do so,<br /><br />
+                    K: first come in the middle and then tell me, maybe I could help you out,<br /><br />
 
-                Then she beautifully looked at his eyes, with a very innocent face, and said, "Would you help me, if yes then how"<br /><br />
+                    Girl 6: they kidnapped my family, I know many martial arts moves, but I never used them for any bad purpose, but they are blackmailing me to do so,<br /><br />
 
-                K: I can surely help you, but, I don't know how could I, for helping you, I need to move out from here first after saving my friends, either you could leave from the back door or could move with us<br /><br />
+                    Then she beautifully looked at his eyes, with a very innocent face, and said, "Would you help me, if yes then how"<br /><br />
 
-                Girl 6: I guess I should move with you, I would be safe with you, thank you for letting me come with you, if you don't mind then can I get a positive hug?<br /><br />
+                    K: I can surely help you, but, I don't know how could I, for helping you, I need to move out from here first after saving my friends, either you could leave from the back door or could move with us<br /><br />
 
-                K: please no, I don't suspect your intentions but sorry I have some set boundaries, despite first tell me how could I open the cabin gate of Paki?<br /><br />
+                    Girl 6: I guess I should move with you, I would be safe with you, thank you for letting me come with you, if you don't mind then can I get a positive hug?<br /><br />
 
-                Girl 6: hmmm ok, but sorry, I have no idea, let's move near the cabin, we may figure out<br /><br />
+                    K: please no, I don't suspect your intentions but sorry I have some set boundaries, despite first tell me how could I open the cabin gate of Paki?<br /><br />
 
-                K: ok<br /><br />
+                    Girl 6: hmmm ok, but sorry, I have no idea, let's move near the cabin, we may figure out<br /><br />
 
-                So both started moving towards Paki's cabin, but the girl was a little behind K<br /><br />
+                    K: ok<br /><br />
 
-                Suddenly the girl attacked K with a dagger at his back<br /><br />
+                    So both started moving towards Paki's cabin, but the girl was a little behind K<br /><br />
 
-                But K held the dagger with his hands, blood was being dropped down his hands, he kicked the girl at her thighs, made her fall down,<br /><br />
+                    Suddenly the girl attacked K with a dagger at his back<br /><br />
 
-                Girl 6: how were you attentive, I thought I manipulated you<br /><br />
+                    But K held the dagger with his hands, blood was being dropped down his hands, he kicked the girl at her thighs, made her fall down,<br /><br />
 
-                K: I don't trust girls that easily, despite the fact that I trusted you because of your tears, but the moment you were asking for a hug, despite we can't hear Paki but she gave me a hint, that I should not trust you, and so I was totally ready for your actions, it was clever that you didn't show any extra change in your movement so that Paki can't see or even I can't hear, but my focus was on your shadow so get lost now before I<br /><br />
+                    Girl 6: how were you attentive, I thought I manipulated you<br /><br />
 
-                Girl 6 (laughs): nice, but how would you open the gates, without the key<br /><br />
+                    K: I don't trust girls that easily, despite the fact that I trusted you because of your tears, but the moment you were asking for a hug, despite we can't hear Paki but she gave me a hint, that I should not trust you, and so I was totally ready for your actions, it was clever that you didn't show any extra change in your movement so that Paki can't see or even I can't hear, but my focus was on your shadow so get lost now before I<br /><br />
 
-                K: did you have the key?<br /><br />
+                    Girl 6 (laughs): nice, but how would you open the gates, without the key<br /><br />
 
-                Girl 6: yess, and yes don't try to snatch it or else I would break it (shows the key which was made of plastic)<br /><br />
+                    K: did you have the key?<br /><br />
 
-                K: I guess you forgot something<br /><br />
+                    Girl 6: yess, and yes don't try to snatch it or else I would break it (shows the key which was made of plastic)<br /><br />
 
-                Girl 6: what<br /><br />
+                    K: I guess you forgot something<br /><br />
 
-                K then threw the stick which was at his back directly at her head very quickly and she got unconscious<br /><br />
+                    Girl 6: what<br /><br />
 
-                K came near her body<br /><br />
+                    K then threw the stick which was at his back directly at her head very quickly and she got unconscious<br /><br />
 
-                K: that's why it's the OG weapon<br /><br />
+                    K came near her body<br /><br />
 
-                K took the key and opened the cabin<br /><br />
+                    K: that's why it's the OG weapon<br /><br />
 
-                Both of them hugged each other very tightly,<br /><br />
+                    K took the key and opened the cabin<br /><br />
 
-                Then Paki quickly tore a piece of her clothes and tied it at the hand of K from where blood was dropping<br /><br />
+                    Both of them hugged each other very tightly,<br /><br />
 
-                Paki: up your t-shirt<br /><br />
+                    Then Paki quickly tore a piece of her clothes and tied it at the hand of K from where blood was dropping<br /><br />
 
-                K: what<br /><br />
+                    Paki: up your t-shirt<br /><br />
 
-                Paki: I want to see your back<br /><br />
+                    K: what<br /><br />
 
-                K lifted his t-shirt up<br /><br />
+                    Paki: I want to see your back<br /><br />
 
-                Paki: how badly they hurt you, the mark of the whip is still there,<br /><br />
+                    K lifted his t-shirt up<br /><br />
 
-                K: you have met me now, this pain is equivalent to 0 in front of happiness I got meeting you, but let's move further, I guess this stage is cleared<br /><br />
+                    Paki: how badly they hurt you, the mark of the whip is still there,<br /><br />
 
-                Paki: if the first stage took so long time, then how would other ones go<br /><br />
+                    K: you have met me now, this pain is equivalent to 0 in front of happiness I got meeting you, but let's move further, I guess this stage is cleared<br /><br />
 
-                K: I guess this was easy but long, coming next difficulty would increase but may become short, just a wild guess<br /><br />
+                    Paki: if the first stage took so long time, then how would other ones go<br /><br />
 
-                Paki: let's see<br /><br />
+                    K: I guess this was easy but long, coming next difficulty would increase but may become short, just a wild guess<br /><br />
 
-                Both of them moved out of the front door<br />
-                (as we see the door was closed, something was written as a heading it was, 'LUST CLEARED')<br /><br />
+                    Paki: let's see<br /><br />
 
-                to the next room in which the mafia leader was already present<br /><br />
+                    Both of them moved out of the front door<br />
+                    (as we see the door was closed, something was written as a heading it was, 'LUST CLEARED')<br /><br />
 
-                Mafia leader: hello, do you know who I am<br /><br />
+                    to the next room in which the mafia leader was already present<br /><br />
 
-                K: no<br /><br />
+                    Mafia leader: hello, do you know who I am<br /><br />
 
-                Mafia leader: my name is Ogama Charles Lucky<br /><br />
+                    K: no<br /><br />
 
-                Paki: wait, I read your name in the newspaper, you are the leader of the biggest Mafia of Asia<br /><br />
+                    Mafia leader: my name is Ogama Charles Lucky<br /><br />
 
-                Ogama: yes and soon the world (laughs aloud)<br /><br />
+                    Paki: wait, I read your name in the newspaper, you are the leader of the biggest Mafia of Asia<br /><br />
 
-                K: if this is the next stage, where are my friends,<br /><br />
+                    Ogama: yes and soon the world (laughs aloud)<br /><br />
 
-                Ogama: why in such a hurry, wait, first meet my pets, due to whom I killed my every enemy<br /><br />
+                    K: if this is the next stage, where are my friends,<br /><br />
 
-                He whistled and called HCM - 090,<br /><br />
+                    Ogama: why in such a hurry, wait, first meet my pets, due to whom I killed my every enemy<br /><br />
 
-                And with that a sphinx came, (lion head and arms with a human body)<br /><br />
+                    He whistled and called HCM - 090,<br /><br />
 
-                K: how is that possible<br /><br />
+                    And with that a sphinx came, (lion head and arms with a human body)<br /><br />
 
-                Ogama: genes can be mixed, and when done properly, results in success but wait let me call HCM - 570, HCM- 901, HCM - 270<br /><br />
+                    K: how is that possible<br /><br />
 
-                Further a creature made up of dark brown stones, one stone was one leg and other stone, the other, one stone stomach and 2 stones each in arms and one as a head with eyes and mouth appeared, all the stones were wide enough<br /><br />
+                    Ogama: genes can be mixed, and when done properly, results in success but wait let me call HCM - 570, HCM- 901, HCM - 270<br /><br />
 
-                Following him a human-like figure with 4 broad tentacles (2 in front and 2 in back) like tardigrade, sharp nails, glowing eyes, had great muscles walked in<br /><br />
+                    Further a creature made up of dark brown stones, one stone was one leg and other stone, the other, one stone stomach and 2 stones each in arms and one as a head with eyes and mouth appeared, all the stones were wide enough<br /><br />
 
-                And following them a creature floating in air, 2 thin metal arms, whole body was a metal, white glowing eyes, 0 muscles but the strongest of them also appeared<br /><br />
+                    Following him a human-like figure with 4 broad tentacles (2 in front and 2 in back) like tardigrade, sharp nails, glowing eyes, had great muscles walked in<br /><br />
 
-                Paki: wait a rockman, tardihuman, and a cybrain, how the heck you made them,<br /><br />
+                    And following them a creature floating in air, 2 thin metal arms, whole body was a metal, white glowing eyes, 0 muscles but the strongest of them also appeared<br /><br />
 
-                Ogama: for now, defeat them, you have to kill them<br /><br />
+                    Paki: wait a rockman, tardihuman, and a cybrain, how the heck you made them,<br /><br />
 
-                K: Paki, stay back, I will fight<br /><br />
+                    Ogama: for now, defeat them, you have to kill them<br /><br />
 
-                Paki: they are 4, we need to fight together to handle<br /><br />
+                    K: Paki, stay back, I will fight<br /><br />
 
-                K: don't argue, if I feel, I will call you by myself<br /><br />
+                    Paki: they are 4, we need to fight together to handle<br /><br />
 
-                Paki: why you always want to fight alone, never matter your life, as if only you can fight, no other can,<br /><br />
+                    K: don't argue, if I feel, I will call you by myself<br /><br />
 
-                K: ok ok, please don't scold me, but I request please let me fight first<br /><br />
+                    Paki: why you always want to fight alone, never matter your life, as if only you can fight, no other can,<br /><br />
 
-                Ogama: hey, stop your husband-wife quarrel, only one of them would fight at one time, your wish fight alone or together and yes I am sending 2 of them back, HCM- 901, HCM - 270, go back, only these 2 are enough for you<br /><br />
+                    K: ok ok, please don't scold me, but I request please let me fight first<br /><br />
 
-                Paki: ok then, but if I would feel, I will enter the fight in between<br /><br />
+                    Ogama: hey, stop your husband-wife quarrel, only one of them would fight at one time, your wish fight alone or together and yes I am sending 2 of them back, HCM- 901, HCM - 270, go back, only these 2 are enough for you<br /><br />
 
-                K: alright<br /><br />
+                    Paki: ok then, but if I would feel, I will enter the fight in between<br /><br />
 
-                Ogama went aside in the room<br /><br />
+                    K: alright<br /><br />
 
-                K ran towards sphinx and as he was about to attack, sphinx attacked with his arms at the chest of K, due to which, K flew in the air, struck the walls and got unconscious<br /><br />
+                    Ogama went aside in the room<br /><br />
 
-                Paki rushed towards him tried to wake him up, called his name, but he didn't respond, despite she checked, that he was alive, just unconscious<br /><br />
+                    K ran towards sphinx and as he was about to attack, sphinx attacked with his arms at the chest of K, due to which, K flew in the air, struck the walls and got unconscious<br /><br />
 
-                Paki: hey you listen, now I will fight with you, attack me<br /><br />
+                    Paki rushed towards him tried to wake him up, called his name, but he didn't respond, despite she checked, that he was alive, just unconscious<br /><br />
 
-                Further the sphinx rushed at her, attacked with his claw, but Paki dodged, and attacked at the joint arms and muscles with her elbow, but no damage occurred to him, so she quickly slid back and waited for him to attack, meanwhile thinking what could be the possible way to defeat<br /><br />
+                    Paki: hey you listen, now I will fight with you, attack me<br /><br />
 
-                Suddenly she saw a belt in his neck, so she knew what to do<br /><br />
+                    Further the sphinx rushed at her, attacked with his claw, but Paki dodged, and attacked at the joint arms and muscles with her elbow, but no damage occurred to him, so she quickly slid back and waited for him to attack, meanwhile thinking what could be the possible way to defeat<br /><br />
 
-                And as expected she jumped in the air, went on his back and pulled out the belt and came in front of him<br /><br />
+                    Suddenly she saw a belt in his neck, so she knew what to do<br /><br />
 
-                But wait what, sphinx became mad, now it was screaming, and further punched her and made her fly in the air<br /><br />
+                    And as expected she jumped in the air, went on his back and pulled out the belt and came in front of him<br /><br />
 
-                Meanwhile she was in the air she was just thinking how to control him<br /><br />
+                    But wait what, sphinx became mad, now it was screaming, and further punched her and made her fly in the air<br /><br />
 
-                But she hit the ground and too became unconscious, despite she was unconscious she got a vision<br /><br />
+                    Meanwhile she was in the air she was just thinking how to control him<br /><br />
 
-                Where she and K were sitting on bed and were talking to each other<br /><br />
+                    But she hit the ground and too became unconscious, despite she was unconscious she got a vision<br /><br />
 
-                K (lovely tone): do you know, why I like and love you from so early,<br /><br />
+                    Where she and K were sitting on bed and were talking to each other<br /><br />
 
-                Paki: love doesn't have any reason<br /><br />
+                    K (lovely tone): do you know, why I like and love you from so early,<br /><br />
 
-                K: yes, but I hated girls as you know, but I was impressed from you<br /><br />
+                    Paki: love doesn't have any reason<br /><br />
 
-                Paki: oh damn, why,<br /><br />
+                    K: yes, but I hated girls as you know, but I was impressed from you<br /><br />
 
-                K: cause you are good, not only with me but with everyone, you love every creature just like me or I can say better than me, I too sometimes talked rudely, but you were always good to everyone,<br /><br />
+                    Paki: oh damn, why,<br /><br />
 
-                Suddenly Paki got her consciousness back<br /><br />
+                    K: cause you are good, not only with me but with everyone, you love every creature just like me or I can say better than me, I too sometimes talked rudely, but you were always good to everyone,<br /><br />
 
-                Paki (inside): yes I know, what to do, thanks K,<br /><br />
+                    Suddenly Paki got her consciousness back<br /><br />
 
-                Then went directly in front of him with her hands at back<br /><br />
+                    Paki (inside): yes I know, what to do, thanks K,<br /><br />
 
-                Paki: you wanna hurt me, you can, I will not hurt you<br /><br />
+                    Then went directly in front of him with her hands at back<br /><br />
 
-                First time he talked<br /><br />
+                    Paki: you wanna hurt me, you can, I will not hurt you<br /><br />
 
-                Sphinx: but you wanted to kill me<br /><br />
+                    First time he talked<br /><br />
 
-                Paki: sorry but I thought you were evil and made artificially, but I realized you are also a part of this nature and deserve to live<br /><br />
+                    Sphinx: but you wanted to kill me<br /><br />
 
-                While saying this all she was slowly moving further step by step<br /><br />
+                    Paki: sorry but I thought you were evil and made artificially, but I realized you are also a part of this nature and deserve to live<br /><br />
 
-                Paki: you are not wrong, wrong has happened to you,<br /><br />
+                    While saying this all she was slowly moving further step by step<br /><br />
 
-                By the time, she was near him now<br /><br />
+                    Paki: you are not wrong, wrong has happened to you,<br /><br />
 
-                Paki: you are like my brother (saying this, hugged him), still you want to hurt me you can<br /><br />
+                    By the time, she was near him now<br /><br />
 
-                Sphinx started crying at her shoulders<br /><br />
+                    Paki: you are like my brother (saying this, hugged him), still you want to hurt me you can<br /><br />
 
-                Suddenly the rockman attacked her with his punch, but K came at the right time and held his hand<br /><br />
+                    Sphinx started crying at her shoulders<br /><br />
 
-                K: hello, love you Paki,<br /><br />
+                    Suddenly the rockman attacked her with his punch, but K came at the right time and held his hand<br /><br />
 
-                Seeing that Sphinx became angry and went directly to Ogama, holding him by neck, killed him<br /><br />
+                    K: hello, love you Paki,<br /><br />
 
-                Scientist and Head were seeing this<br /><br />
+                    Seeing that Sphinx became angry and went directly to Ogama, holding him by neck, killed him<br /><br />
 
-                Scientist: I can't do anything if the belt is not in the neck, I never expected that by this method they would clear, I just thought at max K may convert his anger to power and kill them<br /><br />
+                    Scientist and Head were seeing this<br /><br />
 
-                Head: hmmm, nothing can be done now, in great wars sacrifices are needed<br /><br />
+                    Scientist: I can't do anything if the belt is not in the neck, I never expected that by this method they would clear, I just thought at max K may convert his anger to power and kill them<br /><br />
 
-                Back to room<br /><br />
+                    Head: hmmm, nothing can be done now, in great wars sacrifices are needed<br /><br />
 
-                Sphinx: you both shall go, I will handle this pile of stones<br /><br />
+                    Back to room<br /><br />
 
-                K: no that's my war, I will do it<br /><br />
+                    Sphinx: you both shall go, I will handle this pile of stones<br /><br />
 
-                Saying this he attacked at joints of rockman and he got split into pieces<br /><br />
+                    K: no that's my war, I will do it<br /><br />
 
-                But wait what he rejoined,<br /><br />
+                    Saying this he attacked at joints of rockman and he got split into pieces<br /><br />
 
-                And attacked K<br /><br />
+                    But wait what he rejoined,<br /><br />
 
-                K flew but luckily Sphinx caught him,<br /><br />
+                    And attacked K<br /><br />
 
-                K: thanks bro<br /><br />
+                    K flew but luckily Sphinx caught him,<br /><br />
 
-                Sphinx: let me fight<br /><br />
+                    K: thanks bro<br /><br />
 
-                K: one last try, can you hold him for 2 minutes<br /><br />
+                    Sphinx: let me fight<br /><br />
 
-                Sphinx: yes of course<br /><br />
+                    K: one last try, can you hold him for 2 minutes<br /><br />
 
-                Then Sphinx went near rockman and started fighting in a way, just want to stop him not to attack<br /><br />
+                    Sphinx: yes of course<br /><br />
 
-                Meanwhile K standing, started meditating, gathering all his power and anger in his hands<br /><br />
+                    Then Sphinx went near rockman and started fighting in a way, just want to stop him not to attack<br /><br />
 
-                K: give space,<br /><br />
+                    Meanwhile K standing, started meditating, gathering all his power and anger in his hands<br /><br />
 
-                Saying this attacked at the head of rockman due to which it got burst and split into small thousands of pieces,<br /><br />
+                    K: give space,<br /><br />
 
-                Sphinx: nice, can you tell why you called me bro<br /><br />
+                    Saying this attacked at the head of rockman due to which it got burst and split into small thousands of pieces,<br /><br />
 
-                K: cause you are also nice, at start anger was in my head, making me rage, but due I remembered how to convert anger to power<br /><br />
+                    Sphinx: nice, can you tell why you called me bro<br /><br />
 
-                Sphinx: oh great<br /><br />
+                    K: cause you are also nice, at start anger was in my head, making me rage, but due I remembered how to convert anger to power<br /><br />
 
-                Paki: but he is still a hybrid, what will he do<br /><br />
+                    Sphinx: oh great<br /><br />
 
-                Sphinx: there are many forests and mountain areas which are rarely visited, I will go there,<br /><br />
+                    Paki: but he is still a hybrid, what will he do<br /><br />
 
-                K: but if any time you felt lonely, as you have human emotions, you can anytime come to us we are like your family or if you want to live with you can, but it would be more like a jail, so you have to decide<br /><br />
+                    Sphinx: there are many forests and mountain areas which are rarely visited, I will go there,<br /><br />
 
-                Sphinx: I know, I will choose option A, goodbye<br /><br />
+                    K: but if any time you felt lonely, as you have human emotions, you can anytime come to us we are like your family or if you want to live with you can, but it would be more like a jail, so you have to decide<br /><br />
 
-                So he hugged K and K wished him good luck, he broke the walls of the room and went away<br /><br />
+                    Sphinx: I know, I will choose option A, goodbye<br /><br />
 
-                Then K took 3 of the stones and one by one shot them at the 3 cameras of the room and now none could see what happened in next 2-3 minutes<br /><br />
+                    So he hugged K and K wished him good luck, he broke the walls of the room and went away<br /><br />
 
-                But next we could see K and Paki moved further to the next room<br /><br />
+                    Then K took 3 of the stones and one by one shot them at the 3 cameras of the room and now none could see what happened in next 2-3 minutes<br /><br />
 
-                And after the door of this room closed it was written<br /><br />
+                    But next we could see K and Paki moved further to the next room<br /><br />
 
-                Pride and greed cleared<br /><br />
+                    And after the door of this room closed it was written<br /><br />
 
-                So they entered the next room, with serious faces,<br /><br />
+                    Pride and greed cleared<br /><br />
 
-                As they entered they saw Ursh was unconscious inside a cage and outside it there were 2 bodyguards it were the tardihuman and the cybrain<br /><br />
+                    So they entered the next room, with serious faces,<br /><br />
 
-                K ignoring them just moved further towards Ursh, tardihuman attacked him but K moved a little right, dodged his attack<br /><br />
+                    As they entered they saw Ursh was unconscious inside a cage and outside it there were 2 bodyguards it were the tardihuman and the cybrain<br /><br />
 
-                Then a whistle sound came which was done by Paki<br /><br />
+                    K ignoring them just moved further towards Ursh, tardihuman attacked him but K moved a little right, dodged his attack<br /><br />
 
-                Paki: hey, fight with us<br /><br />
+                    Then a whistle sound came which was done by Paki<br /><br />
 
-                Then tardihuman and cybrain looked at all of them, ready to attack<br /><br />
+                    Paki: hey, fight with us<br /><br />
 
-                Meanwhile they all were dodging the attacks or attacking when any other was their target, K reached near the cage of Ursh, he held the 2 bars to make them open, stretched them but nothing happened, he then used the rod to break the bars, but no change, but got an idea, he threw the rod at cybrain,<br /><br />
+                    Then tardihuman and cybrain looked at all of them, ready to attack<br /><br />
 
-                Cybrain looked at the back and attacked K with a laser beam through the eyes, but K dodged it, due to which the laser beam struck the bar of cage and melted it<br /><br />
+                    Meanwhile they all were dodging the attacks or attacking when any other was their target, K reached near the cage of Ursh, he held the 2 bars to make them open, stretched them but nothing happened, he then used the rod to break the bars, but no change, but got an idea, he threw the rod at cybrain,<br /><br />
 
-                But cybrain was so fast that the very next moment he held K from neck and threw him apart,<br /><br />
+                    Cybrain looked at the back and attacked K with a laser beam through the eyes, but K dodged it, due to which the laser beam struck the bar of cage and melted it<br /><br />
 
-                And now tardihuman also faced towards K, and the moment he was going to attack K with his tentacles Ursh came and pulled K aside<br /><br />
+                    But cybrain was so fast that the very next moment he held K from neck and threw him apart,<br /><br />
 
-                Ursh: no one can harm K till I am present<br /><br />
+                    And now tardihuman also faced towards K, and the moment he was going to attack K with his tentacles Ursh came and pulled K aside<br /><br />
 
-                Now both tardihuman and cybrain attacked them together<br /><br />
+                    Ursh: no one can harm K till I am present<br /><br />
 
-                But a whistle came, they stopped<br /><br />
+                    Now both tardihuman and cybrain attacked them together<br /><br />
 
-                And now both the heads, mathematician and the scientist came inside the room, ordered HCMs to go<br /><br />
+                    But a whistle came, they stopped<br /><br />
 
-                Head 1: great work K, defeating the human emotions, the deadly sins,<br /><br />
+                    And now both the heads, mathematician and the scientist came inside the room, ordered HCMs to go<br /><br />
 
-                Head 2: yes, at first you defeated lust, despite of those cute girls you still focused on your love<br /><br />
+                    Head 1: great work K, defeating the human emotions, the deadly sins,<br /><br />
 
-                Head 1: next defeating the 2 HCMs, you win over anger and fear<br /><br />
+                    Head 2: yes, at first you defeated lust, despite of those cute girls you still focused on your love<br /><br />
 
-                Ursh: do you really think he fears these hybrids<br /><br />
+                    Head 1: next defeating the 2 HCMs, you win over anger and fear<br /><br />
 
-                K stopped Ursh by sign as keeping his finger on lips<br /><br />
+                    Ursh: do you really think he fears these hybrids<br /><br />
 
-                Head 2: earlier we thought you also have pride that's why you accepted such a difficult challenge so easily<br /><br />
+                    K stopped Ursh by sign as keeping his finger on lips<br /><br />
 
-                Head 1: but you knew what was going to happen, and also when you had the option to kill me, not showing any greed you chose the right path<br /><br />
+                    Head 2: earlier we thought you also have pride that's why you accepted such a difficult challenge so easily<br /><br />
 
-                Head 2: and in the previous level, without wasting any time, you won over sloth<br /><br />
+                    Head 1: but you knew what was going to happen, and also when you had the option to kill me, not showing any greed you chose the right path<br /><br />
 
-                Head 1: and at last, you showed the real focus that was to save Ursh,<br /><br />
+                    Head 2: and in the previous level, without wasting any time, you won over sloth<br /><br />
 
-                Then both the heads clapped thrice<br /><br />
+                    Head 1: and at last, you showed the real focus that was to save Ursh,<br /><br />
 
-                Head 1: so, as you may have guessed, I like giving options, so your first option is, join us<br /><br />
+                    Then both the heads clapped thrice<br /><br />
 
-                K nodded left-right<br /><br />
+                    Head 1: so, as you may have guessed, I like giving options, so your first option is, join us<br /><br />
 
-                Head 2: or else die<br /><br />
+                    K nodded left-right<br /><br />
 
-                Head 1: you know what, in every story, there is a villain<br /><br />
+                    Head 2: or else die<br /><br />
 
-                Interrupting him<br /><br />
+                    Head 1: you know what, in every story, there is a villain<br /><br />
 
-                Ursh: yes we know, every story has a hero and a villain, and this too, you wanna say that<br /><br />
+                    Interrupting him<br /><br />
 
-                Head 1: listen, I wanna say, every story has a hero and a villain, but in real life stories both are villains, but you know what in this story we both are heroes,<br /><br />
+                    Ursh: yes we know, every story has a hero and a villain, and this too, you wanna say that<br /><br />
 
-                Head 2: yes, we just care for humans, cause the information you were spreading could be so harmful, if went in wrong hands, yes all your thesis are absolutely right, but normal people who are trapped in these sins can misuse the information, we are the top leaders of this world, but those who are little below may use your information for their benefits, not caring about the concepts of space and time<br /><br />
+                    Head 1: listen, I wanna say, every story has a hero and a villain, but in real life stories both are villains, but you know what in this story we both are heroes,<br /><br />
 
-                K then showed thumb to them (wanna say ok)<br /><br />
+                    Head 2: yes, we just care for humans, cause the information you were spreading could be so harmful, if went in wrong hands, yes all your thesis are absolutely right, but normal people who are trapped in these sins can misuse the information, we are the top leaders of this world, but those who are little below may use your information for their benefits, not caring about the concepts of space and time<br /><br />
 
-                Then waved and signed everyone to move backward<br /><br />
+                    K then showed thumb to them (wanna say ok)<br /><br />
 
-                The next moment, head 1 signed mathematician<br /><br />
+                    Then waved and signed everyone to move backward<br /><br />
 
-                And so he rushed towards K held him and put a gun at his head, warning others to move back, near the door,<br /><br />
+                    The next moment, head 1 signed mathematician<br /><br />
 
-                Head 1: hope you would have made the right choice, but I guess I have to send you again in that dimension,<br /><br />
+                    And so he rushed towards K held him and put a gun at his head, warning others to move back, near the door,<br /><br />
 
-                Saying this head 2 brought that machine<br /><br />
+                    Head 1: hope you would have made the right choice, but I guess I have to send you again in that dimension,<br /><br />
 
-                Paki: how did you get that back<br /><br />
+                    Saying this head 2 brought that machine<br /><br />
 
-                Then they brought Steve (robo of K)<br /><br />
+                    Paki: how did you get that back<br /><br />
 
-                Head 1: we hacked him, it was difficult but, we did<br /><br />
+                    Then they brought Steve (robo of K)<br /><br />
 
-                Ursh: oh that's why K and I got trapped earlier too<br /><br />
+                    Head 1: we hacked him, it was difficult but, we did<br /><br />
 
-                Head 1: yes, and now I will switch on this machine again, setting it at you, and yes now it doesn't need plugs,<br /><br />
+                    Ursh: oh that's why K and I got trapped earlier too<br /><br />
 
-                K then bites the mathematician's hand<br /><br />
+                    Head 1: yes, and now I will switch on this machine again, setting it at you, and yes now it doesn't need plugs,<br /><br />
 
-                But the mathematician again held him<br /><br />
+                    K then bites the mathematician's hand<br /><br />
 
-                Scientist: let me handle him<br /><br />
+                    But the mathematician again held him<br /><br />
 
-                Finally K spoke<br /><br />
+                    Scientist: let me handle him<br /><br />
 
-                K: don't use that machine it has a glitch,<br /><br />
+                    Finally K spoke<br /><br />
 
-                But head 1 not cared<br /><br />
+                    K: don't use that machine it has a glitch,<br /><br />
 
-                Meanwhile the scientist rushed towards him with a special glove type machine and punched at his chest<br /><br />
+                    But head 1 not cared<br /><br />
 
-                And at the same time head 1 switched on the machine,<br /><br />
+                    Meanwhile the scientist rushed towards him with a special glove type machine and punched at his chest<br /><br />
 
-                And with that a great flash occurred, sound of blast came, same time smoke happened in the whole area, none of K's team could see what is happening<br /><br />
+                    And at the same time head 1 switched on the machine,<br /><br />
 
-                And at the right moment scientist and the mathematician tossed at different sides walls<br /><br />
+                    And with that a great flash occurred, sound of blast came, same time smoke happened in the whole area, none of K's team could see what is happening<br /><br />
 
-                And it was so hard that their necks were broken and they died<br /><br />
+                    And at the right moment scientist and the mathematician tossed at different sides walls<br /><br />
 
-                Smoke remained for 2-3 minutes and finally from the smoke K appeared and said in a very serious and sad tone<br /><br />
+                    And it was so hard that their necks were broken and they died<br /><br />
 
-                K: WE WON<br /><br />
+                    Smoke remained for 2-3 minutes and finally from the smoke K appeared and said in a very serious and sad tone<br /><br />
 
-                They all hugged him,<br /><br />
+                    K: WE WON<br /><br />
 
-                While going back<br /><br />
+                    They all hugged him,<br /><br />
 
-                Paki: I have a question Ursh<br /><br />
+                    While going back<br /><br />
 
-                Ursh: what<br /><br />
+                    Paki: I have a question Ursh<br /><br />
 
-                Paki: what is K actually scared of<br /><br />
+                    Ursh: what<br /><br />
 
-                Ursh: just leave it for now and relax, WE WON<br /><br />
+                    Paki: what is K actually scared of<br /><br />
 
-                K: BUT AT WHAT COST<br /><br />
+                    Ursh: just leave it for now and relax, WE WON<br /><br />
 
-                WITH THIS SEASON 1 ENDS<br /><br />
+                    K: BUT AT WHAT COST<br /><br />
 
-                Some glimpses for season 2<br /><br />
+                    WITH THIS SEASON 1 ENDS<br /><br />
 
-                Scene 1<br /> <br />
-                Paki : ursh,, from 2-3 days K is acting a little weird,, not spending any night with me ,, why <br /><br />
+                    Some glimpses for season 2<br /><br />
 
-                Scene 2  <br /> <br />
-                A monster,,  <br /> <br />
+                    Scene 1<br /> <br />
+                    Paki : ursh,, from 2-3 days K is acting a little weird,, not spending any night with me ,, why <br /><br />
 
-                with a lion face, metal body and tentacles <br /><br />
+                    Scene 2  <br /> <br />
+                    A monster,,  <br /> <br />
 
-                Scene 3 <br /><br />
+                    with a lion face, metal body and tentacles <br /><br />
 
-                K : My real fear is the INFINITY
+                    Scene 3 <br /><br />
+
+                    K : My real fear is the INFINITY
                 </p>
 
             </div>

@@ -39,22 +39,46 @@ export default function Comparision() {
       </div>
       <br />
       <h1 className=' text-yellow-300 text-center text-4xl md:text-6xl'>Simple fusions</h1>
-      <div className=' text-2xl py-10 text-center grid grid-cols-2 md:grid md:grid-cols-4 text-cyan-300 '>
-        {
-          data.map((item, key) => (
-            <h1 className=' py-5'><a href={item.href}>{item.title1}</a>   <h1 className=' text-red-500'>{item.title2}hearts</h1></h1>
-          ))
-        }
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center py-10 text-cyan-300 text-2xl">
+        {data.map((item, key) => (
+          <div
+            key={key}
+            className="transition duration-300 ease-in-out transform hover:scale-105 hover:text-yellow-300 border border-cyan-500 rounded-xl p-4 shadow-md hover:shadow-cyan-300"
+          >
+            <a
+              href={item.href}
+              className="block text-cyan-200 font-semibold hover:underline"
+            >
+              {item.title1}
+            </a>
+            <div className="text-red-400 text-lg mt-2 font-medium">
+              ❤️ {item.title2} hearts
+            </div>
+          </div>
+        ))}
       </div>
+
       <br />
       <h1 className=' text-6xl text-center md:text-7xl text-lime-400'>Special fusions</h1>
-      <div className=' text-3xl py-10 text-center grid grid-cols-1 md:grid md:grid-cols-2 text-cyan-300 px-5'>
-        {
-          data2.map((item, key) => (
-            <h1 className=' py-5'><a href={item.href}>{item.title1}</a>   <h1 className=' text-red-500'>{item.title2}hearts</h1></h1>
-          ))
-        }
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-5 py-10 text-center text-cyan-300 text-3xl">
+        {data2.map((item, key) => (
+          <div
+            key={key}
+            className="bg-gradient-to-br from-[#0f172a] to-[#1e293b] border border-cyan-700 rounded-xl shadow-lg p-6 hover:shadow-cyan-500/40 hover:scale-105 transition-all duration-300 ease-in-out"
+          >
+            <a
+              href={item.href}
+              className="block text-cyan-200 font-semibold text-3xl md:text-4xl hover:underline tracking-wide"
+            >
+              {item.title1}
+            </a>
+            <div className="text-green-500 text-xl md:text-2xl mt-3 font-medium tracking-tight animate-pulse">
+              ❤️ {item.title2} hearts
+            </div>
+          </div>
+        ))}
       </div>
+
 
       <div className=' items-center text-center'>
         <div className='text-6xl md:text-8xl text-orange-400 text-center'>
@@ -72,8 +96,8 @@ export default function Comparision() {
             THE GREATEST FUSION
           </MovingComponent>
         </div>
-       
-            <MovingComponent
+
+        <MovingComponent
           type="shakeMix"
           duration="1000ms"
           delay="0s"
@@ -88,7 +112,7 @@ export default function Comparision() {
               </a>
             </div>
           </div>
-          </MovingComponent>
+        </MovingComponent>
 
 
 

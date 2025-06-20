@@ -7,13 +7,13 @@
   }
 }
 
-.animated-gradient-border {
+.animated-gradient-borders {
   position: relative;
   padding: 2px; /* Border thickness */
   border-radius: 0.75rem; /* Match Tailwind's rounded-lg */
-  background: linear-gradient(270deg, #0408f9, #07f647, #f30909, #07e9f1 , #100f01);
+  background: linear-gradient(270deg,  #0a0a0a , #e61106, #1a0000 ,#001a1a , #0606e6, #0a0a1a, #08f42c);
   background-size: 400% 400%;
-  animation: border-move 5s linear infinite;
+  animation: border-move 10s linear infinite;
 }
 
 .animated-gradient-border-inner {

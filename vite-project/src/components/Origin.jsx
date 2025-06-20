@@ -1,14 +1,16 @@
 import React from 'react'
 import { Link, Element } from 'react-scroll';
+import './Origin.css';
+
 import Logo from './Logo';
 
 
 export default function Origin() {
   return (
     <Element name="origin">
-     <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white flex items-center justify-center px-6 py-20">
-  <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-xl p-10 max-w-5xl w-full text-center shadow-lg">
-    <h1 className="text-5xl md:text-6xl font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500">
+     <div className="min-h-screen  bg-gradient-to-b from-black via-gray-900 to-black text-white flex items-center justify-center px-6 py-20">
+  <div className="bg-white/5 border animated-gradient-borders   border-white/10 backdrop-blur-md rounded-xl p-10 max-w-5xl w-full text-center shadow-lg">
+    <h1 className="text-5xl  md:text-6xl font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500">
       Origin of HCMs
     </h1>
     <p className="text-xl md:text-2xl leading-relaxed text-gray-200">

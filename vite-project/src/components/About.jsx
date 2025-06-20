@@ -13,10 +13,8 @@ export default function About() {
         <Empty_Spaces />
         
       </Element>
-      <br />
       <Element name="about_hcm">
         <About_HCM /></Element>
-      <br />
       <Element name="origin">
       <Origin /></Element>
       <br />

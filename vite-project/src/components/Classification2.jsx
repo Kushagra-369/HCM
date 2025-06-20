@@ -68,7 +68,7 @@ export default function Classification2() {
             </div>
 
             <div className=' py-5'>
-                <div className=' text-white text-5xl nd:text-6xl flex justify-center items-center text-center'>
+                <div className=' text-white text-5xl md:text-6xl flex justify-center items-center text-center'>
                     <h1>S(Species) TYPE OF HCM</h1>
                 </div>
                 <div className="px-6 md:px-16 py-12 bg-black min-h-screen">

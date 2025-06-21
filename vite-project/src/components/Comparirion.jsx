@@ -3,6 +3,7 @@ import Logo from './Logo'
 import MovingComponent from 'react-moving-text';
 import './Greatest.css';
 import { Link as ScrollLink, Element } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 
 export default function Comparision() {
@@ -46,12 +47,11 @@ export default function Comparision() {
             key={key}
             className="transition duration-300 ease-in-out transform hover:scale-105 hover:text-yellow-300 border border-cyan-500 rounded-xl p-4 shadow-md hover:shadow-cyan-300"
           >
-            <a
-              href={item.href}
+            <Link to = {item.href}
               className="block text-cyan-200 font-semibold hover:underline"
             >
               {item.title1}
-            </a>
+            </Link>
             <div className="text-red-400 text-lg mt-2 font-medium">
               ❤️ {item.title2} hearts
             </div>
@@ -67,12 +67,11 @@ export default function Comparision() {
             key={key}
             className="bg-gradient-to-br from-[#0f172a] to-[#1e293b] border border-cyan-700 rounded-xl shadow-lg p-6 hover:shadow-cyan-500/40 hover:scale-105 transition-all duration-300 ease-in-out"
           >
-            <a
-              href={item.href}
+            <Link to={item.href}
               className="block text-cyan-200 font-semibold text-3xl md:text-4xl hover:underline tracking-wide"
             >
               {item.title1}
-            </a>
+            </Link>
             <div className="text-green-500 text-xl md:text-2xl mt-3 font-medium tracking-tight animate-pulse">
               ❤️ {item.title2} hearts
             </div>

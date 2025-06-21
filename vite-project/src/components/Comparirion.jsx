@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from './Logo'
 import MovingComponent from 'react-moving-text';
 import './Greatest.css';
+import { Link as ScrollLink, Element } from 'react-scroll';
 
 
 export default function Comparision() {
@@ -117,6 +118,17 @@ export default function Comparision() {
 
 
       </div>
+      <h1 className="items-center flex justify-center font-extrabold text-white text-2xl py-5">
+        <ScrollLink
+          to="navbar"
+          smooth={true}
+          duration={600}
+          offset={-70}
+          className="cursor-pointer"
+        >
+          <span>Back to top</span>
+        </ScrollLink>
+      </h1>
       <div>
         <Logo />
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from './Logo';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link, Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink, Element } from 'react-scroll';
 
 export default function Footer() {
@@ -27,7 +27,9 @@ export default function Footer() {
             backgroundSize: 'cover',
           }}
         >
-          {/* Scroll Link */}
+          <Link to = "/login2"><h1 className=' text-2xl text-white text-center py-10 font-black hover:underline'>
+            CONTACT WITH US
+          </h1></Link>
           <h1 className="items-center flex justify-center font-extrabold text-white text-2xl py-5">
             <ScrollLink
               to="navbar"

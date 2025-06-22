@@ -29,6 +29,8 @@ import Season1 from './components/Season1'
 import About_HCM from './components/About_HCM'
 import Origin from './components/Origin'
 import Empty_Spaces from './components/Empty_Spaces'
+import Login from './components/Login'
+import Login2 from './components/Login2'
 import Logo from './components/Logo'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -45,6 +47,8 @@ export default function App() {
           <Route path='classification' element={<Classification2 />} />
           <Route path='comparision' element={<Comparision />} />
           <Route path='about' element={<About />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/login2' element={<Login2 />} />
           <Route path='/sphinx' element={<Sphinix />} />
           <Route path='/rockman' element={<Rockman />} />
           <Route path='/tardihuman' element={<Tardihuman />} />

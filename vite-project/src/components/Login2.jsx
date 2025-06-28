@@ -17,7 +17,7 @@ export default function Login2() {
         }}>
             <div className="flex justify-end w-full p-6">
                 <div className="flex items-center    ">
-                    <Link to="/login2" className=" border-2  border-white text-white text-black bg-black p-2 rounded-l-2xl ">Light Theme</Link>
+                    <Link to="/login2" className=" border-2  border-white  text-black bg-black p-2 rounded-l-2xl ">Light Theme</Link>
 
                     <Link to="/login" className='border-2  border-white  bg-white p-2 rounded-r-2xl'>Dark Theme</Link>
                 </div>

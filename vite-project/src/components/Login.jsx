@@ -3,10 +3,15 @@ import { FaGoogle, FaFacebook, FaApple } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 export default function Login() {
+      const SignData = [
+        { name: 'name', placeholder: 'Enter your name', type: 'text' },
+        { name: 'email', placeholder: 'Enter your email', type: 'email' },
+        { name: 'password', placeholder: 'Enter your password', type: 'password' },
+    ]
     return (
         <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center"  style={{
           backgroundImage:
-            'url(https://t3.ftcdn.net/jpg/01/22/03/84/360_F_122038456_AEdKNITqNDwdPTVdPDy1Fk5YaD9Um1xm.jpg)',
+            'url(https://thumbs.dreamstime.com/b/grunge-red-forest-horror-background-red-color-grunge-background-horror-creepy-style-horror-background-dark-red-color-horror-326613608.jpg)',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
         }}>
@@ -22,36 +27,29 @@ export default function Login() {
                 <h1 className="text-xl md:text-2xl text-center py-5">
                     Enter your email address to log in or create an account.
                 </h1>
-                <div className="mt-4">
-                    <label className="block py-2" htmlFor="email">EMAIL ADDRESS</label>
-                    <input
-                        type="email"
-                        id="email"
-                        className="h-10 w-full border-2 text-white border-gray-300 rounded-2xl px-5 "
-                        placeholder="you@example.com"
-                    />
-                    <div className="flex py-3 gap-2 items-center">
+             <div>
+                    {SignData.map((item, key) => (
+                        <div key={key}>
+                            <label className="block py-2" htmlFor={item.name}>{item.name}</label>
+                            <input
+                                name={item.name}
+                                type={item.type}
+                                id={item.name}
+                                className="h-10 w-full border-2 border-gray-300 rounded-2xl px-5"
+                                placeholder={item.placeholder}
+                                required
+                            />
+                        </div>
+                    ))}
+                     <div className="flex py-3 gap-2 items-center">
                         <input id="remember" type="checkbox" className="text-2xl" />
                         <label htmlFor="remember" className="text-xl">Remember me</label>
                     </div>
                     <button
                         className="hover:bg-red-700 bg-red-500 h-10 w-full text-white rounded-2xl font-semibold transition"
-                        type="button"
+                        type="submit"
                     >
                         CONTINUE
-                    </button>
-                    <div className="text-center py-3">or</div>
-                    <div className="text-center px-2 text-xs text-gray-400 mb-4">
-                        By continuing, you agree to the Terms of Sale, Terms of Service, and Privacy Policy.
-                    </div>
-                    <button className="hover:bg-gray-200 h-10 w-full border-2 border-gray-300 hover:text-black rounded-2xl flex justify-center items-center gap-2 mb-3 transition">
-                        <FaGoogle /> Continue with Google
-                    </button>
-                    <button className="hover:bg-gray-200 h-10 w-full border-2 border-gray-300 hover:text-black rounded-2xl flex justify-center items-center gap-2 mb-3 transition">
-                        <FaFacebook /> Continue with Facebook
-                    </button>
-                    <button className="hover:bg-gray-200 h-10 w-full border-2 border-gray-300 hover:text-black rounded-2xl flex justify-center items-center gap-2 transition">
-                        <FaApple /> Continue with Apple
                     </button>
                 </div>
             </div>

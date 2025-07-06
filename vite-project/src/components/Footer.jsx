@@ -27,7 +27,7 @@ export default function Footer() {
             backgroundSize: 'cover',
           }}
         >
-          <Link to = "/login2"><h1 className=' text-2xl text-white text-center py-10 font-black hover:underline'>
+          <Link to = "/login2"><h1 className=' text-2xl  text-white text-center py-10 font-black hover:underline'>
             CONTACT WITH US
           </h1></Link>
           <h1 className="items-center flex justify-center font-extrabold text-white text-2xl py-5">

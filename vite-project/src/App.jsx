@@ -32,6 +32,8 @@ import Empty_Spaces from './components/Empty_Spaces'
 import Login from './components/Login'
 import Login2 from './components/Login2'
 import Logo from './components/Logo'
+import OTP1 from './components/OTP1'
+import Signed_In1 from './components/Signed_In1'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 export default function App() {
@@ -73,9 +75,10 @@ export default function App() {
           <Route path='/about_empty_spaces' element={<Empty_Spaces />} />
           <Route path='/about_hcm' element={<About_HCM />} />
           <Route path='/origin' element={<Origin />} />
+          <Route path='/otp1' element={<OTP1 />} />
+          <Route path='/signedin1' element={<Signed_In1 />} />
 
         </Routes>
-
 
 
 

@@ -1,0 +1,19 @@
+.scary-bg {
+  background-image: url('https://img.freepik.com/free-photo/halloween-wallpaper-with-zombie-hand_23-2149122586.jpg?semt=ais_hybrid&w=740'); /* replace with a creepy background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.otp-input {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 2px solid red;
+  background-color: #111;
+  color: #ff4d4d;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px red;
+}

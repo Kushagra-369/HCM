@@ -1,15 +1,18 @@
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "./horror-toast.css"; // 👈 custom styles
 
-// Initialize toast configuration globally
 export const toastConfig = {
   position: "top-right",
-  autoClose: 3000,
+  autoClose: 4000,
   hideProgressBar: false,
   closeOnClick: true,
   pauseOnHover: true,
   draggable: true,
-  theme: "light",
+  theme: "dark", // 👈 using dark theme as base
+  className: "horror-toast", // 👈 add custom class
+  bodyClassName: "horror-toast-body", // 👈 customize body
+  progressClassName: "horror-toast-progress", // 👈 customize progress
 };
 
 // Success Notification

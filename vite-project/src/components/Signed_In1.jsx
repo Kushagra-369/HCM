@@ -28,7 +28,10 @@ export default function Signed_In1() {
             />
           </div>
         ))}
-
+        <div className=' flex justify-between px-5'>
+          <h1></h1>
+          <a href=""> <h1 className=' hover:text-blue-600'>Forger password ?</h1></a>
+        </div>
         <div className="pt-6">
           <button
             type="submit"

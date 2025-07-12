@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { FaGoogle, FaFacebook, FaApple } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import { useFormik } from "formik"
-import {validationSignUpSchema} from "./Validation"
+import { validationSignUpSchema } from "./Validation"
 import { showSuccessToast, showErrorToast } from './Notification';
 import * as Yup from 'yup'
 import axios from "axios";
+import { APIURL } from '../GlobalAPIURL'
 
 export default function Login2() {
 
@@ -19,12 +20,14 @@ export default function Login2() {
 
         onSubmit: async (values, { resetForm }) => {
             try {
-                const response = await axios.post('http://localhost:6900/HCM', values);
+                const response = await axios.post(`${APIURL}HCM`, values);
 
                 const id = response.data.data._id
+                const email = response.data.data.email
                 if (response.status === 200 || response.status === 201) {
                     showSuccessToast(response.data.msg);
-                    navigate(`/otp1`)
+                    sessionStorage.setItem('Useremail', email)
+                    navigate(`/otp1/user_otp/${id}`)
                     resetForm();
                 }
             }
@@ -109,7 +112,7 @@ export default function Login2() {
 
                     <button
                         type="submit"
-                        className="h-12 w-full bg-gradient-to-r from-red-600 via-red-400 to-red-600 text-white rounded-xl font-bold"
+                        className="h-12 w-full bg-gradient-to-r hover:bg-gradient-to-r hover:from-red-700  hover:via-red-500 hover:to-red-700 from-red-600 via-red-400 to-red-600 text-white rounded-xl font-bold"
                     >
                         SIGN-IN IF YOU DARE
                     </button>
@@ -117,12 +120,22 @@ export default function Login2() {
 
                 <form>
                     <h1 className=' py-5'>Already joined ? then log-in</h1>
-                    <Link to='/signedin1'> <button
-                        className="hover:bg-blue-700 bg-blue-500 h-10 w-full text-white rounded-2xl font-semibold transition"
-                        type="submit"
-                    >
-                        LOG-IN
-                    </button></Link>
+                    <Link to='/signedin1'>
+                        <button
+                            className="drip-btn hover:bg-blue-600 bg-blue-500 h-10 w-full text-white rounded-2xl font-semibold relative transition"
+                            type="submit"
+                        >
+                            <span className="relative z-10">LOG-IN</span>
+
+                            {/* Falling drops */}
+                            <span className="drop"></span>
+                            <span className="drop"></span>
+                            <span className="drop"></span>
+                        </button>
+
+
+
+                    </Link>
                 </form>
             </div>
         </div>

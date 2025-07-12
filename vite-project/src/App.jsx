@@ -75,7 +75,7 @@ export default function App() {
           <Route path='/about_empty_spaces' element={<Empty_Spaces />} />
           <Route path='/about_hcm' element={<About_HCM />} />
           <Route path='/origin' element={<Origin />} />
-          <Route path='/otp1' element={<OTP1 />} />
+          <Route path='/otp1/:type/:userID' element={<OTP1 />} />
           <Route path='/signedin1' element={<Signed_In1 />} />
 
         </Routes>

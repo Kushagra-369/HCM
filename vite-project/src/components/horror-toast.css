@@ -1,0 +1,16 @@
+/* horror-toast.css */
+.horror-toast {
+  background-color: #1c1c1c;
+  color: #f44336;
+  font-family: 'Creepster', cursive; /* Optional spooky font */
+  border: 2px solid #8b0000;
+  box-shadow: 0 0 10px #ff0000;
+}
+
+.horror-toast-body {
+  font-size: 1.1rem;
+}
+
+.horror-toast-progress {
+  background: linear-gradient(90deg, red, darkred);
+}

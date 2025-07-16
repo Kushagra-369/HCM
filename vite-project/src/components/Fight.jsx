@@ -24,7 +24,11 @@ import image20 from '../assets/images/hcm 371.jpg'
 export default function Fight() {
   const [selectedList, setSelectedList] = useState([]);
   const [fightStarted, setFightStarted] = useState(false);
-  const [activeModal, setActiveModal] = useState(null); // current monster in modal
+  const [activeModal, setActiveModal] = useState(null);
+  const [inFight, setInFight] = useState(false);
+  const [turn, setTurn] = useState(0);
+  const [hpStatus, setHpStatus] = useState({});
+  const [log, setLog] = useState([]);
   const MAX = 2;
 
   const monsterData = {
@@ -38,7 +42,7 @@ export default function Fight() {
     PETRABYTE: { img: image10, hp: 1300, attacks: ['vine whip', 'immune to water & fire & fly', 'laser beam'], weaknesses: ['hackable', 'has switch off', "can't see at night"] },
     GORKON: { img: image11, hp: 700, attacks: ['gorilla smash', 'super clap', 'ground shock wave'], weaknesses: ['weak on full moon', 'fire', 'lead'] },
     SANDRAX: { img: image12, hp: 700, attacks: ['unbreakable', 'shape moulding', 'sand storm'], weaknesses: ['water', 'high winds', 'magnetic fields'] },
-    TARDION: { img: image14, hp: 500, attacks: ['hug crush', 'spine shots', 'regenerate health'], weaknesses: ['extreme temperature', 'toxic chemicals', 'high frequency sound'] },
+    TARDION: { img: image14, hp: 500, attacks: ['hug crush', 'spine shots', 'ground attack'], weaknesses: ['extreme temperature', 'toxic chemicals', 'high frequency sound'] },
     FLARON: { img: image13, hp: 900, attacks: ['hide underground', 'poison gas', 'fireball'], weaknesses: ['small tail exposed', 'sand', 'immobile'] },
     TIGRIS: { img: image16, hp: 900, attacks: ['wind whip', 'earthquake', 'super smash'], weaknesses: ['fire', 'low stamina', 'ultrasound'] },
     OCULUS: { img: image19, hp: 2000, attacks: ['electric shock', 'super wave', 'indestructible'], weaknesses: ['extreme heat', 'limited land range', 'no brain – only anger'] },
@@ -55,8 +59,52 @@ export default function Fight() {
     } else if (selectedList.length < MAX) {
       setSelectedList([...selectedList, name]);
     }
-    setActiveModal(null); // close modal
+    setActiveModal(null);
   };
+
+  const startBattle = () => {
+    const initialHp = {
+      [selectedList[0]]: monsterData[selectedList[0]].hp,
+      [selectedList[1]]: monsterData[selectedList[1]].hp,
+    };
+    setHpStatus(initialHp);
+    setInFight(true);
+    setFightStarted(false);
+    setLog([]);
+    setTurn(0);
+  };
+
+  const handleAttack = (attacker, defender, attack) => {
+    const damage = Math.floor(Math.random() * 200) + 50;
+    const newHp = Math.max(hpStatus[defender] - damage, 0);
+
+    setHpStatus((prev) => ({
+      ...prev,
+      [defender]: newHp,
+    }));
+
+    setLog((prev) => [
+      ...prev,
+      `${attacker} used ${attack} on ${defender} — ${damage} damage!`,
+    ]);
+
+    if (newHp <= 0) {
+      setLog((prev) => [...prev, `${defender} has been defeated!`]);
+    } else {
+      setTurn((prev) => (prev === 0 ? 1 : 0));
+    }
+  };
+
+  const restartGame = () => {
+    setSelectedList([]);
+    setFightStarted(false);
+    setActiveModal(null);
+    setInFight(false);
+    setTurn(0);
+    setHpStatus({});
+    setLog([]);
+  };
+
 
   return (
     <div className="bg-black min-h-screen text-white p-8">
@@ -71,13 +119,12 @@ export default function Fight() {
               key={name}
               disabled={isDisabled}
               onClick={() => setActiveModal(name)}
-              className={`py-3 px-4 rounded shadow ${
-                selectedList.includes(name)
-                  ? 'bg-gray-600'
-                  : isDisabled
+              className={`py-3 px-4 rounded shadow ${selectedList.includes(name)
+                ? 'bg-gray-600'
+                : isDisabled
                   ? 'bg-gray-800'
                   : 'bg-yellow-800 hover:bg-yellow-700'
-              }`}
+                }`}
             >
               {name}
             </button>
@@ -85,7 +132,6 @@ export default function Fight() {
         })}
       </div>
 
-      {/* Modal */}
       {activeModal && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
           <div className="bg-gray-900 p-6 rounded-lg shadow-lg max-w-sm w-full text-center relative">
@@ -102,11 +148,10 @@ export default function Fight() {
             />
             <button
               onClick={() => toggleSelect(activeModal)}
-              className={`px-4 py-2 rounded text-white ${
-                selectedList.includes(activeModal)
-                  ? 'bg-red-600 hover:bg-red-700'
-                  : 'bg-green-600 hover:bg-green-700'
-              }`}
+              className={`px-4 py-2 rounded text-white ${selectedList.includes(activeModal)
+                ? 'bg-red-600 hover:bg-red-700'
+                : 'bg-green-600 hover:bg-green-700'
+                }`}
             >
               {selectedList.includes(activeModal) ? 'Deselect' : 'Select'}
             </button>
@@ -114,7 +159,7 @@ export default function Fight() {
         </div>
       )}
 
-      {selectedList.length === MAX && (
+      {selectedList.length === MAX && !inFight && (
         <div className="text-center mb-8">
           <p className="text-green-400 mb-4">{selectedList.join(' and ')} are selected.</p>
           <button
@@ -126,10 +171,10 @@ export default function Fight() {
         </div>
       )}
 
-      {fightStarted && (
+      {fightStarted && !inFight && (
         <div className="mt-12 space-y-12">
           <h2 className="text-4xl text-center mb-8">Battle Preview</h2>
-          <div className="flex  flex-col md:flex-row justify-center items-start gap-12">
+          <div className="flex flex-col md:flex-row justify-center items-start gap-12">
             {selectedList.map((name) => {
               const m = monsterData[name];
               return (
@@ -153,6 +198,77 @@ export default function Fight() {
               );
             })}
           </div>
+          <div className="text-center">
+            <button
+              onClick={startBattle}
+              className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 mt-6 rounded"
+            >
+              Start Turn-Based Fight
+            </button>
+          </div>
+        </div>
+      )}
+
+      {inFight && (
+        <div className="mt-12 text-center">
+          <h2 className="text-4xl mb-6">Turn-Based Fight</h2>
+          <div className="flex flex-col md:flex-row justify-center gap-8 mb-8">
+            {selectedList.map((name) => {
+              const m = monsterData[name];
+              const opponent = selectedList[turn === 0 ? 1 : 0];
+              return (
+                <div key={name} className="bg-gray-800 p-4 rounded-lg w-full md:w-1/2">
+                  <h3 className="text-2xl font-bold mb-2">{name}</h3>
+                  <p className="text-red-400 mb-2">HP: {hpStatus[name]} / {m.hp}</p>
+                  <img src={m.img} alt={name} className="w-full h-auto rounded mb-4 border-4 border-yellow-500" />
+                  {turn === selectedList.indexOf(name) &&
+                    hpStatus[selectedList[0]] > 0 &&
+                    hpStatus[selectedList[1]] > 0 && (
+                      <div>
+                        <p className="mb-2">Choose an attack:</p>
+                        <div className="space-y-2">
+                          {m.attacks.map((attack) => (
+                            <button
+                              key={attack}
+                              onClick={() => handleAttack(name, opponent, attack)}
+                              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded block w-full"
+                            >
+                              {attack}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="bg-gray-900 p-4 rounded-lg max-w-xl mx-auto text-left">
+            <h4 className="text-xl mb-2 underline">Battle Log</h4>
+            <ul className="list-disc list-inside space-y-1">
+              {log.map((entry, i) => (
+                <li key={i}>{entry}</li>
+              ))}
+            </ul>
+          </div>
+
+          {(hpStatus[selectedList[0]] === 0 || hpStatus[selectedList[1]] === 0) && (
+            <div className="mt-6">
+              <h2 className="text-3xl text-green-400 mb-4">
+                {hpStatus[selectedList[0]] === 0
+                  ? `${selectedList[1]} wins!`
+                  : `${selectedList[0]} wins!`}
+              </h2>
+              <button
+                onClick={restartGame}
+                className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded"
+              >
+                Restart
+              </button>
+            </div>
+          )}
+
         </div>
       )}
     </div>

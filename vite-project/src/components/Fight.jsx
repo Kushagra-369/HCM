@@ -45,7 +45,7 @@ export default function Fight() {
     TARDION: { img: image14, hp: 500, attacks: ['hug crush', 'spine shots', 'ground attack'], weaknesses: ['extreme temperature', 'toxic chemicals', 'high frequency sound'] },
     FLARON: { img: image13, hp: 900, attacks: ['hide underground', 'poison gas', 'fireball'], weaknesses: ['small tail exposed', 'sand', 'immobile'] },
     TIGRIS: { img: image16, hp: 900, attacks: ['wind whip', 'earthquake', 'super smash'], weaknesses: ['fire', 'low stamina', 'ultrasound'] },
-    OCULUS: { img: image19, hp: 2000, attacks: ['electric shock', 'super wave', 'indestructible'], weaknesses: ['extreme heat', 'limited land range', 'no brain – only anger'] },
+    OCULUS: { img: image19, hp: 1700, attacks: ['electric shock', 'super wave', 'indestructible'], weaknesses: ['extreme heat', 'limited land range', 'no brain – only anger'] },
     FLURTONE: { img: image18, hp: 1000, attacks: ['fireball', 'ranged attack', 'disguise as stone'], weaknesses: ['water', 'almost immobile', 'ego'] },
     PETROVIS: { img: image17, hp: 600, attacks: ['wind slash', 'super bite', 'tackle'], weaknesses: ['water', 'gold', 'thunder'] },
   };
@@ -109,9 +109,9 @@ export default function Fight() {
   return (
     <div className="bg-black min-h-screen text-white p-8">
       <h1 className="text-5xl text-center mb-6">Choose your monsters</h1>
-      <p className="text-center mb-6">{selectedList.length}/{MAX} selected</p>
+      <p className="text-center mb-6 ">{selectedList.length}/{MAX} selected</p>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-2 text-black md:grid-cols-4 gap-4 mb-6">
         {allNames.map((name) => {
           const isDisabled = !selectedList.includes(name) && selectedList.length === MAX;
           return (
@@ -120,10 +120,10 @@ export default function Fight() {
               disabled={isDisabled}
               onClick={() => setActiveModal(name)}
               className={`py-3 px-4 rounded shadow ${selectedList.includes(name)
-                ? 'bg-gray-600'
+                ? 'bg-cyan-300'
                 : isDisabled
-                  ? 'bg-gray-800'
-                  : 'bg-yellow-800 hover:bg-yellow-700'
+                  ? 'bg-red-500'
+                  : 'bg-green-400 hover:bg-green-500'
                 }`}
             >
               {name}

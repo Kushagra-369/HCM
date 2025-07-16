@@ -12,6 +12,7 @@ const navLinks = [
   { href: '/classification', title: 'CLASSIFICATION' },
   { href: '/comparision', title: 'COMPARISION' },
   { href: '/about', title: 'MORE' },
+  { href: '/fight', title: 'FIGHT' },
 ];
 
 const scrollLinks = [

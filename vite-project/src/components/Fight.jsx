@@ -1,21 +1,25 @@
 import React, { useState } from 'react';
 
-import image1 from '../assets/images/hcm 090.jpg';
-import image2 from '../assets/images/HCM 570.jpg';
-import image3 from '../assets/images/hcm 901.jpg';
-import image4 from '../assets/images/hcm 270.jpg';
-import image6 from '../assets/images/hcm 701.jpg';
-import image7 from '../assets/images/HCM - 170.jpg';
-import image9 from '../assets/images/hcm 521.jpg';
-import image10 from '../assets/images/hcm 211.jpg';
-import image11 from '../assets/images/hcm 080.jpg';
-import image12 from '../assets/images/hcm 008.jpg';
-import image13 from '../assets/images/hcm 660.jpg';
-import image14 from '../assets/images/hcm 180.jpg';
-import image16 from '../assets/images/hcm 280.jpg';
-import image17 from '../assets/images/hcm 421.jpg';
-import image18 from '../assets/images/hcm 111.jpg';
-import image19 from '../assets/images/hcm 190.jpg';
+import image1 from '../assets/images/hcm 090.jpg'
+import image2 from '../assets/images/HCM 570.jpg'
+import image3 from '../assets/images/HCM 901.jpg'
+import image4 from '../assets/images/HCM 270.jpg'
+import image5 from '../assets/images/hcm 871.jpg'
+import image6 from '../assets/images/hcm 701.jpg'
+import image7 from '../assets/images/HCM - 170.jpg'
+import image8 from '../assets/images/hcm 522.jpg'
+import image9 from '../assets/images/hcm 521.jpg'
+import image10 from '../assets/images/hcm 211.jpg'
+import image11 from '../assets/images/hcm 080.jpg'
+import image12 from '../assets/images/hcm 008.jpg'
+import image13 from '../assets/images/hcm 660.jpg'
+import image14 from '../assets/images/hcm 180.jpg'
+import image15 from '../assets/images/hcm 561.jpg'
+import image16 from '../assets/images/hcm 280.jpg'
+import image17 from '../assets/images/hcm 421.jpg'
+import image18 from '../assets/images/hcm 111.jpg'
+import image19 from '../assets/images/hcm 190.jpg'
+import image20 from '../assets/images/hcm 371.jpg'
 
 export default function Fight() {
   const [selectedList, setSelectedList] = useState([]);

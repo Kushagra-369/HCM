@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 import image1 from '../assets/images/hcm 090.jpg'
 import image2 from '../assets/images/HCM 570.jpg'
@@ -30,6 +30,9 @@ export default function Fight() {
   const [hpStatus, setHpStatus] = useState({});
   const [log, setLog] = useState([]);
   const MAX = 2;
+
+  const previewRef = useRef(null);
+  const fightRef = useRef(null);
 
   const monsterData = {
     SPHINX: { img: image1, hp: 800, attacks: ['Super Punch', 'Super Roar', 'Killing grasp'], weaknesses: ['gold', 'blindness in dark', "can't bear hair pulling"] },
@@ -72,6 +75,10 @@ export default function Fight() {
     setFightStarted(false);
     setLog([]);
     setTurn(0);
+
+    setTimeout(() => {
+      fightRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
   };
 
   const handleAttack = (attacker, defender, attack) => {
@@ -104,7 +111,6 @@ export default function Fight() {
     setHpStatus({});
     setLog([]);
   };
-
 
   return (
     <div className="bg-black min-h-screen text-white p-8">
@@ -164,7 +170,12 @@ export default function Fight() {
           <p className="text-green-400 mb-4">{selectedList.join(' and ')} are selected.</p>
           <div className=' flex justify-center gap-2'>
             <button
-              onClick={() => setFightStarted(true)}
+              onClick={() => {
+                setFightStarted(true);
+                setTimeout(() => {
+                  previewRef.current?.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+              }}
               className="bg-red-600  hover:bg-red-700 text-white px-6 py-3 rounded"
             >
               Ready to Fight
@@ -180,13 +191,13 @@ export default function Fight() {
       )}
 
       {fightStarted && !inFight && (
-        <div className="mt-12 space-y-12">
+        <div ref={previewRef} className="mt-12 space-y-12">
           <h2 className="text-4xl text-center mb-8">Battle Preview</h2>
           <div className="flex flex-col md:flex-row justify-center items-start gap-12">
             {selectedList.map((name) => {
               const m = monsterData[name];
               return (
-                <div key={name} className=" bg-gradient-to-r from-green-400 via-black to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:via-black hover:to-green-400 text-center p-6 rounded-lg shadow-lg w-full md:w-1/2">
+                <div key={name} className="bg-gradient-to-r from-green-400 via-black to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:via-black hover:to-green-400 text-center p-6 rounded-lg shadow-lg w-full md:w-1/2">
                   <img src={m.img} alt={name} className="w-full h-auto rounded mb-4 border-4 border-yellow-500" />
                   <h3 className="text-3xl font-bold text-center mb-2">{name}</h3>
                   <p className="mb-4 text-xl text-red-500">HP: {m.hp} HEARTS</p>
@@ -206,7 +217,7 @@ export default function Fight() {
               );
             })}
           </div>
-          <div className="text-center  ">
+          <div className="text-center flex justify-center gap-4">
             <button
               onClick={startBattle}
               className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 mt-6 rounded"
@@ -224,14 +235,14 @@ export default function Fight() {
       )}
 
       {inFight && (
-        <div className="mt-12 text-center">
+        <div ref={fightRef} className="mt-12 text-center">
           <h2 className="text-4xl mb-6">Turn-Based Fight</h2>
           <div className="flex flex-col md:flex-row justify-center gap-8 mb-8">
             {selectedList.map((name) => {
               const m = monsterData[name];
               const opponent = selectedList[turn === 0 ? 1 : 0];
               return (
-                <div key={name} className="bg-gradient-to-r from-green-400 via-black to-red-600 hover:bg-gradient-to-r hover:from-red-600 hover:via-black hover:to-green-400 p-4  rounded-lg w-full md:w-1/2">
+                <div key={name} className="bg-gradient-to-r from-green-400 via-black to-red-600 hover:bg-gradient-to-r hover:from-red-600 hover:via-black hover:to-green-400 p-4 rounded-lg w-full md:w-1/2">
                   <h3 className="text-2xl font-bold mb-2">{name}</h3>
                   <p className="text-red-400 mb-2">HP: {hpStatus[name]} / {m.hp}</p>
                   <img src={m.img} alt={name} className="w-full h-auto rounded mb-4 border-4 border-yellow-500" />
@@ -257,21 +268,23 @@ export default function Fight() {
               );
             })}
           </div>
-          <button
-            onClick={restartGame}
-            className="bg-yellow-600  hover:bg-yellow-700 text-white px-6 py-3 rounded"
-          >
-            Select again
-          </button>
-          <button
-            onClick={startBattle}
-            className="bg-cyan-400  hover:bg-cyan-600 text-white px-6 py-3 rounded"
-          >
-            Start battle again
-          </button>
+          <div className='flex justify-center gap-4 py-4'>
+            <button
+              onClick={startBattle}
+              className="bg-cyan-400  hover:bg-cyan-600 text-white px-6 py-3 rounded"
+            >
+              Start battle again
+            </button>
+            <button
+              onClick={restartGame}
+              className="bg-yellow-600  hover:bg-yellow-700 text-white px-6 py-3 rounded"
+            >
+              Select again
+            </button>
+          </div>
 
           <div className="bg-gradient-to-r from-blue-600 via-black to-red-600 hover:bg-gradient-to-r hover:from-red-600 hover:via-white hover:text-black hover:to-blue-600 p-4 rounded-lg max-w-xl mx-auto text-left">
-            <h4 className="text-xl mb-2 underline">Battle Log</h4>
+            <h4 className="text-xl text-center mb-2 underline">Battle Log</h4>
             <ul className="list-disc list-inside space-y-1">
               {log.map((entry, i) => (
                 <li key={i}>{entry}</li>
@@ -294,7 +307,6 @@ export default function Fight() {
               </button>
             </div>
           )}
-
         </div>
       )}
     </div>

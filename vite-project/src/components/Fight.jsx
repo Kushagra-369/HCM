@@ -111,7 +111,7 @@ export default function Fight() {
       <h1 className="text-5xl text-center mb-6">Choose your monsters</h1>
       <p className="text-center mb-6 ">{selectedList.length}/{MAX} selected</p>
 
-      <div className="grid grid-cols-2 text-black md:grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-2  text-black md:grid-cols-4 gap-4 mb-6">
         {allNames.map((name) => {
           const isDisabled = !selectedList.includes(name) && selectedList.length === MAX;
           return (
@@ -119,7 +119,7 @@ export default function Fight() {
               key={name}
               disabled={isDisabled}
               onClick={() => setActiveModal(name)}
-              className={`py-3 px-4 rounded shadow ${selectedList.includes(name)
+              className={`py-3 px-4 hover:scale-105 rounded shadow  ${selectedList.includes(name)
                 ? 'bg-cyan-300'
                 : isDisabled
                   ? 'bg-red-500'
@@ -162,12 +162,20 @@ export default function Fight() {
       {selectedList.length === MAX && !inFight && (
         <div className="text-center mb-8">
           <p className="text-green-400 mb-4">{selectedList.join(' and ')} are selected.</p>
-          <button
-            onClick={() => setFightStarted(true)}
-            className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded"
-          >
-            Ready to Fight
-          </button>
+          <div className=' flex justify-center gap-2'>
+            <button
+              onClick={() => setFightStarted(true)}
+              className="bg-red-600  hover:bg-red-700 text-white px-6 py-3 rounded"
+            >
+              Ready to Fight
+            </button>
+            <button
+              onClick={restartGame}
+              className="bg-yellow-600  hover:bg-yellow-700 text-white px-6 py-3 rounded"
+            >
+              Select again
+            </button>
+          </div>
         </div>
       )}
 
@@ -178,7 +186,7 @@ export default function Fight() {
             {selectedList.map((name) => {
               const m = monsterData[name];
               return (
-                <div key={name} className="bg-gray-900 text-center p-6 rounded-lg shadow-lg w-full md:w-1/2">
+                <div key={name} className=" bg-gradient-to-r from-green-400 via-black to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:via-black hover:to-green-400 text-center p-6 rounded-lg shadow-lg w-full md:w-1/2">
                   <img src={m.img} alt={name} className="w-full h-auto rounded mb-4 border-4 border-yellow-500" />
                   <h3 className="text-3xl font-bold text-center mb-2">{name}</h3>
                   <p className="mb-4 text-xl text-red-500">HP: {m.hp} HEARTS</p>
@@ -198,12 +206,18 @@ export default function Fight() {
               );
             })}
           </div>
-          <div className="text-center">
+          <div className="text-center  ">
             <button
               onClick={startBattle}
               className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 mt-6 rounded"
             >
-              Start Turn-Based Fight
+              Start Fight
+            </button>
+            <button
+              onClick={restartGame}
+              className="bg-yellow-600  hover:bg-yellow-700 text-white px-6 py-3 mt-6 rounded"
+            >
+              Select again
             </button>
           </div>
         </div>
@@ -217,7 +231,7 @@ export default function Fight() {
               const m = monsterData[name];
               const opponent = selectedList[turn === 0 ? 1 : 0];
               return (
-                <div key={name} className="bg-gray-800 p-4 rounded-lg w-full md:w-1/2">
+                <div key={name} className="bg-gradient-to-r from-green-400 via-black to-red-600 hover:bg-gradient-to-r hover:from-red-600 hover:via-black hover:to-green-400 p-4  rounded-lg w-full md:w-1/2">
                   <h3 className="text-2xl font-bold mb-2">{name}</h3>
                   <p className="text-red-400 mb-2">HP: {hpStatus[name]} / {m.hp}</p>
                   <img src={m.img} alt={name} className="w-full h-auto rounded mb-4 border-4 border-yellow-500" />
@@ -243,8 +257,20 @@ export default function Fight() {
               );
             })}
           </div>
+          <button
+            onClick={restartGame}
+            className="bg-yellow-600  hover:bg-yellow-700 text-white px-6 py-3 rounded"
+          >
+            Select again
+          </button>
+          <button
+            onClick={startBattle}
+            className="bg-cyan-400  hover:bg-cyan-600 text-white px-6 py-3 rounded"
+          >
+            Start battle again
+          </button>
 
-          <div className="bg-gray-900 p-4 rounded-lg max-w-xl mx-auto text-left">
+          <div className="bg-gradient-to-r from-blue-600 via-black to-red-600 hover:bg-gradient-to-r hover:from-red-600 hover:via-white hover:text-black hover:to-blue-600 p-4 rounded-lg max-w-xl mx-auto text-left">
             <h4 className="text-xl mb-2 underline">Battle Log</h4>
             <ul className="list-disc list-inside space-y-1">
               {log.map((entry, i) => (

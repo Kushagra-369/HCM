@@ -63,6 +63,7 @@ function MenuOverlay({ items, onClose, isScroll }) {
                   className="animated-gradient-border-inner p-1 block text-center text-yellow-300 py-3 text-2xl font-semibold hover:text-black transition rounded-lg"
                 >
                   {title}
+                  
                 </ScrollLink>
               ) : (
                 <RouterLink
@@ -143,17 +144,31 @@ export default function Navbar() {
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: 'spring', stiffness: 300 }}
                 key={idx}
-                className="animated-gradient-border w-3/4 max-w-xs mx-auto my-2"
+                className="animated-gradient-border w-3/4  max-w-xs mx-auto my-2"
               >
                 <RouterLink
                   to={href}
-                  className="animated-gradient-border-inner p-1 block text-center text-yellow-300 py-3 text-2xl font-semibold hover:text-black transition rounded-lg"
+                  className="group relative block p-3 text-center text-yellow-300 py-3 text-2xl font-semibold transition-colors duration-300 hover:text-black rounded-lg overflow-hidden"
                 >
                   {title}
+
+                  {/* Top Border */}
+                  <span className="absolute top-0 left-0 h-1 w-0 bg-white transition-all duration-300 group-hover:w-full delay-[100ms] rounded-tl-lg rounded-tr-lg"></span>
+
+                  {/* Right Border */}
+                  <span className="absolute top-0 right-0 w-1 h-0 bg-white transition-all duration-300 group-hover:h-full delay-[200ms] rounded-tr-lg rounded-br-lg"></span>
+
+                  {/* Bottom Border */}
+                  <span className="absolute bottom-0 right-0 h-1 w-0 bg-white transition-all duration-300 group-hover:w-full delay-[300ms] rounded-bl-lg rounded-br-lg"></span>
+
+                  {/* Left Border */}
+                  <span className="absolute bottom-0 left-0 w-1 h-0 bg-white transition-all duration-300 group-hover:h-full rounded-bl-lg rounded-tl-lg"></span>
                 </RouterLink>
+
               </motion.div>
             ))}
           </ul>
+
         </div>
 
         {/* Animated Overlays for Mobile Menus */}

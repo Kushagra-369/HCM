@@ -5,7 +5,7 @@ import './Greatest.css';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-
+import image1 from '../assets/images/HCM-001.jpg'
 export default function Comparision() {
   const data = [
     { title1: "SPHINX", title2: "800", href: '/sphinx' },
@@ -162,11 +162,26 @@ export default function Comparision() {
             iteration="infinite"
             fillMode="none"
           >
-            <div className='items-center flex justify-center py-40'>
-              <div className='devil-shadow-card'>
-                <h1 className='text-3xl text-red-200 text-center py-10 font-horror'>SOON TO BE UPLOADED</h1>
-              </div>
-            </div>
+<div className="flex justify-center items-center min-h-screen bg-black bg-opacity-95">
+  <div className="p-8 w-[420px] bg-black/70 border border-red-900 rounded-xl shadow-[0_0_30px_red] text-center text-white font-horror">
+    
+    <h1 className="text-4xl text-red-600 tracking-wider mb-6 animate-pulse drop-shadow-lg">
+      ☠ OMNOXAR ☠
+    </h1>
+
+    <img
+      className="w-72 h-72 object-cover mx-auto mb-6 rounded-lg grayscale hover:grayscale-0 transition duration-500 shadow-[0_0_20px_#ff0000aa]"
+      src={image1}
+      alt="Omnoxar"
+    />
+
+    <h2 className="text-2xl text-yellow-100 font-bold tracking-wide">
+      HCM-001
+    </h2>
+  </div>
+</div>
+
+
           </MovingComponent>
         </motion.div>
       </motion.div>

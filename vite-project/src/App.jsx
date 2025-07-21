@@ -31,7 +31,7 @@ import Flurtone from './components/Flurtone';
 import Oculus from './components/Oculus';
 import Tigris from './components/Tigris';
 import Flurtotilus from './components/Flurtotilus';
-
+import Fight2 from './components/Fight2';
 // Misc pages
 import About_HCM from './components/About_HCM';
 import Origin from './components/Origin';
@@ -56,6 +56,7 @@ export default function App() {
 
         {/* Fight Routes */}
         <Route path="/fight" element={<Fight />} />
+        <Route path="/fight2" element={<Fight2 />} />
 
         {/* Monster Detail Pages */}
         <Route path="/sphinx" element={<Sphinix />} />

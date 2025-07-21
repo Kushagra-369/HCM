@@ -3,6 +3,7 @@ import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink, Element } from 'react-scroll';
 import { FaBars } from 'react-icons/fa6';
 import { GiSplitCross } from 'react-icons/gi';
+import { GiSwordsEmblem } from "react-icons/gi";
 import MovingComponent from 'react-moving-text';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Navbar.css';
@@ -12,7 +13,8 @@ const navLinks = [
   { href: '/classification', title: 'CLASSIFICATION' },
   { href: '/comparision', title: 'COMPARISION' },
   { href: '/about', title: 'MORE' },
-  { href: '/fight', title: 'FIGHT' },
+  { href: '/fight', title: 'FIGHT1' },
+  {href:'/fight2',title:"FIGHT2"}
 ];
 
 const scrollLinks = [
@@ -22,6 +24,9 @@ const scrollLinks = [
   { href: 'phase4', title: 'PHASE4' },
   { href: 'footer', title: 'FOOTER' },
 ];
+
+const mainLinks = navLinks.slice(0, 4); // HOME - MORE
+const fightLink = navLinks.slice(4); // includes both FIGHT and FIGHT2
 
 function MenuOverlay({ items, onClose, isScroll }) {
   return (
@@ -63,17 +68,11 @@ function MenuOverlay({ items, onClose, isScroll }) {
                   className="group relative block p-3 text-center text-yellow-300 py-3 text-2xl font-semibold transition-colors duration-300 hover:text-black rounded-lg overflow-hidden"
                 >
                   {title}
-                    <span className="absolute top-0 left-0 h-1 w-0 bg-white transition-all duration-300 group-hover:w-full delay-[100ms] rounded-tl-lg rounded-tr-lg"></span>
-
-                  {/* Right Border */}
+                  {/* Borders */}
+                  <span className="absolute top-0 left-0 h-1 w-0 bg-white transition-all duration-300 group-hover:w-full delay-[100ms] rounded-tl-lg rounded-tr-lg"></span>
                   <span className="absolute top-0 right-0 w-1 h-0 bg-white transition-all duration-300 group-hover:h-full delay-[200ms] rounded-tr-lg rounded-br-lg"></span>
-
-                  {/* Bottom Border */}
                   <span className="absolute bottom-0 right-0 h-1 w-0 bg-white transition-all duration-300 group-hover:w-full delay-[300ms] rounded-bl-lg rounded-br-lg"></span>
-
-                  {/* Left Border */}
                   <span className="absolute bottom-0 left-0 w-1 h-0 bg-white transition-all duration-300 group-hover:h-full rounded-bl-lg rounded-tl-lg"></span>
- 
                 </ScrollLink>
               ) : (
                 <RouterLink
@@ -94,7 +93,8 @@ function MenuOverlay({ items, onClose, isScroll }) {
 
 export default function Navbar() {
   const [openScrollMenu, setOpenScrollMenu] = useState(false);
-  const [openNavMenu, setOpenNavMenu] = useState(false);
+  const [openMainNavMenu, setOpenMainNavMenu] = useState(false);
+  const [openFightMenu, setOpenFightMenu] = useState(false);
 
   return (
     <Element name="navbar">
@@ -106,9 +106,9 @@ export default function Navbar() {
           backgroundSize: 'cover',
         }}
       >
-        <div className="flex justify-between px-5 text-white h-50 items-center py-4">
+        <div className="flex justify-between items-center px-5 py-15 text-white">
 
-          {/* Left: In-page scroll menu (mobile) */}
+          {/* Left bar - scroll menu (all screens) */}
           <div
             onClick={() => setOpenScrollMenu(true)}
             className="cursor-pointer text-3xl"
@@ -117,71 +117,76 @@ export default function Navbar() {
             <FaBars />
           </div>
 
-          {/* Center: Logo/Title */}
-          <div
-            className="text-5xl font-black md:text-6xl text-center"
-            style={{
-              fontFamily: "'Creepster', cursive",
-              textShadow: '2px 2px 8px black',
-            }}
-          >
-            <MovingComponent
-              type="swing"
-              duration="4000ms"
-              delay="0s"
-              direction="normal"
-              timing="ease-in-out"
-              iteration="infinite"
-              fillMode="both"
+          {/* Center + right section */}
+          <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-center gap-4 text-center">
+
+            {/* Title */}
+            <div
+              className="text-4xl md:text-6xl font-black"
+              style={{
+                fontFamily: "'Creepster', cursive",
+                textShadow: '2px 2px 8px black',
+              }}
             >
-              EMPTY SPACES
-            </MovingComponent>
+              <MovingComponent
+                type="swing"
+                duration="4000ms"
+                delay="0s"
+                direction="normal"
+                timing="ease-in-out"
+                iteration="infinite"
+                fillMode="both"
+              >
+                EMPTY SPACES
+              </MovingComponent>
+            </div>
+
+            {/* Inline nav (desktop only) */}
+            <ul className="hidden md:flex items-center gap-6 pl-6">
+              {mainLinks.map(({ href, title }, idx) => (
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: 'spring', stiffness: 300 }}
+                  key={idx}
+                  className="animated-gradient-border"
+                >
+                  <RouterLink
+                    to={href}
+                    className="group relative block px-4 py-2 text-yellow-300 text-xl font-semibold transition-colors duration-300 hover:text-black rounded-lg overflow-hidden"
+                  >
+                    {title}
+                    {/* Border animation */}
+                    <span className="absolute top-0 left-0 h-1 w-0 bg-white transition-all duration-300 group-hover:w-full delay-[100ms] rounded-tl-lg rounded-tr-lg"></span>
+                    <span className="absolute top-0 right-0 w-1 h-0 bg-white transition-all duration-300 group-hover:h-full delay-[200ms] rounded-tr-lg rounded-br-lg"></span>
+                    <span className="absolute bottom-0 right-0 h-1 w-0 bg-white transition-all duration-300 group-hover:w-full delay-[300ms] rounded-bl-lg rounded-br-lg"></span>
+                    <span className="absolute bottom-0 left-0 w-1 h-0 bg-white transition-all duration-300 group-hover:h-full rounded-bl-lg rounded-tl-lg"></span>
+                  </RouterLink>
+                </motion.div>
+              ))}
+            </ul>
           </div>
 
-          {/* Right: Router menu (mobile) */}
+          {/* Fight Menu Toggle - Desktop Only */}
+          <div
+            onClick={() => setOpenFightMenu(true)}
+            className="hidden md:block cursor-pointer px-5 text-red-600 hover:scale-110 duration-500 text-5xl"
+            aria-label="Open fight menu"
+          >
+            <GiSwordsEmblem />
+
+          </div>
+
+          {/* All Nav - Mobile Only */}
           <button
-            onClick={() => setOpenNavMenu(true)}
+            onClick={() => setOpenMainNavMenu(true)}
             className="md:hidden block cursor-pointer text-3xl"
-            aria-label="Open nav menu"
+            aria-label="Open full nav menu"
           >
             <FaBars />
           </button>
-
-          {/* Desktop Nav Links */}
-          <ul className="hidden md:flex justify-center gap-10">
-            {navLinks.map(({ href, title }, idx) => (
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: 'spring', stiffness: 300 }}
-                key={idx}
-                className="animated-gradient-border w-3/4  max-w-xs mx-auto my-2"
-              >
-                <RouterLink
-                  to={href}
-                  className="group relative block p-3 text-center text-yellow-300 py-3 text-2xl font-semibold transition-colors duration-300 hover:text-black rounded-lg overflow-hidden"
-                >
-                  {title}
-
-                  {/* Top Border */}
-                  <span className="absolute top-0 left-0 h-1 w-0 bg-white transition-all duration-300 group-hover:w-full delay-[100ms] rounded-tl-lg rounded-tr-lg"></span>
-
-                  {/* Right Border */}
-                  <span className="absolute top-0 right-0 w-1 h-0 bg-white transition-all duration-300 group-hover:h-full delay-[200ms] rounded-tr-lg rounded-br-lg"></span>
-
-                  {/* Bottom Border */}
-                  <span className="absolute bottom-0 right-0 h-1 w-0 bg-white transition-all duration-300 group-hover:w-full delay-[300ms] rounded-bl-lg rounded-br-lg"></span>
-
-                  {/* Left Border */}
-                  <span className="absolute bottom-0 left-0 w-1 h-0 bg-white transition-all duration-300 group-hover:h-full rounded-bl-lg rounded-tl-lg"></span>
-                </RouterLink>
-
-              </motion.div>
-            ))}
-          </ul>
-
         </div>
 
-        {/* Animated Overlays for Mobile Menus */}
+        {/* Overlays */}
         {openScrollMenu && (
           <MenuOverlay
             items={scrollLinks}
@@ -189,10 +194,17 @@ export default function Navbar() {
             isScroll={true}
           />
         )}
-        {openNavMenu && (
+        {openMainNavMenu && (
           <MenuOverlay
             items={navLinks}
-            onClose={() => setOpenNavMenu(false)}
+            onClose={() => setOpenMainNavMenu(false)}
+            isScroll={false}
+          />
+        )}
+        {openFightMenu && (
+          <MenuOverlay
+            items={fightLink}
+            onClose={() => setOpenFightMenu(false)}
             isScroll={false}
           />
         )}

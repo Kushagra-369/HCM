@@ -17,8 +17,8 @@ import image15 from '../assets/Failed_images/slenderman.webp';
 import image16 from '../assets/Failed_images/noface.webp';
 import image17 from '../assets/Failed_images/upsidedown.webp';
 import image18 from '../assets/Failed_images/mouth2.jpg';
-import image19 from '../assets/Failed_images/replace.gif'
-import image20 from '../assets/Failed_images/multiple.gif'
+// import image19 from '../assets/Failed_images/replace.gif'
+// import image20 from '../assets/Failed_images/multiple.gif'
 
 const failedImages = [
   {
@@ -93,14 +93,14 @@ const failedImages = [
     image: image18,
     detail: 'Lamprey mouth embedded in chest. It whispers constantly.',
   },
-  {
-    image: image19,
-    detail: 'Mimic DNA created a face that replaces itself over and over.',
-  },
-  {
-    image: image20,
-    detail: 'Attempted to host multiple faces. None agree on a single identity.',
-  }
+  // {
+  //   image: image19,
+  //   detail: 'Mimic DNA created a face that replaces itself over and over.',
+  // },
+  // {
+  //   image: image20,
+  //   detail: 'Attempted to host multiple faces. None agree on a single identity.',
+  // }
 ];
 
 

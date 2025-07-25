@@ -134,7 +134,7 @@ export default function Footer() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
           >
-            <h1><a href="/failed">CLICK TO SEE OUR FAILED PROJECTS</a></h1>
+            <h1><Link to ="/failed">CLICK TO SEE OUR FAILED PROJECTS</Link></h1>
           </motion.div>
         </div>
 

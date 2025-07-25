@@ -23,7 +23,7 @@ import image20 from '../assets/Failed_images/multiple.gif'
 const failedImages = [
   {
     image: image1,
-    detail: 'Human and crocodile DNA. The jaw became uncontrollably aggressive.',
+    detail: 'Human and crocodile DNA , The jaw became uncontrollably aggressive.',
   },
   {
     image: image2,

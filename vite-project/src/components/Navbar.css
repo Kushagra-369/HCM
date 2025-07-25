@@ -13,9 +13,15 @@
   border-radius: 0.75rem; /* Match Tailwind's rounded-lg */
   background: linear-gradient(270deg, #0408f9, #07f647, #f30909, #07e9f1 , #100f01);
   background-size: 400% 400%;
-  animation: border-move 5s linear infinite;
+  animation: border-move 8s linear infinite;
   
 }
+
+.horror-container {
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.9); /* black shadow */
+  /* You can adjust the values to get the desired shadow size/spread */
+}
+
 
 .animated-gradient-border-inner {
   border-radius: 0.75rem;

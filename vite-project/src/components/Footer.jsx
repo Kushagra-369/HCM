@@ -127,6 +127,17 @@ export default function Footer() {
           </motion.div>
         </div>
 
+        <div>
+          <motion.div
+            className="pb-10 px-5 text-center text-red-500"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h1><a href="/failed">CLICK TO SEE OUR FAILED PROJECTS</a></h1>
+          </motion.div>
+        </div>
+
         <motion.div
           className="pb-10 px-5"
           initial={{ opacity: 0, scale: 0.9 }}

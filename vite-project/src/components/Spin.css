@@ -1,0 +1,12 @@
+/* FailedDetail.css */
+.spin-flip {
+  transition: transform 1s;
+}
+
+.spin-flip:active {
+  transform: rotateY(180deg);
+}
+
+.animate-spin-slow {
+  animation: spinSlow 10s linear infinite;
+}

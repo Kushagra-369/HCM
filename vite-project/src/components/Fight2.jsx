@@ -194,19 +194,17 @@ export default function Fight2() {
           <h2 className="text-3xl mb-6 text-center">
             Select 2 Monsters for Fight 1
           </h2>
-
-          <div className="flex flex-wrap justify-center gap-8 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {allNames.map((name) => {
               const m = monsterData[name];
               const selected = selectedMonsters.includes(name);
               return (
-                <div key={name} className="text-center">
+                <div key={name} className="flex flex-col items-center text-center">
                   <img
                     src={m.img}
                     alt={name}
-                    className={`w-48 h-auto rounded-lg cursor-pointer border-4 ${
-                      selected ? 'border-red-600' : 'border-transparent'
-                    }`}
+                    className={`w-48 h-auto rounded-lg cursor-pointer border-4 ${selected ? 'border-red-600' : 'border-transparent'
+                      }`}
                     onClick={() => toggleSelect(name)}
                     style={{ filter: disabledForSelection(name) ? 'grayscale(1)' : 'none' }}
                   />
@@ -216,67 +214,66 @@ export default function Fight2() {
             })}
           </div>
 
+
           {/* Show selected monsters details */}
           {selectedMonsters.length === 2 && (
-            <div className="mb-6 max-w-4xl mx-auto bg-gray-900 p-6 rounded-lg">
-              <h3 className="text-2xl mb-4 text-center">Selected Monsters Details</h3>
-              <div className="flex text-center justify-around flex-wrap gap-8">
-                {selectedMonsters.map((name) => {
-                  const m = monsterData[name];
-                  return (
-                    <div
-                      key={name}
-                      className="bg-black p-4 rounded shadow-lg max-w-xs flex-1"
-                    >
-                      <img
-                        src={m.img}
-                        alt={name}
-                        className="w-40 h-auto rounded mb-4 mx-auto"
-                      />
-                      <h4 className="text-xl font-bold mb-2">{name}</h4>
-                      <p>
-                        <strong>HP:</strong> {m.hp}
-                      </p>
-                      <p>
-                        <strong>Attacks:</strong>
-                      </p>
-                      <ul className="list-disc list-inside mb-2">
-                        {m.attacks.map((a, i) => (
-                          <li key={i}>{a}</li>
-                        ))}
-                      </ul>
-                      <p>
-                        <strong>Weaknesses:</strong>
-                      </p>
-                      <ul className="list-disc list-inside">
-                        {m.weaknesses.map((w, i) => (
-                          <li key={i}>{w}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="mt-6 flex justify-center gap-6">
-                <button
-                  onClick={reselect}
-                  className="bg-yellow-600 hover:bg-yellow-700 px-6 py-3 rounded font-semibold"
-                >
-                  Reselect Monsters
-                </button>
-                <button
-                  onClick={startFight}
-                  disabled={selectedMonsters.length !== 2}
-                  className={`px-6 py-3 rounded font-semibold text-white ${
-                    selectedMonsters.length === 2
-                      ? 'bg-red-600 hover:bg-red-700'
-                      : 'bg-gray-600 cursor-not-allowed'
-                  }`}
-                >
-                  Start Fight 1
-                </button>
-              </div>
-            </div>
+         <div className="mb-6 md:max-w-4xl mx-auto bg-gray-900 p-6 rounded-lg">
+  <h3 className="text-2xl mb-4 text-center text-white">Selected Monsters Details</h3>
+
+  <div className="flex flex-wrap justify-center gap-4">
+    {selectedMonsters.map((name) => {
+      const m = monsterData[name];
+      return (
+        <div
+          key={name}
+          className="bg-black text-white p-4 rounded shadow-lg w-[45%] max-w-[180px] flex flex-col items-center"
+        >
+          <img
+            src={m.img}
+            alt={name}
+            className="w-24 h-auto rounded mb-4"
+          />
+          <h4 className="text-base md:text-xl font-bold mb-2 text-center">{name}</h4>
+          <p><strong>HP:</strong> {m.hp}</p>
+          <p className="mt-2 font-semibold">Attacks:</p>
+          <ul className="list-disc text-center list-inside mb-2 text-sm">
+            {m.attacks.map((a, i) => (
+              <li key={i}>{a}</li>
+            ))}
+          </ul>
+          <p className="mt-2 font-semibold">Weaknesses:</p>
+          <ul className="list-disc text-center list-inside text-sm">
+            {m.weaknesses.map((w, i) => (
+              <li key={i}>{w}</li>
+            ))}
+          </ul>
+        </div>
+      );
+    })}
+  </div>
+
+  <div className="mt-6 flex flex-wrap justify-center gap-6">
+    <button
+      onClick={reselect}
+      className="bg-yellow-600 hover:bg-yellow-700 px-6 py-3 rounded font-semibold text-white"
+    >
+      Reselect Monsters
+    </button>
+    <button
+      onClick={startFight}
+      disabled={selectedMonsters.length !== 2}
+      className={`px-6 py-3 rounded font-semibold text-white ${
+        selectedMonsters.length === 2
+          ? 'bg-red-600 hover:bg-red-700'
+          : 'bg-gray-600 cursor-not-allowed'
+      }`}
+    >
+      Start Fight
+    </button>
+  </div>
+</div>
+
+
           )}
         </>
       )}
@@ -285,16 +282,17 @@ export default function Fight2() {
       {inFight && currentFightMonsters.length === 2 && (
         <div
           ref={fightRef}
-          className="max-w-5xl mx-auto bg-red-600 p-8 rounded-lg shadow-lg"
+          className="max-w-5xl mx-auto bg-red-600 p-4 md:p-8 rounded-lg shadow-lg"
         >
-          <h2 className="text-center text-4xl mb-8">
+          <h2 className="text-center text-2xl md:text-4xl mb-6 text-white">
             {stage === 3
               ? 'Final Fight'
               : stage === 2
-              ? 'Fight 2'
-              : 'Fight 1'}
+                ? 'Fight 2'
+                : 'Fight 1'}
           </h2>
-          <div className="flex flex-wrap justify-center gap-12">
+
+          <div className="flex justify-center gap-4 md:gap-12">
             {currentFightMonsters.map((name, idx) => {
               const m = monsterData[name];
               const hp = hpStatus[name];
@@ -305,26 +303,27 @@ export default function Fight2() {
               return (
                 <div
                   key={name}
-                  className="bg-black p-6 rounded-lg shadow-xl max-w-sm flex flex-col items-center"
+                  className="bg-black text-white p-3 md:p-6 rounded-lg shadow-xl w-1/2 max-w-[160px] md:max-w-sm flex flex-col items-center"
                 >
                   <img
                     src={m.img}
                     alt={name}
-                    className="w-48 h-auto rounded mb-4 border-4 border-red-700"
+                    className="w-20 md:w-40 h-auto rounded mb-2 md:mb-4 border-4 border-red-700"
                   />
-                  <h3 className="text-3xl font-bold mb-2">{name}</h3>
-                  <p className="mb-4 text-xl">HP: {hp}</p>
-                  <div className="flex flex-col gap-3">
+                  <h3 className="text-lg md:text-2xl font-bold mb-1 md:mb-2 text-center">
+                    {name}
+                  </h3>
+                  <p className="mb-2 text-sm md:text-lg">HP: {hp}</p>
+                  <div className="flex flex-col gap-1 md:gap-2 w-full">
                     {m.attacks.map((attack, i) => (
                       <button
                         key={i}
                         disabled={!attacker || defenderHp <= 0}
                         onClick={() => handleAttack(name, defender, attack)}
-                        className={`px-4 py-2 rounded font-semibold transition ${
-                          attacker
+                        className={`px-2 py-1 md:px-4 md:py-2 text-xs md:text-base rounded font-semibold transition w-full ${attacker
                             ? 'bg-blue-600 hover:bg-blue-900 text-white cursor-pointer'
                             : 'bg-gray-700 text-gray-400 cursor-not-allowed'
-                        }`}
+                          }`}
                       >
                         {attack}
                       </button>
@@ -334,8 +333,9 @@ export default function Fight2() {
               );
             })}
           </div>
+
           <div
-            className="max-h-48 overflow-auto bg-black mt-8 p-4 rounded border border-red-700 text-left"
+            className="max-h-48 overflow-auto bg-black mt-6 md:mt-8 p-3 md:p-4 rounded border border-red-700 text-left text-white text-sm md:text-base"
             aria-live="polite"
           >
             {log.map((entry, idx) => (
@@ -344,6 +344,7 @@ export default function Fight2() {
           </div>
         </div>
       )}
+
 
       {/* Tournament winner and restart */}
       {!inFight &&

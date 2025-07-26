@@ -193,12 +193,15 @@ export default function Fight() {
       {fightStarted && !inFight && (
         <div ref={previewRef} className="mt-12 space-y-12">
           <h2 className="text-4xl text-center mb-8">Battle Preview</h2>
-          <div className="flex flex-col md:flex-row justify-center items-start gap-12">
+          <div className="flex flex-row md:flex-row justify-center items-start gap-12">
             {selectedList.map((name) => {
               const m = monsterData[name];
               return (
-                <div key={name} className="bg-gradient-to-r from-green-400 via-black to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:via-black hover:to-green-400 text-center p-6 rounded-lg shadow-lg w-full md:w-1/2">
-                  <img src={m.img} alt={name} className="w-full h-auto rounded mb-4 border-4 border-yellow-500" />
+                <div key={name} className="bg-gradient-to-r   from-green-400 via-black to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:via-black hover:to-green-400 text-center p-6 rounded-lg shadow-lg w-full md:w-1/2">
+                  <div className=' flex justify-center'>
+                    <img src={m.img} alt={name} className="w-1/2  h-auto rounded mb-4 border-4 border-yellow-500" />
+
+                  </div>
                   <h3 className="text-3xl font-bold text-center mb-2">{name}</h3>
                   <p className="mb-4 text-xl text-red-500">HP: {m.hp} HEARTS</p>
                   <div className="mb-4">
@@ -237,7 +240,7 @@ export default function Fight() {
       {inFight && (
         <div ref={fightRef} className="mt-12 text-center">
           <h2 className="text-4xl mb-6">Turn-Based Fight</h2>
-          <div className="flex flex-col md:flex-row justify-center gap-8 mb-8">
+          <div className="flex flex-row md:flex-row justify-center gap-8 mb-8">
             {selectedList.map((name) => {
               const m = monsterData[name];
               const opponent = selectedList[turn === 0 ? 1 : 0];

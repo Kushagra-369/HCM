@@ -29,7 +29,7 @@ export default function Failed() {
         <div className="flex justify-center">
           <div
             onClick={toggleTop}
-            className="cursor-pointer hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl h-55 w-45 md:h-100 md:w-80 spin-flip"
+            className="cursor-pointer hover:scale-110 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl h-55 w-45 md:h-100 md:w-80 spin-flip"
             style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}
           >
             {showTopDetail ? (

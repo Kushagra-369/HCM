@@ -94,13 +94,13 @@ const failedImages = [
     detail: 'Lamprey mouth embedded in chest. It whispers constantly.',
   },
   {
-    image: image19,
+    image: image19, 
     detail: 'Mimic DNA created a face that replaces itself over and over.',
   },
   {
     image: image20,
     detail: 'Attempted to host multiple faces. None agree on a single identity.',
-  }
+  },
 ];
 
 

@@ -210,7 +210,7 @@ export default function Classification2() {
 
             {/* Greatest Fusion Spin Text */}
             <motion.div
-                className='text-6xl md:text-9xl text-red-600 text-center'
+                className='text-6xl font-horror md:text-9xl text-red-600 text-center'
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 2 }}
@@ -228,8 +228,9 @@ export default function Classification2() {
                 </MovingComponent>
             </motion.div>
 
-            <h1 className='text-2xl text-cyan-300 text-center py-10'>soon to be uploaded</h1>
-
+            <h1 className="text-4xl font-horror text-cyan-300 text-center py-10 tracking-wider mb-6 animate-pulse drop-shadow-lg">
+                ☠ OMNOXAR ☠
+            </h1>
             <motion.h1
                 className="items-center flex justify-center font-extrabold text-white text-2xl py-5"
                 initial={{ opacity: 0 }}

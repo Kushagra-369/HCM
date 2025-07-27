@@ -261,81 +261,103 @@ export default function Fight() {
 )}
 
 
-      {inFight && (
-        <div ref={fightRef} className="mt-12 text-center">
-          <h2 className="text-4xl mb-6">Turn-Based Fight</h2>
-          <div className="flex flex-row md:flex-row justify-center gap-8 mb-8">
-            {selectedList.map((name) => {
-              const m = monsterData[name];
-              const opponent = selectedList[turn === 0 ? 1 : 0];
-              return (
-                <div key={name} className="bg-gradient-to-r from-green-400 via-black to-red-600 hover:bg-gradient-to-r hover:from-red-600 hover:via-black hover:to-green-400 p-4 rounded-lg w-full md:w-1/2">
-                  <h3 className="text-2xl font-bold mb-2">{name}</h3>
-                  <p className="text-red-400 mb-2">HP: {hpStatus[name]} / {m.hp}</p>
-                  <img src={m.img} alt={name} className="w-full h-auto rounded mb-4 border-4 border-yellow-500" />
-                  {turn === selectedList.indexOf(name) &&
-                    hpStatus[selectedList[0]] > 0 &&
-                    hpStatus[selectedList[1]] > 0 && (
-                      <div>
-                        <p className="mb-2">Choose an attack:</p>
-                        <div className="space-y-2">
-                          {m.attacks.map((attack) => (
-                            <button
-                              key={attack}
-                              onClick={() => handleAttack(name, opponent, attack)}
-                              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded block w-full"
-                            >
-                              {attack}
-                            </button>
-                          ))}
-                        </div>
-                      </div>
-                    )}
+   {inFight && (
+  <div ref={fightRef} className="mt-12 text-center px-4">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl mb-6">Turn-Based Fight</h2>
+
+    <div className="flex flex-wrap justify-center gap-4 mb-8">
+      {selectedList.map((name) => {
+        const m = monsterData[name];
+        const opponent = selectedList[turn === 0 ? 1 : 0];
+        return (
+          <div
+            key={name}
+            className="w-[45%] sm:w-[40%] md:w-1/2 lg:w-1/3
+                       bg-gradient-to-r from-green-400 via-black to-red-600 
+                       hover:from-red-600 hover:via-black hover:to-green-400 
+                       p-4 rounded-lg break-words"
+          >
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 break-words">
+              {name}
+            </h3>
+            <p className="text-sm sm:text-base text-red-400 mb-2 break-words">
+              HP: {hpStatus[name]} / {m.hp}
+            </p>
+            <img
+              src={m.img}
+              alt={name}
+              className="w-full h-auto max-w-[120px] mx-auto rounded mb-4 border-4 border-yellow-500"
+            />
+
+            {/* Only show attack buttons for the current fighter */}
+            {turn === selectedList.indexOf(name) &&
+              hpStatus[selectedList[0]] > 0 &&
+              hpStatus[selectedList[1]] > 0 && (
+                <div>
+                  <p className="text-sm sm:text-base mb-2">Choose an attack:</p>
+                  <div className="space-y-2">
+                    {m.attacks.map((attack) => (
+                      <button
+                        key={attack}
+                        onClick={() => handleAttack(name, opponent, attack)}
+                        className="text-sm sm:text-base bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded block w-full break-words"
+                      >
+                        {attack}
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              );
-            })}
+              )}
           </div>
-          <div className='flex justify-center gap-4 py-4'>
-            <button
-              onClick={startBattle}
-              className="bg-cyan-400  hover:bg-cyan-600 text-white px-6 py-3 rounded"
-            >
-              Start battle again
-            </button>
-            <button
-              onClick={restartGame}
-              className="bg-yellow-600  hover:bg-yellow-700 text-white px-6 py-3 rounded"
-            >
-              Select again
-            </button>
-          </div>
+        );
+      })}
+    </div>
 
-          <div className="bg-gradient-to-r from-blue-600 via-black to-red-600 hover:bg-gradient-to-r hover:from-red-600 hover:via-white hover:text-black hover:to-blue-600 p-4 rounded-lg max-w-xl mx-auto text-left">
-            <h4 className="text-xl text-center mb-2 underline">Battle Log</h4>
-            <ul className="list-disc list-inside space-y-1">
-              {log.map((entry, i) => (
-                <li key={i}>{entry}</li>
-              ))}
-            </ul>
-          </div>
+    {/* Action buttons */}
+    <div className="flex flex-col sm:flex-row justify-center gap-4 py-4">
+      <button
+        onClick={startBattle}
+        className="bg-cyan-400 hover:bg-cyan-600 text-white px-6 py-3 rounded text-sm sm:text-base"
+      >
+        Start battle again
+      </button>
+      <button
+        onClick={restartGame}
+        className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded text-sm sm:text-base"
+      >
+        Select again
+      </button>
+    </div>
 
-          {(hpStatus[selectedList[0]] === 0 || hpStatus[selectedList[1]] === 0) && (
-            <div className="mt-6">
-              <h2 className="text-3xl text-green-400 mb-4">
-                {hpStatus[selectedList[0]] === 0
-                  ? `${selectedList[1]} wins!`
-                  : `${selectedList[0]} wins!`}
-              </h2>
-              <button
-                onClick={restartGame}
-                className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded"
-              >
-                Restart
-              </button>
-            </div>
-          )}
-        </div>
-      )}
+    {/* Battle Log */}
+    <div className="bg-gradient-to-r from-blue-600 via-black to-red-600 hover:from-red-600 hover:via-white hover:text-black hover:to-blue-600 p-4 rounded-lg max-w-xl mx-auto text-left text-sm sm:text-base break-words">
+      <h4 className="text-base sm:text-lg text-center mb-2 underline">Battle Log</h4>
+      <ul className="list-disc list-inside space-y-1">
+        {log.map((entry, i) => (
+          <li key={i}>{entry}</li>
+        ))}
+      </ul>
+    </div>
+
+    {/* Winner announcement */}
+    {(hpStatus[selectedList[0]] === 0 || hpStatus[selectedList[1]] === 0) && (
+      <div className="mt-6">
+        <h2 className="text-2xl sm:text-3xl text-green-400 mb-4">
+          {hpStatus[selectedList[0]] === 0
+            ? `${selectedList[1]} wins!`
+            : `${selectedList[0]} wins!`}
+        </h2>
+        <button
+          onClick={restartGame}
+          className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded text-sm sm:text-base"
+        >
+          Restart
+        </button>
+      </div>
+    )}
+  </div>
+)}
+
     </div>
   );
 }

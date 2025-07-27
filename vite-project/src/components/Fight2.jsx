@@ -233,7 +233,7 @@ export default function Fight2() {
             alt={name}
             className="w-24 h-auto rounded mb-4"
           />
-          <h4 className="text-base md:text-xl font-bold mb-2 text-center">{name}</h4>
+          <h4 className="text-base md:text-xl font-bold mb-2 px-5 text-center">{name}</h4>
           <p><strong>HP:</strong> {m.hp}</p>
           <p className="mt-2 font-semibold">Attacks:</p>
           <ul className="list-disc text-center list-inside mb-2 text-sm">

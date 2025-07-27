@@ -191,36 +191,53 @@ export default function Fight() {
       )}
 
       {fightStarted && !inFight && (
-        <div ref={previewRef} className="mt-12 space-y-12">
+        <div ref={previewRef} className="mt-12 space-y-12 px-4">
           <h2 className="text-4xl text-center mb-8">Battle Preview</h2>
-          <div className="flex flex-row md:flex-row justify-center items-start gap-12">
+
+          {/* Keep flex row on all screens, wrap if needed */}
+          <div className="flex flex-row flex-wrap justify-center items-start gap-4">
             {selectedList.map((name) => {
               const m = monsterData[name];
               return (
-                <div key={name} className="bg-gradient-to-r   from-green-400 via-black to-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:via-black hover:to-green-400 text-center p-6 rounded-lg shadow-lg w-full md:w-1/2">
-                  <div className=' flex justify-center'>
-                    <img src={m.img} alt={name} className="w-1/2  h-auto rounded mb-4 border-4 border-yellow-500" />
-
+                <div
+                  key={name}
+                  className="w-[45%] sm:w-[40%] md:w-1/2 lg:w-1/3 
+                       bg-gradient-to-r from-green-400 via-black to-blue-600 
+                       hover:from-blue-600 hover:via-black hover:to-green-400 
+                       text-center p-4 rounded-lg shadow-lg"
+                >
+                  <div className="flex justify-center">
+                    <img
+                      src={m.img}
+                      alt={name}
+                      className="w-full h-auto max-w-[120px] rounded mb-4 border-4 border-yellow-500"
+                    />
                   </div>
-                  <h3 className="text-3xl font-bold text-center mb-2">{name}</h3>
-                  <p className="mb-4 text-xl text-red-500">HP: {m.hp} HEARTS</p>
-                  <div className="mb-4">
-                    <h4 className="text-2xl underline">ATTACKS:</h4>
-                    <ul className="list-disc list-inside">
-                      {m.attacks.map((a) => <li key={a}>{a}</li>)}
+                  <h3 className="text-2xl font-bold  mb-2">{name}</h3>
+                  <p className="mb-3 text-lg text-red-500">HP: {m.hp} HEARTS</p>
+                  <div className="mb-3">
+                    <h4 className="text-xl underline">ATTACKS:</h4>
+                    <ul className="list-disc list-inside text-left">
+                      {m.attacks.map((a) => (
+                        <li key={a}>{a}</li>
+                      ))}
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-2xl underline">WEAKNESSES:</h4>
-                    <ul className="list-disc list-inside">
-                      {m.weaknesses.map((w) => <li key={w}>{w}</li>)}
+                    <h4 className="text-xl underline">WEAKNESSES:</h4>
+                    <ul className="list-disc list-inside text-left">
+                      {m.weaknesses.map((w) => (
+                        <li key={w}>{w}</li>
+                      ))}
                     </ul>
                   </div>
                 </div>
               );
             })}
           </div>
-          <div className="text-center flex justify-center gap-4">
+
+          {/* Buttons */}
+          <div className="text-center flex flex-col sm:flex-row justify-center gap-4">
             <button
               onClick={startBattle}
               className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 mt-6 rounded"
@@ -229,13 +246,14 @@ export default function Fight() {
             </button>
             <button
               onClick={restartGame}
-              className="bg-yellow-600  hover:bg-yellow-700 text-white px-6 py-3 mt-6 rounded"
+              className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 mt-6 rounded"
             >
               Select again
             </button>
           </div>
         </div>
       )}
+
 
       {inFight && (
         <div ref={fightRef} className="mt-12 text-center">

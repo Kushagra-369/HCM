@@ -200,7 +200,7 @@ export default function Fight() {
         return (
           <div
             key={name}
-            className="w-[45%] sm:w-[40%] md:w-1/2 lg:w-1/3 
+            className="w-[45%] md:w-130  
                        bg-gradient-to-r from-green-400 via-black to-blue-600 
                        hover:from-blue-600 hover:via-black hover:to-green-400 
                        text-center p-4 rounded-lg shadow-lg break-words"
@@ -209,7 +209,7 @@ export default function Fight() {
               <img
                 src={m.img}
                 alt={name}
-                className="w-full h-auto max-w-[100px] sm:max-w-[120px] rounded mb-4 border-4 border-yellow-500"
+                className="w-full h-auto md:w-70 md:h-80 rounded mb-4 border-4 border-yellow-500"
               />
             </div>
 
@@ -221,17 +221,17 @@ export default function Fight() {
               HP: {m.hp} HEARTS
             </p>
 
-            <div className="mb-3 text-left">
-              <h4 className="text-base sm:text-lg underline">ATTACKS:</h4>
-              <ul className="list-disc list-inside text-sm sm:text-base break-words">
+            <div className="mb-3  text-center">
+              <h4 className="text-base sm:text-lg underline md:text-2xl ">ATTACKS:</h4>
+              <ul className="list-disc list-inside text-sm sm:text-base  break-words">
                 {m.attacks.map((a) => (
                   <li key={a}>{a}</li>
                 ))}
               </ul>
             </div>
 
-            <div className="text-left">
-              <h4 className="text-base sm:text-lg underline">WEAKNESSES:</h4>
+            <div className="text-center">
+              <h4 className="text-base md:text-2xl  underline">WEAKNESSES:</h4>
               <ul className="list-disc list-inside text-sm sm:text-base break-words">
                 {m.weaknesses.map((w) => (
                   <li key={w}>{w}</li>
@@ -265,14 +265,14 @@ export default function Fight() {
   <div ref={fightRef} className="mt-12 text-center px-4">
     <h2 className="text-2xl sm:text-3xl md:text-4xl mb-6">Turn-Based Fight</h2>
 
-    <div className="flex flex-wrap justify-center gap-4 mb-8">
+    <div className="flex flex-wrap justify-center md:gap-8 gap-4 mb-8">
       {selectedList.map((name) => {
         const m = monsterData[name];
         const opponent = selectedList[turn === 0 ? 1 : 0];
         return (
           <div
             key={name}
-            className="w-[45%] sm:w-[40%] md:w-1/2 lg:w-1/3
+            className="w-[45%] sm:w-[40%] md:w-1/2 lg:w-130
                        bg-gradient-to-r from-green-400 via-black to-red-600 
                        hover:from-red-600 hover:via-black hover:to-green-400 
                        p-4 rounded-lg break-words"
@@ -286,7 +286,7 @@ export default function Fight() {
             <img
               src={m.img}
               alt={name}
-              className="w-full h-auto max-w-[120px] mx-auto rounded mb-4 border-4 border-yellow-500"
+              className="w-full h-auto md:w-80 md:h-80 mx-auto rounded mb-4 border-4 border-yellow-500"
             />
 
             {/* Only show attack buttons for the current fighter */}

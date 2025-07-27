@@ -223,30 +223,30 @@ export default function Fight2() {
               </h3>
 
               {/* Side-by-side layout that fits mobile without scrolling */}
-              <div className="flex justify-center gap-2 sm:gap-4">
+              <div className="flex justify-center md:gap-30 gap-4">
                 {selectedMonsters.map((name) => {
                   const m = monsterData[name];
                   return (
                     <div
                       key={name}
-                      className="bg-black text-white p-2 md:p-4 rounded shadow-lg w-1/2 max-w-[160px] flex flex-col items-center text-center"
+                      className="bg-black text-white p-2 md:p-4 rounded shadow-lg w-1/2 md:w-100  flex flex-col items-center text-center"
                     >
                       <img
                         src={m.img}
                         alt={name}
-                        className="w-16 md:w-24 h-auto rounded mb-2"
+                        className="w-16 md:w-50 md:h-50 h-auto rounded mb-2"
                       />
-                      <h4 className="text-xs md:text-lg font-bold mb-1 px-2">{name}</h4>
-                      <p className="text-[10px] md:text-sm">
+                      <h4 className="text-xs md:text-3xl font-bold mb-1 px-2">{name}</h4>
+                      <p className="text-[10px] md:text-2xl">
                         <strong>HP:</strong> {m.hp}
                       </p>
-                      <p className="mt-1 font-semibold text-[10px] md:text-sm">Attacks:</p>
+                      <p className="mt-1 font-semibold text-[10px] md:text-2xl">Attacks:</p>
                       <ul className="list-disc list-inside mb-1 text-[10px] md:text-sm">
                         {m.attacks.map((a, i) => (
                           <li key={i} className="break-words">{a}</li>
                         ))}
                       </ul>
-                      <p className="mt-1 font-semibold text-[10px] md:text-sm">Weaknesses:</p>
+                      <p className="mt-1 font-semibold text-[10px] md:text-2xl">Weaknesses:</p>
                       <ul className="list-disc list-inside text-[10px] md:text-sm">
                         {m.weaknesses.map((w, i) => (
                           <li key={i} className="break-words">{w}</li>

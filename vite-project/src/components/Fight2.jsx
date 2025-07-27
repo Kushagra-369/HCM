@@ -216,69 +216,69 @@ export default function Fight2() {
 
 
           {/* Show selected monsters details */}
-       {selectedMonsters.length === 2 && (
-  <div className="mb-6 md:max-w-4xl mx-auto bg-gray-900 p-4 md:p-6 rounded-lg">
-    <h3 className="text-xl md:text-2xl mb-4 text-center text-white">
-      Selected Monsters Details
-    </h3>
+          {selectedMonsters.length === 2 && (
+            <div className="mb-6 md:max-w-4xl mx-auto bg-gray-900 p-4 md:p-6 rounded-lg">
+              <h3 className="text-xl md:text-2xl mb-4 text-center text-white">
+                Selected Monsters Details
+              </h3>
 
-    <div className="flex flex-wrap justify-center gap-4">
-      {selectedMonsters.map((name) => {
-        const m = monsterData[name];
-        return (
-          <div
-            key={name}
-            className="bg-black text-white p-3 md:p-4 rounded shadow-lg w-[90%] sm:w-[45%] max-w-[180px] flex flex-col items-center break-words"
-          >
-            <img
-              src={m.img}
-              alt={name}
-              className="w-20 md:w-24 h-auto rounded mb-3"
-            />
-            <h4 className="text-sm md:text-lg font-bold mb-2 px-2 text-center">
-              {name}
-            </h4>
-            <p className="text-xs md:text-sm">
-              <strong>HP:</strong> {m.hp}
-            </p>
-            <p className="mt-2 font-semibold text-xs md:text-sm">Attacks:</p>
-            <ul className="list-disc text-center list-inside mb-2 text-xs md:text-sm">
-              {m.attacks.map((a, i) => (
-                <li key={i} className="break-words">{a}</li>
-              ))}
-            </ul>
-            <p className="mt-2 font-semibold text-xs md:text-sm">Weaknesses:</p>
-            <ul className="list-disc text-center list-inside text-xs md:text-sm">
-              {m.weaknesses.map((w, i) => (
-                <li key={i} className="break-words">{w}</li>
-              ))}
-            </ul>
-          </div>
-        );
-      })}
-    </div>
+              {/* Horizontal scroll container for mobile */}
+              <div className="flex flex-row gap-4 overflow-x-auto justify-start md:justify-center px-1">
+                {selectedMonsters.map((name) => {
+                  const m = monsterData[name];
+                  return (
+                    <div
+                      key={name}
+                      className="bg-black text-white p-3 md:p-4 rounded shadow-lg min-w-[160px] max-w-[180px] flex-shrink-0 flex flex-col items-center break-words"
+                    >
+                      <img
+                        src={m.img}
+                        alt={name}
+                        className="w-20 md:w-24 h-auto rounded mb-3"
+                      />
+                      <h4 className="text-sm md:text-lg font-bold mb-2 px-2 text-center">
+                        {name}
+                      </h4>
+                      <p className="text-xs md:text-sm">
+                        <strong>HP:</strong> {m.hp}
+                      </p>
+                      <p className="mt-2 font-semibold text-xs md:text-sm">Attacks:</p>
+                      <ul className="list-disc text-center list-inside mb-2 text-xs md:text-sm">
+                        {m.attacks.map((a, i) => (
+                          <li key={i} className="break-words">{a}</li>
+                        ))}
+                      </ul>
+                      <p className="mt-2 font-semibold text-xs md:text-sm">Weaknesses:</p>
+                      <ul className="list-disc text-center list-inside text-xs md:text-sm">
+                        {m.weaknesses.map((w, i) => (
+                          <li key={i} className="break-words">{w}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  );
+                })}
+              </div>
 
-    <div className="mt-6 flex flex-wrap justify-center gap-4 md:gap-6">
-      <button
-        onClick={reselect}
-        className="bg-yellow-600 hover:bg-yellow-700 px-4 py-2 md:px-6 md:py-3 rounded font-semibold text-white text-sm md:text-base"
-      >
-        Reselect Monsters
-      </button>
-      <button
-        onClick={startFight}
-        disabled={selectedMonsters.length !== 2}
-        className={`px-4 py-2 md:px-6 md:py-3 rounded font-semibold text-white text-sm md:text-base ${
-          selectedMonsters.length === 2
-            ? 'bg-red-600 hover:bg-red-700'
-            : 'bg-gray-600 cursor-not-allowed'
-        }`}
-      >
-        Start Fight
-      </button>
-    </div>
-  </div>
-)}
+              <div className="mt-6 flex flex-wrap justify-center gap-4 md:gap-6">
+                <button
+                  onClick={reselect}
+                  className="bg-yellow-600 hover:bg-yellow-700 px-4 py-2 md:px-6 md:py-3 rounded font-semibold text-white text-sm md:text-base"
+                >
+                  Reselect Monsters
+                </button>
+                <button
+                  onClick={startFight}
+                  disabled={selectedMonsters.length !== 2}
+                  className={`px-4 py-2 md:px-6 md:py-3 rounded font-semibold text-white text-sm md:text-base ${selectedMonsters.length === 2
+                      ? 'bg-red-600 hover:bg-red-700'
+                      : 'bg-gray-600 cursor-not-allowed'
+                    }`}
+                >
+                  Start Fight
+                </button>
+              </div>
+            </div>
+          )}
 
         </>
       )}
@@ -326,8 +326,8 @@ export default function Fight2() {
                         disabled={!attacker || defenderHp <= 0}
                         onClick={() => handleAttack(name, defender, attack)}
                         className={`px-2 py-1 md:px-4 md:py-2 text-xs md:text-base rounded font-semibold transition w-full ${attacker
-                            ? 'bg-blue-600 hover:bg-blue-900 text-white cursor-pointer'
-                            : 'bg-gray-700 text-gray-400 cursor-not-allowed'
+                          ? 'bg-blue-600 hover:bg-blue-900 text-white cursor-pointer'
+                          : 'bg-gray-700 text-gray-400 cursor-not-allowed'
                           }`}
                       >
                         {attack}

@@ -27,9 +27,6 @@ import Footer from './Footer'
 
 import { href, Link } from 'react-router-dom'
 
-
-
-
 export default function Home() {
 
     let data = [

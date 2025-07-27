@@ -314,7 +314,7 @@ export default function Fight2() {
                     alt={name}
                     className="w-20 md:w-40 h-auto rounded mb-2 md:mb-4 border-4 border-red-700"
                   />
-                  <h3 className="text-lg md:text-2xl font-bold mb-1 md:mb-2 text-center">
+                  <h3 className=" text-xl md:text-2xl font-bold mb-1 md:mb-2 text-center">
                     {name}
                   </h3>
                   <p className="mb-2 text-sm md:text-lg">HP: {hp}</p>

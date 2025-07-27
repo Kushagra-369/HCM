@@ -192,9 +192,8 @@ export default function Fight() {
 
 {fightStarted && !inFight && (
   <div ref={previewRef} className="mt-12 space-y-12 px-4">
-    <h2 className="text-4xl text-center mb-8">Battle Preview</h2>
+    <h2 className="text-2xl sm:text-3xl md:text-4xl text-center mb-8">Battle Preview</h2>
 
-    {/* Flex and wrap */}
     <div className="flex flex-row flex-wrap justify-center items-start gap-4">
       {selectedList.map((name) => {
         const m = monsterData[name];
@@ -204,37 +203,38 @@ export default function Fight() {
             className="w-[45%] sm:w-[40%] md:w-1/2 lg:w-1/3 
                        bg-gradient-to-r from-green-400 via-black to-blue-600 
                        hover:from-blue-600 hover:via-black hover:to-green-400 
-                       text-center p-4 rounded-lg shadow-lg 
-                       overflow-hidden break-words"
+                       text-center p-4 rounded-lg shadow-lg break-words"
           >
             <div className="flex justify-center">
               <img
                 src={m.img}
                 alt={name}
-                className="w-full h-auto max-w-[120px] rounded mb-4 border-4 border-yellow-500"
+                className="w-full h-auto max-w-[100px] sm:max-w-[120px] rounded mb-4 border-4 border-yellow-500"
               />
             </div>
 
-            <h3 className="text-2xl font-bold text-center mb-2 break-words">{name}</h3>
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-center mb-2 break-words">
+              {name}
+            </h3>
 
-            <p className="mb-3 text-lg text-red-500 break-words">
+            <p className="mb-3 text-sm sm:text-base md:text-lg text-red-500 break-words">
               HP: {m.hp} HEARTS
             </p>
 
-            <div className="mb-3">
-              <h4 className="text-xl underline">ATTACKS:</h4>
-              <ul className="list-disc list-inside text-left break-words">
+            <div className="mb-3 text-left">
+              <h4 className="text-base sm:text-lg underline">ATTACKS:</h4>
+              <ul className="list-disc list-inside text-sm sm:text-base break-words">
                 {m.attacks.map((a) => (
-                  <li key={a} className="break-words">{a}</li>
+                  <li key={a}>{a}</li>
                 ))}
               </ul>
             </div>
 
-            <div>
-              <h4 className="text-xl underline">WEAKNESSES:</h4>
-              <ul className="list-disc list-inside text-left break-words">
+            <div className="text-left">
+              <h4 className="text-base sm:text-lg underline">WEAKNESSES:</h4>
+              <ul className="list-disc list-inside text-sm sm:text-base break-words">
                 {m.weaknesses.map((w) => (
-                  <li key={w} className="break-words">{w}</li>
+                  <li key={w}>{w}</li>
                 ))}
               </ul>
             </div>
@@ -243,17 +243,16 @@ export default function Fight() {
       })}
     </div>
 
-    {/* Buttons */}
     <div className="text-center flex flex-col sm:flex-row justify-center gap-4">
       <button
         onClick={startBattle}
-        className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 mt-6 rounded"
+        className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 mt-6 rounded text-sm sm:text-base"
       >
         Start Fight
       </button>
       <button
         onClick={restartGame}
-        className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 mt-6 rounded"
+        className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 mt-6 rounded text-sm sm:text-base"
       >
         Select again
       </button>

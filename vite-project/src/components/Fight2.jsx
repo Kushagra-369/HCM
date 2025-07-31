@@ -165,7 +165,7 @@ export default function Fight2() {
                 <div key={name}
                   className={`bg-black text-white p-4 rounded-lg shadow-xl w-1/2 flex flex-col items-center ${impactTarget===name?'impact':''}`}>
                   <img src={m.img} alt={name} className="  md:w-70 md:h-70 rounded mb-3 border-4 border-red-700" />
-                  <h3 className="text-xl font-bold mb-1">{name}</h3>
+                  <h3 className="md:text-xl font-bold mb-1">{name}</h3>
                   <p className="mb-2">HP: {hp}</p>
                   <div className="flex flex-col gap-2 w-full">
                     {m.attacks.map((attack,i)=>(
@@ -185,8 +185,8 @@ export default function Fight2() {
               <div className="absolute top-20 left-0 right-0 mx-auto h-0 z-50">
                 <div className="punch-effect"
                   style={{
-                    left: punching.attacker===currentFightMonsters[0]?'25%':'75%',
-                    '--dx': punching.attacker===currentFightMonsters[0]?'300px':'-300px',
+                    left: punching.attacker===currentFightMonsters[0]?'35%':'65%',
+                    '--dx': punching.attacker===currentFightMonsters[0]?'200px':'-200px',
                     '--dy':'40px',
                   }} />
               </div>

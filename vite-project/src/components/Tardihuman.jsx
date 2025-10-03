@@ -1,5 +1,4 @@
 import React from 'react'
-import image3 from '../assets/images/HCM 901.jpg'
 import Logo from './Logo'
 
 
@@ -9,7 +8,7 @@ export default function Tardihuman() {
 
 
       <div>
-        <img src={image3} alt="" />
+        <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757505383/HCM_901_ccptqk.jpg' alt="" />
       </div>
       <h1>NAME - HCM-901 (Human Contentment Monster-901)</h1>
       <br />

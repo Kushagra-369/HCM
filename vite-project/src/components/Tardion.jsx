@@ -1,5 +1,4 @@
 import React from 'react'
-import image14 from '../assets/images/hcm 180.jpg'
 import Logo from './Logo'
 
 
@@ -8,7 +7,7 @@ export default function Tardion() {
     
     <div className="text-3xl text-yellow-200 px-5 bg-black ">
         <div>
-            <img src={image14} alt="" />
+            <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757507010/hcm_180_yrrem6.jpg' alt="" />
         </div>
          <h1>NAME - HCM-180 (Human Contentment Monster-180)</h1>
          <br />

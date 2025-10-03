@@ -1,24 +1,5 @@
 import React from 'react'
-import image1 from '../assets/images/hcm 090.jpg'
-import image2 from '../assets/images/HCM 570.jpg'
-import image3 from '../assets/images/HCM 901.jpg'
-import image4 from '../assets/images/HCM 270.jpg'
-import image5 from '../assets/images/hcm 871.jpg'
-import image6 from '../assets/images/hcm 701.jpg'
-import image7 from '../assets/images/HCM - 170.jpg'
-import image8 from '../assets/images/hcm 522.jpg'
-import image9 from '../assets/images/hcm 521.jpg'
-import image10 from '../assets/images/hcm 211.jpg'
-import image11 from '../assets/images/hcm 080.jpg'
-import image12 from '../assets/images/hcm 008.jpg'
-import image13 from '../assets/images/hcm 660.jpg'
-import image14 from '../assets/images/hcm 180.jpg'
-import image15 from '../assets/images/hcm 561.jpg'
-import image16 from '../assets/images/hcm 280.jpg'
-import image17 from '../assets/images/hcm 421.jpg'
-import image18 from '../assets/images/hcm 111.jpg'
-import image19 from '../assets/images/hcm 190.jpg'
-import image20 from '../assets/images/hcm 371.jpg'
+
 import { TypeAnimation } from 'react-type-animation';
 import { Element } from 'react-scroll';
 import MovingComponent from 'react-moving-text';
@@ -30,55 +11,55 @@ import { href, Link } from 'react-router-dom'
 export default function Home() {
 
     let data = [
-        { title1: "SPHINIX", title2: "HCM 090", title3: image1, href: '/sphinx' },
-        { title1: "ROCKMAN", title2: "HCM 570", title3: image2, href: '/rockman' },
+        { title1: "SPHINIX", title2: "HCM 090", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757504724/hcm_090_ph8uom.jpg', href: '/sphinx' },
+        { title1: "ROCKMAN", title2: "HCM 570", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757504762/HCM_570_op828i.jpg', href: '/rockman' },
     ];
 
     let data2 = [
-        { title1: "HUMOTARDILIXIAN", title2: "HCM 871", title3: image5, href: '/humotardilixian' }
+        { title1: "HUMOTARDILIXIAN", title2: "HCM 871", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757503069/hcm_871_vvdccd.jpg', href: '/humotardilixian' }
 
     ];
     let data3 = [
-        { title1: "TARDIHUMAN", title2: "HCM 901", title3: image3, href: '/tardihuman' },
-        { title1: "CYBRAIN", title2: "HCM 270", title3: image4, href: '/cybrain' }
+        { title1: "TARDIHUMAN", title2: "HCM 901", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757505383/HCM_901_ccptqk.jpg', href: '/tardihuman' },
+        { title1: "CYBRAIN", title2: "HCM 270", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757505397/HCM_270_xiihmy.jpg', href: '/cybrain' }
     ];
     let data4 = [
-        { title1: "WEREWOLF", title2: "HCM 701", title3: image6, href: '/werewolf' },
-        { title1: "TERRAKA", title2: "HCM 170", title3: image7, href: '/terraka' },
+        { title1: "WEREWOLF", title2: "HCM 701", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757505413/hcm_701_qtpbgq.jpg', href: '/werewolf' },
+        { title1: "TERRAKA", title2: "HCM 170", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757505425/HCM_-_170_px94br.jpg', href: '/terraka' },
     ];
 
     let data5 = [
-        { title1: "TERRAWOLFVULBYTE", title2: "HCM 522", title3: image8, href: '/terrawolfvulbyte' }
+        { title1: "TERRAWOLFVULBYTE", title2: "HCM 522", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757503606/hcm_522_i66yvn.jpg', href: '/terrawolfvulbyte' }
 
     ];
     let data6 = [
-        { title1: "VULTRIX", title2: "HCM 521", title3: image9, href: '/vultrix' },
-        { title1: "PETRABYTE", title2: "HCM 211", title3: image10, href: '/petrabyte' }
+        { title1: "VULTRIX", title2: "HCM 521", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757506646/hcm_521_xkxw3u.jpg', href: '/vultrix' },
+        { title1: "PETRABYTE", title2: "HCM 211", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757506670/hcm_211_rinzgv.jpg', href: '/petrabyte' }
     ];
 
     let data7 = [
-        { title1: "GORKON", title2: "HCM 080", title3: image11, href: '/gorkon' },
-        { title1: "SANDRAX", title2: "HCM 008", title3: image12, href: '/sandrax' },
+        { title1: "GORKON", title2: "HCM 080", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757506692/hcm_080_mdm61b.jpg', href: '/gorkon' },
+        { title1: "SANDRAX", title2: "HCM 008", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757506724/hcm_008_p88g9j.jpg', href: '/sandrax' },
     ];
     let data8 = [
-        { title1: "GORDRAXDIOZONE", title2: "HCM 561", title3: image15, href: '/gordraxdiozone' }
+        { title1: "GORDRAXDIOZONE", title2: "HCM 561", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757503629/hcm_561_xefz7o.jpg', href: '/gordraxdiozone' }
 
     ];
     let data9 = [
-        { title1: "TARDION", title2: "HCM 180", title3: image14, href: '/tardion' },
-        { title1: "FLARON", title2: "HCM 660", title3: image13, href: '/flaron' }
+        { title1: "TARDION", title2: "HCM 180", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757507010/hcm_180_yrrem6.jpg', href: '/tardion' },
+        { title1: "FLARON", title2: "HCM 660", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757507048/hcm_660_vs8jj5.jpg', href: '/flaron' }
     ];
     let data10 = [
-        { title1: "TIGRIS", title2: "HCM 280", title3: image16, href: '/tigris' },
-        { title1: "OCULUS", title2: "HCM 190", title3: image19, href: '/oculus' },
+        { title1: "TIGRIS", title2: "HCM 280", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757508193/hcm_280_i0erm9.jpg', href: '/tigris' },
+        { title1: "OCULUS", title2: "HCM 190", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757507457/hcm_190_o8xgrs.jpg', href: '/oculus' },
     ];
     let data11 = [
-        { title1: "FLURTOTILUS", title2: "HCM 371", title3: image20, href: '/flurtotilus' }
+        { title1: "FLURTOTILUS", title2: "HCM 371", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757503677/hcm_371_iw4ptd.jpg', href: '/flurtotilus' }
 
     ];
     let data12 = [
-        { title1: "FLURTONE", title2: "HCM 111", title3: image18, href: '/flurtone' },
-        { title1: "PETROVIS", title2: "HCM 421", title3: image17, href: '/petrovis' }
+        { title1: "FLURTONE", title2: "HCM 111", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757507371/hcm_111_bsnq9y.jpg', href: '/flurtone' },
+        { title1: "PETROVIS", title2: "HCM 421", title3: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757508208/hcm_421_grcgq9.jpg', href: '/petrovis' }
     ];
 
     return (

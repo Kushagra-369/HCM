@@ -1,5 +1,4 @@
 import React from 'react'
-import image1 from '../assets/images/hcm 090.jpg'
 import Logo from './Logo'
 
 
@@ -8,7 +7,7 @@ export default function Sphinix() {
     
     <div className="text-3xl text-yellow-200 px-5 bg-black ">
         <div>
-            <img src={image1} alt="" />
+            <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757504724/hcm_090_ph8uom.jpg' alt="" />
         </div>
          <h1>NAME - HCM-090 (Human Contentment Monster-090)</h1>
          <br />

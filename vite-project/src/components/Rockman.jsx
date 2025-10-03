@@ -1,5 +1,4 @@
 import React from 'react'
-import image2 from '../assets/images/HCM 570.jpg'
 import Logo from './Logo'
 
 
@@ -7,7 +6,7 @@ export default function Rockman() {
   return (
     <div className="text-3xl text-amber-900 px-5 bg-black">
         <div>
-          <img src={image2} alt="" />
+          <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757504762/HCM_570_op828i.jpg' alt="" />
         </div>
   <br/>
 <br/>

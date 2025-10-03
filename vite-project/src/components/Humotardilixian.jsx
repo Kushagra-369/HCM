@@ -1,5 +1,4 @@
 import React from 'react';
-import image5 from '../assets/images/hcm 871.jpg';
 import Logo from './Logo';
 import { motion } from 'framer-motion';
 
@@ -23,7 +22,7 @@ export default function Humotardilixian() {
         transition={{ duration: 1 }}
         className="py-10"
       >
-        <img src={image5} alt="HCM-871" className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl" />
+        <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757503069/hcm_871_vvdccd.jpg' alt="HCM-871" className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl" />
       </motion.div>
 
       {/* Name + Classification */}

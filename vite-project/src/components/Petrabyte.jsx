@@ -1,5 +1,4 @@
 import React from 'react'
-import image10 from '../assets/images/hcm 211.jpg'
 import Logo from './Logo'
 
 
@@ -8,7 +7,7 @@ export default function Petrabyte() {
 
     <div className="text-3xl text-yellow-200 px-5 bg-black ">
       <div>
-        <img src={image10} alt="" />
+        <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757506670/hcm_211_rinzgv.jpg' alt="" />
       </div>
       <h1>NAME - HCM-211 (Human Contentment Monster-211)</h1>
       <br />

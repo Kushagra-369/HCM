@@ -1,5 +1,4 @@
 import React from 'react'
-import image11 from '../assets/images/hcm 080.jpg'
 import Logo from './Logo'
 
 export default function Gorkon() {
@@ -8,7 +7,7 @@ export default function Gorkon() {
 
 
       <div>
-        <img src={image11} alt="" />
+        <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757506692/hcm_080_mdm61b.jpg' alt="" />
       </div>
       <h1>NAME - HCM-080 (Human Contentment Monster-080)</h1>
       <br />

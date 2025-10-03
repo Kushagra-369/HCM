@@ -1,5 +1,4 @@
 import React from 'react'
-import image4 from '../assets/images/HCM 270.jpg'
 import Logo from './Logo'
 
 export default function Cybrain() {
@@ -8,7 +7,7 @@ export default function Cybrain() {
 
 
       <div>
-        <img src={image4} alt="" />
+        <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757505397/HCM_270_xiihmy.jpg' alt="" />
       </div>
       <h1>NAME - HCM-270 (Human Contentment Monster-270)</h1>
       <br />

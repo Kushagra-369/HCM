@@ -1,5 +1,4 @@
 import React from 'react'
-import image7 from '../assets/images/HCM - 170.jpg'
 import Logo from './Logo'
 
 
@@ -8,7 +7,7 @@ export default function Terraka() {
     
     <div className="text-3xl text-yellow-200 px-5 bg-black ">
         <div>
-            <img src={image7} alt="" />
+            <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757505425/HCM_-_170_px94br.jpg' alt="" />
         </div>
          <h1>NAME - HCM-170 (Human Contentment Monster-170)</h1>
          <br />

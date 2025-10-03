@@ -1,5 +1,4 @@
 import React from 'react'
-import image6 from '../assets/images/hcm 701.jpg'
 import Logo from './Logo'
 
 
@@ -8,7 +7,7 @@ export default function Werewolf() {
     
     <div className="text-3xl text-yellow-200 px-5 bg-black ">
         <div>
-            <img src={image6} alt="" />
+            <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757505413/hcm_701_qtpbgq.jpg' alt="" />
         </div>
          <h1>NAME - HCM-701 (Human Contentment Monster-701)</h1>
          <br />

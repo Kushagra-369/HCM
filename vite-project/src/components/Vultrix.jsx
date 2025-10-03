@@ -1,5 +1,4 @@
 import React from 'react'
-import image9 from '../assets/images/hcm 521.jpg'
 import Logo from './Logo'
 
 
@@ -8,7 +7,7 @@ export default function Vultrix() {
 
     <div className="text-3xl text-yellow-200 px-5 bg-black ">
       <div>
-        <img src={image9} alt="" />
+        <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757506646/hcm_521_xkxw3u.jpg' alt="" />
       </div>
       <h1>NAME - HCM-521 (Human Contentment Monster-521)</h1>
       <br />

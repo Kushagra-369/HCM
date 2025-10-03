@@ -1,25 +1,5 @@
 import React, { useState, useRef } from 'react';
 
-import image1 from '../assets/images/hcm 090.jpg'
-import image2 from '../assets/images/HCM 570.jpg'
-import image3 from '../assets/images/HCM 901.jpg'
-import image4 from '../assets/images/HCM 270.jpg'
-import image5 from '../assets/images/hcm 871.jpg'
-import image6 from '../assets/images/hcm 701.jpg'
-import image7 from '../assets/images/HCM - 170.jpg'
-import image8 from '../assets/images/hcm 522.jpg'
-import image9 from '../assets/images/hcm 521.jpg'
-import image10 from '../assets/images/hcm 211.jpg'
-import image11 from '../assets/images/hcm 080.jpg'
-import image12 from '../assets/images/hcm 008.jpg'
-import image13 from '../assets/images/hcm 660.jpg'
-import image14 from '../assets/images/hcm 180.jpg'
-import image15 from '../assets/images/hcm 561.jpg'
-import image16 from '../assets/images/hcm 280.jpg'
-import image17 from '../assets/images/hcm 421.jpg'
-import image18 from '../assets/images/hcm 111.jpg'
-import image19 from '../assets/images/hcm 190.jpg'
-import image20 from '../assets/images/hcm 371.jpg'
 
 export default function Fight() {
   const [selectedList, setSelectedList] = useState([]);
@@ -30,27 +10,27 @@ export default function Fight() {
   const [hpStatus, setHpStatus] = useState({});
   const [log, setLog] = useState([]);
   const MAX = 2;
-
+ 
   const previewRef = useRef(null);
   const fightRef = useRef(null);
 
   const monsterData = {
-    SPHINX: { img: image1, hp: 800, attacks: ['Super Punch', 'Super Roar', 'Killing grasp'], weaknesses: ['gold', 'blindness in dark', "can't bear hair pulling"] },
-    ROCKMAN: { img: image2, hp: 500, attacks: ['regenerate after breaking', 'shape moulding', 'super bite'], weaknesses: ['water', 'very slow', 'thunder'] },
-    TARDIHUMAN: { img: image3, hp: 1200, attacks: ['iron tentacle attack', 'poison tongue lick', 'can change size'], weaknesses: ['high temperature', 'chlorine', "its poison is in its tentacles"] },
-    CYBRAIN: { img: image4, hp: 1500, attacks: ['laser beam', 'flying', 'can transfer consciousness'], weaknesses: ['water', 'hackable', 'has a switch off button'] },
-    WEREWOLF: { img: image6, hp: 600, attacks: ['beast transformation', 'shadow attack', 'can turn others'], weaknesses: ['silver', 'mercury', 'weak on no-moon night'] },
-    TERRAKA: { img: image7, hp: 600, attacks: ['vine whip', 'poisonous seed', 'earthquake'], weaknesses: ['fire', 'cannot see in day', 'eats grass weeds'] },
-    VULTRIX: { img: image9, hp: 1000, attacks: ['wind slash', 'flying', 'tornado'], weaknesses: ['electricity', 'icy water', 'high pressure'] },
-    PETRABYTE: { img: image10, hp: 1300, attacks: ['vine whip', 'immune to water & fire & fly', 'laser beam'], weaknesses: ['hackable', 'has switch off', "can't see at night"] },
-    GORKON: { img: image11, hp: 700, attacks: ['gorilla smash', 'super clap', 'ground shock wave'], weaknesses: ['weak on full moon', 'fire', 'lead'] },
-    SANDRAX: { img: image12, hp: 700, attacks: ['unbreakable', 'shape moulding', 'sand storm'], weaknesses: ['water', 'high winds', 'magnetic fields'] },
-    TARDION: { img: image14, hp: 500, attacks: ['hug crush', 'spine shots', 'ground attack'], weaknesses: ['extreme temperature', 'toxic chemicals', 'high frequency sound'] },
-    FLARON: { img: image13, hp: 900, attacks: ['hide underground', 'poison gas', 'fireball'], weaknesses: ['small tail exposed', 'sand', 'immobile'] },
-    TIGRIS: { img: image16, hp: 900, attacks: ['wind whip', 'earthquake', 'super smash'], weaknesses: ['fire', 'low stamina', 'ultrasound'] },
-    OCULUS: { img: image19, hp: 1700, attacks: ['electric shock', 'super wave', 'indestructible'], weaknesses: ['extreme heat', 'limited land range', 'no brain – only anger'] },
-    FLURTONE: { img: image18, hp: 1000, attacks: ['fireball', 'ranged attack', 'disguise as stone'], weaknesses: ['water', 'almost immobile', 'ego'] },
-    PETROVIS: { img: image17, hp: 600, attacks: ['wind slash', 'super bite', 'tackle'], weaknesses: ['water', 'gold', 'thunder'] },
+    SPHINX: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757504724/hcm_090_ph8uom.jpg', hp: 800, attacks: ['Super Punch', 'Super Roar', 'Killing grasp'], weaknesses: ['gold', 'blindness in dark', "can't bear hair pulling"] },
+    ROCKMAN: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757504762/HCM_570_op828i.jpg', hp: 500, attacks: ['regenerate after breaking', 'shape moulding', 'super bite'], weaknesses: ['water', 'very slow', 'thunder'] },
+    TARDIHUMAN: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757505383/HCM_901_ccptqk.jpg', hp: 1200, attacks: ['iron tentacle attack', 'poison tongue lick', 'can change size'], weaknesses: ['high temperature', 'chlorine', "its poison is in its tentacles"] },
+    CYBRAIN: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757505397/HCM_270_xiihmy.jpg', hp: 1500, attacks: ['laser beam', 'flying', 'can transfer consciousness'], weaknesses: ['water', 'hackable', 'has a switch off button'] },
+    WEREWOLF: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757505413/hcm_701_qtpbgq.jpg', hp: 600, attacks: ['beast transformation', 'shadow attack', 'can turn others'], weaknesses: ['silver', 'mercury', 'weak on no-moon night'] },
+    TERRAKA: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757505425/HCM_-_170_px94br.jpg', hp: 600, attacks: ['vine whip', 'poisonous seed', 'earthquake'], weaknesses: ['fire', 'cannot see in day', 'eats grass weeds'] },
+    VULTRIX: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757506646/hcm_521_xkxw3u.jpg', hp: 1000, attacks: ['wind slash', 'flying', 'tornado'], weaknesses: ['electricity', 'icy water', 'high pressure'] },
+    PETRABYTE: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757506670/hcm_211_rinzgv.jpg', hp: 1300, attacks: ['vine whip', 'immune to water & fire & fly', 'laser beam'], weaknesses: ['hackable', 'has switch off', "can't see at night"] },
+    GORKON: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757506692/hcm_080_mdm61b.jpg', hp: 700, attacks: ['gorilla smash', 'super clap', 'ground shock wave'], weaknesses: ['weak on full moon', 'fire', 'lead'] },
+    SANDRAX: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757506724/hcm_008_p88g9j.jpg', hp: 700, attacks: ['unbreakable', 'shape moulding', 'sand storm'], weaknesses: ['water', 'high winds', 'magnetic fields'] },
+    TARDION: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757507010/hcm_180_yrrem6.jpg', hp: 500, attacks: ['hug crush', 'spine shots', 'ground attack'], weaknesses: ['extreme temperature', 'toxic chemicals', 'high frequency sound'] },
+    FLARON: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757507048/hcm_660_vs8jj5.jpg', hp: 900, attacks: ['hide underground', 'poison gas', 'fireball'], weaknesses: ['small tail exposed', 'sand', 'immobile'] },
+    TIGRIS: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757508193/hcm_280_i0erm9.jpg', hp: 900, attacks: ['wind whip', 'earthquake', 'super smash'], weaknesses: ['fire', 'low stamina', 'ultrasound'] },
+    OCULUS: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757507457/hcm_190_o8xgrs.jpg', hp: 1700, attacks: ['electric shock', 'super wave', 'indestructible'], weaknesses: ['extreme heat', 'limited land range', 'no brain – only anger'] },
+    FLURTONE: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757507371/hcm_111_bsnq9y.jpg', hp: 1000, attacks: ['fireball', 'ranged attack', 'disguise as stone'], weaknesses: ['water', 'almost immobile', 'ego'] },
+    PETROVIS: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757508208/hcm_421_grcgq9.jpg', hp: 600, attacks: ['wind slash', 'super bite', 'tackle'], weaknesses: ['water', 'gold', 'thunder'] },
   };
 
   const allNames = Object.keys(monsterData);

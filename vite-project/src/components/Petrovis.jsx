@@ -1,5 +1,4 @@
 import React from 'react'
-import image17 from '../assets/images/hcm 421.jpg'
 import Logo from './Logo'
 
 
@@ -7,7 +6,7 @@ export default function Petrovis() {
   return (
     <div className="text-3xl text-amber-900 px-5 bg-black">
         <div>
-          <img src={image17} alt="" />
+          <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757508208/hcm_421_grcgq9.jpg' alt="" />
         </div>
   <br/>
 <br/>

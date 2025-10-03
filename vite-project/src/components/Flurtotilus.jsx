@@ -1,5 +1,4 @@
 import React from 'react';
-import image20 from '../assets/images/hcm 371.jpg';
 import Logo from './Logo';
 import { motion } from 'framer-motion';
 
@@ -23,7 +22,7 @@ export default function Flurtotilus() {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <img src={image20} alt="HCM-371" className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl" />
+        <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757503677/hcm_371_iw4ptd.jpg' alt="HCM-371" className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl" />
       </motion.div>
 
       {/* Info headings */}

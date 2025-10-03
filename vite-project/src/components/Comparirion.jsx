@@ -5,7 +5,6 @@ import './Greatest.css';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import image1 from '../assets/images/HCM-001.jpg'
 export default function Comparision() {
   const data = [
     { title1: "SPHINX", title2: "800", href: '/sphinx' },
@@ -171,7 +170,7 @@ export default function Comparision() {
 
     <img
       className="w-72 h-72 object-cover mx-auto mb-6 rounded-lg grayscale hover:grayscale-0 transition duration-500 shadow-[0_0_20px_#ff0000aa]"
-      src={image1}
+      src= 'https://res.cloudinary.com/dynodadq0/image/upload/v1757502746/HCM-001_yjegni.jpg'
       alt="Omnoxar"
     />
 

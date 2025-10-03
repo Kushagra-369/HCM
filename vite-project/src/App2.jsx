@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Season1 from './components/Season1';
+import Season2 from './components/Season2';
 import Classification2 from './components/Classification2';
 import Comparision from './components/Comparirion';
 import About from './components/About';
@@ -50,6 +51,7 @@ export default function App2() {
                 {/* Main Routes */}
                 <Route path="/" element={<Home />} />
                 <Route path="/season1" element={<Season1 />} />
+                <Route path="/season2" element={<Season2 />} />
                 <Route path="/classification" element={<Classification2 />} />
                 <Route path="/comparision" element={<Comparision />} />
                 <Route path="/about" element={<About />} />

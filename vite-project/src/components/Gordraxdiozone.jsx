@@ -1,5 +1,4 @@
 import React from 'react';
-import image15 from '../assets/images/hcm 561.jpg';
 import Logo from './Logo';
 import { motion } from 'framer-motion';
 
@@ -23,7 +22,7 @@ export default function Gordraxdiozone() {
         transition={{ duration: 1 }}
         className="py-10"
       >
-        <img src={image15} alt="HCM-561" className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl" />
+        <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757503629/hcm_561_xefz7o.jpg' alt="HCM-561" className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl" />
       </motion.div>
 
       {/* Name + Classification */}

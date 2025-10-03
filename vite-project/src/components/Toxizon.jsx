@@ -1,5 +1,5 @@
 import React from 'react'
-import image13 from '../assets/images/hcm 221.jpg'
+// import image13 from '../assets/images/hcm 221.jpg'
 import Logo from './Logo'
 
 

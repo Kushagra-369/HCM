@@ -1,5 +1,4 @@
 import React from 'react'
-import image19 from '../assets/images/hcm 190.jpg'
 import Logo from './Logo'
 
 
@@ -7,7 +6,7 @@ export default function Oculus() {
   return (
     <div className="text-3xl text-amber-900 px-5 bg-black">
         <div>
-          <img src={image19} alt="" />
+          <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757507457/hcm_190_o8xgrs.jpg' alt="" />
         </div>
   <br/>
 <br/>

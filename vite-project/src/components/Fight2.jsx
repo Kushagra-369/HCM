@@ -1,18 +1,14 @@
 import React, { useState, useRef } from 'react';
 
-import image5 from '../assets/images/hcm 871.jpg';
-import image8 from '../assets/images/hcm 522.jpg';
-import image15 from '../assets/images/hcm 561.jpg';
-import image20 from '../assets/images/hcm 371.jpg';
 
 import './Fight2.css'
 
 export default function Fight2() {
   const monsterData = {
-    HUMOTARDILIXIAN: { img: image5, hp: 5000, attacks: ['Super Roar', 'Regenerate after breaking', 'Poison tongue lick', 'Laser beam', 'Has metal body and can fly'], weaknesses: ['Has energy ball, which is protected inside the metal body'] },
-    TERRAWOLFBYTE: { img: image8, hp: 4500, attacks: ['big beast transformation', 'earthquake', 'tornado', 'lazer beam', 'have metal body and can fly'], weaknesses: ['Weakens from water'] },
-    GORDRAXDIOZONE: { img: image15, hp: 4200, attacks: ['Poison gas', 'Sand storm', 'Super clap', 'Spine shots', 'Regenerate health'], weaknesses: ['High radiation magnetic field'] },
-    FLURTOTILUS: { img: image20, hp: 5500, attacks: ['fire gas', 'water punch', 'super roar', 'can fly', 'very hard rock attacks'], weaknesses: ['can not bear very high pressure'] },
+    HUMOTARDILIXIAN: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757503069/hcm_871_vvdccd.jpg', hp: 5000, attacks: ['Super Roar', 'Regenerate after breaking', 'Poison tongue lick', 'Laser beam', 'Has metal body and can fly'], weaknesses: ['Has energy ball, which is protected inside the metal body'] },
+    TERRAWOLFBYTE: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757503606/hcm_522_i66yvn.jpg', hp: 4500, attacks: ['big beast transformation', 'earthquake', 'tornado', 'lazer beam', 'have metal body and can fly'], weaknesses: ['Weakens from water'] },
+    GORDRAXDIOZONE: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757503629/hcm_561_xefz7o.jpg', hp: 4200, attacks: ['Poison gas', 'Sand storm', 'Super clap', 'Spine shots', 'Regenerate health'], weaknesses: ['High radiation magnetic field'] },
+    FLURTOTILUS: { img: 'https://res.cloudinary.com/dynodadq0/image/upload/v1757503677/hcm_371_iw4ptd.jpg', hp: 5500, attacks: ['fire gas', 'water punch', 'super roar', 'can fly', 'very hard rock attacks'], weaknesses: ['can not bear very high pressure'] },
   };
 
   const allNames = Object.keys(monsterData);

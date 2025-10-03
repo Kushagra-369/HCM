@@ -1,5 +1,4 @@
 import React from 'react'
-import image12 from '../assets/images/hcm 008.jpg'
 import Logo from './Logo'
 
 
@@ -7,7 +6,7 @@ export default function Sandrax() {
   return (
     <div className="text-3xl text-amber-900 px-5 bg-black">
         <div>
-          <img src={image12} alt="" />
+          <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757506724/hcm_008_p88g9j.jpg' alt="" />
         </div>
   <br/>
 <br/>

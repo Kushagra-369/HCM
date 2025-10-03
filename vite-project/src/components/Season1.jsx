@@ -1038,7 +1038,9 @@ export default function Season1() {
 
                     <br /><br />
                 </p>
+
                 <h2 className='text-center font-bold'>EMPTY SPACES PART-4</h2>
+
                 <p>
 
 
@@ -1458,7 +1460,9 @@ export default function Season1() {
 
                     INTERVAL-4<br /><br />
                 </p>
+
                 <h2 className='text-center font-bold'>EMPTY SPACES SEASON FINALE</h2>
+                
                 <p>
 
                     <br />

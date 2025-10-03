@@ -1,5 +1,4 @@
 import React from 'react'
-import image13 from '../assets/images/hcm 660.jpg'
 import Logo from './Logo'
 
 
@@ -9,7 +8,7 @@ export default function Toxizon() {
 
 
       <div>
-        <img src={image13} alt="" />
+        <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757507048/hcm_660_vs8jj5.jpg' alt="" />
       </div>
       <h1>NAME - HCM-660 (Human Contentment Monster-660)</h1>
       <br />

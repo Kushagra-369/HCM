@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 export default function Footer() {
   const data = [
     { title2: "/season1", title1: "season-1" },
-    { title2: "", title1: "season-2 (soon)" },
+    { title2: "/season2", title1: "season-2" },
     { title2: "", title1: "season-3 (not yet)" },
   ];
 

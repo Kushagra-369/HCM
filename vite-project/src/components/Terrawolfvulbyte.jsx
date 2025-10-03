@@ -1,5 +1,4 @@
 import React from 'react';
-import image8 from '../assets/images/hcm 522.jpg';
 import Logo from './Logo';
 import { motion } from 'framer-motion';
 
@@ -23,7 +22,7 @@ export default function Terrawolfvulbyte() {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <img src={image8} alt="HCM-522" className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl" />
+        <img src='https://res.cloudinary.com/dynodadq0/image/upload/v1757503606/hcm_522_i66yvn.jpg' alt="HCM-522" className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl" />
       </motion.div>
 
       {/* Info */}

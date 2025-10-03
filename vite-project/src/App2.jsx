@@ -37,7 +37,6 @@ import Fight2 from './components/Fight2';
 import About_HCM from './components/About_HCM';
 import Origin from './components/Origin';
 import Empty_Spaces from './components/Empty_Spaces';
-import Login from './components/Login';
 import Login2 from './components/Login2';
 import OTP1 from './components/OTP1';
 import Signed_In1 from './components/Signed_In1';
@@ -88,7 +87,6 @@ export default function App2() {
                 <Route path="/about_hcm" element={<About_HCM />} />
                 <Route path="/about_empty_spaces" element={<Empty_Spaces />} />
                 <Route path="/origin" element={<Origin />} />
-                <Route path="/login" element={<Login />} />
                 <Route path="/login2" element={<Login2 />} />
                 <Route path="/otp1/:type/:userID" element={<OTP1 />} />
                 <Route path="/signedin1" element={<Signed_In1 />} />

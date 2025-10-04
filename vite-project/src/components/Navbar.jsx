@@ -3,9 +3,11 @@ import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink, Element } from "react-scroll";
 import { FaBars } from "react-icons/fa6";
 import { GiSplitCross, GiSwordsEmblem } from "react-icons/gi";
+import { useAuth } from "./AuthContext";
 import MovingComponent from "react-moving-text";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Navbar.css";
+import ProfileD from "./Profile/ProfileD";
 
 const navLinks = [
   { href: "/", title: "HOME" },
@@ -15,6 +17,7 @@ const navLinks = [
   { href: "/fight", title: "FIGHT1" },
   { href: "/fight2", title: "FIGHT2" },
 ];
+
 
 const scrollLinks = [
   { href: "phase1", title: "PHASE1" },
@@ -111,6 +114,7 @@ export default function Navbar() {
   const [openMainNavMenu, setOpenMainNavMenu] = useState(false);
   const [openFightMenu, setOpenFightMenu] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const { isLog, userData } = useAuth();
 
   const closeAllMenus = () => {
     setOpenScrollMenu(false);
@@ -140,7 +144,7 @@ export default function Navbar() {
             <FaBars />
           </button>
 
-          <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-center gap-4 text-center">
+          <div className="flex-1 flex justify-center flex-col md:flex-row md:items-center px-8 gap-10 text-center">
             <div
               className="text-4xl md:text-6xl font-black select-none"
               style={{
@@ -148,14 +152,22 @@ export default function Navbar() {
                 textShadow: "2px 2px 8px black",
               }}
             >
-              <MovingComponent
-                type="swing"
-                duration="4000ms"
-                direction="normal"
-                iteration="infinite"
-              >
-                EMPTY SPACES
-              </MovingComponent>
+              {
+                isLog ? (
+                  <ProfileD />
+                ) : (
+                  <MovingComponent
+                    type="swing"
+                    duration="4000ms"
+                    direction="normal"
+                    iteration="infinite"
+                  >
+                    EMPTY SPACES
+                  </MovingComponent>
+                )
+              }
+
+
             </div>
 
             <ul className="hidden md:flex items-center gap-6 pl-6">
@@ -176,13 +188,13 @@ export default function Navbar() {
                     {/* Hover Border Animation (restore this) */}
                     <span className={`absolute bottom-0 left-0 w-1  transition-all duration-100 ${hoveredIndex === idx ? "bg-white h-full delay-[0ms]" : "bg-black h-0 delay-[200ms]"} rounded-bl-lg rounded-tl-lg`} />
                     <span className={`absolute bottom-0 left-0 w-1 transition-all duration-100 ${hoveredIndex === idx ? "bg-white h-0 delay-[200ms]" : "bg-black h-full delay-[200ms]"} rounded-bl-lg rounded-tl-lg`} />
-               
+
                     <span className={`absolute top-0 left-0 h-1 transition-all duration-100 ${hoveredIndex === idx ? "bg-white w-full delay-[600ms]" : "bg-black w-0 delay-[800ms]"} rounded-tl-lg rounded-tr-lg`} />
                     <span className={`absolute top-0 left-0 h-1 transition-all duration-100 ${hoveredIndex === idx ? "bg-white w-0 delay-[800ms]" : "bg-black w-full delay-[800ms]"} rounded-tl-lg rounded-tr-lg`} />
-                
+
                     <span className={`absolute top-0 right-0 w-1 transition-all duration-100 ${hoveredIndex === idx ? "bg-white h-full delay-[400ms]" : "bg-black h-0 delay-[600ms]"} rounded-tr-lg rounded-br-lg`} />
                     <span className={`absolute top-0 right-0 w-1 transition-all duration-100 ${hoveredIndex === idx ? "bg-white h-0 delay-[600ms]" : "bg-black h-full delay-[600ms]"} rounded-tr-lg rounded-br-lg`} />
-                   
+
                     <span className={`absolute bottom-0 right-0 h-1 transition-all duration-100 ${hoveredIndex === idx ? "bg-white w-full delay-[200ms]" : "bg-black w-0 delay-[400ms]"} rounded-bl-lg rounded-br-lg`} />
                     <span className={`absolute bottom-0 right-0 h-1 transition-all duration-100 ${hoveredIndex === idx ? "bg-white w-0 delay-[400ms]" : "bg-black w-full delay-[400ms]"} rounded-bl-lg rounded-br-lg`} />
                   </RouterLink>

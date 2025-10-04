@@ -5,11 +5,14 @@ import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 import { showSuccessToast, showErrorToast } from './Notification';
 import { APIURL } from '../GlobalAPIURL';
+import { useAuth } from './AuthContext.jsx';
 
 export default function Signed_In1() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [theme, setTheme] = useState('dark'); // default dark
+
+  const { setIsLog, setUserData } = useAuth();  // ⬅️ get context setters
 
   const toggleTheme = () =>
     setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
@@ -42,11 +45,21 @@ export default function Signed_In1() {
         const { id, token } = response.data.data;
         if (response.status === 200 || response.status === 201) {
           showSuccessToast("Login successful");
+
+          const { id, token } = response.data.data;
+          const user = response.data.data;   // <-- assume API sends user info
+
           sessionStorage.setItem("UserId", id);
           sessionStorage.setItem("UserToken", token);
+
+          // 🔥 Update AuthContext
+          setIsLog(true);
+          setUserData(user);
+
           navigate(`/`);
           resetForm();
         }
+
       } catch (err) {
         const msg = err.response?.data?.msg;
         if (msg === "Account already verified, please login") {

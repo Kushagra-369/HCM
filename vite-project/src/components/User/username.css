@@ -1,0 +1,57 @@
+/* username.css */
+
+/* Glass card with better contrast and visibility */
+.glass-card {
+  background: rgba(255, 255, 255, 0.678); /* Light translucent white */
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Slight scaling effect on hover */
+.glass-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Input styling */
+input {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+input:focus {
+  outline: none;
+  border-color: #3b82f6; /* Tailwind blue-500 */
+  box-shadow: 0 0 0 3px rgb(247, 249, 247);
+}
+
+/* Button hover effect */
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
+
+/* Typography */
+label {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Responsive tweak */
+@media (max-width: 480px) {
+  .glass-card {
+    padding: 1.5rem;
+  }
+}

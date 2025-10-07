@@ -7,14 +7,15 @@ import './OTP1.css';
 
 export default function OTP1() {
   const navigate = useNavigate();
-  const { userID, type } = useParams();
+  const { userID, type } = useParams(); // type: "user" or "new_email"
   const email = sessionStorage.getItem("Useremail");
 
-  const [code, setcode] = useState(new Array(4).fill(""));
+  const [code, setCode] = useState(new Array(4).fill(""));
   const [isLoading, setLoading] = useState(false);
   const [timeLeft, setTimeLeft] = useState(30);
   const [canResend, setCanResend] = useState(false);
 
+  // Timer for Resend
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(prev => {
@@ -34,7 +35,18 @@ export default function OTP1() {
     if (!canResend) return;
 
     try {
-      await axios.post(`${APIURL}resend_otp`, { email });
+      let endpoint = "";
+      if (type === "new_email") {
+        endpoint = `resend_otp/${userID}?type=change_email`;
+      } else {
+        endpoint = `resend_otp/${userID}`;
+      }
+
+      const token = sessionStorage.getItem("UserToken");
+      const headers = type === "new_email" ? { "x-api-key": token } : {};
+
+      await axios.post(`${APIURL}${endpoint}`, {}, { headers });
+
       showSuccessToast("OTP resent successfully!");
 
       setCanResend(false);
@@ -55,13 +67,14 @@ export default function OTP1() {
     }
   };
 
+
   const handleChange = (element, index) => {
     const value = element.value;
     if (!/^\d?$/.test(value)) return;
 
     let newCode = [...code];
     newCode[index] = value;
-    setcode(newCode);
+    setCode(newCode);
 
     if (value && index < code.length - 1) {
       document.getElementById(`otp-input-${index + 1}`).focus();
@@ -80,30 +93,54 @@ export default function OTP1() {
     const userOtp = code.join("");
 
     try {
-      const response = await axios.post(`${APIURL}user_otp_verify/${userID}`, { otp: userOtp });
+      let endpoint = "";
+      let body = { otp: userOtp };
+
+      if (type === "new_email") {
+        endpoint = `newEmailVerify/${userID}`;
+        body.email = email; // Add newEmail to body
+      } else {
+        endpoint = `user_otp_verify/${userID}`;
+      }
+
+      const token = sessionStorage.getItem("UserToken"); // your auth token
+      const headers = type === "new_email" ? { "x-api-key": token } : {};
+
+      const response = await axios.post(
+        `${APIURL}${endpoint}`,
+        body,
+        { headers }
+      );
 
       if (response.status === 200) {
-        showSuccessToast(response.data.msg);
-        navigate('/signedin1');
+        showSuccessToast(response.data.msg || "OTP verified successfully");
+
+        if (type === "new_email") {
+          navigate('/signedin1'); // after email change OTP
+        } else {
+          navigate('/dashboard'); // after normal login OTP
+        }
       }
     } catch (err) {
+      console.error(err.response);
       showErrorToast(err.response?.data?.msg || "An error occurred");
     } finally {
       setLoading(false);
     }
   };
 
+
   return (
     <div className="min-h-screen flex justify-center items-center scary-bg">
-      <div className='border-2 p-10 w-[350px] text-center rounded-3xl  bg-gradient-to-tr hover:scale-105 transition-all from-gray-900 via-gray-700 to-gray-900  bg-opacity-80 text-red-400 shadow-2xl shadow-red-700'>
-        <h1 className='py-5 text-xl font-bold animate-pulse'>
+      <div className="border-2 p-10 w-[350px] text-center rounded-3xl bg-gradient-to-tr hover:scale-105 transition-all from-gray-900 via-gray-700 to-gray-900 bg-opacity-80 text-red-400 shadow-2xl shadow-red-700">
+        <h1 className="py-5 text-xl font-bold animate-pulse">
           <p>We have sent a code to your email - <span className="font-bold">{email}</span></p>
         </h1>
 
         <h2 className="mb-2 py-5 text-lg">Enter OTP</h2>
 
         <form onSubmit={handleSubmit}>
-          <div className='flex gap-5 py-3'>
+          <div className="flex gap-5 py-3">
             {code.map((data, index) => (
               <div key={index} className="w-16 h-16">
                 <input
@@ -121,7 +158,7 @@ export default function OTP1() {
             ))}
           </div>
 
-          <div className='px-10 py-5 w-full'>
+          <div className="px-10 py-5 w-full">
             <button
               type="submit"
               disabled={isLoading}

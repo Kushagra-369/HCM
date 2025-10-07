@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import App from "../../App";
 import Profile from "./Profile"; // Make sure Profile is imported
+import ChangeEmail from "./ChangeEmail";
+import DeleteAccount from "./DeleteAccount";
 import { motion, AnimatePresence } from "framer-motion";
 import {
     FaUser,
@@ -39,6 +41,10 @@ export default function UserHome() {
                 return <App />; // directly render Home component
             case "profile":
                 return <Profile />;
+            case "changeEmail":
+                return <ChangeEmail />;
+            case "deleteAccount":
+                return <DeleteAccount />;
             default:
                 return <App />;
         }
@@ -60,7 +66,7 @@ export default function UserHome() {
                 {/* Sidebar */}
                 <div className="w-1/5 bg-black bg-opacity-90 shadow-lg p-4 flex flex-col justify-between h-screen border-r border-red-800">
                     <div>
-                        <h1 className="text-center text-2xl font-bold text-red-600 mb-6 glow-text">
+                        <h1 className="text-center text-2xl font-bold text-red-600 mb-6 ">
                             USER SETTINGS
                         </h1>
                         {mainItems.map((item) => (

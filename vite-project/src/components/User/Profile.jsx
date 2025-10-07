@@ -78,8 +78,8 @@ export default function Profile() {
     };
 
     const handleNameUpdate = async () => {
-        const userID = sessionStorage.getItem("UsereId");
-        const token = sessionStorage.getItem("UsereToken");
+        const userID = sessionStorage.getItem("UserId");
+        const token = sessionStorage.getItem("UserToken");
 
         if (!userID || !token) {
             return showErrorToast("You must be logged in to update your name");
@@ -99,6 +99,13 @@ export default function Profile() {
             );
 
             showSuccessToast(response.data.msg || "Name updated successfully");
+            setUserData((prev) => ({
+                ...prev,
+                DBDATA: {
+                    ...prev.DBDATA,
+                    name,
+                },
+            }));
             setIsEditing(false);
         } catch (err) {
             console.error(err);
@@ -159,8 +166,8 @@ export default function Profile() {
                     {status.message && (
                         <div
                             className={`mt-4 p-3 rounded-lg text-sm flex items-center ${status.type === "success"
-                                    ? "bg-green-900 text-green-300"
-                                    : "bg-red-900 text-red-300"
+                                ? "bg-green-900 text-green-300"
+                                : "bg-red-900 text-red-300"
                                 }`}
                         >
                             {status.type === "success" ? (

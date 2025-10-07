@@ -41,11 +41,11 @@ export default function Profile() {
             const formData = new FormData();
             formData.append("profileIMG", file);
 
-            const id = sessionStorage.getItem("UsereId");
-            const token = sessionStorage.getItem("UsereToken");
+            const id = sessionStorage.getItem("UserId");
+            const token = sessionStorage.getItem("UserToken");
 
             const response = await axios.put(
-                `${APIURL}uploadProfileImg/${id}`,
+                `${APIURL}UploadProfileImg/${id}`,
                 formData,
                 {
                     headers: {
@@ -54,17 +54,26 @@ export default function Profile() {
                     },
                 }
             );
-
             const secureUrl =
-                response.data?.data?.profileImg?.secure_url ||
+                response.data?.data?.profileIMG?.secure_url ||
+                response.data?.data?.profileIMG ||
                 response.data?.data?.secure_url;
+
+            console.log("secureUrl →", secureUrl); // 🧩 Check what’s actually returned
 
             if (secureUrl) {
                 setUserData((prev) => ({
                     ...prev,
-                    profileIMG: { secure_url: secureUrl },
+                    DBDATA: {
+                        ...prev.DBDATA,
+                        profileIMG: { secure_url: secureUrl },
+                    },
                 }));
+                // Force reload to bypass cache
+                setAvatarUrl(`${secureUrl}?t=${Date.now()}`);
             }
+
+
 
             showSuccessToast(response.data?.msg || "Profile image updated successfully");
             setStatus({ message: "Successfully Updated", type: "success" });

@@ -70,7 +70,7 @@ export default function ChangeEmail() {
         {/* Header */}
         <div className="flex flex-col items-center mb-8">
           <img
-            src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png"
+            src="https://thumbs.dreamstime.com/b/evil-zombie-spooky-monster-eye-dark-horror-background-gothic-style-vampire-137171243.jpg"
             alt="Horror Avatar"
             className="w-20 h-20 mb-4 rounded-full border-4 border-red-800 shadow-lg"
           />

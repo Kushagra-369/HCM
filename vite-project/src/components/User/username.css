@@ -1,57 +1,99 @@
-/* username.css */
-
-/* Glass card with better contrast and visibility */
-.glass-card {
-  background: rgba(255, 255, 255, 0.678); /* Light translucent white */
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Background - smoky red-blue-black horror look */
+.horror-bg {
+  background: radial-gradient(circle at 20% 20%, #000, #190014, #360014, #000);
+  background-size: 400% 400%;
+  animation: horrorGradient 10s ease infinite;
 }
 
-/* Slight scaling effect on hover */
-.glass-card:hover {
-  transform: translateY(-4px) scale(1.01);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+@keyframes horrorGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-/* Input styling */
-input {
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  color: #333;
+/* Card styling - glassy with blood aura */
+.horror-card {
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 0, 0, 0.4);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.4), inset 0 0 20px rgba(255, 0, 0, 0.2);
+  border-radius: 12px;
+  transition: 0.4s ease;
+}
+.horror-card:hover {
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.7);
 }
 
-input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+/* Inputs - blood red focus and ghost text */
+.horror-input {
+  width: 100%;
+  border: 1px solid #550000;
+  border-radius: 8px;
+  padding: 12px;
+  background: rgba(20, 0, 0, 0.9);
+  color: #f5f5f5;
+  font-family: 'Courier New', monospace;
+  transition: 0.3s ease;
 }
-
-input:focus {
+.horror-input:focus {
   outline: none;
-  border-color: #3b82f6; /* Tailwind blue-500 */
-  box-shadow: 0 0 0 3px rgb(247, 249, 247);
+  box-shadow: 0 0 10px #ff0000;
+  border-color: #ff0000;
 }
 
-/* Button hover effect */
-button {
-  transition: all 0.2s ease-in-out;
+/* Button - red glowing pulse */
+.horror-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #8b0000, #ff0000);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px #ff0000;
+  transition: 0.3s;
+}
+.horror-btn:hover {
+  box-shadow: 0 0 25px #ff0000, 0 0 40px #ff0000;
+  transform: scale(1.03);
 }
 
-button:hover {
-  filter: brightness(1.05);
+/* Title glitch effect */
+.glitch {
+  position: relative;
+  display: inline-block;
+}
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+}
+.glitch::before {
+  animation: glitchTop 1s infinite linear alternate-reverse;
+  color: #ff0000;
+}
+.glitch::after {
+  animation: glitchBottom 1s infinite linear alternate-reverse;
+  color: #00ffff;
 }
 
-/* Typography */
-label {
-  font-weight: 600;
-  color: #333;
+@keyframes glitchTop {
+  0% { clip-path: inset(0 0 85% 0); transform: translate(-2px, -2px); }
+  100% { clip-path: inset(0 0 10% 0); transform: translate(2px, 2px); }
 }
 
-/* Responsive tweak */
-@media (max-width: 480px) {
-  .glass-card {
-    padding: 1.5rem;
-  }
+@keyframes glitchBottom {
+  0% { clip-path: inset(80% 0 0 0); transform: translate(2px, 2px); }
+  100% { clip-path: inset(10% 0 0 0); transform: translate(-2px, -2px); }
 }
+
+/* Title font */
+.horror-title {
+  font-family: 'Creepster', cursive;
+  letter-spacing: 2px;
+}
+
+/* Add this in your index.html or import font in CSS */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');

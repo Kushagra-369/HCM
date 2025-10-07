@@ -13,11 +13,13 @@ export default function ProfileD() {
     const [name, setName] = useState(userData?.DBDATA?.name || "");
 
     const email = sessionStorage.getItem("Useremail") || userData?.DBDATA?.email || "";
-
+        const [avatarUrl, setAvatarUrl] = useState(
+            userData?.DBDATA?.profileIMG?.secure_url || defaultAvatar
+        );
     const user = {
         name: name || "Kushagra", // fallback name
         email: email || "kushagra@gmail.com",
-        avatar: userData?.profileIMG?.secure_url || "https://thumbs.dreamstime.com/b/evil-zombie-spooky-monster-eye-dark-horror-background-gothic-style-vampire-137171243.jpg"
+        avatar: avatarUrl || "https://thumbs.dreamstime.com/b/evil-zombie-spooky-monster-eye-dark-horror-background-gothic-style-vampire-137171243.jpg"
     };
 
     const LogOutUser = () => {

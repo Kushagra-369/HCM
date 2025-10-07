@@ -3,6 +3,7 @@ import App from "../../App";
 import Profile from "./Profile"; // Make sure Profile is imported
 import ChangeEmail from "./ChangeEmail";
 import DeleteAccount from "./DeleteAccount";
+import ChangePassword from "./ChangePassword";
 import { motion, AnimatePresence } from "framer-motion";
 import {
     FaUser,
@@ -43,6 +44,8 @@ export default function UserHome() {
                 return <Profile />;
             case "changeEmail":
                 return <ChangeEmail />;
+            case "changePassword":
+                return <ChangePassword />;
             case "deleteAccount":
                 return <DeleteAccount />;
             default:

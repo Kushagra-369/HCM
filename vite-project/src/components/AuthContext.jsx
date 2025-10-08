@@ -13,18 +13,7 @@ export function AuthProvider({ children }) {
   const [userData, setUserData] = useState({});
   const [adminData, setAdminData] = useState({});
 
-  const value = {
-    isLog,
-    setIsLog,
-    userDashboard,
-    setUserDashboard,
-    userData,
-    setUserData,
-    adminData,
-    setAdminData,
-    adminDashboard,
-    setAdminDashboard,
-  };
+  const value = {isLog,  setIsLog,  userDashboard, setUserDashboard,  userData, setUserData,   adminData,  setAdminData,    adminDashboard, setAdminDashboard,};
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }

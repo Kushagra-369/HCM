@@ -45,14 +45,15 @@ import Failed from "./components/Failed";
 import { AuthProvider } from "./components/AuthContext.jsx";
 import Profile from "./components/User/Profile.jsx";
 import UserHome from "./components/User/UserHome.jsx";
-
+import Admin_home from "./components/Admin/Admin_home.jsx";
 export default function App2() {
   const location = useLocation();
 
   return (
     <AuthProvider>
       {/* Show Navbar except for /userhome */}
-      {location.pathname !== "/userhome" && <Navbar />}
+     {location.pathname !== "/userhome" && location.pathname !== "/admin_home" && <Navbar />}
+
 
       <Routes>
         {/* Main Routes */}
@@ -64,6 +65,7 @@ export default function App2() {
         <Route path="/about" element={<About />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/userhome" element={<UserHome />} />
+        <Route path="/admin_home" element={<Admin_home />} />
 
         {/* Fight Routes */}
         <Route path="/fight" element={<Fight />} />

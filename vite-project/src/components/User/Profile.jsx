@@ -17,7 +17,7 @@ export default function Profile() {
     );
     const [name, setName] = useState(userData?.DBDATA?.name || "");
     const email = userData?.DBDATA?.email || "No Email Provided";
-
+    console.log(userData)
     const [isEditing, setIsEditing] = useState(false);
     const [upload, setUpload] = useState(false);
     const [status, setStatus] = useState({ message: "", type: "" });

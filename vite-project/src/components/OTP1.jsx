@@ -4,11 +4,25 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { showSuccessToast, showErrorToast } from './Notification';
 import { APIURL } from '../GlobalAPIURL';
 import './OTP1.css';
+import { useAuth } from './AuthContext'
 
 export default function OTP1() {
   const navigate = useNavigate();
-  const { userID, type } = useParams(); // type: "user" or "new_email"
-  const email = sessionStorage.getItem("Useremail");
+  const { userID, type } = useParams();
+  const { setAdminData } = useAuth();
+
+  // Retrieve email based on type
+  const email = type === "admin"
+    ? sessionStorage.getItem("Adminemail") // Match the exact key used in sign-in
+    : sessionStorage.getItem("Useremail");
+
+  // Debug email retrieval
+  useEffect(() => {
+    console.log("Type:", type);
+    console.log("Adminemail from sessionStorage:", sessionStorage.getItem("Adminemail"));
+    console.log("Useremail from sessionStorage:", sessionStorage.getItem("Useremail"));
+    console.log("Displayed email:", email);
+  }, [type, email]);
 
   const [code, setCode] = useState(new Array(4).fill(""));
   const [isLoading, setLoading] = useState(false);
@@ -67,7 +81,6 @@ export default function OTP1() {
     }
   };
 
-
   const handleChange = (element, index) => {
     const value = element.value;
     if (!/^\d?$/.test(value)) return;
@@ -99,11 +112,14 @@ export default function OTP1() {
       if (type === "new_email") {
         endpoint = `newEmailVerify/${userID}`;
         body.email = email; // Add newEmail to body
+      }
+      if (type === "admin") {
+        endpoint = `AdminOtpVerify/${userID}`;
       } else {
         endpoint = `user_otp_verify/${userID}`;
       }
 
-      const token = sessionStorage.getItem("UserToken"); // your auth token
+      const token = sessionStorage.getItem("UserToken");
       const headers = type === "new_email" ? { "x-api-key": token } : {};
 
       const response = await axios.post(
@@ -117,8 +133,29 @@ export default function OTP1() {
 
         if (type === "new_email") {
           navigate('/signedin1'); // after email change OTP
-        } else {
-          navigate('/dashboard'); // after normal login OTP
+        }
+        if (type === "admin") {
+          const adminResponseData = response.data?.data;
+
+          if (!adminResponseData) {
+            showErrorToast("Failed to fetch admin data");
+            return;
+          }
+
+          setAdminData(adminResponseData); // ✅ store real admin data in context
+
+          // Persist in sessionStorage for reload
+          sessionStorage.setItem("AdminData", JSON.stringify(adminResponseData));
+          sessionStorage.setItem("AdminToken", adminResponseData.token || "");
+          sessionStorage.setItem("AdminId", adminResponseData.id || "");
+          sessionStorage.setItem("Adminname", adminResponseData?.DBDATA?.name || "");
+          sessionStorage.setItem("Adminemail", adminResponseData?.DBDATA?.email || "");
+
+          navigate("/admin_home");
+        }
+
+        else {
+          navigate('/signedin1'); // after normal login OTP
         }
       }
     } catch (err) {
@@ -129,12 +166,14 @@ export default function OTP1() {
     }
   };
 
-
   return (
     <div className="min-h-screen flex justify-center items-center scary-bg">
       <div className="border-2 p-10 w-[350px] text-center rounded-3xl bg-gradient-to-tr hover:scale-105 transition-all from-gray-900 via-gray-700 to-gray-900 bg-opacity-80 text-red-400 shadow-2xl shadow-red-700">
         <h1 className="py-5 text-xl font-bold animate-pulse">
-          <p>We have sent a code to your email - <span className="font-bold">{email}</span></p>
+          <p>
+            We have sent a code to your email -{' '}
+            <span className="font-bold">{email || 'Not found'}</span>
+          </p>
         </h1>
 
         <h2 className="mb-2 py-5 text-lg">Enter OTP</h2>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import App from "../../App";
 import AdminProfile from "./AdminProfile";
 import { motion, AnimatePresence } from "framer-motion";
+import AdminPassChange from "./Admin_pass_change";
 import { FaHome } from "react-icons/fa";
 
 export default function Admin_home() {
@@ -11,6 +12,7 @@ export default function Admin_home() {
   const mainItems = [
     { key: "home", label: "Dashboard", icon: <FaHome /> },
     { key: "profile", label: "Profile", icon: <FaHome /> },
+    { key: "pass_change", label: "Change Password", icon: <FaHome /> },
 ];
 
   const renderContent = () => {
@@ -19,6 +21,8 @@ export default function Admin_home() {
         return <App />;
       case "profile":
         return <AdminProfile />;
+      case "pass_change":
+        return <AdminPassChange />;
       default:
         return <App />;
     }

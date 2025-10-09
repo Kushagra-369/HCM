@@ -13,19 +13,17 @@ export default function AdminProfile() {
     const defaultAvatar = "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?fm=jpg&q=60&w=3000";
 
     const [avatarUrl, setAvatarUrl] = useState(adminData?.profileIMG?.secure_url || adminData?.profileIMG?.url || adminData?.profileIMG || defaultAvatar);
-    const [name, setName] = useState("Admin User");
-    const [email, setEmail] = useState("No Email Provided");
+    const [name, setName] = useState(adminData?.name || "Admin User");
+    const [email, setEmail] = useState(adminData?.email || "No Email Provided");
 
     useEffect(() => {
         if (adminData?.name) setName(adminData.name);
         if (adminData?.email) setEmail(adminData.email);
     }, [adminData.DBDATA]);
-    console.log(adminData);
     const [isEditing, setIsEditing] = useState(false);
     const [upload, setUpload] = useState(false);
     const [status, setStatus] = useState({ message: "", type: "" });
     const [file, setFile] = useState(null);
-    console.log(adminData.DBDATA)
 
 
     // Sync name, email, avatar whenever adminData changes
@@ -47,49 +45,60 @@ export default function AdminProfile() {
 
     const uploadProfileImage = async () => {
         if (!file) {
-            showErrorToast("Please select a file first");
-            return;
+            return showErrorToast("Please select a file first");
         }
 
         try {
             setUpload(true);
+
             const formData = new FormData();
             formData.append("profileIMG", file);
 
             const id = sessionStorage.getItem("AdminId");
-            const token = sessionStorage.getItem("AdminToken");
+            const token = adminData?.token || sessionStorage.getItem("AdminToken");
 
+            console.log(token)
             if (!id || !token) {
-                showErrorToast("You must be logged in as admin to upload profile image");
-                return;
+                return showErrorToast("You must be logged in as admin to upload profile image");
             }
 
-            const response = await axios.put(`${APIURL}AdminProfileImg/${id}`, formData, {
-                headers: {
-                    Authorization: `Bearer ${token}`,
-                    "x-api-key": token,
-                    "Content-Type": "multipart/form-data",
-                },
-            });
+            const response = await axios.put(
+                `${APIURL}UploadAdminProfileImg/${id}`,
+                formData,
+                {
+                    headers: {
+                        Authorization: `Bearer ${token}`, // ✅ Send token
+                        "x-api-key": token,
+                    },
+                }
+            );
 
-            const respData = response.data?.data;
+            const secureUrl =
+                response.data?.data?.profileIMG?.secure_url ||
+                response.data?.data?.profileIMG?.url ||
+                response.data?.data?.profileIMG;
 
-            if (respData) {
-                setAdminData({ ...adminData, ...respData });
-                setAvatarUrl(respData.profileIMG?.secure_url || avatarUrl);
-
-                sessionStorage.setItem("Adminname", respData?.DBDATA?.name || name);
-                sessionStorage.setItem("Adminemail", respData?.DBDATA?.email || email);
+            if (secureUrl) {
+                setAdminData(prev => ({
+                    ...prev,
+                    profileIMG: { secure_url: secureUrl },
+                }));
+                setAvatarUrl(`${secureUrl}?t=${Date.now()}`);
+                sessionStorage.setItem("AdminprofileIMG", secureUrl);
             }
 
-            showSuccessToast(response.data?.msg || "Profile updated successfully");
+            showSuccessToast(response.data?.msg || "Profile image updated successfully");
+            setStatus({ message: "Successfully Updated", type: "success" });
         } catch (error) {
-            console.error(error);
+            console.error("Upload error:", error.response?.data || error);
             showErrorToast(error.response?.data?.msg || "Failed to upload image");
+            setStatus({ message: "Upload failed", type: "error" });
         } finally {
             setUpload(false);
         }
     };
+
+
 
     const handleNameUpdate = async () => {
         const id = sessionStorage.getItem("AdminId");
@@ -169,7 +178,7 @@ export default function AdminProfile() {
                             </div>
                         ) : (
                             <div className="flex justify-between items-center">
-                                <p className="text-white text-base glow-text">{name}</p>
+                                <p className="text-white text-base glow-text">{adminData?.name}</p>
                                 <button onClick={() => setIsEditing(true)} className="text-sm text-red-500 hover:underline glow-text">Edit</button>
                             </div>
                         )}
@@ -177,7 +186,7 @@ export default function AdminProfile() {
 
                     <div>
                         <label className="block text-lg font-semibold text-red-500 mb-1 glow-text">Email:</label>
-                        <p className="text-white text-base glow-text">{email}</p>
+                        <p className="text-white text-base glow-text">{adminData?.email}</p>
                     </div>
                 </div>
             </div>

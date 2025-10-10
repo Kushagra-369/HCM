@@ -5,6 +5,7 @@ import ChangeEmail from "./ChangeEmail";
 import DeleteAccount from "./DeleteAccount";
 import ChangePassword from "./ChangePassword";
 import CreateMonster from "./CreateMonster";
+import UserReview from "./UserReview";
 import { motion, AnimatePresence } from "framer-motion";
 import {
     FaUser,
@@ -26,7 +27,7 @@ export default function UserHome() {
         { key: "changeEmail", label: "Change Email", icon: <FaEnvelope /> },
         { key: "changePassword", label: "Change Password", icon: <FaLock /> },
         { key: "userCreateMonster", label: "Create Monster", icon: <FaPlus /> },
-        { key: "myOrders", label: "My Orders", icon: <FaClipboardList /> },
+        // { key: "myOrders", label: "My Orders", icon: <FaClipboardList /> },
         { key: "userReview", label: "Give Review", icon: <FaRegCommentDots /> },
     ];
 
@@ -49,6 +50,8 @@ export default function UserHome() {
                 return <ChangePassword />;
             case "userCreateMonster":
                 return <CreateMonster />;
+            case "userReview":
+                return <UserReview />;
             case "deleteAccount":
                 return <DeleteAccount />;
             default:

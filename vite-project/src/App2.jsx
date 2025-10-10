@@ -33,7 +33,7 @@ import Oculus from "./components/Oculus";
 import Tigris from "./components/Tigris";
 import Flurtotilus from "./components/Flurtotilus";
 import Fight2 from "./components/Fight2";
-
+import GetReview from "./components/Admin/GetReview.jsx";
 // Misc pages
 import About_HCM from "./components/About_HCM";
 import Origin from "./components/Origin";
@@ -46,6 +46,7 @@ import { AuthProvider } from "./components/AuthContext.jsx";
 import Profile from "./components/User/Profile.jsx";
 import UserHome from "./components/User/UserHome.jsx";
 import Admin_home from "./components/Admin/Admin_home.jsx";
+import YourMonsters from "./components/YourMonsters.jsx";
 export default function App2() {
   const location = useLocation();
 
@@ -70,7 +71,9 @@ export default function App2() {
         {/* Fight Routes */}
         <Route path="/fight" element={<Fight />} />
         <Route path="/fight2" element={<Fight2 />} />
-
+        <Route path="/yourmonsters" element={<YourMonsters />} />
+        <Route path="/getreviews" element={<GetReview />} />
+        
         {/* Monster Detail Pages */}
         <Route path="/sphinx" element={<Sphinix />} />
         <Route path="/rockman" element={<Rockman />} />

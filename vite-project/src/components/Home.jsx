@@ -3,7 +3,7 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 import { Element } from 'react-scroll';
 import MovingComponent from 'react-moving-text';
-
+import YourMonsters from './YourMonsters';
 import Footer from './Footer'
 
 import { href, Link } from 'react-router-dom'
@@ -64,6 +64,7 @@ export default function Home() {
 
     return (
         <div style={{ backgroundImage: 'url(https://t3.ftcdn.net/jpg/01/22/03/84/360_F_122038456_AEdKNITqNDwdPTVdPDy1Fk5YaD9Um1xm.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} >
+            <YourMonsters/>
             <div class="text-center justify-center text-2xl md:text-7xl text-yellow-200 py-10 underline">
                 <TypeAnimation
                     sequence={[

@@ -4,7 +4,8 @@ import AdminProfile from "./AdminProfile";
 import { motion, AnimatePresence } from "framer-motion";
 import AdminPassChange from "./Admin_pass_change";
 import { FaHome } from "react-icons/fa";
-
+import UserMonsterDetails from "./UserMonsterDetails";
+import AdminMonster from "./AdminMonster";
 export default function Admin_home() {
   const [activeTab, setActiveTab] = useState("home");
 
@@ -13,6 +14,8 @@ export default function Admin_home() {
     { key: "home", label: "Dashboard", icon: <FaHome /> },
     { key: "profile", label: "Profile", icon: <FaHome /> },
     { key: "pass_change", label: "Change Password", icon: <FaHome /> },
+    { key: "user_monster_details", label: "User Monster Details", icon: <FaHome /> },
+    { key: "admin_monster", label: "Create Monster", icon: <FaHome /> },
 ];
 
   const renderContent = () => {
@@ -23,6 +26,10 @@ export default function Admin_home() {
         return <AdminProfile />;
       case "pass_change":
         return <AdminPassChange />;
+      case "user_monster_details":
+        return <UserMonsterDetails />;
+      case "admin_monster":
+        return <AdminMonster />;
       default:
         return <App />;
     }

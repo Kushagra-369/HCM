@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import axios from "axios";
+import { APIURL } from "../../GlobalAPIURL";
+import { showSuccessToast, showErrorToast } from "../Notification";
 
 export default function CreateMonster() {
   const [monster, setMonster] = useState({
@@ -10,16 +13,67 @@ export default function CreateMonster() {
     tentacles: "no",
   });
 
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setMonster({ ...monster, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const token = sessionStorage.getItem("UserToken"); // Get stored JWT
+
+      if (!token) {
+        showErrorToast("You must be logged in to create a monster");
+        setLoading(false);
+        return;
+      }
+
+      const response = await axios.post(`${APIURL}monsters`, monster, {
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": token, // This must match backend middleware
+        },
+      });
+
+      console.log("✅ Monster Saved:", response.data);
+      showSuccessToast(response.data.msg || "Monster created successfully! 🎉");
+
+      // Reset form
+      setMonster({
+        eyes: 1,
+        heads: 1,
+        wings: "no",
+        base: "fire",
+        arms: 2,
+        tentacles: "no",
+      });
+    } catch (error) {
+      console.error("❌ Error saving monster:", error);
+
+      showErrorToast(
+        error.response?.data?.msg ||
+          error.response?.data?.message ||
+          error.message ||
+          "Failed to create monster ❌"
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center py-10 px-4">
       <h1 className="text-3xl font-bold mb-6">🧬 Create Your Monster</h1>
 
-      <div className="bg-gray-800 p-6 rounded-2xl shadow-lg w-full max-w-md space-y-4">
+      <form
+        onSubmit={handleSubmit}
+        className="bg-gray-800 p-6 rounded-2xl shadow-lg w-full max-w-md space-y-4"
+      >
         {/* Number of Eyes */}
         <div>
           <label className="block mb-1 text-gray-300">Number of Eyes 👁️</label>
@@ -115,18 +169,16 @@ export default function CreateMonster() {
             <option value="no">No</option>
           </select>
         </div>
-      </div>
 
-      {/* Monster Summary */}
-      <div className="mt-8 bg-gray-800 p-6 rounded-2xl w-full max-w-md text-center">
-        <h2 className="text-xl font-semibold mb-3">🧟 Monster Summary</h2>
-        <p>👁️ Eyes: {monster.eyes}</p>
-        <p>🧠 Heads: {monster.heads}</p>
-        <p>🪽 Wings: {monster.wings}</p>
-        <p>🌋 Base Element: {monster.base}</p>
-        <p>💪 Arms: {monster.arms}</p>
-        <p>🐙 Tentacles: {monster.tentacles}</p>
-      </div>
+        {/* Submit */}
+        <button
+          type="submit"
+          disabled={loading}
+          className="w-full mt-4 bg-green-600 hover:bg-green-700 p-2 rounded text-white font-semibold transition"
+        >
+          {loading ? "Submitting..." : "Create Monster"}
+        </button>
+      </form>
     </div>
   );
 }

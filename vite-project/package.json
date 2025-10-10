@@ -18,6 +18,7 @@
     "axios": "^1.10.0",
     "formik": "^2.4.6",
     "framer-motion": "^12.23.3",
+    "lucide-react": "^0.545.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hot-toast": "^2.6.0",

@@ -17,7 +17,7 @@ const navLinks = [
   { href: "/fight", title: "FIGHT1" },
   { href: "/fight2", title: "FIGHT2" },
   { href: "/yourmonsters", title: "YOUR MONSTERS" },
-  { href: "/getreviews", title: "SEE SUGGESTIONS OF USERS" },
+  { href: "/getreviews", title: "SEE SUGGESTIONS AND REVIEWS OF USERS" },
 ];
 
 

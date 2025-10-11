@@ -90,6 +90,7 @@ export default function Signed_In1() {
 
         const { id, token } = response.data.data;
         const adminData = { id, token, email: formik.values.email };
+        console.log(id)
 
         // ✅ Ensure sessionStorage fully written before navigation
         sessionStorage.setItem("AdminId", id);
@@ -106,6 +107,7 @@ export default function Signed_In1() {
     } catch (err) {
       const msg = err.response?.data?.msg;
       showErrorToast(msg || "Admin login failed");
+      console.log(err)
     } finally {
       setLoading(false);
     }

@@ -35,6 +35,7 @@ import Flurtotilus from "./components/Flurtotilus";
 import Fight2 from "./components/Fight2";
 import GetReview from "./components/Admin/GetReview.jsx";
 // Misc pages
+import Movies from "./components/Movie/Movies.jsx";
 import About_HCM from "./components/About_HCM";
 import Origin from "./components/Origin";
 import Empty_Spaces from "./components/Empty_Spaces";
@@ -67,6 +68,7 @@ export default function App2() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/userhome" element={<UserHome />} />
         <Route path="/admin_home" element={<Admin_home />} />
+        <Route path="/addmovie" element={<Movies />} />
 
         {/* Fight Routes */}
         <Route path="/fight" element={<Fight />} />

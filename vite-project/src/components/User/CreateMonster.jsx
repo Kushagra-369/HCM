@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { APIURL } from "../../GlobalAPIURL";
 import { showSuccessToast, showErrorToast } from "../Notification";
@@ -14,6 +14,47 @@ export default function CreateMonster() {
   });
 
   const [loading, setLoading] = useState(false);
+  const [disabledUntil, setDisabledUntil] = useState(null);
+  const [countdown, setCountdown] = useState(""); // For live countdown
+
+  // Check localStorage on mount
+  useEffect(() => {
+    const timestamp = localStorage.getItem("monsterSubmitTime");
+    if (timestamp) {
+      const disabledTime = parseInt(timestamp) + 24 * 60 * 60 * 1000; // 24 hrs
+      if (Date.now() < disabledTime) {
+        setDisabledUntil(disabledTime);
+      } else {
+        localStorage.removeItem("monsterSubmitTime");
+      }
+    }
+  }, []);
+
+  // Update countdown every second
+  useEffect(() => {
+    if (!disabledUntil) return;
+
+    const interval = setInterval(() => {
+      const remaining = disabledUntil - Date.now();
+      if (remaining <= 0) {
+        setDisabledUntil(null);
+        localStorage.removeItem("monsterSubmitTime");
+        setCountdown("");
+        clearInterval(interval);
+      } else {
+        const hrs = Math.floor(remaining / (1000 * 60 * 60));
+        const mins = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+        const secs = Math.floor((remaining % (1000 * 60)) / 1000);
+        setCountdown(
+          `${hrs.toString().padStart(2, "0")}:${mins
+            .toString()
+            .padStart(2, "0")}:${secs.toString().padStart(2, "0")}`
+        );
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [disabledUntil]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,7 +66,7 @@ export default function CreateMonster() {
     setLoading(true);
 
     try {
-      const token = sessionStorage.getItem("UserToken"); // Get stored JWT
+      const token = sessionStorage.getItem("UserToken");
 
       if (!token) {
         showErrorToast("You must be logged in to create a monster");
@@ -36,11 +77,10 @@ export default function CreateMonster() {
       const response = await axios.post(`${APIURL}monsters`, monster, {
         headers: {
           "Content-Type": "application/json",
-          "x-api-key": token, // This must match backend middleware
+          "x-api-key": token,
         },
       });
 
-      console.log("✅ Monster Saved:", response.data);
       showSuccessToast(response.data.msg || "Monster created successfully! 🎉");
 
       // Reset form
@@ -52,9 +92,13 @@ export default function CreateMonster() {
         arms: 2,
         tentacles: "no",
       });
-    } catch (error) {
-      console.error("❌ Error saving monster:", error);
 
+      // Disable button for 24 hrs
+      const now = Date.now();
+      const disableTime = now + 24 * 60 * 60 * 1000;
+      localStorage.setItem("monsterSubmitTime", now);
+      setDisabledUntil(disableTime);
+    } catch (error) {
       showErrorToast(
         error.response?.data?.msg ||
           error.response?.data?.message ||
@@ -65,6 +109,8 @@ export default function CreateMonster() {
       setLoading(false);
     }
   };
+
+  const isDisabled = loading || (disabledUntil && Date.now() < disabledUntil);
 
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center py-10 px-4">
@@ -173,10 +219,16 @@ export default function CreateMonster() {
         {/* Submit */}
         <button
           type="submit"
-          disabled={loading}
-          className="w-full mt-4 bg-green-600 hover:bg-green-700 p-2 rounded text-white font-semibold transition"
+          disabled={isDisabled}
+          className={`w-full mt-4 p-2 rounded text-white font-semibold transition ${
+            isDisabled ? "bg-gray-600 cursor-not-allowed" : "bg-green-600 hover:bg-green-700"
+          }`}
         >
-          {loading ? "Submitting..." : "Create Monster"}
+          {isDisabled
+            ? `Disabled (${countdown})`
+            : loading
+            ? "Submitting..."
+            : "Submit Details"}
         </button>
       </form>
     </div>

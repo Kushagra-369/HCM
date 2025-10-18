@@ -15,25 +15,19 @@ export default function CreateMonster() {
 
   const [loading, setLoading] = useState(false);
   const [disabledUntil, setDisabledUntil] = useState(null);
-  const [countdown, setCountdown] = useState(""); // For live countdown
+  const [countdown, setCountdown] = useState("");
 
-  // Check localStorage on mount
   useEffect(() => {
     const timestamp = localStorage.getItem("monsterSubmitTime");
     if (timestamp) {
-      const disabledTime = parseInt(timestamp) + 24 * 60 * 60 * 1000; // 24 hrs
-      if (Date.now() < disabledTime) {
-        setDisabledUntil(disabledTime);
-      } else {
-        localStorage.removeItem("monsterSubmitTime");
-      }
+      const disabledTime = parseInt(timestamp) + 24 * 60 * 60 * 1000;
+      if (Date.now() < disabledTime) setDisabledUntil(disabledTime);
+      else localStorage.removeItem("monsterSubmitTime");
     }
   }, []);
 
-  // Update countdown every second
   useEffect(() => {
     if (!disabledUntil) return;
-
     const interval = setInterval(() => {
       const remaining = disabledUntil - Date.now();
       if (remaining <= 0) {
@@ -52,7 +46,6 @@ export default function CreateMonster() {
         );
       }
     }, 1000);
-
     return () => clearInterval(interval);
   }, [disabledUntil]);
 
@@ -67,7 +60,6 @@ export default function CreateMonster() {
 
     try {
       const token = sessionStorage.getItem("UserToken");
-
       if (!token) {
         showErrorToast("You must be logged in to create a monster");
         setLoading(false);
@@ -81,9 +73,8 @@ export default function CreateMonster() {
         },
       });
 
-      showSuccessToast(response.data.msg || "Monster created successfully! 🎉");
+      showSuccessToast(response.data.msg || "Monster summoned successfully! 👹");
 
-      // Reset form
       setMonster({
         eyes: 1,
         heads: 1,
@@ -93,7 +84,6 @@ export default function CreateMonster() {
         tentacles: "no",
       });
 
-      // Disable button for 24 hrs
       const now = Date.now();
       const disableTime = now + 24 * 60 * 60 * 1000;
       localStorage.setItem("monsterSubmitTime", now);
@@ -103,7 +93,7 @@ export default function CreateMonster() {
         error.response?.data?.msg ||
           error.response?.data?.message ||
           error.message ||
-          "Failed to create monster ❌"
+          "Failed to summon monster 💀"
       );
     } finally {
       setLoading(false);
@@ -113,122 +103,79 @@ export default function CreateMonster() {
   const isDisabled = loading || (disabledUntil && Date.now() < disabledUntil);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center py-10 px-4">
-      <h1 className="text-3xl font-bold mb-6">🧬 Create Your Monster</h1>
+    <div className="min-h-screen bg-gradient-to-b from-black via-red-950 to-black text-red-200 flex flex-col items-center py-10 px-4 relative overflow-hidden">
+      {/* Horror fog effect */}
+      <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')] animate-pulse" />
+      
+      <h1 className="text-4xl font-extrabold mb-6 text-red-500 drop-shadow-[0_0_10px_#ff0000] animate-pulse font-[Creepster]">
+        ☠️ Summon Your Monster ☠️
+      </h1>
 
       <form
         onSubmit={handleSubmit}
-        className="bg-gray-800 p-6 rounded-2xl shadow-lg w-full max-w-md space-y-4"
+        className="relative bg-black/70 backdrop-blur-md p-6 rounded-2xl border-2 border-red-700 shadow-[0_0_25px_#8b0000] w-full max-w-md space-y-4"
       >
-        {/* Number of Eyes */}
-        <div>
-          <label className="block mb-1 text-gray-300">Number of Eyes 👁️</label>
-          <select
-            name="eyes"
-            value={monster.eyes}
-            onChange={handleChange}
-            className="w-full bg-gray-700 text-white p-2 rounded"
-          >
-            {[1, 2, 3, 4, 5].map((num) => (
-              <option key={num} value={num}>
-                {num}
-              </option>
-            ))}
-          </select>
-        </div>
+        {["eyes", "heads", "wings", "base", "arms", "tentacles"].map((key) => (
+          <div key={key}>
+            <label className="block mb-1 text-gray-300 capitalize tracking-wider">
+              {key === "base"
+                ? "Base Element 🌋"
+                : key === "wings"
+                ? "Wings 🪽"
+                : key === "tentacles"
+                ? "Tentacles 🐙"
+                : key === "eyes"
+                ? "Number of Eyes 👁️"
+                : key === "heads"
+                ? "Number of Heads 🧠"
+                : "Number of Arms 💪"}
+            </label>
+            <select
+              name={key}
+              value={monster[key]}
+              onChange={handleChange}
+              className="w-full bg-gray-900 border border-red-700 focus:border-red-500 focus:ring-2 focus:ring-red-600 text-red-100 p-2 rounded-md transition-all"
+            >
+              {key === "eyes" &&
+                [1, 2, 3, 4, 5].map((n) => <option key={n}>{n}</option>)}
+              {key === "heads" &&
+                [1, 2, 3].map((n) => <option key={n}>{n}</option>)}
+              {key === "wings" &&
+                ["yes", "no"].map((n) => (
+                  <option key={n} value={n}>
+                    {n.toUpperCase()}
+                  </option>
+                ))}
+              {key === "base" &&
+                ["fire", "water", "air", "sky", "earth"].map((el) => (
+                  <option key={el}>{el}</option>
+                ))}
+              {key === "arms" &&
+                [2, 4, 6].map((n) => <option key={n}>{n}</option>)}
+              {key === "tentacles" &&
+                ["yes", "no"].map((n) => (
+                  <option key={n} value={n}>
+                    {n.toUpperCase()}
+                  </option>
+                ))}
+            </select>
+          </div>
+        ))}
 
-        {/* Number of Heads */}
-        <div>
-          <label className="block mb-1 text-gray-300">Number of Heads 🧠</label>
-          <select
-            name="heads"
-            value={monster.heads}
-            onChange={handleChange}
-            className="w-full bg-gray-700 text-white p-2 rounded"
-          >
-            {[1, 2, 3].map((num) => (
-              <option key={num} value={num}>
-                {num}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        {/* Wings */}
-        <div>
-          <label className="block mb-1 text-gray-300">Wings 🪽</label>
-          <select
-            name="wings"
-            value={monster.wings}
-            onChange={handleChange}
-            className="w-full bg-gray-700 text-white p-2 rounded"
-          >
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-          </select>
-        </div>
-
-        {/* Base Element */}
-        <div>
-          <label className="block mb-1 text-gray-300">Base Element 🌋</label>
-          <select
-            name="base"
-            value={monster.base}
-            onChange={handleChange}
-            className="w-full bg-gray-700 text-white p-2 rounded"
-          >
-            {["fire", "water", "air", "sky", "earth"].map((el) => (
-              <option key={el} value={el}>
-                {el.charAt(0).toUpperCase() + el.slice(1)}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        {/* Number of Arms */}
-        <div>
-          <label className="block mb-1 text-gray-300">Number of Arms 💪</label>
-          <select
-            name="arms"
-            value={monster.arms}
-            onChange={handleChange}
-            className="w-full bg-gray-700 text-white p-2 rounded"
-          >
-            {[2, 4, 6].map((num) => (
-              <option key={num} value={num}>
-                {num}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        {/* Tentacles */}
-        <div>
-          <label className="block mb-1 text-gray-300">Tentacles 🐙</label>
-          <select
-            name="tentacles"
-            value={monster.tentacles}
-            onChange={handleChange}
-            className="w-full bg-gray-700 text-white p-2 rounded"
-          >
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-          </select>
-        </div>
-
-        {/* Submit */}
         <button
           type="submit"
           disabled={isDisabled}
-          className={`w-full mt-4 p-2 rounded text-white font-semibold transition ${
-            isDisabled ? "bg-gray-600 cursor-not-allowed" : "bg-green-600 hover:bg-green-700"
+          className={`w-full mt-6 p-3 text-lg rounded-md font-bold transition-all duration-300 ${
+            isDisabled
+              ? "bg-gray-700 text-gray-400 cursor-not-allowed"
+              : "bg-gradient-to-r from-red-800 via-red-600 to-red-800 text-white shadow-[0_0_20px_#ff0000] hover:shadow-[0_0_40px_#ff1a1a] hover:scale-105"
           }`}
         >
           {isDisabled
-            ? `Disabled (${countdown})`
+            ? `Cursed (${countdown})`
             : loading
-            ? "Submitting..."
-            : "Submit Details"}
+            ? "Summoning..."
+            : "Summon Now"}
         </button>
       </form>
     </div>

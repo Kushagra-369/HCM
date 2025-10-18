@@ -149,7 +149,7 @@ export default function Navbar() {
 
           <div className="flex-1 flex justify-center flex-col md:flex-row md:items-center px-8 gap-10 text-center">
             <div
-              className="text-4xl md:text-6xl font-black select-none"
+              className=" text-4xl sm:text-6xl lg:text-6xl md:text-4xl font-black select-none"
               style={{
                 fontFamily: "'Creepster', cursive",
                 textShadow: "2px 2px 8px black",
@@ -173,7 +173,7 @@ export default function Navbar() {
 
             </div>
 
-            <ul className="hidden md:flex items-center gap-6 pl-6">
+            <ul className="hidden md:flex items-center gap-2 pl-1">
               {mainLinks.map(({ href, title }, idx) => (
                 <motion.div
                   whileHover={{ scale: 1.05 }}
@@ -183,7 +183,7 @@ export default function Navbar() {
                 >
                   <RouterLink
                     to={href}
-                    className="group relative block px-4 py-4 text-yellow-300 text-xl font-semibold transition-colors duration-300 hover:text-black horror-container rounded-lg overflow-hidden overflow-y-auto max-h-screen"
+                    className="group relative block px-2 py-2 lg:px-4 lg:py-4 text-yellow-300 sm:text-sm lg:text-xl font-semibold transition-colors duration-300 hover:text-black horror-container rounded-lg overflow-hidden overflow-y-auto max-h-screen"
                     onMouseEnter={() => setHoveredIndex(idx)}
                     onMouseLeave={() => setHoveredIndex(null)}
                   >

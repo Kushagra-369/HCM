@@ -41,7 +41,7 @@ export default function Footer() {
           variants={fadeInUp}
         >
           <Link to="/login2">
-            <h1 className='text-2xl text-white text-center py-10 font-black hover:underline transition duration-300 hover:text-cyan-300'>
+            <h1 className=' text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-9xl text-white text-center py-10 font-black hover:underline transition duration-300 hover:text-cyan-300'>
               CONTACT WITH US
             </h1>
           </Link>
@@ -58,7 +58,7 @@ export default function Footer() {
             smooth={true}
             duration={600}
             offset={-70}
-            className="cursor-pointer hover:text-cyan-300 transition duration-300"
+            className="cursor-pointer hover:text-cyan-300 text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-4xl 2xl:text-6xl transition duration-300"
           >
             <span>Back to top</span>
           </ScrollLink>
@@ -73,12 +73,12 @@ export default function Footer() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <h1 className="font-bold md:border-b-2 text-4xl border-cyan-300 mb-4">
+            <h1 className="font-bold md:border-b-2 text-4xl sm:text-3xl lg:text-4xl xl:text-6xl 2xl:text-8xl border-cyan-300 mb-4">
               Get to know
             </h1>
             {data2.map((item, key) => (
               <RouterLink key={key} to={item.title3}>
-                <h1 className="text-yellow-300 text-2xl hover:underline hover:text-white transition duration-300">
+                <h1 className="text-yellow-300 text-2xl sm:text-3xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl hover:underline hover:text-white transition duration-300">
                   {item.title1}
                 </h1>
               </RouterLink>
@@ -93,15 +93,15 @@ export default function Footer() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <h1 className="font-bold md:border-b-2 text-4xl border-cyan-300 mb-4">
+            <h1 className="font-bold md:border-b-2 text-4xl sm:text-3xl  lg:text-4xl xl:text-6xl 2xl:text-8xl border-cyan-300 mb-4">
               Connect with us
             </h1>
-            <h1 className="text-yellow-300 text-2xl hover:underline hover:text-white transition duration-300">
+            <h1 className="text-yellow-300 text-2xl sm:text-3xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl hover:underline hover:text-white transition duration-300">
               <a href="https://github.com/Kushagra-369" target="_blank" rel="noopener noreferrer">
                 git hub
               </a>
             </h1>
-            <h1 className="text-yellow-300 text-2xl hover:underline hover:text-white transition duration-300">
+            <h1 className="text-yellow-300 text-2xl sm:text-3xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl hover:underline hover:text-white transition duration-300">
               <a href="https://www.linkedin.com/in/kushagra-chhabra-83b215355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
                 linkedin
               </a>
@@ -116,11 +116,11 @@ export default function Footer() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <h1 className="font-bold md:border-b-2 text-4xl border-cyan-300 mb-4">
+            <h1 className="font-bold md:border-b-2 text-4xl sm:text-3xl lg:text-4xl xl:text-6xl 2xl:text-8xl border-cyan-300 mb-4">
               Read our novel
             </h1>
             {data.map((item, key) => (
-              <h1 key={key} className="text-yellow-300 text-2xl hover:underline hover:text-white transition duration-300">
+              <h1 key={key} className="text-yellow-300 text-2xl sm:text-3xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl hover:underline hover:text-white transition duration-300">
                 <RouterLink to={item.title2}>{item.title1}</RouterLink>
               </h1>
             ))}
@@ -129,7 +129,7 @@ export default function Footer() {
 
         <div>
           <motion.div
-            className="pb-10 px-5 text-center text-red-500"
+            className="pb-10 px-5 text-center text-sm sm:text-sm md:text-sm lg:text-xl xl:text-2xl 2xl:text-3xl text-red-500"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}

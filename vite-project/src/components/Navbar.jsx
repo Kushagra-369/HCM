@@ -122,18 +122,32 @@ export default function Navbar() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const { isLog, userData } = useAuth();
 
-   const [isTabletView, setIsTabletView] = useState(window.innerWidth <= 768);
+  const [isTabletView, setIsTabletView] = useState(window.innerWidth <= 768);
+  const [isLandscape, setIsLandscape] = useState(window.matchMedia("(orientation: landscape)").matches);
 
-  // ✅ Update on resize
   React.useEffect(() => {
     const handleResize = () => setIsTabletView(window.innerWidth <= 768);
+    const handleOrientationChange = (e) => setIsLandscape(e.matches);
+
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    const mql = window.matchMedia("(orientation: landscape)");
+    mql.addEventListener("change", handleOrientationChange);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      mql.removeEventListener("change", handleOrientationChange);
+    };
   }, []);
 
+
   // ✅ Dynamic link grouping based on screen size
-  const mainLinks = isTabletView ? navLinks.slice(0, 2) : navLinks.slice(0, 4);
-  const fightLinks = isTabletView ? navLinks.slice(2) : navLinks.slice(4);
+  // If mobile landscape, show only first 2 links as main
+  // Else (portrait or larger screens), show 4 main links
+  const mainLinks = isTabletView && isLandscape ? navLinks.slice(0, 2) : navLinks.slice(0, 4);
+
+  // Fight links are the rest
+  const fightLinks = navLinks.slice(mainLinks.length);
+
 
 
   const closeAllMenus = () => {

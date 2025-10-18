@@ -64,7 +64,7 @@ export default function Home() {
 
     return (
         <div style={{ backgroundImage: 'url(https://t3.ftcdn.net/jpg/01/22/03/84/360_F_122038456_AEdKNITqNDwdPTVdPDy1Fk5YaD9Um1xm.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} >
-            <div class="text-center justify-center text-2xl md:text-7xl text-yellow-200 py-10 underline">
+            <div className="text-center py-10 underline text-yellow-200">
                 <TypeAnimation
                     sequence={[
                         1000,
@@ -75,10 +75,12 @@ export default function Home() {
                     ]}
                     wrapper="span"
                     speed={100}
-                    style={{ display: 'inline-block' }}
+                    className="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-9xl inline-block"
                     repeat={Infinity}
                 />
             </div>
+
+
             <br />
             <br />
             <div className=' text-center border-2 font-black text-2xl text-yellow-400 border-red-800  rounded-bl-2xl rounded-br-2xl ' style={{ boxShadow: '4px 4px 50px rgb(239, 252, 8)' }}>
@@ -123,7 +125,7 @@ export default function Home() {
                                         <Link to={item.href}>
                                             <h1 className="text-center md:text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-30 w-25 md:h-50 md:w-50 " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-25 md:h-50 md:w-50  lg:h-60 lg:w-60 xl:h-80 xl:w-90 2xl:h-120 2xl:w-120" src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -152,7 +154,7 @@ export default function Home() {
                                         <Link to={item.href} >
                                             <h1 className="text-center  md:text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-40 w-40 md:h-60 md:w-60 " src={item.title3} alt=""></img>
+                                            <img className="h-40 w-40 md:h-60 md:w-60 lg:h-70 lg:w-80 xl:h-90 xl:w-100 2xl:h-130 2xl:w-140" src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -179,7 +181,7 @@ export default function Home() {
                                         <Link to={item.href} >
                                             <h1 className="text-center  md:text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-30 w-25 md:h-50 md:w-50 " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-25 md:h-50 md:w-50 lg:h-60 lg:w-60 xl:h-80 xl:w-90 2xl:h-120 2xl:w-120 " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -233,7 +235,7 @@ export default function Home() {
                                         <Link to={item.href}>
                                             <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-30 w-30 md:h-50 md:w-50  " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-30 md:h-50 md:w-50 lg:h-60 lg:w-60 xl:h-80 xl:w-90 2xl:h-120 2xl:w-120  " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -261,7 +263,7 @@ export default function Home() {
                                         <Link to={item.href} >
                                             <h1 className="text-center md:text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-40 w-40 md:h-60 md:w-60  " src={item.title3} alt=""></img>
+                                            <img className="h-40 w-40 md:h-60 md:w-60 lg:h-70 lg:w-80 xl:h-90 xl:w-100 2xl:h-130 2xl:w-140 " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -288,7 +290,7 @@ export default function Home() {
                                         <Link to={item.href} >
                                             <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-30 w-30 md:h-50 md:w-50  " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-30 md:h-50 md:w-50 lg:h-60 lg:w-60 xl:h-80 xl:w-90 2xl:h-120 2xl:w-120 " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -344,7 +346,7 @@ export default function Home() {
                                         <Link to={item.href}>
                                             <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-30 w-30 md:h-50 md:w-50  " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-30 md:h-50 md:w-50 lg:h-60 lg:w-60 xl:h-80 xl:w-90 2xl:h-120 2xl:w-120 " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -372,7 +374,7 @@ export default function Home() {
                                         <Link to={item.href} >
                                             <h1 className="text-center md:text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-40 w-40 md:h-60 md:w-60   " src={item.title3} alt=""></img>
+                                            <img className="h-40 w-40 md:h-60 md:w-60 lg:h-70 lg:w-80 xl:h-90 xl:w-100 2xl:h-130 2xl:w-140  " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -399,7 +401,7 @@ export default function Home() {
                                         <Link to={item.href} >
                                             <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-30 w-30 md:h-50 md:w-50  " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-30 md:h-50 md:w-50 lg:h-60 lg:w-60 xl:h-80 xl:w-90 2xl:h-120 2xl:w-120 " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -452,7 +454,7 @@ export default function Home() {
                                         <Link to={item.href}>
                                             <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-30 w-30 md:h-50 md:w-50  " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-30 md:h-50 md:w-50 lg:h-60 lg:w-60 xl:h-80 xl:w-90 2xl:h-120 2xl:w-120 " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -480,7 +482,7 @@ export default function Home() {
                                         <Link to={item.href} >
                                             <h1 className="text-center  md:text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-40 w-40 md:h-60 md:w-60 " src={item.title3} alt=""></img>
+                                            <img className="h-40 w-40 md:h-60 md:w-60 lg:h-70 lg:w-80 xl:h-90 xl:w-100 2xl:h-130 2xl:w-140" src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>
@@ -507,7 +509,7 @@ export default function Home() {
                                         <Link to={item.href} >
                                             <h1 className="text-center text-2xl text-cyan-300">{item.title1}</h1>
                                             <br />
-                                            <img className="h-30 w-30 md:h-50 md:w-50  " src={item.title3} alt=""></img>
+                                            <img className="h-30 w-30 md:h-50 md:w-50 lg:h-60 lg:w-60 xl:h-80 xl:w-90 2xl:h-120 2xl:w-120 " src={item.title3} alt=""></img>
                                             <br />
                                             <h1 className="text-center text-2xl text-yellow-200">{item.title2}</h1>
                                         </Link>

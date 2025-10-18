@@ -18,7 +18,7 @@ const navLinks = [
   { href: "/fight2", title: "FIGHT2" },
   { href: "/yourmonsters", title: "YOUR MONSTERS" },
   { href: "/getreviews", title: "SEE SUGGESTIONS AND REVIEWS OF USERS" },
-  { href: "/addmovie", title: " MOVIES" },
+  { href: "/addmovie", title: " MOVIES" }, 
 ];
 
 
@@ -32,8 +32,6 @@ const scrollLinks = [
 
 const mainLinks = navLinks.slice(0, 4);
 const fightLinks = navLinks.slice(4);
-
-
 
 function MenuOverlay({ items, onClose, isScroll, position = "left", hoveredIndex, setHoveredIndex }) {
   const variants = {
@@ -51,9 +49,8 @@ function MenuOverlay({ items, onClose, isScroll, position = "left", hoveredIndex
       variants={variants}
       transition={{ type: "tween", ease: "easeInOut", duration: 0.4 }}
       className={`fixed top-0 ${position === "right" ? "right-0" : "left-0"}
-    w-full sm:w-[85%] md:w-80 h-full z-50 bg-black bg-opacity-95 backdrop-blur-md 
+    w-full md:w-80 h-full z-50 bg-black bg-opacity-95 backdrop-blur-md 
     flex flex-col shadow-lg overflow-y-auto max-h-screen`}
-
     >
 
       <div className="flex justify-end p-4">
@@ -74,7 +71,7 @@ function MenuOverlay({ items, onClose, isScroll, position = "left", hoveredIndex
             initial={{ opacity: 0, x: position === "right" ? 40 : -40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: idx * 0.1, duration: 0.3 }}
-            className="animated-gradient-border w-full max-w-xs  mx-auto my-2"
+            className="animated-gradient-border w-full max-w-xs mx-auto my-2"
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
@@ -85,7 +82,7 @@ function MenuOverlay({ items, onClose, isScroll, position = "left", hoveredIndex
                 duration={600}
                 offset={-70}
                 onClick={onClose}
-                className="group relative block p-3 text-center text-yellow-300 py-3 text-xl sm:text-2xl font-semibold transition-colors duration-300 hover:text-black rounded-lg overflow-hidden"
+                className="group relative block p-3 text-center text-yellow-300 py-3 text-2xl font-semibold transition-colors duration-300 hover:text-black rounded-lg overflow-hidden"
               >
                 {title}
                 {/* Hover Border Animation */}
@@ -98,7 +95,7 @@ function MenuOverlay({ items, onClose, isScroll, position = "left", hoveredIndex
               <RouterLink
                 to={href}
                 onClick={onClose}
-                className="animated-gradient-border-inner p-1 block text-center text-yellow-300 py-3 text-xl sm:text-2xl font-semibold hover:text-black transition rounded-lg relative overflow-hidden"
+                className="animated-gradient-border-inner p-1 block text-center text-yellow-300 py-3 text-2xl font-semibold hover:text-black transition rounded-lg relative overflow-hidden"
               >
                 {title}
                 {/* Hover Border Animation */}
@@ -122,34 +119,6 @@ export default function Navbar() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const { isLog, userData } = useAuth();
 
-  const [isTabletView, setIsTabletView] = useState(window.innerWidth <= 768);
-  const [isLandscape, setIsLandscape] = useState(window.matchMedia("(orientation: landscape)").matches);
-
-  React.useEffect(() => {
-    const handleResize = () => setIsTabletView(window.innerWidth <= 768);
-    const handleOrientationChange = (e) => setIsLandscape(e.matches);
-
-    window.addEventListener("resize", handleResize);
-    const mql = window.matchMedia("(orientation: landscape)");
-    mql.addEventListener("change", handleOrientationChange);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      mql.removeEventListener("change", handleOrientationChange);
-    };
-  }, []);
-
-
-  // ✅ Dynamic link grouping based on screen size
-  // If mobile landscape, show only first 2 links as main
-  // Else (portrait or larger screens), show 4 main links
-  const mainLinks = isTabletView && isLandscape ? navLinks.slice(0, 2) : navLinks.slice(0, 4);
-
-  // Fight links are the rest
-  const fightLinks = navLinks.slice(mainLinks.length);
-
-
-
   const closeAllMenus = () => {
     setOpenScrollMenu(false);
     setOpenMainNavMenu(false);
@@ -166,21 +135,21 @@ export default function Navbar() {
           backgroundSize: "cover",
         }}
       >
-        <div className="flex justify-between items-center px-4 py-6 sm:px-6 sm:py-8 md:py-12 text-white">
+        <div className="flex justify-between items-center px-6 py-8 md:py-12 text-white">
           <button
             onClick={() => {
               closeAllMenus();
               setOpenScrollMenu(true);
             }}
-            className="cursor-pointer text-3xl sm:text-4xl"
+            className="cursor-pointer text-3xl"
             aria-label="Open scroll menu"
           >
             <FaBars />
           </button>
 
-          <div className="flex-1 flex justify-center flex-col md:flex-row md:items-center px-4 sm:px-6 gap-6 md:gap-10 text-center">
+          <div className="flex-1 flex justify-center flex-col md:flex-row md:items-center px-8 gap-10 text-center">
             <div
-              className="text-3xl sm:text-4xl md:text-6xl font-black select-none text-center"
+              className="text-4xl md:text-6xl font-black select-none"
               style={{
                 fontFamily: "'Creepster', cursive",
                 textShadow: "2px 2px 8px black",
@@ -204,7 +173,7 @@ export default function Navbar() {
 
             </div>
 
-            <ul className="hidden md:flex items-center gap-4 lg:gap-6 pl-4 md:pl-6">
+            <ul className="hidden md:flex items-center gap-6 pl-6">
               {mainLinks.map(({ href, title }, idx) => (
                 <motion.div
                   whileHover={{ scale: 1.05 }}
@@ -252,14 +221,13 @@ export default function Navbar() {
           <button
             onClick={() => {
               closeAllMenus();
-              setOpenFightMenu(true);
+              setOpenMainNavMenu((prev) => !prev);
             }}
-            className="md:hidden block cursor-pointer text-red-600 hover:scale-110 duration-500 text-4xl"
-            aria-label="Open fight menu"
+            className="md:hidden block text-red-600 cursor-pointer text-3xl"
+            aria-label="Toggle main nav menu"
           >
-            <GiSwordsEmblem />
+           <GiSwordsEmblem />
           </button>
-
         </div>
 
         <AnimatePresence mode="wait">

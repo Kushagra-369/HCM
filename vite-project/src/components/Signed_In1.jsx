@@ -6,7 +6,7 @@ import axios from 'axios';
 import { showSuccessToast, showErrorToast } from './Notification';
 import { APIURL } from '../GlobalAPIURL';
 import { useAuth } from './AuthContext.jsx';
-
+import Logo from './Logo.jsx';
 export default function Signed_In1() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
@@ -167,6 +167,10 @@ export default function Signed_In1() {
             </button>
           </div>
         </form>
+      </div>
+
+      <div>
+        <Logo />
       </div>
     </div>
   );

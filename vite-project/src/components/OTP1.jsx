@@ -5,7 +5,7 @@ import { showSuccessToast, showErrorToast } from './Notification';
 import { APIURL } from '../GlobalAPIURL';
 import './OTP1.css';
 import { useAuth } from './AuthContext'
-
+import Logo from './Logo.jsx';
 export default function OTP1() {
   const navigate = useNavigate();
   const { userID, type } = useParams();
@@ -167,8 +167,9 @@ export default function OTP1() {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center scary-bg">
-      <div className="border-2 p-10 w-[350px] text-center rounded-3xl bg-gradient-to-tr hover:scale-105 transition-all from-gray-900 via-gray-700 to-gray-900 bg-opacity-80 text-red-400 shadow-2xl shadow-red-700">
+    <div className="min-h-screen  scary-bg">
+      <div className='flex justify-center items-center'>
+        <div className="border-2 p-10 w-[350px] text-center rounded-3xl bg-gradient-to-tr hover:scale-105 transition-all from-gray-900 via-gray-700 to-gray-900 bg-opacity-80 text-red-400 shadow-2xl shadow-red-700">
         <h1 className="py-5 text-xl font-bold animate-pulse">
           <p>
             We have sent a code to your email -{' '}
@@ -218,6 +219,11 @@ export default function OTP1() {
             <span>Resend in {timeLeft}s</span>
           )}
         </div>
+      </div>
+      </div>
+
+      <div>
+        <Logo />
       </div>
     </div>
   );

@@ -8,19 +8,19 @@ export default function Origin() {
   return (
     <Element name="origin">
       <motion.div
-        className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white flex items-center justify-center px-6 py-20"
+        className="h-full bg-gradient-to-b from-black via-gray-900 to-black text-white flex items-center justify-center px-6 py-20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
         <motion.div
-          className="bg-white/5 border animated-gradient-borders border-white/10 backdrop-blur-md rounded-xl p-10 max-w-5xl w-full text-center shadow-lg"
+          className="bg-white/5 border w-100 xl:w-300 2xl:w-500 animated-gradient-borders border-white/10 backdrop-blur-md rounded-xl p-10 w-full text-center shadow-lg"
           initial={{ scale: 0.95, y: 40 }}
           animate={{ scale: 1, y: 0 }}
           transition={{ duration: 1.2, ease: 'easeOut' }}
         >
           <motion.h1
-            className="text-5xl md:text-6xl font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500"
+            className="text-3xl md:text-6xl 2xl:text-8xl font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
@@ -29,7 +29,7 @@ export default function Origin() {
           </motion.h1>
 
           <motion.p
-            className="text-xl md:text-2xl leading-relaxed text-gray-200"
+            className="text-sm md:text-2xl 2xl:text-5xl leading-relaxed text-gray-200"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}

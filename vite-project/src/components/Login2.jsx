@@ -5,6 +5,7 @@ import axios from "axios";
 import { validationSignUpSchema } from "./Validation";
 import { showSuccessToast, showErrorToast } from './Notification';
 import { APIURL } from '../GlobalAPIURL';
+import Logo from './Logo';
 
 export default function Login2() {
 
@@ -62,14 +63,15 @@ export default function Login2() {
         }`;
 
     return (
-        <div className="min-h-screen flex flex-col justify-center items-center"
+        <div className=""
             style={{
                 backgroundImage: bgImage,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
             }}>
 
-            {/* Theme Toggle */}
+          <div className=' min-h-screen flex flex-col justify-center items-center'>
+              {/* Theme Toggle */}
             <div className="flex justify-end w-full p-6">
                 <div className="flex items-center">
                     <button
@@ -150,6 +152,12 @@ export default function Login2() {
                         </button>
                     </Link>
                 </form>
+            </div>
+          </div>
+
+            <div>
+                <Logo />
+
             </div>
         </div>
     );

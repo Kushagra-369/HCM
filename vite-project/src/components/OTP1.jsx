@@ -167,59 +167,60 @@ export default function OTP1() {
   };
 
   return (
-    <div className="min-h-screen  scary-bg">
-      <div className='flex justify-center items-center'>
-        <div className="border-2 p-10 w-[350px] text-center rounded-3xl bg-gradient-to-tr hover:scale-105 transition-all from-gray-900 via-gray-700 to-gray-900 bg-opacity-80 text-red-400 shadow-2xl shadow-red-700">
-        <h1 className="py-5 text-xl font-bold animate-pulse">
-          <p>
-            We have sent a code to your email -{' '}
-            <span className="font-bold">{email || 'Not found'}</span>
-          </p>
-        </h1>
+    <div className=" py-20 scary-bg">
+      <div className='flex justify-center h-220 items-center'>
+        <div className="border-2 p-10 w-[250px] sm:w-[300px] md:w-[350px] lg:w-[400px] xl:w-[450px] 2xl:w-[500px] text-center rounded-3xl bg-gradient-to-tr hover:scale-105 transition-all from-gray-900 via-gray-700 to-gray-900 bg-opacity-80 text-red-400 shadow-2xl shadow-red-700">
+          <h1 className="py-5 text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold animate-pulse">
+            <p>
+              We have sent a code to your email -{' '}
+              <span className="font-bold ">{email || 'Not found'}</span>
+            </p>
+          </h1>
 
-        <h2 className="mb-2 py-5 text-lg">Enter OTP</h2>
+          <h2 className="mb-2 py-5 text-lg xl:text-xl 2xl:text-2xl">Enter OTP</h2>
 
-        <form onSubmit={handleSubmit}>
-          <div className="flex gap-5 py-3">
-            {code.map((data, index) => (
-              <div key={index} className="w-16 h-16">
-                <input
-                  id={`otp-input-${index}`}
-                  className="w-full h-full text-black text-center px-5 outline-none rounded-xl border border-gray-200 text-lg bg-white"
-                  type="text"
-                  maxLength="1"
-                  value={data}
-                  onChange={(e) => handleChange(e.target, index)}
-                  onKeyDown={(e) => handleKeyDown(e, index)}
-                  onFocus={(e) => e.target.select()}
-                  onPaste={(e) => e.preventDefault()}
-                />
-              </div>
-            ))}
+          <form onSubmit={handleSubmit}>
+            <div className="flex gap-5 py-3 justify-center">
+              {code.map((data, index) => (
+                <div key={index}>
+                  <input
+                    id={`otp-input-${index}`}
+                    className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 text-black text-center outline-none rounded-xl border border-gray-300 text-xl bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-300 transition-all"
+                    type="text"
+                    maxLength="1"
+                    value={data}
+                    onChange={(e) => handleChange(e.target, index)}
+                    onKeyDown={(e) => handleKeyDown(e, index)}
+                    onFocus={(e) => e.target.select()}
+                    onPaste={(e) => e.preventDefault()}
+                  />
+                </div>
+              ))}
+            </div>
+
+
+            <div className=" py-10 w-full">
+              <button
+                type="submit"
+                disabled={isLoading}
+                className="w-full py-5  hover:bg-red-600 bg-red-700 text-white text-base sm:text-lg md:text-xl lg:text-2xl rounded-xl disabled:opacity-50"
+              >
+                {isLoading ? 'Verifying...' : 'Verify Account'}
+              </button>
+            </div>
+          </form>
+
+          <div className="flex justify-center 2xl:text-2xl text-red-500 text-sm space-x-3">
+            <p>Didn't receive code?</p>
+            {canResend ? (
+              <button type="button" onClick={handleResendOTP} className="hover:text-blue-600 cursor-pointer">
+                Resend
+              </button>
+            ) : (
+              <span>Resend in {timeLeft}s</span>
+            )}
           </div>
-
-          <div className="px-10 py-5 w-full">
-            <button
-              type="submit"
-              disabled={isLoading}
-              className="w-full py-5 hover:bg-red-600 bg-red-700 text-white text-xl rounded-xl disabled:opacity-50"
-            >
-              {isLoading ? 'Verifying...' : 'Verify Account'}
-            </button>
-          </div>
-        </form>
-
-        <div className="flex justify-center text-red-500 space-x-1">
-          <p>Didn't receive code?</p>
-          {canResend ? (
-            <button type="button" onClick={handleResendOTP} className="hover:text-blue-600 cursor-pointer">
-              Resend
-            </button>
-          ) : (
-            <span>Resend in {timeLeft}s</span>
-          )}
         </div>
-      </div>
       </div>
 
       <div>

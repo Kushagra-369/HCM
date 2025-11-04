@@ -141,7 +141,7 @@ export default function Navbar() {
               closeAllMenus();
               setOpenScrollMenu(true);
             }}
-            className="cursor-pointer 2xl:pl-15 text-3xl sm:text-4xl md:text-4xl xl:text-6xl 2xl:text-8xl"
+            className="cursor-pointer 2xl:pl-2 text-3xl sm:text-4xl md:text-4xl xl:text-6xl 2xl:text-6xl"
             aria-label="Open scroll menu"
           >
             <FaBars />
@@ -150,7 +150,7 @@ export default function Navbar() {
 
           <div className="flex-1 flex justify-center flex-col md:flex-row md:items-center px-2 gap-10 text-center">
             <div
-              className=" text-4xl sm:text-6xl lg:text-6xl md:text-4xl xl:text-7xl 2xl:text-9xl font-black select-none"
+              className=" text-4xl sm:text-6xl lg:text-6xl md:text-4xl xl:text-7xl 2xl:text-7xl font-black select-none"
               style={{
                 fontFamily: "'Creepster', cursive",
                 textShadow: "2px 2px 8px black",
@@ -174,7 +174,7 @@ export default function Navbar() {
 
             </div>
 
-            <ul className="hidden md:flex items-center gap-2 pl-1 2xl:gap-20  2xl:pl-4">
+            <ul className="hidden md:flex items-center gap-2 pl-1 2xl:gap-10  2xl:pl-1">
               {mainLinks.map(({ href, title }, idx) => (
                 <motion.div
                   whileHover={{ scale: 1.05 }}
@@ -184,7 +184,7 @@ export default function Navbar() {
                 >
                   <RouterLink
                     to={href}
-                    className="group relative block  px-2 py-2 lg:px-4 lg:py-4 xl:px-6 xl:py-6 2xl:px-8 2xl:py-8 text-yellow-300 sm:text-sm lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold transition-colors duration-300 hover:text-black horror-container rounded-lg overflow-hidden overflow-y-auto max-h-screen"
+                    className="group relative block  px-2 py-2 lg:px-4 lg:py-4 xl:px-6 xl:py-6 2xl:px-4 2xl:py-4  text-yellow-300 sm:text-sm lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold transition-colors duration-300 hover:text-black horror-container rounded-lg overflow-hidden overflow-y-auto max-h-screen"
                     onMouseEnter={() => setHoveredIndex(idx)}
                     onMouseLeave={() => setHoveredIndex(null)}
                   >

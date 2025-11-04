@@ -75,7 +75,7 @@ export default function Home() {
                     ]}
                     wrapper="span"
                     speed={100}
-                    className="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-9xl inline-block"
+                    className="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl inline-block"
                     repeat={Infinity}
                 />
             </div>

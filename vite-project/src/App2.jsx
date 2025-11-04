@@ -9,7 +9,7 @@ import Classification2 from "./components/Classification2";
 import Comparision from "./components/Comparirion";
 import About from "./components/About";
 import Fight from "./components/Fight";
-
+import ForgotPassword from "./components/ForgotPassword.jsx";
 // Monster-specific pages
 import Sphinix from "./components/Sphinix";
 import Rockman from "./components/Rockman";
@@ -34,6 +34,7 @@ import Tigris from "./components/Tigris";
 import Flurtotilus from "./components/Flurtotilus";
 import Fight2 from "./components/Fight2";
 import GetReview from "./components/Admin/GetReview.jsx";
+import MobileLogin from "./components/MobileLogin.jsx";
 // Misc pages
 import Movies from "./components/Movie/Movies.jsx";
 import About_HCM from "./components/About_HCM";
@@ -69,6 +70,8 @@ export default function App2() {
         <Route path="/userhome" element={<UserHome />} />
         <Route path="/admin_home" element={<Admin_home />} />
         <Route path="/addmovie" element={<Movies />} />
+        <Route path="/forgotpassword" element={<ForgotPassword />} />
+        <Route path="/mobilelogin" element={<MobileLogin />} />
 
         {/* Fight Routes */}
         <Route path="/fight" element={<Fight />} />

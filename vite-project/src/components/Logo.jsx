@@ -3,7 +3,7 @@ import image1 from '../assets/images/EMPTY SPACES logo.png'
 
 export default function Logo() {
   return (
-    <div className=' flex justify-between items-align-right  '>
+    <div className='flex justify-between items-align-right '>
         <div>
 
         </div>

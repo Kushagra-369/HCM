@@ -152,7 +152,7 @@ export default function Signed_In1() {
 
           <div className="flex justify-between px-1 text-sm mt-2">
             <span></span>
-            <Link to="/forgot-password" className={`hover:underline 2xl:text-xl ${isDark ? 'hover:text-blue-400' : 'hover:text-blue-600'}`}>Forgot password?</Link>
+            <Link to="/forgotpassword" className={`hover:underline 2xl:text-xl ${isDark ? 'hover:text-blue-400' : 'hover:text-blue-600'}`}>Forgot password?</Link>
           </div>
 
           <div className="pt-6">

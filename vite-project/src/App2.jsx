@@ -49,6 +49,7 @@ import Profile from "./components/User/Profile.jsx";
 import UserHome from "./components/User/UserHome.jsx";
 import Admin_home from "./components/Admin/Admin_home.jsx";
 import YourMonsters from "./components/YourMonsters.jsx";
+import Season3 from "./components/season3.jsx";
 export default function App2() {
   const location = useLocation();
 
@@ -63,6 +64,7 @@ export default function App2() {
         <Route path="/" element={<Home />} />
         <Route path="/season1" element={<Season1 />} />
         <Route path="/season2" element={<Season2 />} />
+        <Route path="/season3" element={<Season3 />} />
         <Route path="/classification" element={<Classification2 />} />
         <Route path="/comparision" element={<Comparision />} />
         <Route path="/about" element={<About />} />
